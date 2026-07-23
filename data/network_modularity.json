@@ -1,0 +1,37 @@
+{
+  "econ": {
+    "largest_cc_nodes": 7465,
+    "largest_cc_edges": 8160,
+    "louvain_Q": 0.924,
+    "n_communities": 66,
+    "viz_nodes": 775
+  },
+  "math": {
+    "largest_cc_nodes": 5103,
+    "largest_cc_edges": 5363,
+    "louvain_Q": 0.95,
+    "n_communities": 70,
+    "viz_nodes": 800
+  },
+  "neuro": {
+    "largest_cc_nodes": 66194,
+    "largest_cc_edges": 72151,
+    "louvain_Q": 0.943,
+    "n_communities": 202,
+    "viz_nodes": 800
+  },
+  "physics": {
+    "largest_cc_nodes": 35929,
+    "largest_cc_edges": 38096,
+    "louvain_Q": 0.959,
+    "n_communities": 161,
+    "viz_nodes": 800
+  },
+  "chemistry": {
+    "largest_cc_nodes": 79501,
+    "largest_cc_edges": 82942,
+    "louvain_Q": 0.967,
+    "n_communities": 242,
+    "viz_nodes": 800
+  }
+}

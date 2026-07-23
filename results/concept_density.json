@@ -1,0 +1,32 @@
+{
+  "econ": {
+    "n_concepts": 6305,
+    "student_concept_edges": 26128,
+    "advisor_concept_edges": 16294,
+    "mean_concept_degree": 6.73
+  },
+  "math": {
+    "n_concepts": 12590,
+    "student_concept_edges": 48514,
+    "advisor_concept_edges": 28020,
+    "mean_concept_degree": 6.08
+  },
+  "neuro": {
+    "n_concepts": 21432,
+    "student_concept_edges": 209604,
+    "advisor_concept_edges": 119494,
+    "mean_concept_degree": 15.36
+  },
+  "physics": {
+    "n_concepts": 14152,
+    "student_concept_edges": 114900,
+    "advisor_concept_edges": 61028,
+    "mean_concept_degree": 12.43
+  },
+  "chemistry": {
+    "n_concepts": 22352,
+    "student_concept_edges": 259011,
+    "advisor_concept_edges": 121984,
+    "mean_concept_degree": 17.05
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "econ": {
+    "pairs": 8000,
+    "stu_links_mean": 6.24,
+    "stu_links_median": 0.0,
+    "adv_links_mean": 35.81,
+    "adv_links_median": 22.0,
+    "both_linkable": 2358,
+    "both_linkable_frac": 0.2948,
+    "rate_raw": 0.1634,
+    "rate_coverage_conditioned": 0.5543
+  },
+  "physics": {
+    "pairs": 8000,
+    "stu_links_mean": 24.7,
+    "stu_links_median": 4.0,
+    "adv_links_mean": 89.27,
+    "adv_links_median": 55.0,
+    "both_linkable": 4501,
+    "both_linkable_frac": 0.5626,
+    "rate_raw": 0.4449,
+    "rate_coverage_conditioned": 0.7907
+  },
+  "chemistry": {
+    "pairs": 8000,
+    "stu_links_mean": 21.39,
+    "stu_links_median": 5.0,
+    "adv_links_mean": 110.68,
+    "adv_links_median": 66.0,
+    "both_linkable": 5518,
+    "both_linkable_frac": 0.6897,
+    "rate_raw": 0.5524,
+    "rate_coverage_conditioned": 0.8008
+  },
+  "math": {
+    "pairs": 8000,
+    "stu_links_mean": 7.83,
+    "stu_links_median": 0.0,
+    "adv_links_mean": 44.71,
+    "adv_links_median": 24.0,
+    "both_linkable": 3120,
+    "both_linkable_frac": 0.39,
+    "rate_raw": 0.2934,
+    "rate_coverage_conditioned": 0.7522
+  },
+  "neuro": {
+    "pairs": 8000,
+    "stu_links_mean": 10.82,
+    "stu_links_median": 2.0,
+    "adv_links_mean": 41.97,
+    "adv_links_median": 25.0,
+    "both_linkable": 4385,
+    "both_linkable_frac": 0.5481,
+    "rate_raw": 0.3744,
+    "rate_coverage_conditioned": 0.683
+  }
+}

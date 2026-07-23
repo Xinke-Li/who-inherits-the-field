@@ -1,0 +1,19 @@
+{
+  "field": "physics",
+  "min_works": 3,
+  "raw_pairs": 53812,
+  "both_resolvable": 27008,
+  "both_in_works_store": 27008,
+  "survive_window_filters": 12290,
+  "modeled": 11810,
+  "drop_breakdown": {
+    "no_years": 4,
+    "adv_no_years": 7,
+    "too_recent": 1674,
+    "implausible_t0": 1414,
+    "span_gt_max": 5139,
+    "sparse_windows": 6480
+  },
+  "adv_id_coverage": 0.781,
+  "st_id_coverage": 0.5648
+}

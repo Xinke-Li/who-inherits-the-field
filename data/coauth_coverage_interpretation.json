@@ -1,0 +1,22 @@
+{
+  "finding": "The AFT ever-coauthored RAW rate is confounded by differential authorPub indexing coverage across trees. rate_raw = rate_coverage_conditioned * both_linkable_frac, so the raw axis mixes true collaboration with how well each tree is linked in AFT authorPub.",
+  "student_link_median": {
+    "econ": 0.0,
+    "physics": 4.0,
+    "chemistry": 5.0,
+    "math": 0.0,
+    "neuro": 2.0
+  },
+  "both_linkable_frac": {
+    "econ": 0.2948,
+    "physics": 0.5626,
+    "chemistry": 0.6897,
+    "math": 0.39,
+    "neuro": 0.5481
+  },
+  "raw_order": "econ 0.163 < math 0.293 < neuro 0.374 < physics 0.445 < chem 0.552",
+  "coverage_conditioned_order": "econ 0.554 < neuro 0.683 < math 0.752 < physics 0.791 < chem 0.801  (math JUMPS above neuro)",
+  "implication": "math student authorPub coverage is very low (median 0 links, both_linkable 0.39); its LOW raw rate is partly an indexing artifact, not necessarily low collaboration. Whether math is genuinely low-coauth (the de-confounding linchpin) is UNRESOLVED by AFT and must be decided by the OpenAlex early-window coauth rate from the P2c builds (paper metric; bypasses AFT authorPub).",
+  "robust": "econ is lowest under BOTH metrics; math is the exception where coverage adjustment flips the order vs neuro.",
+  "authoritative_axis": "The reported axis is the OpenAlex early-window coauth_early_rate per discipline on the shared pub-ID resolver, in coauthorship_axis.json. The AFT proxy here is ranking-only and coverage-confounded, kept for provenance."
+}

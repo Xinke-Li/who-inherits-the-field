@@ -1,0 +1,57 @@
+{
+  "field": "chemistry",
+  "tabular_ceiling_mean_max_M2_M3": 0.5349,
+  "n_ceiling_seeds": 10,
+  "models": {
+    "hgt": {
+      "n_seeds": 10,
+      "seed_mean_auc_pr": 0.5415,
+      "delta_vs_ceiling_mean": 0.0066,
+      "paired_p": 0.76953125,
+      "bootstrap_ci_diff": [
+        -0.0117,
+        0.0224
+      ],
+      "paired_p_bh": 0.845703,
+      "exceeds_ceiling": false
+    },
+    "hgt_tuned": {
+      "n_seeds": 10,
+      "seed_mean_auc_pr": 0.5426,
+      "delta_vs_ceiling_mean": 0.0077,
+      "paired_p": 0.845703125,
+      "bootstrap_ci_diff": [
+        -0.01,
+        0.0234
+      ],
+      "paired_p_bh": 0.845703,
+      "exceeds_ceiling": false
+    },
+    "rgcn": {
+      "n_seeds": 10,
+      "seed_mean_auc_pr": 0.5598,
+      "delta_vs_ceiling_mean": 0.0249,
+      "paired_p": 0.001953125,
+      "bootstrap_ci_diff": [
+        0.0186,
+        0.0318
+      ],
+      "paired_p_bh": 0.007812,
+      "exceeds_ceiling": true
+    },
+    "gat_cohort_time": {
+      "n_seeds": 10,
+      "seed_mean_auc_pr": 0.547,
+      "delta_vs_ceiling_mean": 0.0122,
+      "paired_p": 0.013671875,
+      "bootstrap_ci_diff": [
+        0.0056,
+        0.0191
+      ],
+      "paired_p_bh": 0.027344,
+      "exceeds_ceiling": true
+    }
+  },
+  "gates": "exceeds_ceiling requires seed_mean>ceiling AND BH p<0.05 AND bootstrap CI excludes 0",
+  "any_exceeds": true
+}

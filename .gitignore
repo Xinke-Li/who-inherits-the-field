@@ -1,0 +1,35 @@
+# Secrets: the OpenAlex key lives in the environment only, never in the tree.
+.openalex_key
+*.key
+.env
+.env.*
+
+# Large data ships through Zenodo, not git. The archive keeps these; the repo does not.
+*.parquet
+*.jsonl
+*.npz
+*.gz
+*.csv
+
+# Python and build noise
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# LaTeX build artifacts (regenerable by latexmk)
+*.aux
+*.log
+*.fls
+*.fdb_latexmk
+*.bbl
+*.blg
+*.out
+*.synctex.gz
+paper/*.pdf
+
+# Colab bundle is a build artifact (contains Zenodo-channel data); rebuild with code/make_colab_bundle.py
+*.zip
+
+# Official ACM template reference copy (unpacked from acmart-primary.zip; the two
+# files the paper needs are vendored in paper/): not tracked.
+acmart-primary/

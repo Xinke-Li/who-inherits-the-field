@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: If you use this dataset or benchmark, please cite it.
+title: "Who Inherits the Field? A Leakage-Audited Benchmark for Intellectual Inheritance in Doctoral Training"
+type: dataset
+authors:
+  - family-names: "Li"
+    given-names: "Xinke"
+    affiliation: "University of Chicago"
+    orcid: "https://orcid.org/0009-0001-0403-3606"
+version: "1.0.0"
+date-released: "2027-01-01"
+doi: "10.5281/zenodo.21501632"
+repository-code: "https://github.com/Xinke-Li/who-inherits-the-field"
+license: "MIT"
+keywords:
+  - benchmark
+  - forward prediction
+  - leakage audit
+  - scientific genealogy
+  - graph neural networks
+  - negative control

@@ -1,0 +1,19 @@
+{
+  "field": "chemistry",
+  "min_works": 3,
+  "raw_pairs": 106765,
+  "both_resolvable": 69904,
+  "both_in_works_store": 69904,
+  "survive_window_filters": 28045,
+  "modeled": 26830,
+  "drop_breakdown": {
+    "no_years": 7,
+    "adv_no_years": 3,
+    "too_recent": 8835,
+    "implausible_t0": 3605,
+    "span_gt_max": 11291,
+    "sparse_windows": 18118
+  },
+  "adv_id_coverage": 0.9037,
+  "st_id_coverage": 0.699
+}

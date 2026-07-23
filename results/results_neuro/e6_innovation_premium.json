@@ -1,0 +1,98 @@
+{
+  "experiment": "E6_innovation_premium",
+  "n": 21844,
+  "primary_outcome": {
+    "late_cite_pct_mean": {
+      "1_raw": {
+        "coef": -0.0065,
+        "se": 0.001,
+        "p": 0.0,
+        "n": 21844,
+        "r2": 0.0025
+      },
+      "2_controls": {
+        "coef": -0.0032,
+        "se": 0.0011,
+        "p": 0.00393,
+        "n": 21844,
+        "r2": 0.0115
+      },
+      "3_controls_FE": {
+        "coef": -0.0039,
+        "se": 0.0011,
+        "p": 0.00045,
+        "n": 21844,
+        "r2": 0.0343
+      },
+      "4_structural_FE": {
+        "coef": 0.0078,
+        "se": 0.0013,
+        "p": 0.0,
+        "n": 21844,
+        "r2": 0.0361
+      }
+    }
+  },
+  "legacy_outcome": {
+    "h_index_full_career": {
+      "1_raw": {
+        "coef": -0.5015,
+        "se": 0.1378,
+        "p": 0.00027,
+        "n": 21844,
+        "r2": 0.0008
+      },
+      "2_controls": {
+        "coef": -0.3749,
+        "se": 0.1666,
+        "p": 0.02446,
+        "n": 21844,
+        "r2": 0.1059
+      },
+      "3_controls_FE": {
+        "coef": -0.6052,
+        "se": 0.1371,
+        "p": 1e-05,
+        "n": 21844,
+        "r2": 0.4123
+      },
+      "4_structural_FE": {
+        "coef": 0.5084,
+        "se": 0.1541,
+        "p": 0.00097,
+        "n": 21844,
+        "r2": 0.412
+      }
+    }
+  },
+  "nonlinearity": {
+    "late_cite_pct_mean": {
+      "(-6.33, -0.566]": {
+        "mean": 0.5286,
+        "sem": 0.0015,
+        "n": 7286
+      },
+      "(-0.566, -0.000704]": {
+        "mean": 0.5298,
+        "sem": 0.0019,
+        "n": 4413
+      },
+      "(-0.000704, 0.502]": {
+        "mean": 0.5239,
+        "sem": 0.0019,
+        "n": 4347
+      },
+      "(0.502, 0.951]": {
+        "mean": 0.5151,
+        "sem": 0.0022,
+        "n": 3589
+      },
+      "(0.951, 1.356]": {
+        "mean": 0.4946,
+        "sem": 0.003,
+        "n": 2209
+      }
+    }
+  },
+  "verdict": "DIVERGENCE PENALTY: negative and significant with FE - premium NOT supported in this discipline; report as discipline difference"
+}

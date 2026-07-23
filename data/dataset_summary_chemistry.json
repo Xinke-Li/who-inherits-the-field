@@ -1,0 +1,57 @@
+{
+  "schema_version": 2,
+  "sha256_parquet": "0b4d21bf7b161b361a2e82904c4e55c2b17f5b928281177079b6a3fb060b8080",
+  "n_students": 26830,
+  "n_advisors": 10437,
+  "n_institutions": 2190,
+  "label_base_rate": 0.2182,
+  "t0_range": [
+    1950,
+    2011
+  ],
+  "coauth_early_rate": 0.7905,
+  "country_missing_rate": 1.0,
+  "id_cols": [
+    "student_pid",
+    "advisor_pid",
+    "st_openalex_id",
+    "adv_openalex_id",
+    "st_name",
+    "adv_name"
+  ],
+  "feature_cols": [
+    "t0",
+    "early_prod",
+    "early_breadth",
+    "early_concepts",
+    "adv_profile",
+    "adv_early_prod",
+    "adv_early_breadth",
+    "adv_career_age_at_t0",
+    "early_overlap",
+    "coauth_early",
+    "coauth_early_n",
+    "institution_name",
+    "institution_country"
+  ],
+  "label_cols": [
+    "y",
+    "late_overlap",
+    "late_prod"
+  ],
+  "params": {
+    "early_years": 5,
+    "late_years": 15,
+    "min_works_per_window": 3,
+    "theta": 0.2,
+    "topk": 10,
+    "concept_min_score": 0.3,
+    "t0_min": 1950,
+    "max_career_span": 60,
+    "max_works_per_author": 400,
+    "sort": "publication_date:asc",
+    "obs_year": 2026
+  },
+  "discipline": "chemistry",
+  "field": "chemistry"
+}

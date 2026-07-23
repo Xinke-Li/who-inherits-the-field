@@ -1,0 +1,45 @@
+{
+  "experiment": "E9b_advisor_disjoint",
+  "model": "M3 GBDT (E1 configuration), 10 seeds per split",
+  "reference_temporal": {
+    "auc_pr": {
+      "mean": 0.4257264014067542,
+      "std": 0.006255800327591724,
+      "n_seeds": 10
+    },
+    "auc_roc": {
+      "mean": 0.6764392521041109,
+      "std": 0.00297017299137961,
+      "n_seeds": 10
+    },
+    "f1": {
+      "mean": 0.4746189662854438,
+      "std": 0.004376829481132318,
+      "n_seeds": 10
+    },
+    "n_test": 3463,
+    "test_base_rate": 0.2645
+  },
+  "advisor_disjoint": {
+    "auc_pr": {
+      "mean": 0.43494344959608,
+      "std": 0.0034658432499706715,
+      "n_seeds": 10
+    },
+    "auc_roc": {
+      "mean": 0.7045948525793427,
+      "std": 0.0024144333221764822,
+      "n_seeds": 10
+    },
+    "f1": {
+      "mean": 0.48117109303393546,
+      "std": 0.0033910437176375313,
+      "n_seeds": 10
+    },
+    "n_test": 4439,
+    "test_base_rate": 0.2516
+  },
+  "shift_auc_pr": 0.0092,
+  "rule": "PASS if disjoint mean AUC-PR >= temporal reference mean - 0.05",
+  "verdict": "PASS"
+}

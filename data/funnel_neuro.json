@@ -1,0 +1,19 @@
+{
+  "field": "neuro",
+  "min_works": 3,
+  "raw_pairs": 120347,
+  "both_resolvable": 61724,
+  "both_in_works_store": 0,
+  "survive_window_filters": 0,
+  "modeled": 21846,
+  "drop_breakdown": {
+    "no_years": 0,
+    "adv_no_years": 0,
+    "too_recent": 0,
+    "implausible_t0": 0,
+    "span_gt_max": 0,
+    "sparse_windows": 0
+  },
+  "adv_id_coverage": 0.8169,
+  "st_id_coverage": 0.5574
+}

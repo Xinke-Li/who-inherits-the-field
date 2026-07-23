@@ -1,0 +1,289 @@
+{
+  "experiment": "E12_corrected_summary",
+  "run": "third (canonical)",
+  "rows": [
+    {
+      "field": "econ",
+      "model": "hgt",
+      "seed_mean_auc_pr": 0.3565,
+      "naive_exceeds": false,
+      "preregistered_exceeds": false,
+      "fair_exceeds": false,
+      "delta_vs_M5": 0.0175,
+      "delta_vs_M5prime": -0.0048,
+      "student_ci95_vs_M5prime": [
+        -0.0724,
+        0.0569
+      ]
+    },
+    {
+      "field": "econ",
+      "model": "hgt_tuned",
+      "seed_mean_auc_pr": 0.3484,
+      "naive_exceeds": false,
+      "preregistered_exceeds": false,
+      "fair_exceeds": false,
+      "delta_vs_M5": 0.0094,
+      "delta_vs_M5prime": -0.0129,
+      "student_ci95_vs_M5prime": [
+        -0.0777,
+        0.0437
+      ]
+    },
+    {
+      "field": "econ",
+      "model": "rgcn",
+      "seed_mean_auc_pr": 0.3405,
+      "naive_exceeds": false,
+      "preregistered_exceeds": false,
+      "fair_exceeds": false,
+      "delta_vs_M5": 0.0015,
+      "delta_vs_M5prime": -0.0208,
+      "student_ci95_vs_M5prime": [
+        -0.0812,
+        0.0365
+      ]
+    },
+    {
+      "field": "econ",
+      "model": "gat_cohort_time",
+      "seed_mean_auc_pr": 0.3722,
+      "naive_exceeds": false,
+      "preregistered_exceeds": false,
+      "fair_exceeds": false,
+      "delta_vs_M5": 0.0332,
+      "delta_vs_M5prime": 0.0109,
+      "student_ci95_vs_M5prime": [
+        -0.0613,
+        0.0805
+      ]
+    },
+    {
+      "field": "math",
+      "model": "hgt",
+      "seed_mean_auc_pr": 0.3894,
+      "naive_exceeds": false,
+      "preregistered_exceeds": false,
+      "fair_exceeds": false,
+      "delta_vs_M5": -0.0085,
+      "delta_vs_M5prime": -0.0463,
+      "student_ci95_vs_M5prime": [
+        -0.0976,
+        0.0037
+      ]
+    },
+    {
+      "field": "math",
+      "model": "hgt_tuned",
+      "seed_mean_auc_pr": 0.3518,
+      "naive_exceeds": false,
+      "preregistered_exceeds": false,
+      "fair_exceeds": false,
+      "delta_vs_M5": -0.0461,
+      "delta_vs_M5prime": -0.0838,
+      "student_ci95_vs_M5prime": [
+        -0.1371,
+        -0.0297
+      ]
+    },
+    {
+      "field": "math",
+      "model": "rgcn",
+      "seed_mean_auc_pr": 0.4051,
+      "naive_exceeds": false,
+      "preregistered_exceeds": false,
+      "fair_exceeds": false,
+      "delta_vs_M5": 0.0072,
+      "delta_vs_M5prime": -0.0306,
+      "student_ci95_vs_M5prime": [
+        -0.0782,
+        0.0194
+      ]
+    },
+    {
+      "field": "math",
+      "model": "gat_cohort_time",
+      "seed_mean_auc_pr": 0.358,
+      "naive_exceeds": false,
+      "preregistered_exceeds": false,
+      "fair_exceeds": false,
+      "delta_vs_M5": -0.04,
+      "delta_vs_M5prime": -0.0777,
+      "student_ci95_vs_M5prime": [
+        -0.1306,
+        -0.0248
+      ]
+    },
+    {
+      "field": "neuro",
+      "model": "hgt",
+      "seed_mean_auc_pr": 0.4286,
+      "naive_exceeds": false,
+      "preregistered_exceeds": false,
+      "fair_exceeds": false,
+      "delta_vs_M5": 0.0055,
+      "delta_vs_M5prime": 0.0036,
+      "student_ci95_vs_M5prime": [
+        -0.0155,
+        0.0214
+      ]
+    },
+    {
+      "field": "neuro",
+      "model": "hgt_tuned",
+      "seed_mean_auc_pr": 0.4329,
+      "naive_exceeds": false,
+      "preregistered_exceeds": false,
+      "fair_exceeds": false,
+      "delta_vs_M5": 0.0099,
+      "delta_vs_M5prime": 0.008,
+      "student_ci95_vs_M5prime": [
+        -0.0116,
+        0.0271
+      ]
+    },
+    {
+      "field": "neuro",
+      "model": "rgcn",
+      "seed_mean_auc_pr": 0.4354,
+      "naive_exceeds": true,
+      "preregistered_exceeds": false,
+      "fair_exceeds": false,
+      "delta_vs_M5": 0.0123,
+      "delta_vs_M5prime": 0.0105,
+      "student_ci95_vs_M5prime": [
+        -0.0072,
+        0.0273
+      ]
+    },
+    {
+      "field": "neuro",
+      "model": "gat_cohort_time",
+      "seed_mean_auc_pr": 0.4188,
+      "naive_exceeds": false,
+      "preregistered_exceeds": false,
+      "fair_exceeds": false,
+      "delta_vs_M5": -0.0042,
+      "delta_vs_M5prime": -0.0061,
+      "student_ci95_vs_M5prime": [
+        -0.0284,
+        0.0159
+      ]
+    },
+    {
+      "field": "physics",
+      "model": "hgt",
+      "seed_mean_auc_pr": 0.6551,
+      "naive_exceeds": true,
+      "preregistered_exceeds": false,
+      "fair_exceeds": false,
+      "delta_vs_M5": 0.0114,
+      "delta_vs_M5prime": 0.0066,
+      "student_ci95_vs_M5prime": [
+        -0.0132,
+        0.0269
+      ]
+    },
+    {
+      "field": "physics",
+      "model": "hgt_tuned",
+      "seed_mean_auc_pr": 0.6605,
+      "naive_exceeds": true,
+      "preregistered_exceeds": false,
+      "fair_exceeds": false,
+      "delta_vs_M5": 0.0168,
+      "delta_vs_M5prime": 0.0119,
+      "student_ci95_vs_M5prime": [
+        -0.0112,
+        0.0347
+      ]
+    },
+    {
+      "field": "physics",
+      "model": "rgcn",
+      "seed_mean_auc_pr": 0.6538,
+      "naive_exceeds": true,
+      "preregistered_exceeds": false,
+      "fair_exceeds": false,
+      "delta_vs_M5": 0.0101,
+      "delta_vs_M5prime": 0.0052,
+      "student_ci95_vs_M5prime": [
+        -0.0133,
+        0.0247
+      ]
+    },
+    {
+      "field": "physics",
+      "model": "gat_cohort_time",
+      "seed_mean_auc_pr": 0.6466,
+      "naive_exceeds": true,
+      "preregistered_exceeds": false,
+      "fair_exceeds": false,
+      "delta_vs_M5": 0.0029,
+      "delta_vs_M5prime": -0.0019,
+      "student_ci95_vs_M5prime": [
+        -0.0246,
+        0.0197
+      ]
+    },
+    {
+      "field": "chemistry",
+      "model": "hgt",
+      "seed_mean_auc_pr": 0.5415,
+      "naive_exceeds": false,
+      "preregistered_exceeds": false,
+      "fair_exceeds": false,
+      "delta_vs_M5": 0.0108,
+      "delta_vs_M5prime": 0.0041,
+      "student_ci95_vs_M5prime": [
+        -0.0105,
+        0.0173
+      ]
+    },
+    {
+      "field": "chemistry",
+      "model": "hgt_tuned",
+      "seed_mean_auc_pr": 0.5426,
+      "naive_exceeds": false,
+      "preregistered_exceeds": false,
+      "fair_exceeds": false,
+      "delta_vs_M5": 0.0119,
+      "delta_vs_M5prime": 0.0052,
+      "student_ci95_vs_M5prime": [
+        -0.0109,
+        0.0209
+      ]
+    },
+    {
+      "field": "chemistry",
+      "model": "rgcn",
+      "seed_mean_auc_pr": 0.5598,
+      "naive_exceeds": true,
+      "preregistered_exceeds": true,
+      "fair_exceeds": true,
+      "delta_vs_M5": 0.0291,
+      "delta_vs_M5prime": 0.0224,
+      "student_ci95_vs_M5prime": [
+        0.0071,
+        0.0364
+      ]
+    },
+    {
+      "field": "chemistry",
+      "model": "gat_cohort_time",
+      "seed_mean_auc_pr": 0.547,
+      "naive_exceeds": true,
+      "preregistered_exceeds": false,
+      "fair_exceeds": false,
+      "delta_vs_M5": 0.0164,
+      "delta_vs_M5prime": 0.0096,
+      "student_ci95_vs_M5prime": [
+        -0.0078,
+        0.0271
+      ]
+    }
+  ],
+  "n_naive": 7,
+  "n_preregistered": 1,
+  "n_fair": 1
+}
