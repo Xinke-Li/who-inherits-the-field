@@ -1,0 +1,185 @@
+{
+  "task": "T2.8",
+  "reviewer_point": "C1",
+  "question": "does the early co-authorship ordering, economics lowest, hold within early-productivity strata rather than only in the pooled sample?",
+  "stratifier": "early_prod terciles, computed within discipline",
+  "pooled_rates": {
+    "econ": 0.583,
+    "math": 0.6777,
+    "neuro": 0.7625,
+    "physics": 0.7876,
+    "chemistry": 0.7905
+  },
+  "strata": {
+    "econ": {
+      "low": {
+        "n": 1043,
+        "coauth_early_rate": 0.4746,
+        "early_prod_range": [
+          3.0,
+          7.0
+        ]
+      },
+      "mid": {
+        "n": 826,
+        "coauth_early_rate": 0.6368,
+        "early_prod_range": [
+          8.0,
+          13.0
+        ]
+      },
+      "high": {
+        "n": 829,
+        "coauth_early_rate": 0.6659,
+        "early_prod_range": [
+          14.0,
+          134.0
+        ]
+      }
+    },
+    "math": {
+      "low": {
+        "n": 1709,
+        "coauth_early_rate": 0.5266,
+        "early_prod_range": [
+          3.0,
+          6.0
+        ]
+      },
+      "mid": {
+        "n": 1713,
+        "coauth_early_rate": 0.728,
+        "early_prod_range": [
+          7.0,
+          12.0
+        ]
+      },
+      "high": {
+        "n": 1629,
+        "coauth_early_rate": 0.7833,
+        "early_prod_range": [
+          13.0,
+          293.0
+        ]
+      }
+    },
+    "neuro": {
+      "low": {
+        "n": 8672,
+        "coauth_early_rate": 0.6485,
+        "early_prod_range": [
+          3.0,
+          6.0
+        ]
+      },
+      "mid": {
+        "n": 6255,
+        "coauth_early_rate": 0.8219,
+        "early_prod_range": [
+          7.0,
+          10.0
+        ]
+      },
+      "high": {
+        "n": 6919,
+        "coauth_early_rate": 0.8517,
+        "early_prod_range": [
+          11.0,
+          382.0
+        ]
+      }
+    },
+    "physics": {
+      "low": {
+        "n": 4217,
+        "coauth_early_rate": 0.6374,
+        "early_prod_range": [
+          3.0,
+          8.0
+        ]
+      },
+      "mid": {
+        "n": 3717,
+        "coauth_early_rate": 0.8388,
+        "early_prod_range": [
+          9.0,
+          15.0
+        ]
+      },
+      "high": {
+        "n": 3876,
+        "coauth_early_rate": 0.9017,
+        "early_prod_range": [
+          16.0,
+          396.0
+        ]
+      }
+    },
+    "chemistry": {
+      "low": {
+        "n": 10670,
+        "coauth_early_rate": 0.6659,
+        "early_prod_range": [
+          3.0,
+          7.0
+        ]
+      },
+      "mid": {
+        "n": 7352,
+        "coauth_early_rate": 0.8501,
+        "early_prod_range": [
+          8.0,
+          12.0
+        ]
+      },
+      "high": {
+        "n": 8808,
+        "coauth_early_rate": 0.8916,
+        "early_prod_range": [
+          13.0,
+          199.0
+        ]
+      }
+    }
+  },
+  "ordering_within_strata": {
+    "low": {
+      "lowest": "econ",
+      "econ_is_lowest": true,
+      "rates": {
+        "econ": 0.4746,
+        "math": 0.5266,
+        "neuro": 0.6485,
+        "physics": 0.6374,
+        "chemistry": 0.6659
+      },
+      "econ_margin_to_next": 0.052
+    },
+    "mid": {
+      "lowest": "econ",
+      "econ_is_lowest": true,
+      "rates": {
+        "econ": 0.6368,
+        "math": 0.728,
+        "neuro": 0.8219,
+        "physics": 0.8388,
+        "chemistry": 0.8501
+      },
+      "econ_margin_to_next": 0.0912
+    },
+    "high": {
+      "lowest": "econ",
+      "econ_is_lowest": true,
+      "rates": {
+        "econ": 0.6659,
+        "math": 0.7833,
+        "neuro": 0.8517,
+        "physics": 0.9017,
+        "chemistry": 0.8916
+      },
+      "econ_margin_to_next": 0.1174
+    }
+  },
+  "econ_lowest_in_all_strata": true,
+  "reading": "the ordering survives stratification and is not an artifact of differing productivity distributions"
+}

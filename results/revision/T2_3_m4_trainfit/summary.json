@@ -1,0 +1,228 @@
+{
+  "task": "T2.3",
+  "finding": "W5",
+  "change": "TF-IDF vectorizer fitted on the training split only; transform applied to all rows, out-of-vocabulary tokens dropped",
+  "legacy_path_retained_as": "build_features(concepts=\"tfidf_legacy\")",
+  "fields": {
+    "econ": {
+      "legacy": {
+        "auc_pr": {
+          "mean": 0.23915634995564766
+        },
+        "auc_roc": {
+          "mean": 0.5718093787400719
+        },
+        "base_rate": {
+          "mean": 0.18383838383838386
+        },
+        "f1": {
+          "mean": 0.31651376146789
+        },
+        "threshold": {
+          "mean": 0.0014190079157305384
+        }
+      },
+      "trainfit": {
+        "auc_pr": {
+          "mean": 0.2483133268986552
+        },
+        "auc_roc": {
+          "mean": 0.5737134152975737
+        },
+        "base_rate": {
+          "mean": 0.18383838383838386
+        },
+        "f1": {
+          "mean": 0.31981981981981983
+        },
+        "threshold": {
+          "mean": 0.001826130871085393
+        }
+      },
+      "delta": {
+        "auc_pr": 0.009157,
+        "auc_roc": 0.001904,
+        "base_rate": 0.0,
+        "f1": 0.003306,
+        "threshold": 0.000407
+      },
+      "n_features_dropped": 0
+    },
+    "math": {
+      "legacy": {
+        "auc_pr": {
+          "mean": 0.2756123863709082
+        },
+        "auc_roc": {
+          "mean": 0.6066474672009126
+        },
+        "base_rate": {
+          "mean": 0.20748663101604276
+        },
+        "f1": {
+          "mean": 0.36322869955156944
+        },
+        "threshold": {
+          "mean": 0.00012059286930044485
+        }
+      },
+      "trainfit": {
+        "auc_pr": {
+          "mean": 0.29364932177069747
+        },
+        "auc_roc": {
+          "mean": 0.6078578683027951
+        },
+        "base_rate": {
+          "mean": 0.20748663101604276
+        },
+        "f1": {
+          "mean": 0.3739237392373923
+        },
+        "threshold": {
+          "mean": 0.0010432698213929806
+        }
+      },
+      "delta": {
+        "auc_pr": 0.018037,
+        "auc_roc": 0.00121,
+        "base_rate": 0.0,
+        "f1": 0.010695,
+        "threshold": 0.000923
+      },
+      "n_features_dropped": 0
+    },
+    "neuro": {
+      "legacy": {
+        "auc_pr": {
+          "mean": 0.34145183830949766
+        },
+        "auc_roc": {
+          "mean": 0.6021983221977049
+        },
+        "base_rate": {
+          "mean": 0.2645105399942246
+        },
+        "f1": {
+          "mean": 0.422360248447205
+        },
+        "threshold": {
+          "mean": 0.002927041995131188
+        }
+      },
+      "trainfit": {
+        "auc_pr": {
+          "mean": 0.3500714561629357
+        },
+        "auc_roc": {
+          "mean": 0.6092937491320382
+        },
+        "base_rate": {
+          "mean": 0.2645105399942246
+        },
+        "f1": {
+          "mean": 0.43896643896643905
+        },
+        "threshold": {
+          "mean": 0.017367784330474364
+        }
+      },
+      "delta": {
+        "auc_pr": 0.00862,
+        "auc_roc": 0.007095,
+        "base_rate": 0.0,
+        "f1": 0.016606,
+        "threshold": 0.014441
+      },
+      "n_features_dropped": 0
+    },
+    "physics": {
+      "legacy": {
+        "auc_pr": {
+          "mean": 0.4803300191824948
+        },
+        "auc_roc": {
+          "mean": 0.6409809243121373
+        },
+        "base_rate": {
+          "mean": 0.35888187556357076
+        },
+        "f1": {
+          "mean": 0.5478977026441266
+        },
+        "threshold": {
+          "mean": 9.42211163885948e-06
+        }
+      },
+      "trainfit": {
+        "auc_pr": {
+          "mean": 0.4607966443984092
+        },
+        "auc_roc": {
+          "mean": 0.6271021952236568
+        },
+        "base_rate": {
+          "mean": 0.35888187556357076
+        },
+        "f1": {
+          "mean": 0.5440944881889765
+        },
+        "threshold": {
+          "mean": 5.9239874248156354e-08
+        }
+      },
+      "delta": {
+        "auc_pr": -0.019533,
+        "auc_roc": -0.013879,
+        "base_rate": 0.0,
+        "f1": -0.003803,
+        "threshold": -9e-06
+      },
+      "n_features_dropped": 0
+    },
+    "chemistry": {
+      "legacy": {
+        "auc_pr": {
+          "mean": 0.36769013393414024
+        },
+        "auc_roc": {
+          "mean": 0.6498118278342623
+        },
+        "base_rate": {
+          "mean": 0.24496426250812214
+        },
+        "f1": {
+          "mean": 0.43532727842154717
+        },
+        "threshold": {
+          "mean": 0.07706701495588131
+        }
+      },
+      "trainfit": {
+        "auc_pr": {
+          "mean": 0.40870852068862584
+        },
+        "auc_roc": {
+          "mean": 0.6654360272972654
+        },
+        "base_rate": {
+          "mean": 0.24496426250812214
+        },
+        "f1": {
+          "mean": 0.4359203092476954
+        },
+        "threshold": {
+          "mean": 0.08849200541182098
+        }
+      },
+      "delta": {
+        "auc_pr": 0.041018,
+        "auc_roc": 0.015624,
+        "base_rate": 0.0,
+        "f1": 0.000593,
+        "threshold": 0.011425
+      },
+      "n_features_dropped": 0
+    }
+  }
+}

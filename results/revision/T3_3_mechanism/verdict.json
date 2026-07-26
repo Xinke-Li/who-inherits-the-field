@@ -1,0 +1,153 @@
+{
+  "task": "T3.3",
+  "field": "chemistry",
+  "candidate_1_cohort_base_rate_dispersion": {
+    "verdict": "fails as a unifying cause",
+    "stratification_works": {
+      "all": 0.5401,
+      "low_dispersion": 0.5011,
+      "high_dispersion": 0.555
+    },
+    "scramble_residual_by_stratum": {
+      "all": {
+        "auc_roc": 0.5247,
+        "p": 0.0033,
+        "departs_from_chance": true
+      },
+      "low_dispersion": {
+        "auc_roc": 0.5256,
+        "p": 0.0014,
+        "departs_from_chance": true
+      },
+      "high_dispersion": {
+        "auc_roc": 0.5236,
+        "p": 0.0107,
+        "departs_from_chance": true
+      }
+    },
+    "graph_crossing_by_stratum": {
+      "all": {
+        "delta": 0.0448,
+        "ci": [
+          0.0291,
+          0.061
+        ],
+        "excludes_zero": true
+      },
+      "low_dispersion": {
+        "delta": 0.031,
+        "ci": [
+          0.0104,
+          0.0521
+        ],
+        "excludes_zero": true
+      },
+      "high_dispersion": {
+        "delta": 0.0611,
+        "ci": [
+          0.0389,
+          0.0824
+        ],
+        "excludes_zero": true
+      }
+    },
+    "disjoint_shift_by_stratum": {
+      "all": -0.0596,
+      "low_dispersion": -0.0807,
+      "high_dispersion": 0.0807
+    },
+    "all_three_attenuate_together": false,
+    "reading": "the split does isolate dispersion: the composition ceiling falls from 0.5401 to 0.5011, which is chance. The other two anomalies do not follow it. The within-cohort scramble residual is 0.5256 with p 0.0014 in that same stratum, so it is not cell composition; the graph crossing attenuates from 0.0611 to 0.031 but its interval still excludes zero; and the advisor-disjoint penalty is larger in the low-dispersion stratum, which is the wrong direction. One cause behind all three is not supported."
+  },
+  "candidate_2_concept_graph_density": {
+    "verdict": "supported for the graph crossing",
+    "tercile_mean_degree": {
+      "low": 1121.25,
+      "mid": 4449.19,
+      "high": 6399.42
+    },
+    "graph_crossing_by_tercile": {
+      "all": {
+        "delta": 0.0448,
+        "ci": [
+          0.0291,
+          0.061
+        ],
+        "excludes_zero": true
+      },
+      "low": {
+        "delta": 0.0179,
+        "ci": [
+          -0.0153,
+          0.0522
+        ],
+        "excludes_zero": false
+      },
+      "mid": {
+        "delta": 0.0353,
+        "ci": [
+          0.0012,
+          0.0661
+        ],
+        "excludes_zero": true
+      },
+      "high": {
+        "delta": 0.0432,
+        "ci": [
+          0.0245,
+          0.0653
+        ],
+        "excludes_zero": true
+      }
+    },
+    "monotone_in_degree": true,
+    "composition_ceiling_by_tercile": {
+      "low": 0.5393,
+      "mid": 0.52,
+      "high": 0.5506
+    },
+    "reading": "the crossing rises monotonically with concept degree, from 0.0179 with an interval that includes zero to 0.0432 with one that does not, on equal strata of 1539 rows. The composition ceiling is not monotone across the same terciles, so this is not dispersion wearing another name."
+  },
+  "candidate_3_vocabulary_granularity": {
+    "verdict": "chemistry's distinctiveness does not survive, but the ablation changes the label too much to be decisive",
+    "by_field": {
+      "econ": {
+        "base_rate_frozen": 0.1838,
+        "base_rate_restricted": 0.0263,
+        "label_agreement": 0.8384,
+        "composition_ceiling_restricted": 0.6381,
+        "approx_positives_in_test": null
+      },
+      "math": {
+        "base_rate_frozen": 0.2075,
+        "base_rate_restricted": 0.0663,
+        "label_agreement": 0.8417,
+        "composition_ceiling_restricted": 0.5761,
+        "approx_positives_in_test": null
+      },
+      "neuro": {
+        "base_rate_frozen": 0.2645,
+        "base_rate_restricted": 0.0941,
+        "label_agreement": 0.8048,
+        "composition_ceiling_restricted": 0.5157,
+        "approx_positives_in_test": null
+      },
+      "physics": {
+        "base_rate_frozen": 0.3589,
+        "base_rate_restricted": 0.1474,
+        "label_agreement": 0.7723,
+        "composition_ceiling_restricted": 0.5327,
+        "approx_positives_in_test": null
+      },
+      "chemistry": {
+        "base_rate_frozen": 0.245,
+        "base_rate_restricted": 0.0745,
+        "label_agreement": 0.8113,
+        "composition_ceiling_restricted": 0.5289,
+        "approx_positives_in_test": null
+      }
+    },
+    "reading": "restricting profiles to OpenAlex level 2 and deeper cuts the positive rate to between a third and a half of the frozen one and moves 16 to 23 percent of labels, so it defines a different task rather than remeasuring this one. Within it chemistry's composition ceiling is 0.5289 against physics at 0.5327 and neuroscience at 0.5157, so chemistry is no longer the outlier; economics at 0.6381 and mathematics at 0.5761 rest on roughly 13 and 62 test positives and carry no weight. The graph arm was not rerun under this vocabulary, which would need the GPU leg."
+  },
+  "overall": "concept-graph density is the candidate that survives its test. Cohort base-rate dispersion fails as a single cause for the three anomalies, and the within-cohort scramble residual in particular is not cell composition. Vocabulary granularity cannot be ruled out or in from an ablation that changes the label."
+}

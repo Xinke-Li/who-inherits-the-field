@@ -1,0 +1,27 @@
+{
+  "econ": {
+    "pairs": 8000,
+    "co_authored": 1307,
+    "rate": 0.1634
+  },
+  "physics": {
+    "pairs": 8000,
+    "co_authored": 3559,
+    "rate": 0.4449
+  },
+  "chemistry": {
+    "pairs": 8000,
+    "co_authored": 4419,
+    "rate": 0.5524
+  },
+  "math": {
+    "pairs": 8000,
+    "co_authored": 2347,
+    "rate": 0.2934
+  },
+  "neuro": {
+    "pairs": 8000,
+    "co_authored": 2995,
+    "rate": 0.3744
+  }
+}

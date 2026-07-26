@@ -1,0 +1,18 @@
+{
+  "experiment": "R15c_catboost_eq2",
+  "field": "neuro",
+  "catboost_mean": 0.4314,
+  "M5prime_mean": 0.4249,
+  "delta": 0.0065,
+  "wilcoxon_p_raw": 0.00390625,
+  "student_ci95": [
+    -0.0042,
+    0.0182
+  ],
+  "gates": {
+    "seed_mean_gt_ceiling": true,
+    "p_lt_0.05": true,
+    "student_ci_lower_gt_0": false
+  },
+  "exceeds": false
+}

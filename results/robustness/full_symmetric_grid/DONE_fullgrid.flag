@@ -1,0 +1,176 @@
+{
+  "job": "fullgrid",
+  "finished_utc": "2026-07-24T16:29:41Z",
+  "verdicts": {
+    "econ": {
+      "rgcn_sym": {
+        "seed_mean_auc_pr": 0.3546,
+        "delta_vs_M5prime": -0.0067,
+        "wilcoxon_p_raw": 0.16015625,
+        "p_adj_M5prime": 0.160156,
+        "student_ci95_vs_M5prime": [
+          -0.0685,
+          0.0517
+        ],
+        "gates_fair": {
+          "seed_mean_gt_ceiling": false,
+          "p_adj_lt_0.05": false,
+          "student_ci_lower_gt_0": false
+        },
+        "exceeds_fair": false
+      },
+      "gat_sym": {
+        "seed_mean_auc_pr": 0.3807,
+        "delta_vs_M5prime": 0.0194,
+        "wilcoxon_p_raw": 0.009765625,
+        "p_adj_M5prime": 0.019531,
+        "student_ci95_vs_M5prime": [
+          -0.053,
+          0.0879
+        ],
+        "gates_fair": {
+          "seed_mean_gt_ceiling": true,
+          "p_adj_lt_0.05": true,
+          "student_ci_lower_gt_0": false
+        },
+        "exceeds_fair": false
+      }
+    },
+    "math": {
+      "rgcn_sym": {
+        "seed_mean_auc_pr": 0.3954,
+        "delta_vs_M5prime": -0.0403,
+        "wilcoxon_p_raw": 0.001953125,
+        "p_adj_M5prime": 0.001953,
+        "student_ci95_vs_M5prime": [
+          -0.0886,
+          0.0067
+        ],
+        "gates_fair": {
+          "seed_mean_gt_ceiling": false,
+          "p_adj_lt_0.05": true,
+          "student_ci_lower_gt_0": false
+        },
+        "exceeds_fair": false
+      },
+      "gat_sym": {
+        "seed_mean_auc_pr": 0.3515,
+        "delta_vs_M5prime": -0.0842,
+        "wilcoxon_p_raw": 0.001953125,
+        "p_adj_M5prime": 0.001953,
+        "student_ci95_vs_M5prime": [
+          -0.1361,
+          -0.0324
+        ],
+        "gates_fair": {
+          "seed_mean_gt_ceiling": false,
+          "p_adj_lt_0.05": true,
+          "student_ci_lower_gt_0": false
+        },
+        "exceeds_fair": false
+      }
+    },
+    "physics": {
+      "rgcn_sym": {
+        "seed_mean_auc_pr": 0.6589,
+        "delta_vs_M5prime": 0.0104,
+        "wilcoxon_p_raw": 0.001953125,
+        "p_adj_M5prime": 0.003906,
+        "student_ci95_vs_M5prime": [
+          -0.0075,
+          0.0285
+        ],
+        "gates_fair": {
+          "seed_mean_gt_ceiling": true,
+          "p_adj_lt_0.05": true,
+          "student_ci_lower_gt_0": false
+        },
+        "exceeds_fair": false
+      },
+      "gat_sym": {
+        "seed_mean_auc_pr": 0.6489,
+        "delta_vs_M5prime": 0.0003,
+        "wilcoxon_p_raw": 1.0,
+        "p_adj_M5prime": 1.0,
+        "student_ci95_vs_M5prime": [
+          -0.0222,
+          0.0222
+        ],
+        "gates_fair": {
+          "seed_mean_gt_ceiling": true,
+          "p_adj_lt_0.05": false,
+          "student_ci_lower_gt_0": false
+        },
+        "exceeds_fair": false
+      }
+    },
+    "neuro": {
+      "rgcn_sym": {
+        "seed_mean_auc_pr": 0.4397,
+        "delta_vs_M5prime": 0.0148,
+        "wilcoxon_p_raw": 0.001953125,
+        "p_adj_M5prime": 0.003906,
+        "student_ci95_vs_M5prime": [
+          -0.0027,
+          0.0312
+        ],
+        "gates_fair": {
+          "seed_mean_gt_ceiling": true,
+          "p_adj_lt_0.05": true,
+          "student_ci_lower_gt_0": false
+        },
+        "exceeds_fair": false
+      },
+      "gat_sym": {
+        "seed_mean_auc_pr": 0.4226,
+        "delta_vs_M5prime": -0.0023,
+        "wilcoxon_p_raw": 0.556640625,
+        "p_adj_M5prime": 0.556641,
+        "student_ci95_vs_M5prime": [
+          -0.0242,
+          0.0189
+        ],
+        "gates_fair": {
+          "seed_mean_gt_ceiling": false,
+          "p_adj_lt_0.05": false,
+          "student_ci_lower_gt_0": false
+        },
+        "exceeds_fair": false
+      }
+    },
+    "chemistry": {
+      "rgcn_sym": {
+        "seed_mean_auc_pr": 0.5724,
+        "delta_vs_M5prime": 0.035,
+        "wilcoxon_p_raw": 0.001953125,
+        "p_adj_M5prime": 0.003906,
+        "student_ci95_vs_M5prime": [
+          0.0198,
+          0.049
+        ],
+        "gates_fair": {
+          "seed_mean_gt_ceiling": true,
+          "p_adj_lt_0.05": true,
+          "student_ci_lower_gt_0": true
+        },
+        "exceeds_fair": true
+      },
+      "gat_sym": {
+        "seed_mean_auc_pr": 0.5475,
+        "delta_vs_M5prime": 0.0101,
+        "wilcoxon_p_raw": 0.083984375,
+        "p_adj_M5prime": 0.083984,
+        "student_ci95_vs_M5prime": [
+          -0.0075,
+          0.0271
+        ],
+        "gates_fair": {
+          "seed_mean_gt_ceiling": true,
+          "p_adj_lt_0.05": false,
+          "student_ci_lower_gt_0": false
+        },
+        "exceeds_fair": false
+      }
+    }
+  }
+}

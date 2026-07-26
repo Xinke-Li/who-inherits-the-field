@@ -1,0 +1,19 @@
+{
+  "field": "econ",
+  "min_works": 3,
+  "raw_pairs": 20249,
+  "both_resolvable": 5606,
+  "both_in_works_store": 5606,
+  "survive_window_filters": 2850,
+  "modeled": 2698,
+  "drop_breakdown": {
+    "no_years": 2,
+    "adv_no_years": 0,
+    "too_recent": 238,
+    "implausible_t0": 271,
+    "span_gt_max": 993,
+    "sparse_windows": 1252
+  },
+  "adv_id_coverage": 0.7768,
+  "st_id_coverage": 0.3134
+}

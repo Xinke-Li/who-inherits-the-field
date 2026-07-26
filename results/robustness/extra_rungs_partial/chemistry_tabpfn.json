@@ -1,0 +1,19 @@
+{
+  "field": "chemistry",
+  "model": "tabpfn_v2_cpu_context1000",
+  "train_subsampled": true,
+  "per_seed_auc_pr": [
+    0.5213,
+    0.4987,
+    0.5113,
+    0.5322,
+    0.5111,
+    0.5233,
+    0.5113,
+    0.5001,
+    0.5255,
+    0.5258
+  ],
+  "mean": 0.5161,
+  "std": 0.0113
+}

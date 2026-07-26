@@ -1,0 +1,41 @@
+{
+  "experiment": "R17_full_symmetric_grid",
+  "field": "physics",
+  "note": "RGCN and GAT under the HGT tuned protocol; BH across the two symmetric-grid architectures per discipline; chemistry RGCN reused from r3",
+  "M5prime_mean": 0.6485,
+  "models": {
+    "rgcn_sym": {
+      "seed_mean_auc_pr": 0.6589,
+      "delta_vs_M5prime": 0.0104,
+      "wilcoxon_p_raw": 0.001953125,
+      "p_adj_M5prime": 0.003906,
+      "student_ci95_vs_M5prime": [
+        -0.0075,
+        0.0285
+      ],
+      "gates_fair": {
+        "seed_mean_gt_ceiling": true,
+        "p_adj_lt_0.05": true,
+        "student_ci_lower_gt_0": false
+      },
+      "exceeds_fair": false
+    },
+    "gat_sym": {
+      "seed_mean_auc_pr": 0.6489,
+      "delta_vs_M5prime": 0.0003,
+      "wilcoxon_p_raw": 1.0,
+      "p_adj_M5prime": 1.0,
+      "student_ci95_vs_M5prime": [
+        -0.0222,
+        0.0222
+      ],
+      "gates_fair": {
+        "seed_mean_gt_ceiling": true,
+        "p_adj_lt_0.05": false,
+        "student_ci_lower_gt_0": false
+      },
+      "exceeds_fair": false
+    }
+  },
+  "any_exceeds": false
+}

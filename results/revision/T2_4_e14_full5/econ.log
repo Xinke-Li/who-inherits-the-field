@@ -1,0 +1,25 @@
+[data] dropped 1 rows with empty early_concepts
+[split] temporal: train t0<=2004, val t0 in (2004,2007], test t0>2007 | sizes={'train': 1646, 'val': 556, 'test': 495} | base rates={'test': 0.1838, 'train': 0.2078, 'val': 0.2032}
+[split] temporal: train t0<=2004, val t0 in (2004,2007], test t0>2007 | sizes={'train': 1646, 'val': 556, 'test': 495} | base rates={'test': 0.6949, 'train': 0.7145, 'val': 0.7266}
+[r48] econ theta=0.1: floor 0.7947 ci [-0.0052, 0.0768] branch B_SELF_PERSISTENCE_EQUIVALENT
+[split] temporal: train t0<=2004, val t0 in (2004,2007], test t0>2007 | sizes={'train': 1646, 'val': 556, 'test': 495} | base rates={'test': 0.3939, 'train': 0.4532, 'val': 0.4299}
+[r48] econ theta=0.15: floor 0.5275 ci [0.0094, 0.1546] branch C_INTERMEDIATE
+[split] temporal: train t0<=2004, val t0 in (2004,2007], test t0>2007 | sizes={'train': 1646, 'val': 556, 'test': 495} | base rates={'test': 0.1838, 'train': 0.2078, 'val': 0.2032}
+[r48] econ theta=0.2: floor 0.3165 ci [-0.0539, 0.1077] branch B_SELF_PERSISTENCE_EQUIVALENT
+[split] temporal: train t0<=2004, val t0 in (2004,2007], test t0>2007 | sizes={'train': 1646, 'val': 556, 'test': 495} | base rates={'test': 0.0606, 'train': 0.0796, 'val': 0.0917}
+[r48] econ theta=0.25: floor 0.1707 ci [-0.1159, 0.1024] branch B_SELF_PERSISTENCE_EQUIVALENT
+[split] temporal: train t0<=2004, val t0 in (2004,2007], test t0>2007 | sizes={'train': 1646, 'val': 556, 'test': 495} | base rates={'test': 0.0606, 'train': 0.0778, 'val': 0.0917}
+[r48] econ theta=0.3: floor 0.1662 ci [-0.1104, 0.1074] branch B_SELF_PERSISTENCE_EQUIVALENT
+[r48] econ: loading r5 cache for 3975 authors
+[split] temporal: train t0<=2004, val t0 in (2004,2007], test t0>2007 | sizes={'train': 1646, 'val': 556, 'test': 495} | base rates={'test': 0.3798, 'train': 0.4307, 'val': 0.4155}
+[r48] econ_k5: floor 0.4833 ci [-0.0388, 0.0888] branch B_SELF_PERSISTENCE_EQUIVALENT
+[split] temporal: train t0<=2004, val t0 in (2004,2007], test t0>2007 | sizes={'train': 1646, 'val': 556, 'test': 495} | base rates={'test': 0.1838, 'train': 0.2078, 'val': 0.1996}
+[r48] econ_k10: floor 0.3165 ci [-0.0557, 0.1086] branch B_SELF_PERSISTENCE_EQUIVALENT
+[split] temporal: train t0<=2004, val t0 in (2004,2007], test t0>2007 | sizes={'train': 1646, 'val': 556, 'test': 495} | base rates={'test': 0.0929, 'train': 0.1197, 'val': 0.1457}
+[r48] econ_k15: floor 0.1698 ci [-0.0508, 0.189] branch B_SELF_PERSISTENCE_EQUIVALENT
+[split] temporal: train t0<=2004, val t0 in (2004,2007], test t0>2007 | sizes={'train': 1646, 'val': 556, 'test': 495} | base rates={'test': 0.1313, 'train': 0.1403, 'val': 0.1583}
+[r48] econ_k20: floor 0.2278 ci [0.0531, 0.2564] branch A_ADVISOR_INFORMATION_REQUIRED
+[split] temporal: train t0<=2004, val t0 in (2004,2007], test t0>2007 | sizes={'train': 1646, 'val': 556, 'test': 495} | base rates={'test': 0.1879, 'train': 0.2126, 'val': 0.2032}
+[r48] econ_k10_ms0.2: floor 0.3223 ci [-0.0646, 0.1049] branch B_SELF_PERSISTENCE_EQUIVALENT
+[split] temporal: train t0<=2004, val t0 in (2004,2007], test t0>2007 | sizes={'train': 1646, 'val': 556, 'test': 495} | base rates={'test': 0.1515, 'train': 0.1628, 'val': 0.1709}
+[r48] econ_k10_ms0.4: floor 0.3054 ci [-0.0737, 0.1198] branch B_SELF_PERSISTENCE_EQUIVALENT

@@ -1,0 +1,14 @@
+[data] dropped 2 rows with empty early_concepts
+[r48] neuro: loading r5 cache for 29379 authors
+[split] temporal: train t0<=2005, val t0 in (2005,2008], test t0>2008 | sizes={'train': 14224, 'val': 4156, 'test': 3463} | base rates={'test': 0.4643, 'train': 0.4406, 'val': 0.4779}
+[r48] neuro_k5: floor 0.5484 ci [-0.0108, 0.0306] branch B_SELF_PERSISTENCE_EQUIVALENT
+[split] temporal: train t0<=2005, val t0 in (2005,2008], test t0>2008 | sizes={'train': 14224, 'val': 4156, 'test': 3463} | base rates={'test': 0.2631, 'train': 0.2421, 'val': 0.269}
+[r48] neuro_k10: floor 0.3438 ci [0.0085, 0.0604] branch A_ADVISOR_INFORMATION_REQUIRED
+[split] temporal: train t0<=2005, val t0 in (2005,2008], test t0>2008 | sizes={'train': 14224, 'val': 4156, 'test': 3463} | base rates={'test': 0.1761, 'train': 0.1553, 'val': 0.1742}
+[r48] neuro_k15: floor 0.2361 ci [0.0515, 0.1021] branch A_ADVISOR_INFORMATION_REQUIRED
+[split] temporal: train t0<=2005, val t0 in (2005,2008], test t0>2008 | sizes={'train': 14224, 'val': 4156, 'test': 3463} | base rates={'test': 0.1854, 'train': 0.1699, 'val': 0.1879}
+[r48] neuro_k20: floor 0.2807 ci [0.0246, 0.0902] branch C_INTERMEDIATE
+[split] temporal: train t0<=2005, val t0 in (2005,2008], test t0>2008 | sizes={'train': 14224, 'val': 4156, 'test': 3463} | base rates={'test': 0.2636, 'train': 0.2444, 'val': 0.2697}
+[r48] neuro_k10_ms0.2: floor 0.3483 ci [0.0186, 0.0697] branch B_SELF_PERSISTENCE_EQUIVALENT
+[split] temporal: train t0<=2005, val t0 in (2005,2008], test t0>2008 | sizes={'train': 14222, 'val': 4156, 'test': 3463} | base rates={'test': 0.2515, 'train': 0.223, 'val': 0.2502}
+[r48] neuro_k10_ms0.4: floor 0.3278 ci [0.0274, 0.082] branch A_ADVISOR_INFORMATION_REQUIRED

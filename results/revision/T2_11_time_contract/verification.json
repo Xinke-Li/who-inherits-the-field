@@ -1,0 +1,143 @@
+{
+  "fields": {
+    "econ": {
+      "field": "econ",
+      "rows": 2697,
+      "rows_with_both_authors_cached": 2697,
+      "rows_excluded_author_not_cached": 0,
+      "exact_t0plus5_assertion": {
+        "checked_rows": 2697,
+        "violations": 0,
+        "passes": true,
+        "what_it_checks": "every feature rebuilt from the full event history equals the same feature rebuilt from the history truncated at that row's own t0+5",
+        "first_violations": []
+      },
+      "agreement_with_frozen_columns": {
+        "compared_rows": 2697,
+        "early_concepts_set_identical": 0.9974,
+        "adv_profile_set_identical": 0.9904,
+        "early_overlap_within_1e-6": 0.2696,
+        "late_overlap_within_1e-6": 0.9978,
+        "max_abs_early_overlap_delta": 0.205162,
+        "max_abs_late_overlap_delta": 0.1568,
+        "label_kappa": 0.9977,
+        "label_agreement": 0.9993,
+        "is_asserted": false,
+        "why_not": "the events are a live-API rebuild, not the frozen 2026 snapshot; OpenAlex reassigns concepts and backfills years, so a small share of rows differ. That is drift, not a contract breach."
+      },
+      "agreement_in_expected_band": true
+    },
+    "math": {
+      "field": "math",
+      "rows": 5051,
+      "rows_with_both_authors_cached": 5051,
+      "rows_excluded_author_not_cached": 0,
+      "exact_t0plus5_assertion": {
+        "checked_rows": 5051,
+        "violations": 0,
+        "passes": true,
+        "what_it_checks": "every feature rebuilt from the full event history equals the same feature rebuilt from the history truncated at that row's own t0+5",
+        "first_violations": []
+      },
+      "agreement_with_frozen_columns": {
+        "compared_rows": 5051,
+        "early_concepts_set_identical": 0.9972,
+        "adv_profile_set_identical": 0.9958,
+        "early_overlap_within_1e-6": 0.2924,
+        "late_overlap_within_1e-6": 0.9988,
+        "max_abs_early_overlap_delta": 0.25,
+        "max_abs_late_overlap_delta": 0.1099,
+        "label_kappa": 1.0,
+        "label_agreement": 1.0,
+        "is_asserted": false,
+        "why_not": "the events are a live-API rebuild, not the frozen 2026 snapshot; OpenAlex reassigns concepts and backfills years, so a small share of rows differ. That is drift, not a contract breach."
+      },
+      "agreement_in_expected_band": true
+    },
+    "neuro": {
+      "field": "neuro",
+      "rows": 21844,
+      "rows_with_both_authors_cached": 21844,
+      "rows_excluded_author_not_cached": 0,
+      "exact_t0plus5_assertion": {
+        "checked_rows": 21844,
+        "violations": 0,
+        "passes": true,
+        "what_it_checks": "every feature rebuilt from the full event history equals the same feature rebuilt from the history truncated at that row's own t0+5",
+        "first_violations": []
+      },
+      "agreement_with_frozen_columns": {
+        "compared_rows": 21844,
+        "early_concepts_set_identical": 0.9936,
+        "adv_profile_set_identical": 0.9889,
+        "early_overlap_within_1e-6": 0.2904,
+        "late_overlap_within_1e-6": 0.9927,
+        "max_abs_early_overlap_delta": 0.222189,
+        "max_abs_late_overlap_delta": 0.2222,
+        "label_kappa": 0.9952,
+        "label_agreement": 0.9982,
+        "is_asserted": false,
+        "why_not": "the events are a live-API rebuild, not the frozen 2026 snapshot; OpenAlex reassigns concepts and backfills years, so a small share of rows differ. That is drift, not a contract breach."
+      },
+      "agreement_in_expected_band": true
+    },
+    "physics": {
+      "field": "physics",
+      "rows": 11809,
+      "rows_with_both_authors_cached": 11809,
+      "rows_excluded_author_not_cached": 0,
+      "exact_t0plus5_assertion": {
+        "checked_rows": 11809,
+        "violations": 0,
+        "passes": true,
+        "what_it_checks": "every feature rebuilt from the full event history equals the same feature rebuilt from the history truncated at that row's own t0+5",
+        "first_violations": []
+      },
+      "agreement_with_frozen_columns": {
+        "compared_rows": 11809,
+        "early_concepts_set_identical": 0.9964,
+        "adv_profile_set_identical": 0.995,
+        "early_overlap_within_1e-6": 0.2774,
+        "late_overlap_within_1e-6": 0.997,
+        "max_abs_early_overlap_delta": 0.1875,
+        "max_abs_late_overlap_delta": 0.1099,
+        "label_kappa": 0.9989,
+        "label_agreement": 0.9995,
+        "is_asserted": false,
+        "why_not": "the events are a live-API rebuild, not the frozen 2026 snapshot; OpenAlex reassigns concepts and backfills years, so a small share of rows differ. That is drift, not a contract breach."
+      },
+      "agreement_in_expected_band": true
+    },
+    "chemistry": {
+      "field": "chemistry",
+      "rows": 26830,
+      "rows_with_both_authors_cached": 26830,
+      "rows_excluded_author_not_cached": 0,
+      "exact_t0plus5_assertion": {
+        "checked_rows": 26830,
+        "violations": 0,
+        "passes": true,
+        "what_it_checks": "every feature rebuilt from the full event history equals the same feature rebuilt from the history truncated at that row's own t0+5",
+        "first_violations": []
+      },
+      "agreement_with_frozen_columns": {
+        "compared_rows": 26830,
+        "early_concepts_set_identical": 0.9984,
+        "adv_profile_set_identical": 0.996,
+        "early_overlap_within_1e-6": 0.272,
+        "late_overlap_within_1e-6": 0.9986,
+        "max_abs_early_overlap_delta": 0.280668,
+        "max_abs_late_overlap_delta": 0.2807,
+        "label_kappa": 0.9991,
+        "label_agreement": 0.9997,
+        "is_asserted": false,
+        "why_not": "the events are a live-API rebuild, not the frozen 2026 snapshot; OpenAlex reassigns concepts and backfills years, so a small share of rows differ. That is drift, not a contract breach."
+      },
+      "agreement_in_expected_band": true
+    }
+  },
+  "task": "T2.11",
+  "all_exact_assertions_pass": true,
+  "all_agreement_in_expected_band": true,
+  "reading": "the t0+5 assertion is exact and blocking; the agreement figures are reported because the events are a live-API rebuild rather than the frozen snapshot"
+}

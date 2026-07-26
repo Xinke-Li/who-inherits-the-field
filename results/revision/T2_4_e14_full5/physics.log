@@ -1,0 +1,25 @@
+[data] dropped 1 rows with empty early_concepts
+[split] temporal: train t0<=2003, val t0 in (2003,2006], test t0>2006 | sizes={'train': 7645, 'test': 2218, 'val': 1946} | base rates={'test': 0.3589, 'train': 0.3457, 'val': 0.369}
+[split] temporal: train t0<=2003, val t0 in (2003,2006], test t0>2006 | sizes={'train': 7645, 'test': 2218, 'val': 1946} | base rates={'test': 0.7538, 'train': 0.7644, 'val': 0.7539}
+[r48] physics theta=0.1: floor 0.8821 ci [-0.0322, -0.0013] branch B_SELF_PERSISTENCE_EQUIVALENT
+[split] temporal: train t0<=2003, val t0 in (2003,2006], test t0>2006 | sizes={'train': 7645, 'test': 2218, 'val': 1946} | base rates={'test': 0.5564, 'train': 0.5593, 'val': 0.5565}
+[r48] physics theta=0.15: floor 0.7523 ci [-0.0551, 0.0002] branch B_SELF_PERSISTENCE_EQUIVALENT
+[split] temporal: train t0<=2003, val t0 in (2003,2006], test t0>2006 | sizes={'train': 7645, 'test': 2218, 'val': 1946} | base rates={'test': 0.3589, 'train': 0.3457, 'val': 0.369}
+[r48] physics theta=0.2: floor 0.592 ci [-0.0833, -0.012] branch B_SELF_PERSISTENCE_EQUIVALENT
+[split] temporal: train t0<=2003, val t0 in (2003,2006], test t0>2006 | sizes={'train': 7645, 'test': 2218, 'val': 1946} | base rates={'test': 0.1934, 'train': 0.1808, 'val': 0.1978}
+[r48] physics theta=0.25: floor 0.3928 ci [-0.0685, 0.0169] branch B_SELF_PERSISTENCE_EQUIVALENT
+[split] temporal: train t0<=2003, val t0 in (2003,2006], test t0>2006 | sizes={'train': 7645, 'test': 2218, 'val': 1946} | base rates={'test': 0.1898, 'train': 0.1774, 'val': 0.1942}
+[r48] physics theta=0.3: floor 0.388 ci [-0.0597, 0.0234] branch B_SELF_PERSISTENCE_EQUIVALENT
+[r48] physics: loading r5 cache for 15628 authors
+[split] temporal: train t0<=2003, val t0 in (2003,2006], test t0>2006 | sizes={'train': 7644, 'test': 2218, 'val': 1946} | base rates={'test': 0.5158, 'train': 0.5381, 'val': 0.5159}
+[r48] physics_k5: floor 0.7302 ci [-0.0881, -0.0368] branch B_SELF_PERSISTENCE_EQUIVALENT
+[split] temporal: train t0<=2003, val t0 in (2003,2006], test t0>2006 | sizes={'train': 7644, 'test': 2218, 'val': 1946} | base rates={'test': 0.3584, 'train': 0.3454, 'val': 0.3695}
+[r48] physics_k10: floor 0.5847 ci [-0.0712, -0.0002] branch B_SELF_PERSISTENCE_EQUIVALENT
+[split] temporal: train t0<=2003, val t0 in (2003,2006], test t0>2006 | sizes={'train': 7644, 'test': 2218, 'val': 1946} | base rates={'test': 0.2597, 'train': 0.256, 'val': 0.2667}
+[r48] physics_k15: floor 0.4605 ci [-0.0521, 0.0241] branch B_SELF_PERSISTENCE_EQUIVALENT
+[split] temporal: train t0<=2003, val t0 in (2003,2006], test t0>2006 | sizes={'train': 7644, 'test': 2218, 'val': 1946} | base rates={'test': 0.2768, 'train': 0.2886, 'val': 0.3016}
+[r48] physics_k20: floor 0.5027 ci [-0.0447, 0.0296] branch B_SELF_PERSISTENCE_EQUIVALENT
+[split] temporal: train t0<=2003, val t0 in (2003,2006], test t0>2006 | sizes={'train': 7644, 'test': 2218, 'val': 1946} | base rates={'test': 0.3607, 'train': 0.3469, 'val': 0.371}
+[r48] physics_k10_ms0.2: floor 0.5945 ci [-0.0836, -0.0119] branch B_SELF_PERSISTENCE_EQUIVALENT
+[split] temporal: train t0<=2003, val t0 in (2003,2006], test t0>2006 | sizes={'train': 7642, 'test': 2218, 'val': 1946} | base rates={'test': 0.3408, 'train': 0.3339, 'val': 0.3587}
+[r48] physics_k10_ms0.4: floor 0.5591 ci [-0.0718, 0.0] branch B_SELF_PERSISTENCE_EQUIVALENT

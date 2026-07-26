@@ -1,0 +1,84 @@
+{
+  "summary": {
+    "M1s_typicality": {
+      "auc_pr": {
+        "mean": 0.2351553883126681,
+        "std": 2.925694557147251e-17,
+        "n_seeds": 10
+      },
+      "auc_roc": {
+        "mean": 0.5568436356553557,
+        "std": 0.0,
+        "n_seeds": 10
+      },
+      "f1": {
+        "mean": 0.34366696191319746,
+        "std": 5.851389114294502e-17,
+        "n_seeds": 10
+      }
+    },
+    "M1s_scalars": {
+      "auc_pr": {
+        "mean": 0.2751596174186023,
+        "std": 5.851389114294502e-17,
+        "n_seeds": 10
+      },
+      "auc_roc": {
+        "mean": 0.5935800047303029,
+        "std": 1.1702778228589004e-16,
+        "n_seeds": 10
+      },
+      "f1": {
+        "mean": 0.34728682170542635,
+        "std": 0.0,
+        "n_seeds": 10
+      }
+    },
+    "M4s_tfidf": {
+      "auc_pr": {
+        "mean": 0.24833759901637417,
+        "std": 0.0,
+        "n_seeds": 10
+      },
+      "auc_roc": {
+        "mean": 0.5663494581020354,
+        "std": 0.0,
+        "n_seeds": 10
+      },
+      "f1": {
+        "mean": 0.3476394849785408,
+        "std": 5.851389114294502e-17,
+        "n_seeds": 10
+      }
+    },
+    "M3s_gbdt": {
+      "auc_pr": {
+        "mean": 0.28809997501460644,
+        "std": 0.00919700993351261,
+        "n_seeds": 10
+      },
+      "auc_roc": {
+        "mean": 0.6009512778774851,
+        "std": 0.006681291179707604,
+        "n_seeds": 10
+      },
+      "f1": {
+        "mean": 0.35497382534895866,
+        "std": 0.011122290708079808,
+        "n_seeds": 10
+      }
+    }
+  },
+  "verdict": {
+    "branch": "A_ADVISOR_INFORMATION_REQUIRED",
+    "best_student_model": "M3s_gbdt",
+    "best_student_auc_pr": 0.2881,
+    "M1_auc_pr": 0.3825,
+    "placebo_band_plus_margin": 0.2919,
+    "M1_minus_floor_ci95": [
+      0.0421,
+      0.1583
+    ]
+  },
+  "note": "student ladder WITHOUT early_concentration (works store absent)"
+}

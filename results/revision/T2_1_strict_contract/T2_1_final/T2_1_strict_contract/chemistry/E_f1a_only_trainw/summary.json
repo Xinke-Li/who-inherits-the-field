@@ -1,0 +1,29 @@
+{
+  "cell": "E_f1a_only_trainw",
+  "field": "chemistry",
+  "hp": {
+    "lr": 0.005,
+    "hidden": 64,
+    "layers": 3,
+    "dropout": 0.5
+  },
+  "construction": "f1a",
+  "class_weight_scope": "train",
+  "mean_auc_pr": 0.5798,
+  "std_auc_pr": 0.0039,
+  "per_seed_auc_pr": [
+    0.5785,
+    0.5819,
+    0.5852,
+    0.5792,
+    0.5705,
+    0.5839,
+    0.5807,
+    0.5776,
+    0.5817,
+    0.5784
+  ],
+  "ROLE": "F1a alone: advisor nodes keyed by (advisor_pid, t0) so each student gets correctly-timed advisor features, with sibling reachability restored to all cohorts.",
+  "WARNING": "attribution cell, not a verdict cell.",
+  "IS_VERDICT_CELL": false
+}

@@ -1,0 +1,107 @@
+{
+  "field": "neuro",
+  "grand_advisor_coverage": 0.5031,
+  "grand_advisor_with_cached_works": 0.3175,
+  "n_test_covered": 1497,
+  "full": {
+    "analysis": "full",
+    "n_modelling_rows": 21844,
+    "n_test_rows": 3463,
+    "n_test_positives": 916,
+    "M5_mean_auc_pr": 0.4231,
+    "M6_mean_auc_pr": 0.428,
+    "delta_vs_M5": 0.005,
+    "p_BH": 0.064453,
+    "student_ci95": [
+      -0.0063,
+      0.0161
+    ],
+    "gates": {
+      "mean_gt_ceiling": true,
+      "p_adj_lt_0.05": false,
+      "student_ci_lower_gt_0": false
+    },
+    "exceeds": false,
+    "tost": {
+      "delta": 0.005,
+      "sigma": 0.0057,
+      "MDE_80pct": 0.016,
+      "ci90": [
+        -0.0044,
+        0.0144
+      ],
+      "equivalent_at_margin": 0.02,
+      "verdict": "equivalent at 0.02",
+      "largest_gain_excluded": 0.0144
+    },
+    "gate1_frozen_M5": 0.423,
+    "gate1_delta": 0.0001,
+    "gate1_matches_3dp": true
+  },
+  "covered_eval": {
+    "analysis": "covered_eval",
+    "n_modelling_rows": 21844,
+    "n_test_rows": 1497,
+    "n_test_positives": 467,
+    "M5_mean_auc_pr": 0.4786,
+    "M6_mean_auc_pr": 0.4786,
+    "delta_vs_M5": -0.0001,
+    "p_BH": 0.556641,
+    "student_ci95": [
+      -0.0194,
+      0.0196
+    ],
+    "gates": {
+      "mean_gt_ceiling": false,
+      "p_adj_lt_0.05": false,
+      "student_ci_lower_gt_0": false
+    },
+    "exceeds": false,
+    "tost": {
+      "delta": -0.0001,
+      "sigma": 0.01,
+      "MDE_80pct": 0.0279,
+      "ci90": [
+        -0.0165,
+        0.0163
+      ],
+      "equivalent_at_margin": 0.02,
+      "verdict": "equivalent at 0.02",
+      "largest_gain_excluded": 0.0163
+    },
+    "note": "trained on all rows exactly as the full arm; evaluation restricted to covered test rows, so training size is held fixed and only coverage varies"
+  },
+  "covered_retrain": {
+    "analysis": "covered_retrain",
+    "n_modelling_rows": 6935,
+    "n_test_rows": 1497,
+    "n_test_positives": 467,
+    "M5_mean_auc_pr": 0.4593,
+    "M6_mean_auc_pr": 0.4529,
+    "delta_vs_M5": -0.0065,
+    "p_BH": 0.037109,
+    "student_ci95": [
+      -0.0276,
+      0.0161
+    ],
+    "gates": {
+      "mean_gt_ceiling": false,
+      "p_adj_lt_0.05": true,
+      "student_ci_lower_gt_0": false
+    },
+    "exceeds": false,
+    "tost": {
+      "delta": -0.0065,
+      "sigma": 0.0112,
+      "MDE_80pct": 0.0312,
+      "ci90": [
+        -0.0248,
+        0.0119
+      ],
+      "equivalent_at_margin": 0.03,
+      "verdict": "equivalent at 0.03",
+      "largest_gain_excluded": 0.0119
+    },
+    "note": "CONFOUNDED: the training set shrinks with the evaluation set, so this answers whether genealogy helps in a smaller training regime, not whether it helps where genealogy is observed"
+  }
+}

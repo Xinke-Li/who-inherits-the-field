@@ -1,0 +1,11 @@
+[split] temporal: train t0<=2005, val t0 in (2005,2007], test t0>2007 | sizes={'train': 3356, 'test': 935, 'val': 760} | base rates={'test': 0.2075, 'train': 0.2017, 'val': 0.1895}
+[r48] math theta=0.1 done, skipping
+[split] temporal: train t0<=2005, val t0 in (2005,2007], test t0>2007 | sizes={'train': 3356, 'test': 935, 'val': 760} | base rates={'test': 0.4107, 'train': 0.4035, 'val': 0.4053}
+[r48] math theta=0.15: floor 0.5469 ci [-0.0194, 0.0815] branch B_SELF_PERSISTENCE_EQUIVALENT
+[split] temporal: train t0<=2005, val t0 in (2005,2007], test t0>2007 | sizes={'train': 3356, 'test': 935, 'val': 760} | base rates={'test': 0.2075, 'train': 0.2017, 'val': 0.1895}
+[r48] math theta=0.2: floor 0.292 ci [0.0276, 0.1484] branch C_INTERMEDIATE
+[split] temporal: train t0<=2005, val t0 in (2005,2007], test t0>2007 | sizes={'train': 3356, 'test': 935, 'val': 760} | base rates={'test': 0.0695, 'train': 0.0778, 'val': 0.0829}
+[r48] math theta=0.25: floor 0.0934 ci [0.0013, 0.1288] branch A_ADVISOR_INFORMATION_REQUIRED
+[split] temporal: train t0<=2005, val t0 in (2005,2007], test t0>2007 | sizes={'train': 3356, 'test': 935, 'val': 760} | base rates={'test': 0.0684, 'train': 0.0748, 'val': 0.0789}
+[r48] math theta=0.3: floor 0.0981 ci [-0.0211, 0.1322] branch B_SELF_PERSISTENCE_EQUIVALENT
+[r48] math: loading r5 cache for 7380 authors

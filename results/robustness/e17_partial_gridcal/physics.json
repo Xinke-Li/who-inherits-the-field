@@ -1,0 +1,104 @@
+{
+  "experiment": "E17_swap_label_control",
+  "field": "physics",
+  "provenance": "rebuilt family (r5 cache, builder view); frozen M1 for reference only",
+  "n_rows": 11809,
+  "n_test": 2218,
+  "base_rate_rebuilt": 0.3519,
+  "mean_abs_dev_lo_vs_frozen": 0.00024,
+  "true_system_auc_pr": 0.5451,
+  "frozen_M1_reference": 0.5460004830297148,
+  "placebo_auc_pr_mean": 0.4712,
+  "excess_mean": 0.0739,
+  "excess_ci95_redraw": [
+    -0.1602,
+    0.1387
+  ],
+  "excess_ci95_student_pooled": [
+    0.0382,
+    0.1103
+  ],
+  "excess_excludes_zero": true,
+  "per_seed": [
+    {
+      "seed": 0,
+      "theta_p": 0.06,
+      "placebo_base_rate_train": 0.1495,
+      "placebo_base_rate_test": 0.1501,
+      "placebo_auc_pr": 0.4554,
+      "excess": 0.0897
+    },
+    {
+      "seed": 1,
+      "theta_p": 0.06,
+      "placebo_base_rate_train": 0.1492,
+      "placebo_base_rate_test": 0.1384,
+      "placebo_auc_pr": 0.4396,
+      "excess": 0.1055
+    },
+    {
+      "seed": 2,
+      "theta_p": 0.06,
+      "placebo_base_rate_train": 0.1496,
+      "placebo_base_rate_test": 0.147,
+      "placebo_auc_pr": 0.4187,
+      "excess": 0.1264
+    },
+    {
+      "seed": 3,
+      "theta_p": 0.06,
+      "placebo_base_rate_train": 0.1485,
+      "placebo_base_rate_test": 0.1425,
+      "placebo_auc_pr": 0.4749,
+      "excess": 0.0702
+    },
+    {
+      "seed": 4,
+      "theta_p": 0.06,
+      "placebo_base_rate_train": 0.1523,
+      "placebo_base_rate_test": 0.1375,
+      "placebo_auc_pr": 0.4028,
+      "excess": 0.1423
+    },
+    {
+      "seed": 5,
+      "theta_p": 0.06,
+      "placebo_base_rate_train": 0.1482,
+      "placebo_base_rate_test": 0.138,
+      "placebo_auc_pr": 0.4457,
+      "excess": 0.0994
+    },
+    {
+      "seed": 6,
+      "theta_p": 0.0,
+      "placebo_base_rate_train": 0.5605,
+      "placebo_base_rate_test": 0.5099,
+      "placebo_auc_pr": 0.7721,
+      "excess": -0.2271
+    },
+    {
+      "seed": 7,
+      "theta_p": 0.06,
+      "placebo_base_rate_train": 0.1458,
+      "placebo_base_rate_test": 0.1501,
+      "placebo_auc_pr": 0.4265,
+      "excess": 0.1186
+    },
+    {
+      "seed": 8,
+      "theta_p": 0.06,
+      "placebo_base_rate_train": 0.1492,
+      "placebo_base_rate_test": 0.1425,
+      "placebo_auc_pr": 0.4321,
+      "excess": 0.113
+    },
+    {
+      "seed": 9,
+      "theta_p": 0.06,
+      "placebo_base_rate_train": 0.1436,
+      "placebo_base_rate_test": 0.1366,
+      "placebo_auc_pr": 0.4437,
+      "excess": 0.1014
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "task": "T3.1",
+  "field": "chemistry",
+  "n_items": 440,
+  "n_true": 200,
+  "n_placebo": 200,
+  "n_probes": 40,
+  "sample_seed": 0,
+  "works_per_window": 5,
+  "work_cap": 400,
+  "student_window": "[t0+6, t0+15]",
+  "advisor_window": "<= t0+5",
+  "placebo": "cohort-matched advisor, same t0, equal number",
+  "shown_to_judge": "titles and years only",
+  "prompt_sha256": "456012d620c7106809284ddbe68fa6bd65c345c063f9fc9689065fd3774aad78",
+  "prompt_template": "You are shown two lists of paper titles with their publication years.\n\nList A is five papers by one researcher, published early in their career.\nList B is five papers by a second researcher, published years later.\n\nList A:\n{a}\n\nList B:\n{b}\n\nQuestion: do the papers in List B work on substantially the same research topics\nas the papers in List A?\n\nAnswer with exactly one word, YES or NO, and nothing else.",
+  "gates_before_kappa": {
+    "min_true_minus_placebo": 0.1,
+    "min_self_consistency": 0.8
+  },
+  "judge_record_required": [
+    "model",
+    "date",
+    "decoding"
+  ],
+  "reading": "a third instrument, not human validation; agreement is evidence the label tracks something a reader would recognise, disagreement is not evidence either is wrong"
+}

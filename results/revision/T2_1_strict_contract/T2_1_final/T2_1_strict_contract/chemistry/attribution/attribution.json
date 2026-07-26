@@ -1,0 +1,22 @@
+{
+  "field": "chemistry",
+  "session_id": "3d9a066c7a94",
+  "same_session": true,
+  "cell_mean_auc_pr": {
+    "A": 0.5713,
+    "B": 0.571,
+    "C": 0.5815,
+    "E": 0.5803,
+    "F": 0.5714
+  },
+  "F2_class_weight_B_minus_A": -0.0003,
+  "F1a_advisor_keying_E_minus_B": 0.0093,
+  "F1b_sibling_masking_F_minus_B": 0.0004,
+  "F1_both_C_minus_B": 0.0105,
+  "additivity_sum": 0.0097,
+  "additivity_gap": 0.0008,
+  "determinism_floor": 0.0013,
+  "r3_legacy_mean_auc_pr": 0.572395,
+  "environment_offset_B_minus_r3": -0.0014,
+  "offset_note": "computed from r3's ten per-seed files, not from its rounded published mean; it sits at the determinism floor rather than inside it"
+}

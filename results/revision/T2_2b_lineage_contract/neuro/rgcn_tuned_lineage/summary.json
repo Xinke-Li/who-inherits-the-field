@@ -1,0 +1,88 @@
+{
+  "experiment": "T2_2b_lineage_contract",
+  "field": "neuro",
+  "target_table": "Table 13c",
+  "target_row": "RGCN symmetric lineage",
+  "model": "rgcn_strict_lineage",
+  "cell": "rgcn_tuned_lineage",
+  "protocol": "tuned",
+  "config_source": "lineage",
+  "contract": "strict_lineage",
+  "model_class": "RGCNSym",
+  "arch_requested": "rgcn",
+  "hp": {
+    "lr": 0.001,
+    "hidden": 64,
+    "layers": 3,
+    "dropout": 0.5
+  },
+  "budget": "hgt",
+  "changes_vs_r25": [
+    "build_graph_v2 contract=strict_lineage: advisor--mentored_by-->advisor from the AFT parent map, keyed to the focal cohort",
+    "advisor--studies_lineage-->concept from grand-advisor works dated at or before the focal student's t0+5"
+  ],
+  "lineage_graph": {
+    "direct_advisor_nodes": 20311,
+    "grand_advisor_only_nodes": 10445,
+    "ancestry_edges": 11778,
+    "lineage_concept_edges": 59024,
+    "self_ancestry_rows_dropped": 1,
+    "rows_with_ancestry": 12760,
+    "n_rows": 21844
+  },
+  "lineage_coverage": {
+    "rows_with_ancestry_share": 0.5841
+  },
+  "seed_mean_auc_pr": 0.4378,
+  "M5_mean": 0.4231,
+  "M5prime_mean": 0.4249,
+  "delta_vs_M5": 0.0147,
+  "delta_vs_M5prime": 0.0129,
+  "wilcoxon_p_raw": 0.001953,
+  "p_BH": 0.001953,
+  "student_ci95_vs_M5prime": [
+    -0.0035,
+    0.0289
+  ],
+  "gates_fair": {
+    "seed_mean_gt_ceiling": true,
+    "p_adj_lt_0.05": true,
+    "student_ci_lower_gt_0": false
+  },
+  "exceeds_fair": false,
+  "per_seed_auc_pr": [
+    0.4411,
+    0.4346,
+    0.4439,
+    0.4317,
+    0.4382,
+    0.4347,
+    0.4401,
+    0.4385,
+    0.4351,
+    0.4399
+  ],
+  "matching_strict_cell": {
+    "found": true,
+    "path": "/content/t22b/results/revision/T2_1_strict_contract/neuro/rgcn_tuned_strict/summary.json",
+    "cell": "rgcn_tuned_strict",
+    "seed_mean_auc_pr": 0.4414,
+    "delta_vs_M5prime": 0.0165,
+    "student_ci95_vs_M5prime": [
+      -0.0006,
+      0.0334
+    ],
+    "p_BH": 0.001953,
+    "exceeds_fair": false
+  },
+  "lineage_minus_strict_delta": -0.0036,
+  "env": {
+    "gpu": "NVIDIA A100-SXM4-40GB",
+    "cuda": "12.8",
+    "torch": "2.11.0+cu128",
+    "torch_geometric": "2.8.0",
+    "python": "3.12.13",
+    "platform": "Linux-6.6.122+-x86_64-with-glibc2.35",
+    "note": "exact cross-GPU reproduction is not assumed; see DETERMINISM_NOTE.json in the symmetric grid"
+  }
+}

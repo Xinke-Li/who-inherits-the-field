@@ -1,0 +1,629 @@
+{
+  "experiment": "E12_corrected_vs_M5",
+  "field": "neuro",
+  "run": "third (canonical)",
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "n_test": 3463,
+  "ceilings": {
+    "M5_preregistered": 0.4231,
+    "M5_prime_val_symmetric": 0.4249,
+    "maxM2M3_naive": 0.4257,
+    "M3_prime_val_symmetric": 0.4309,
+    "per_seed": {
+      "M5_preregistered": [
+        0.4143,
+        0.4246,
+        0.4265,
+        0.4273,
+        0.4213,
+        0.4128,
+        0.4231,
+        0.4314,
+        0.4284,
+        0.421
+      ],
+      "M5_prime_val_symmetric": [
+        0.4249,
+        0.4249,
+        0.4249,
+        0.4249,
+        0.4249,
+        0.4249,
+        0.4249,
+        0.4249,
+        0.4249,
+        0.4249
+      ],
+      "maxM2M3_naive": [
+        0.425,
+        0.4217,
+        0.4271,
+        0.431,
+        0.4279,
+        0.4116,
+        0.4215,
+        0.4335,
+        0.4281,
+        0.4299
+      ],
+      "M3_prime_val_symmetric": [
+        0.4309,
+        0.4309,
+        0.4309,
+        0.4309,
+        0.4309,
+        0.4309,
+        0.4309,
+        0.4309,
+        0.4309,
+        0.4309
+      ]
+    },
+    "M5_prime_selected_iters": [
+      26,
+      26,
+      26,
+      26,
+      26,
+      26,
+      26,
+      26,
+      26,
+      26
+    ],
+    "M5_refit_vs_e1_stored_max_abs_dev": 0.0
+  },
+  "models": {
+    "hgt": {
+      "n_seeds": 10,
+      "seed_mean_auc_pr": 0.4286,
+      "seed_std_auc_pr": 0.0268,
+      "delta_vs_M5": 0.0055,
+      "p_raw_M5": 0.375,
+      "p_adj_M5": 0.375,
+      "delta_vs_M5prime": 0.0036,
+      "p_raw_M5prime": 0.431640625,
+      "p_adj_M5prime": 0.431641,
+      "secondary_delta_vs_maxM2M3": 0.0028,
+      "secondary_p_raw_maxM2M3": 0.431640625,
+      "secondary_p_adj_maxM2M3": 0.431641,
+      "bootstrap": {
+        "level": "student",
+        "n_boot": 2000,
+        "seed_scope": "all 10 seeds; per-seed CIs listed, pooled CI = per-draw mean over seeds of the paired difference",
+        "vs_M5": {
+          "pooled_ci95": [
+            -0.0125,
+            0.0223
+          ],
+          "per_seed_ci95": [
+            [
+              0.0093,
+              0.0526
+            ],
+            [
+              -0.0822,
+              -0.0409
+            ],
+            [
+              -0.007,
+              0.0412
+            ],
+            [
+              -0.0119,
+              0.0364
+            ],
+            [
+              -0.0101,
+              0.0368
+            ],
+            [
+              -0.0011,
+              0.0428
+            ],
+            [
+              -0.0034,
+              0.0412
+            ],
+            [
+              -0.0122,
+              0.0368
+            ],
+            [
+              -0.0096,
+              0.0362
+            ],
+            [
+              -0.0443,
+              -0.0033
+            ]
+          ]
+        },
+        "vs_M5prime": {
+          "pooled_ci95": [
+            -0.0155,
+            0.0214
+          ],
+          "per_seed_ci95": [
+            [
+              -0.0008,
+              0.0415
+            ],
+            [
+              -0.0821,
+              -0.0414
+            ],
+            [
+              -0.0049,
+              0.0408
+            ],
+            [
+              -0.0082,
+              0.0387
+            ],
+            [
+              -0.0123,
+              0.0336
+            ],
+            [
+              -0.0125,
+              0.0296
+            ],
+            [
+              -0.005,
+              0.0395
+            ],
+            [
+              -0.0041,
+              0.0432
+            ],
+            [
+              -0.006,
+              0.0385
+            ],
+            [
+              -0.0477,
+              -0.0072
+            ]
+          ]
+        },
+        "ci95": [
+          -0.0155,
+          0.0214
+        ]
+      },
+      "gates_preregistered": {
+        "seed_mean_gt_ceiling": true,
+        "p_adj_lt_0.05": false,
+        "student_ci_lower_gt_0": false
+      },
+      "gates_fair": {
+        "seed_mean_gt_ceiling": true,
+        "p_adj_lt_0.05": false,
+        "student_ci_lower_gt_0": false
+      },
+      "exceeds_preregistered": false,
+      "exceeds_fair": false
+    },
+    "hgt_tuned": {
+      "n_seeds": 10,
+      "seed_mean_auc_pr": 0.4329,
+      "seed_std_auc_pr": 0.0206,
+      "delta_vs_M5": 0.0099,
+      "p_raw_M5": 0.322265625,
+      "p_adj_M5": 0.375,
+      "delta_vs_M5prime": 0.008,
+      "p_raw_M5prime": 0.375,
+      "p_adj_M5prime": 0.431641,
+      "secondary_delta_vs_maxM2M3": 0.0072,
+      "secondary_p_raw_maxM2M3": 0.375,
+      "secondary_p_adj_maxM2M3": 0.431641,
+      "bootstrap": {
+        "level": "student",
+        "n_boot": 2000,
+        "seed_scope": "all 10 seeds; per-seed CIs listed, pooled CI = per-draw mean over seeds of the paired difference",
+        "vs_M5": {
+          "pooled_ci95": [
+            -0.0086,
+            0.0282
+          ],
+          "per_seed_ci95": [
+            [
+              0.0072,
+              0.0541
+            ],
+            [
+              -0.0062,
+              0.0371
+            ],
+            [
+              -0.0444,
+              -0.0002
+            ],
+            [
+              -0.0109,
+              0.0386
+            ],
+            [
+              -0.0042,
+              0.0441
+            ],
+            [
+              0.0013,
+              0.0481
+            ],
+            [
+              -0.0126,
+              0.0364
+            ],
+            [
+              -0.0039,
+              0.0456
+            ],
+            [
+              -0.0073,
+              0.0367
+            ],
+            [
+              -0.0602,
+              -0.0102
+            ]
+          ]
+        },
+        "vs_M5prime": {
+          "pooled_ci95": [
+            -0.0116,
+            0.0271
+          ],
+          "per_seed_ci95": [
+            [
+              -0.0043,
+              0.0436
+            ],
+            [
+              -0.0058,
+              0.0371
+            ],
+            [
+              -0.0415,
+              -0.0002
+            ],
+            [
+              -0.0065,
+              0.0398
+            ],
+            [
+              -0.0067,
+              0.0405
+            ],
+            [
+              -0.0089,
+              0.0356
+            ],
+            [
+              -0.0139,
+              0.0348
+            ],
+            [
+              0.0037,
+              0.051
+            ],
+            [
+              -0.0037,
+              0.0403
+            ],
+            [
+              -0.0629,
+              -0.014
+            ]
+          ]
+        },
+        "ci95": [
+          -0.0116,
+          0.0271
+        ]
+      },
+      "gates_preregistered": {
+        "seed_mean_gt_ceiling": true,
+        "p_adj_lt_0.05": false,
+        "student_ci_lower_gt_0": false
+      },
+      "gates_fair": {
+        "seed_mean_gt_ceiling": true,
+        "p_adj_lt_0.05": false,
+        "student_ci_lower_gt_0": false
+      },
+      "exceeds_preregistered": false,
+      "exceeds_fair": false
+    },
+    "rgcn": {
+      "n_seeds": 10,
+      "seed_mean_auc_pr": 0.4354,
+      "seed_std_auc_pr": 0.0037,
+      "delta_vs_M5": 0.0123,
+      "p_raw_M5": 0.001953125,
+      "p_adj_M5": 0.007812,
+      "delta_vs_M5prime": 0.0105,
+      "p_raw_M5prime": 0.001953125,
+      "p_adj_M5prime": 0.007812,
+      "secondary_delta_vs_maxM2M3": 0.0096,
+      "secondary_p_raw_maxM2M3": 0.00390625,
+      "secondary_p_adj_maxM2M3": 0.015625,
+      "bootstrap": {
+        "level": "student",
+        "n_boot": 2000,
+        "seed_scope": "all 10 seeds; per-seed CIs listed, pooled CI = per-draw mean over seeds of the paired difference",
+        "vs_M5": {
+          "pooled_ci95": [
+            -0.0051,
+            0.0282
+          ],
+          "per_seed_ci95": [
+            [
+              0.0042,
+              0.0444
+            ],
+            [
+              -0.0106,
+              0.0264
+            ],
+            [
+              -0.0078,
+              0.0332
+            ],
+            [
+              -0.0188,
+              0.0207
+            ],
+            [
+              -0.0073,
+              0.032
+            ],
+            [
+              -0.0016,
+              0.0376
+            ],
+            [
+              -0.0059,
+              0.0332
+            ],
+            [
+              -0.0145,
+              0.0268
+            ],
+            [
+              -0.0148,
+              0.0251
+            ],
+            [
+              -0.0024,
+              0.0354
+            ]
+          ]
+        },
+        "vs_M5prime": {
+          "pooled_ci95": [
+            -0.0072,
+            0.0273
+          ],
+          "per_seed_ci95": [
+            [
+              -0.0057,
+              0.0329
+            ],
+            [
+              -0.0102,
+              0.0265
+            ],
+            [
+              -0.0048,
+              0.0331
+            ],
+            [
+              -0.0146,
+              0.0227
+            ],
+            [
+              -0.0091,
+              0.0265
+            ],
+            [
+              -0.0124,
+              0.0239
+            ],
+            [
+              -0.0074,
+              0.0312
+            ],
+            [
+              -0.0065,
+              0.0324
+            ],
+            [
+              -0.0098,
+              0.027
+            ],
+            [
+              -0.0055,
+              0.0316
+            ]
+          ]
+        },
+        "ci95": [
+          -0.0072,
+          0.0273
+        ]
+      },
+      "gates_preregistered": {
+        "seed_mean_gt_ceiling": true,
+        "p_adj_lt_0.05": true,
+        "student_ci_lower_gt_0": false
+      },
+      "gates_fair": {
+        "seed_mean_gt_ceiling": true,
+        "p_adj_lt_0.05": true,
+        "student_ci_lower_gt_0": false
+      },
+      "exceeds_preregistered": false,
+      "exceeds_fair": false
+    },
+    "gat_cohort_time": {
+      "n_seeds": 10,
+      "seed_mean_auc_pr": 0.4188,
+      "seed_std_auc_pr": 0.0067,
+      "delta_vs_M5": -0.0042,
+      "p_raw_M5": 0.275390625,
+      "p_adj_M5": 0.375,
+      "delta_vs_M5prime": -0.0061,
+      "p_raw_M5prime": 0.01953125,
+      "p_adj_M5prime": 0.039062,
+      "secondary_delta_vs_maxM2M3": -0.0069,
+      "secondary_p_raw_maxM2M3": 0.083984375,
+      "secondary_p_adj_maxM2M3": 0.167969,
+      "bootstrap": {
+        "level": "student",
+        "n_boot": 2000,
+        "seed_scope": "all 10 seeds; per-seed CIs listed, pooled CI = per-draw mean over seeds of the paired difference",
+        "vs_M5": {
+          "pooled_ci95": [
+            -0.0252,
+            0.0157
+          ],
+          "per_seed_ci95": [
+            [
+              -0.0167,
+              0.0332
+            ],
+            [
+              -0.0206,
+              0.0261
+            ],
+            [
+              -0.0379,
+              0.0154
+            ],
+            [
+              -0.0263,
+              0.0281
+            ],
+            [
+              -0.0255,
+              0.024
+            ],
+            [
+              -0.0198,
+              0.0299
+            ],
+            [
+              -0.0271,
+              0.0195
+            ],
+            [
+              -0.0421,
+              0.0094
+            ],
+            [
+              -0.041,
+              0.0074
+            ],
+            [
+              -0.0366,
+              0.008
+            ]
+          ]
+        },
+        "vs_M5prime": {
+          "pooled_ci95": [
+            -0.0284,
+            0.0159
+          ],
+          "per_seed_ci95": [
+            [
+              -0.027,
+              0.0234
+            ],
+            [
+              -0.0215,
+              0.026
+            ],
+            [
+              -0.0351,
+              0.0159
+            ],
+            [
+              -0.0221,
+              0.0306
+            ],
+            [
+              -0.0276,
+              0.0201
+            ],
+            [
+              -0.0308,
+              0.0177
+            ],
+            [
+              -0.0298,
+              0.0182
+            ],
+            [
+              -0.0349,
+              0.0157
+            ],
+            [
+              -0.0372,
+              0.0098
+            ],
+            [
+              -0.0393,
+              0.0051
+            ]
+          ]
+        },
+        "ci95": [
+          -0.0284,
+          0.0159
+        ]
+      },
+      "gates_preregistered": {
+        "seed_mean_gt_ceiling": false,
+        "p_adj_lt_0.05": false,
+        "student_ci_lower_gt_0": false
+      },
+      "gates_fair": {
+        "seed_mean_gt_ceiling": false,
+        "p_adj_lt_0.05": true,
+        "student_ci_lower_gt_0": false
+      },
+      "exceeds_preregistered": false,
+      "exceeds_fair": false
+    }
+  },
+  "naive_reference": {
+    "file": "e12_hgt_vs_baselines.json",
+    "consistency": "re-derived from the per-seed files of this run; matches",
+    "any_exceeds": true,
+    "exceeds": [
+      "rgcn"
+    ]
+  },
+  "caveats": [
+    "F9: rgcn and gat_cohort_time were trained by h_extra_gnns.py with EPOCHS=300 / PATIENCE=30 and Adam without weight decay (h_extra_gnns.py:56,138); hgt and hgt_tuned by e2_hgt.py with EPOCHS=200 / PATIENCE=15 and weight_decay=1e-4 (e2_hgt.py:43,184). Same split, same features, same seeds; training budget stated per architecture. Not equalized here (would need a GPU re-run).",
+    "F2: h_extra_gnns.py computes the class weight over train+val+test labels (h_extra_gnns.py:136-137); e2_hgt.py restricts to train. Bounded at a 2-4% shift of one loss scalar (audit F2).",
+    "F14 symmetrization: M5'/M3' select the boosting-iteration count on the temporal VAL cohort's AUC-PR via staged_predict_proba (one selection per candidate iteration, mirroring the graph models' per-epoch checkpoint selection). The pre-registered M5 numbers keep the original internal-15%-slice budget.",
+    "Bootstrap is student-level and paired; the pooled CI carries both test-cohort sampling error and seed-to-seed variation."
+  ],
+  "any_exceeds_preregistered": false,
+  "any_exceeds_fair": false
+}

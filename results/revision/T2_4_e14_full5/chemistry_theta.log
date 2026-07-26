@@ -1,0 +1,11 @@
+[split] temporal: train t0<=2003, val t0 in (2003,2007], test t0>2007 | sizes={'train': 16378, 'val': 5835, 'test': 4617} | base rates={'test': 0.245, 'train': 0.211, 'val': 0.2171}
+[split] temporal: train t0<=2003, val t0 in (2003,2007], test t0>2007 | sizes={'train': 16378, 'val': 5835, 'test': 4617} | base rates={'test': 0.6574, 'train': 0.6567, 'val': 0.6593}
+[r48] chemistry theta=0.1: floor 0.7583 ci [-0.0055, 0.0249] branch B_SELF_PERSISTENCE_EQUIVALENT
+[split] temporal: train t0<=2003, val t0 in (2003,2007], test t0>2007 | sizes={'train': 16378, 'val': 5835, 'test': 4617} | base rates={'test': 0.4172, 'train': 0.4, 'val': 0.4053}
+[r48] chemistry theta=0.15: floor 0.5746 ci [-0.0242, 0.0176] branch B_SELF_PERSISTENCE_EQUIVALENT
+[split] temporal: train t0<=2003, val t0 in (2003,2007], test t0>2007 | sizes={'train': 16378, 'val': 5835, 'test': 4617} | base rates={'test': 0.245, 'train': 0.211, 'val': 0.2171}
+[r48] chemistry theta=0.2: floor 0.4617 ci [-0.0703, -0.0162] branch B_SELF_PERSISTENCE_EQUIVALENT
+[split] temporal: train t0<=2003, val t0 in (2003,2007], test t0>2007 | sizes={'train': 16378, 'val': 5835, 'test': 4617} | base rates={'test': 0.1196, 'train': 0.0913, 'val': 0.0989}
+[r48] chemistry theta=0.25: floor 0.2965 ci [-0.0782, -0.0129] branch B_SELF_PERSISTENCE_EQUIVALENT
+[split] temporal: train t0<=2003, val t0 in (2003,2007], test t0>2007 | sizes={'train': 16378, 'val': 5835, 'test': 4617} | base rates={'test': 0.1152, 'train': 0.0882, 'val': 0.0946}
+[r48] chemistry theta=0.3: floor 0.2881 ci [-0.0745, -0.0109] branch B_SELF_PERSISTENCE_EQUIVALENT

@@ -1,0 +1,88 @@
+{
+  "econ": {
+    "field": "econ",
+    "rows_in_frozen_table": 2697,
+    "titles": 267570,
+    "titles_mb": 8.8,
+    "abstracts": 19934,
+    "abstracts_mb": 12.2,
+    "student_rows_with_no_cached_author": 0,
+    "advisor_rows_with_no_cached_author": 0,
+    "windows": {
+      "student_titles": "[t0, t0+15]",
+      "student_abstracts": "[t0, t0+5]",
+      "advisor_titles": "<= t0+5"
+    },
+    "union_caveat": "an author serving several cohorts carries the union of their windows; a consumer must re-filter to the focal student's own window using the publication_year column",
+    "work_cap": 400
+  },
+  "math": {
+    "field": "math",
+    "rows_in_frozen_table": 5051,
+    "titles": 514646,
+    "titles_mb": 18.6,
+    "abstracts": 39564,
+    "abstracts_mb": 27.0,
+    "student_rows_with_no_cached_author": 0,
+    "advisor_rows_with_no_cached_author": 0,
+    "windows": {
+      "student_titles": "[t0, t0+15]",
+      "student_abstracts": "[t0, t0+5]",
+      "advisor_titles": "<= t0+5"
+    },
+    "union_caveat": "an author serving several cohorts carries the union of their windows; a consumer must re-filter to the focal student's own window using the publication_year column",
+    "work_cap": 400
+  },
+  "physics": {
+    "field": "physics",
+    "rows_in_frozen_table": 11809,
+    "titles": 1386590,
+    "titles_mb": 50.5,
+    "abstracts": 108947,
+    "abstracts_mb": 64.9,
+    "student_rows_with_no_cached_author": 0,
+    "advisor_rows_with_no_cached_author": 0,
+    "windows": {
+      "student_titles": "[t0, t0+15]",
+      "student_abstracts": "[t0, t0+5]",
+      "advisor_titles": "<= t0+5"
+    },
+    "union_caveat": "an author serving several cohorts carries the union of their windows; a consumer must re-filter to the focal student's own window using the publication_year column",
+    "work_cap": 400
+  },
+  "neuro": {
+    "field": "neuro",
+    "rows_in_frozen_table": 21844,
+    "titles": 1797683,
+    "titles_mb": 71.2,
+    "abstracts": 114877,
+    "abstracts_mb": 98.9,
+    "student_rows_with_no_cached_author": 0,
+    "advisor_rows_with_no_cached_author": 0,
+    "windows": {
+      "student_titles": "[t0, t0+15]",
+      "student_abstracts": "[t0, t0+5]",
+      "advisor_titles": "<= t0+5"
+    },
+    "union_caveat": "an author serving several cohorts carries the union of their windows; a consumer must re-filter to the focal student's own window using the publication_year column",
+    "work_cap": 400
+  },
+  "chemistry": {
+    "field": "chemistry",
+    "rows_in_frozen_table": 26830,
+    "titles": 2533488,
+    "titles_mb": 105.5,
+    "abstracts": null,
+    "abstracts_mb": null,
+    "titles_only": true,
+    "student_rows_with_no_cached_author": 0,
+    "advisor_rows_with_no_cached_author": 0,
+    "windows": {
+      "student_titles": "[t0, t0+15]",
+      "student_abstracts": "[t0, t0+5]",
+      "advisor_titles": "<= t0+5"
+    },
+    "union_caveat": "an author serving several cohorts carries the union of their windows; a consumer must re-filter to the focal student's own window using the publication_year column",
+    "work_cap": 400
+  }
+}

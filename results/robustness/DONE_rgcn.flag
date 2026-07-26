@@ -1,0 +1,14 @@
+{
+  "job": "rgcn",
+  "finished_utc": "2026-07-23T20:34:57Z",
+  "python": "3.12.13",
+  "numpy": "2.0.2",
+  "pandas": "2.2.2",
+  "scipy": "1.16.3",
+  "sklearn": "1.6.1",
+  "bundle_git_commit": "62b7701233cc22ec0eefaeef5e1a7955b2102d8d",
+  "torch": "2.11.0+cu128",
+  "cuda_available": true,
+  "device_name": "NVIDIA A100-SXM4-40GB",
+  "torch_geometric": "2.8.0"
+}

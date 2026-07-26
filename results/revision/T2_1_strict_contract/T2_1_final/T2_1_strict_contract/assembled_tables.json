@@ -1,0 +1,508 @@
+{
+  "integrity": {
+    "cells": 39,
+    "violations": 0
+  },
+  "tables": {
+    "Table 12b": {
+      "rows": {
+        "chemistry": [
+          {
+            "row": "GAT",
+            "config": "strict",
+            "delta_vs_M5prime": 0.0222,
+            "ci": [
+              0.0047,
+              0.0386
+            ],
+            "p_BH": 0.001953,
+            "exceeds": true,
+            "cell": "gat_prereg_strict"
+          },
+          {
+            "row": "HGT",
+            "config": "strict",
+            "delta_vs_M5prime": 0.0149,
+            "ci": [
+              -0.002,
+              0.0312
+            ],
+            "p_BH": 0.048828,
+            "exceeds": false,
+            "cell": "hgt_prereg_strict"
+          },
+          {
+            "row": "HGT tuned",
+            "config": "strict",
+            "delta_vs_M5prime": 0.02,
+            "ci": [
+              0.0012,
+              0.0385
+            ],
+            "p_BH": 0.064453,
+            "exceeds": false,
+            "cell": "hgt_tuned_strict"
+          },
+          {
+            "row": "RGCN",
+            "config": "strict",
+            "delta_vs_M5prime": 0.0278,
+            "ci": [
+              0.0127,
+              0.0427
+            ],
+            "p_BH": 0.001953,
+            "exceeds": true,
+            "cell": "rgcn_prereg_strict"
+          }
+        ],
+        "econ": [
+          {
+            "row": "GAT",
+            "config": "strict",
+            "delta_vs_M5prime": 0.0093,
+            "ci": [
+              -0.0547,
+              0.0666
+            ],
+            "p_BH": 0.160156,
+            "exceeds": false,
+            "cell": "gat_prereg_strict"
+          },
+          {
+            "row": "HGT",
+            "config": "strict",
+            "delta_vs_M5prime": 0.0017,
+            "ci": [
+              -0.0629,
+              0.0576
+            ],
+            "p_BH": 0.845703,
+            "exceeds": false,
+            "cell": "hgt_prereg_strict"
+          },
+          {
+            "row": "HGT tuned",
+            "config": "strict",
+            "delta_vs_M5prime": -0.0039,
+            "ci": [
+              -0.0714,
+              0.0579
+            ],
+            "p_BH": 0.556641,
+            "exceeds": false,
+            "cell": "hgt_tuned_strict"
+          },
+          {
+            "row": "RGCN",
+            "config": "strict",
+            "delta_vs_M5prime": -0.0093,
+            "ci": [
+              -0.0694,
+              0.0482
+            ],
+            "p_BH": 0.037109,
+            "exceeds": false,
+            "cell": "rgcn_prereg_strict"
+          }
+        ],
+        "math": [
+          {
+            "row": "GAT",
+            "config": "strict",
+            "delta_vs_M5prime": -0.0518,
+            "ci": [
+              -0.1009,
+              -0.0011
+            ],
+            "p_BH": 0.001953,
+            "exceeds": false,
+            "cell": "gat_prereg_strict"
+          },
+          {
+            "row": "HGT",
+            "config": "strict",
+            "delta_vs_M5prime": -0.0384,
+            "ci": [
+              -0.0918,
+              0.0148
+            ],
+            "p_BH": 0.001953,
+            "exceeds": false,
+            "cell": "hgt_prereg_strict"
+          },
+          {
+            "row": "HGT tuned",
+            "config": "strict",
+            "delta_vs_M5prime": -0.0376,
+            "ci": [
+              -0.0911,
+              0.0154
+            ],
+            "p_BH": 0.001953,
+            "exceeds": false,
+            "cell": "hgt_tuned_strict"
+          },
+          {
+            "row": "RGCN",
+            "config": "strict",
+            "delta_vs_M5prime": -0.0299,
+            "ci": [
+              -0.0792,
+              0.0196
+            ],
+            "p_BH": 0.001953,
+            "exceeds": false,
+            "cell": "rgcn_prereg_strict"
+          }
+        ],
+        "neuro": [
+          {
+            "row": "GAT",
+            "config": "strict",
+            "delta_vs_M5prime": -0.0039,
+            "ci": [
+              -0.0236,
+              0.0159
+            ],
+            "p_BH": 0.105469,
+            "exceeds": false,
+            "cell": "gat_prereg_strict"
+          },
+          {
+            "row": "HGT",
+            "config": "strict",
+            "delta_vs_M5prime": -0.0173,
+            "ci": [
+              -0.0365,
+              0.0009
+            ],
+            "p_BH": 0.064453,
+            "exceeds": false,
+            "cell": "hgt_prereg_strict"
+          },
+          {
+            "row": "HGT tuned",
+            "config": "strict",
+            "delta_vs_M5prime": 0.0001,
+            "ci": [
+              -0.0193,
+              0.0189
+            ],
+            "p_BH": 0.556641,
+            "exceeds": false,
+            "cell": "hgt_tuned_strict"
+          },
+          {
+            "row": "RGCN",
+            "config": "strict",
+            "delta_vs_M5prime": 0.0086,
+            "ci": [
+              -0.0082,
+              0.0252
+            ],
+            "p_BH": 0.001953,
+            "exceeds": false,
+            "cell": "rgcn_prereg_strict"
+          }
+        ],
+        "physics": [
+          {
+            "row": "GAT",
+            "config": "strict",
+            "delta_vs_M5prime": 0.0015,
+            "ci": [
+              -0.02,
+              0.0231
+            ],
+            "p_BH": 0.625,
+            "exceeds": false,
+            "cell": "gat_prereg_strict"
+          },
+          {
+            "row": "HGT",
+            "config": "strict",
+            "delta_vs_M5prime": -0.0048,
+            "ci": [
+              -0.024,
+              0.0143
+            ],
+            "p_BH": 1.0,
+            "exceeds": false,
+            "cell": "hgt_prereg_strict"
+          },
+          {
+            "row": "HGT tuned",
+            "config": "strict",
+            "delta_vs_M5prime": 0.0193,
+            "ci": [
+              -0.0026,
+              0.0412
+            ],
+            "p_BH": 0.001953,
+            "exceeds": false,
+            "cell": "hgt_tuned_strict"
+          },
+          {
+            "row": "RGCN",
+            "config": "strict",
+            "delta_vs_M5prime": 0.0034,
+            "ci": [
+              -0.0157,
+              0.0225
+            ],
+            "p_BH": 0.048828,
+            "exceeds": false,
+            "cell": "rgcn_prereg_strict"
+          }
+        ]
+      },
+      "n_exceeds": 2,
+      "n_rows": 20
+    },
+    "Table 13b": {
+      "rows": {
+        "chemistry": [
+          {
+            "row": "GAT symmetric",
+            "config": "legacy",
+            "delta_vs_M5prime": 0.0387,
+            "ci": [
+              0.0218,
+              0.055
+            ],
+            "p_BH": 0.001953,
+            "exceeds": true,
+            "cell": "gat_tuned_legacy"
+          },
+          {
+            "row": "GAT symmetric",
+            "config": "strict",
+            "delta_vs_M5prime": 0.0332,
+            "ci": [
+              0.0163,
+              0.0496
+            ],
+            "p_BH": 0.001953,
+            "exceeds": true,
+            "cell": "gat_tuned_strict"
+          },
+          {
+            "row": "RGCN symmetric",
+            "config": "strict",
+            "delta_vs_M5prime": 0.0448,
+            "ci": [
+              0.0291,
+              0.061
+            ],
+            "p_BH": 0.001953,
+            "exceeds": true,
+            "cell": "rgcn_tuned_strict"
+          }
+        ],
+        "econ": [
+          {
+            "row": "GAT symmetric",
+            "config": "legacy",
+            "delta_vs_M5prime": 0.0116,
+            "ci": [
+              -0.0527,
+              0.069
+            ],
+            "p_BH": 0.083984,
+            "exceeds": false,
+            "cell": "gat_tuned_legacy"
+          },
+          {
+            "row": "GAT symmetric",
+            "config": "strict",
+            "delta_vs_M5prime": 0.0192,
+            "ci": [
+              -0.045,
+              0.0757
+            ],
+            "p_BH": 0.001953,
+            "exceeds": false,
+            "cell": "gat_tuned_strict"
+          },
+          {
+            "row": "RGCN symmetric",
+            "config": "legacy",
+            "delta_vs_M5prime": -0.0015,
+            "ci": [
+              -0.0611,
+              0.056
+            ],
+            "p_BH": 0.695312,
+            "exceeds": false,
+            "cell": "rgcn_tuned_legacy"
+          },
+          {
+            "row": "RGCN symmetric",
+            "config": "strict",
+            "delta_vs_M5prime": -0.0069,
+            "ci": [
+              -0.0698,
+              0.0536
+            ],
+            "p_BH": 0.064453,
+            "exceeds": false,
+            "cell": "rgcn_tuned_strict"
+          }
+        ],
+        "math": [
+          {
+            "row": "GAT symmetric",
+            "config": "legacy",
+            "delta_vs_M5prime": -0.0328,
+            "ci": [
+              -0.0793,
+              0.0137
+            ],
+            "p_BH": 0.001953,
+            "exceeds": false,
+            "cell": "gat_tuned_legacy"
+          },
+          {
+            "row": "GAT symmetric",
+            "config": "strict",
+            "delta_vs_M5prime": -0.0293,
+            "ci": [
+              -0.0752,
+              0.0189
+            ],
+            "p_BH": 0.001953,
+            "exceeds": false,
+            "cell": "gat_tuned_strict"
+          },
+          {
+            "row": "RGCN symmetric",
+            "config": "legacy",
+            "delta_vs_M5prime": -0.0308,
+            "ci": [
+              -0.0773,
+              0.0176
+            ],
+            "p_BH": 0.001953,
+            "exceeds": false,
+            "cell": "rgcn_tuned_legacy"
+          },
+          {
+            "row": "RGCN symmetric",
+            "config": "strict",
+            "delta_vs_M5prime": -0.0308,
+            "ci": [
+              -0.0773,
+              0.0176
+            ],
+            "p_BH": 0.001953,
+            "exceeds": false,
+            "cell": "rgcn_tuned_strict"
+          }
+        ],
+        "neuro": [
+          {
+            "row": "GAT symmetric",
+            "config": "legacy",
+            "delta_vs_M5prime": 0.0042,
+            "ci": [
+              -0.0149,
+              0.0226
+            ],
+            "p_BH": 0.193359,
+            "exceeds": false,
+            "cell": "gat_tuned_legacy"
+          },
+          {
+            "row": "GAT symmetric",
+            "config": "strict",
+            "delta_vs_M5prime": 0.0043,
+            "ci": [
+              -0.0145,
+              0.0222
+            ],
+            "p_BH": 0.160156,
+            "exceeds": false,
+            "cell": "gat_tuned_strict"
+          },
+          {
+            "row": "RGCN symmetric",
+            "config": "legacy",
+            "delta_vs_M5prime": 0.0074,
+            "ci": [
+              -0.008,
+              0.0227
+            ],
+            "p_BH": 0.083984,
+            "exceeds": false,
+            "cell": "rgcn_tuned_legacy"
+          },
+          {
+            "row": "RGCN symmetric",
+            "config": "strict",
+            "delta_vs_M5prime": 0.0165,
+            "ci": [
+              -0.0006,
+              0.0334
+            ],
+            "p_BH": 0.001953,
+            "exceeds": false,
+            "cell": "rgcn_tuned_strict"
+          }
+        ],
+        "physics": [
+          {
+            "row": "GAT symmetric",
+            "config": "legacy",
+            "delta_vs_M5prime": 0.0078,
+            "ci": [
+              -0.0116,
+              0.0281
+            ],
+            "p_BH": 0.001953,
+            "exceeds": false,
+            "cell": "gat_tuned_legacy"
+          },
+          {
+            "row": "GAT symmetric",
+            "config": "strict",
+            "delta_vs_M5prime": 0.0078,
+            "ci": [
+              -0.0117,
+              0.028
+            ],
+            "p_BH": 0.001953,
+            "exceeds": false,
+            "cell": "gat_tuned_strict"
+          },
+          {
+            "row": "RGCN symmetric",
+            "config": "legacy",
+            "delta_vs_M5prime": 0.0103,
+            "ci": [
+              -0.0075,
+              0.028
+            ],
+            "p_BH": 0.001953,
+            "exceeds": false,
+            "cell": "rgcn_tuned_legacy"
+          },
+          {
+            "row": "RGCN symmetric",
+            "config": "strict",
+            "delta_vs_M5prime": 0.0106,
+            "ci": [
+              -0.0073,
+              0.0283
+            ],
+            "p_BH": 0.001953,
+            "exceeds": false,
+            "cell": "rgcn_tuned_strict"
+          }
+        ]
+      },
+      "n_exceeds": 3,
+      "n_rows": 19
+    }
+  }
+}

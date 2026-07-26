@@ -1,0 +1,6 @@
+{
+  "cudnn_deterministic": true,
+  "use_deterministic_algorithms": "True (warn_only)",
+  "note": "PyG hetero scatter ops fall back to nondeterministic CUDA kernels; per-seed AUC-PR may vary ~1e-3 across reruns. Recorded, not hidden.",
+  "torch": "2.11.0+cu128"
+}

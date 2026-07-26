@@ -1,0 +1,101 @@
+{
+  "summary": {
+    "M1s_typicality": {
+      "auc_pr": {
+        "mean": 0.4323672621085044,
+        "std": 0.0,
+        "n_seeds": 10
+      },
+      "auc_roc": {
+        "mean": 0.5275233477011494,
+        "std": 0.0,
+        "n_seeds": 10
+      },
+      "f1": {
+        "mean": 0.582259287338893,
+        "std": 1.1702778228589004e-16,
+        "n_seeds": 10
+      }
+    },
+    "M1s_scalars": {
+      "auc_pr": {
+        "mean": 0.49231344106075553,
+        "std": 0.0,
+        "n_seeds": 10
+      },
+      "auc_roc": {
+        "mean": 0.5837634225650332,
+        "std": 1.1702778228589004e-16,
+        "n_seeds": 10
+      },
+      "f1": {
+        "mean": 0.5800316957210775,
+        "std": 1.1702778228589004e-16,
+        "n_seeds": 10
+      }
+    },
+    "M4s_tfidf": {
+      "auc_pr": {
+        "mean": 0.45073128966466874,
+        "std": 5.851389114294502e-17,
+        "n_seeds": 10
+      },
+      "auc_roc": {
+        "mean": 0.5407923094373865,
+        "std": 0.0,
+        "n_seeds": 10
+      },
+      "f1": {
+        "mean": 0.5833333333333333,
+        "std": 1.1702778228589004e-16,
+        "n_seeds": 10
+      }
+    },
+    "M3s_gbdt": {
+      "auc_pr": {
+        "mean": 0.54688552534798,
+        "std": 0.008260834317144944,
+        "n_seeds": 10
+      },
+      "auc_roc": {
+        "mean": 0.6259277639140957,
+        "std": 0.006082171643918574,
+        "n_seeds": 10
+      },
+      "f1": {
+        "mean": 0.5820412236093352,
+        "std": 0.004644938941281816,
+        "n_seeds": 10
+      }
+    }
+  },
+  "verdict": {
+    "branch": "B_SELF_PERSISTENCE_EQUIVALENT",
+    "best_student_model": "M3s_gbdt",
+    "best_student_auc_pr": 0.5469,
+    "M1_auc_pr": 0.5782,
+    "placebo_band_plus_margin": 0.5018,
+    "M1_minus_floor_ci95": [
+      -0.0194,
+      0.0815
+    ],
+    "M1_minus_floor_ci95_full": [
+      -0.01938470494675303,
+      0.08153376023617794
+    ],
+    "M1_minus_floor_excludes_zero": false
+  },
+  "features": [
+    "early_prod",
+    "early_breadth",
+    "early_typicality",
+    "early_typicality_cohort",
+    "early_concentration"
+  ],
+  "note": "student ladder WITH early_concentration (r47 reconstruction)",
+  "field": "math",
+  "sweep": "theta",
+  "theta": 0.15,
+  "band_source": "results/robustness/theta_0.15.json",
+  "placebo_band_max_L1": 0.4518
+}

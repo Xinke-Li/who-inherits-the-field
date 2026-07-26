@@ -1,0 +1,38 @@
+{
+  "experiment": "E9a_placebo",
+  "test_base_rate": 0.2645,
+  "variants": {
+    "global": {
+      "n_seeds": 30,
+      "auc_roc": {
+        "mean": 0.5008,
+        "std": 0.02
+      },
+      "auc_pr": {
+        "mean": 0.2726,
+        "std": 0.0142
+      },
+      "t_vs_0.5": {
+        "t": 0.213,
+        "p": 0.833
+      }
+    },
+    "cohort": {
+      "n_seeds": 30,
+      "auc_roc": {
+        "mean": 0.5019,
+        "std": 0.0263
+      },
+      "auc_pr": {
+        "mean": 0.2713,
+        "std": 0.0177
+      },
+      "t_vs_0.5": {
+        "t": 0.392,
+        "p": 0.698
+      }
+    }
+  },
+  "rule": "PASS if |mean AUC-ROC - 0.5| <= 0.035 in both variants and global-variant AUC-PR within 0.03 of the test base rate",
+  "verdict": "PASS - global 0.501 / cohort 0.502 vs 0.5; global AP 0.273 vs base rate 0.265; cohort residual = cell-level composition, expected by design"
+}

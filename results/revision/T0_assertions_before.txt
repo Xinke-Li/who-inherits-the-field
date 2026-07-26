@@ -1,0 +1,54 @@
+[PASS] econ: SHA-256 matches SHA256SUMS
+[PASS] math: SHA-256 matches SHA256SUMS
+[PASS] neuro: SHA-256 matches SHA256SUMS
+[PASS] physics: SHA-256 matches SHA256SUMS
+[PASS] chemistry: SHA-256 matches SHA256SUMS
+[PASS] econ: n_students matches summary (2698)
+[PASS] econ: base rate matches summary (0.2024)
+[PASS] econ: label equals 1[late_overlap>0.2]
+[PASS] econ: no right-censored rows (t0+15<=2026)
+[PASS] math: n_students matches summary (5051)
+[PASS] math: base rate matches summary (0.201)
+[PASS] math: label equals 1[late_overlap>0.2]
+[PASS] math: no right-censored rows (t0+15<=2026)
+[PASS] neuro: n_students matches summary (21846)
+[PASS] neuro: base rate matches summary (0.251)
+[PASS] neuro: label equals 1[late_overlap>0.2]
+[PASS] neuro: no right-censored rows (t0+15<=2026)
+[PASS] physics: n_students matches summary (11810)
+[PASS] physics: base rate matches summary (0.352)
+[PASS] physics: label equals 1[late_overlap>0.2]
+[PASS] physics: no right-censored rows (t0+15<=2026)
+[PASS] chemistry: n_students matches summary (26830)
+[PASS] chemistry: base rate matches summary (0.2182)
+[PASS] chemistry: label equals 1[late_overlap>0.2]
+[PASS] chemistry: no right-censored rows (t0+15<=2026)
+[PASS] axis: econ has the lowest early-window coauth
+[PASS] robustness: theta grid complete (5 fields x 5 thetas)
+[PASS] robustness: econ theta=0.20 base rate equals frozen
+[PASS] robustness: math theta=0.20 base rate equals frozen
+[PASS] robustness: neuro theta=0.20 base rate equals frozen
+[PASS] robustness: physics theta=0.20 base rate equals frozen
+[PASS] robustness: chemistry theta=0.20 base rate equals frozen
+[PASS] robustness: theta_0.10.json has all fields, 10-seed ladders
+[PASS] robustness: theta_0.15.json has all fields, 10-seed ladders
+[PASS] robustness: theta_0.20.json has all fields, 10-seed ladders
+[PASS] robustness: theta_0.25.json has all fields, 10-seed ladders
+[PASS] robustness: theta_0.30.json has all fields, 10-seed ladders
+[PASS] robustness: continuous-label check covers all fields, 10 seeds
+[PASS] robustness: rgcn symmetric verdict carries all four models
+[PASS] robustness: rgcn grid selection recorded (16 configs)
+[PASS] robustness: topk sweep complete (4 k-cells + 2 min-score per field)
+[PASS] robustness: k=10 calibration reported for every field
+[PASS] robustness: swap-label control covers all fields, 10 redraws
+[PASS] robustness: swap-label exact calibration recorded per redraw
+[PASS] robustness: swap-label student-level CI present per field
+[PASS] robustness: power/TOST covers 5 fields x 4 architectures
+[PASS] robustness: topics parallel covers 5 fields x 2 granularities
+[PASS] robustness: symmetric grid has 10 winner cells x 10 seeds
+[PASS] robustness: symmetric grid has 5 two-arch verdicts
+[PASS] robustness: symmetric grid DONE flag present
+[PASS] robustness: extra rungs (catboost/tabpfn) cover all fields
+[PASS] robustness: SHA256SUMS.robustness verifies
+
+all reproduction checks passed

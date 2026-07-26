@@ -1,0 +1,13 @@
+{
+  "field": "neuro",
+  "n_test": 3463,
+  "n_cells": 3,
+  "test_base_rate": 0.2645,
+  "composition_only_auc_roc_vs_real_label": 0.5094,
+  "composition_only_auc_roc_vs_scrambled": {
+    "mean": 0.5094,
+    "std": 0.0,
+    "n_seeds": 30
+  },
+  "note": "the model uses no features; each test row is scored by the base rate of its own (split, t0) cell, which is the maximum information cell composition carries"
+}

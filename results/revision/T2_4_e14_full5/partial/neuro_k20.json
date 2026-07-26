@@ -1,0 +1,109 @@
+{
+  "summary": {
+    "M1s_typicality": {
+      "auc_pr": {
+        "mean": 0.21993804754462035,
+        "std": 0.0,
+        "n_seeds": 10
+      },
+      "auc_roc": {
+        "mean": 0.5554781616735188,
+        "std": 0.0,
+        "n_seeds": 10
+      },
+      "f1": {
+        "mean": 0.3139126067302863,
+        "std": 0.0,
+        "n_seeds": 10
+      }
+    },
+    "M1s_scalars": {
+      "auc_pr": {
+        "mean": 0.2665151166787498,
+        "std": 0.0,
+        "n_seeds": 10
+      },
+      "auc_roc": {
+        "mean": 0.6229411478883894,
+        "std": 0.0,
+        "n_seeds": 10
+      },
+      "f1": {
+        "mean": 0.3539267015706806,
+        "std": 0.0,
+        "n_seeds": 10
+      }
+    },
+    "M4s_tfidf": {
+      "auc_pr": {
+        "mean": 0.22492822056442283,
+        "std": 0.0,
+        "n_seeds": 10
+      },
+      "auc_roc": {
+        "mean": 0.5686459806899965,
+        "std": 1.1702778228589004e-16,
+        "n_seeds": 10
+      },
+      "f1": {
+        "mean": 0.3151390319258497,
+        "std": 5.851389114294502e-17,
+        "n_seeds": 10
+      }
+    },
+    "M3s_gbdt": {
+      "auc_pr": {
+        "mean": 0.2807418911564933,
+        "std": 0.004548777921686453,
+        "n_seeds": 10
+      },
+      "auc_roc": {
+        "mean": 0.6352545881412327,
+        "std": 0.006278469651035967,
+        "n_seeds": 10
+      },
+      "f1": {
+        "mean": 0.35695107195392045,
+        "std": 0.0064348886362842654,
+        "n_seeds": 10
+      }
+    }
+  },
+  "verdict": {
+    "branch": "C_INTERMEDIATE",
+    "best_student_model": "M3s_gbdt",
+    "best_student_auc_pr": 0.2807,
+    "M1_auc_pr": 0.3389,
+    "placebo_band_plus_margin": 0.2699,
+    "M1_minus_floor_ci95": [
+      0.0246,
+      0.0902
+    ],
+    "M1_minus_floor_ci95_full": [
+      0.02463605952923892,
+      0.09023577325220414
+    ],
+    "M1_minus_floor_excludes_zero": true
+  },
+  "features": [
+    "early_prod",
+    "early_breadth",
+    "early_typicality",
+    "early_typicality_cohort",
+    "early_concentration"
+  ],
+  "note": "student ladder WITH early_concentration (r47 reconstruction)",
+  "field": "neuro",
+  "sweep": "topk",
+  "k": 20,
+  "min_score": 0.3,
+  "tfidf_fit": "legacy",
+  "band_source": "results/robustness/topk_partial/neuro_k20.json",
+  "placebo_band_max_L1": 0.2199,
+  "row_diagnostics": {
+    "n_no_cache": 0,
+    "n_empty_early": 1,
+    "n_fail_min_works": 7
+  },
+  "provenance": "rebuilt from the r5 live-API cache; compare within the rebuilt family only"
+}

@@ -1,0 +1,9 @@
+{
+  "hp": {
+    "lr": 0.005,
+    "hidden": 64,
+    "layers": 2,
+    "dropout": 0.5
+  },
+  "val_auc_pr_mean": 0.3881248389193187
+}

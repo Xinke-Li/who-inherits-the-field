@@ -1,0 +1,57 @@
+{
+  "schema_version": 2,
+  "sha256_parquet": "5ef1eb6f4c061fc82d10839964deacc01fcf032f65d1dc67fd0e7aa06b97dba3",
+  "n_students": 2698,
+  "n_advisors": 1479,
+  "n_institutions": 236,
+  "label_base_rate": 0.2024,
+  "t0_range": [
+    1957,
+    2011
+  ],
+  "coauth_early_rate": 0.583,
+  "country_missing_rate": 1.0,
+  "id_cols": [
+    "student_pid",
+    "advisor_pid",
+    "st_openalex_id",
+    "adv_openalex_id",
+    "st_name",
+    "adv_name"
+  ],
+  "feature_cols": [
+    "t0",
+    "early_prod",
+    "early_breadth",
+    "early_concepts",
+    "adv_profile",
+    "adv_early_prod",
+    "adv_early_breadth",
+    "adv_career_age_at_t0",
+    "early_overlap",
+    "coauth_early",
+    "coauth_early_n",
+    "institution_name",
+    "institution_country"
+  ],
+  "label_cols": [
+    "y",
+    "late_overlap",
+    "late_prod"
+  ],
+  "params": {
+    "early_years": 5,
+    "late_years": 15,
+    "min_works_per_window": 3,
+    "theta": 0.2,
+    "topk": 10,
+    "concept_min_score": 0.3,
+    "t0_min": 1950,
+    "max_career_span": 60,
+    "max_works_per_author": 400,
+    "sort": "publication_date:asc",
+    "obs_year": 2026
+  },
+  "discipline": "economics",
+  "field": "econ"
+}

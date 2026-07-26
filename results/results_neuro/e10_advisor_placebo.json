@@ -1,0 +1,285 @@
+{
+  "experiment": "E10_advisor_placebo",
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "cohort_window_years": 3,
+  "feature_stats": {
+    "true": {
+      "mean": 0.1764,
+      "std": 0.1301,
+      "corr_with_true": 1.0
+    },
+    "placebo_cohort": {
+      "mean": 0.0338,
+      "std": 0.044,
+      "corr_with_true": 0.1335
+    },
+    "placebo_random": {
+      "mean": 0.0331,
+      "std": 0.0431,
+      "corr_with_true": 0.1297
+    },
+    "field_mean": {
+      "mean": 0.0896,
+      "std": 0.0597,
+      "corr_with_true": 0.2539
+    }
+  },
+  "summary": {
+    "true": {
+      "L1_logit_overlap": {
+        "auc_pr": {
+          "mean": 0.38705085554900814,
+          "std": 5.851389114294502e-17,
+          "n_seeds": 10
+        },
+        "auc_roc": {
+          "mean": 0.6646469945804894,
+          "std": 0.0,
+          "n_seeds": 10
+        }
+      },
+      "L2_logit_tabular": {
+        "auc_pr": {
+          "mean": 0.4096290530024457,
+          "std": 5.851389114294502e-17,
+          "n_seeds": 10
+        },
+        "auc_roc": {
+          "mean": 0.6676919331416531,
+          "std": 0.0,
+          "n_seeds": 10
+        }
+      },
+      "G3_gbdt_tabular": {
+        "auc_pr": {
+          "mean": 0.4257264014067542,
+          "std": 0.006255800327591724,
+          "n_seeds": 10
+        },
+        "auc_roc": {
+          "mean": 0.6764392521041109,
+          "std": 0.00297017299137961,
+          "n_seeds": 10
+        }
+      }
+    },
+    "placebo_cohort": {
+      "L1_logit_overlap": {
+        "auc_pr": {
+          "mean": 0.275651406456047,
+          "std": 0.006205594144816624,
+          "n_seeds": 10
+        },
+        "auc_roc": {
+          "mean": 0.5201644884040304,
+          "std": 0.011998156609551803,
+          "n_seeds": 10
+        }
+      },
+      "L2_logit_tabular": {
+        "auc_pr": {
+          "mean": 0.38382115673359524,
+          "std": 0.0012277425140911275,
+          "n_seeds": 10
+        },
+        "auc_roc": {
+          "mean": 0.6342270982387019,
+          "std": 0.0016774705491858417,
+          "n_seeds": 10
+        }
+      },
+      "G3_gbdt_tabular": {
+        "auc_pr": {
+          "mean": 0.38603331459743506,
+          "std": 0.007521765826935292,
+          "n_seeds": 10
+        },
+        "auc_roc": {
+          "mean": 0.6371850691711971,
+          "std": 0.003142480037446399,
+          "n_seeds": 10
+        }
+      }
+    },
+    "placebo_random": {
+      "L1_logit_overlap": {
+        "auc_pr": {
+          "mean": 0.27496295482451544,
+          "std": 0.005573531111303699,
+          "n_seeds": 10
+        },
+        "auc_roc": {
+          "mean": 0.516355314840818,
+          "std": 0.008054299847882898,
+          "n_seeds": 10
+        }
+      },
+      "L2_logit_tabular": {
+        "auc_pr": {
+          "mean": 0.3836762667870096,
+          "std": 0.0010937759601259514,
+          "n_seeds": 10
+        },
+        "auc_roc": {
+          "mean": 0.6338675691754835,
+          "std": 0.0018735810373591846,
+          "n_seeds": 10
+        }
+      },
+      "G3_gbdt_tabular": {
+        "auc_pr": {
+          "mean": 0.3861231627607949,
+          "std": 0.005531206274674327,
+          "n_seeds": 10
+        },
+        "auc_roc": {
+          "mean": 0.636721920471554,
+          "std": 0.004049025797562991,
+          "n_seeds": 10
+        }
+      }
+    },
+    "field_mean": {
+      "L1_logit_overlap": {
+        "auc_pr": {
+          "mean": 0.2977471507929831,
+          "std": 5.851389114294502e-17,
+          "n_seeds": 10
+        },
+        "auc_roc": {
+          "mean": 0.5489035392267297,
+          "std": 1.1702778228589004e-16,
+          "n_seeds": 10
+        }
+      },
+      "L2_logit_tabular": {
+        "auc_pr": {
+          "mean": 0.38751552672050077,
+          "std": 5.851389114294502e-17,
+          "n_seeds": 10
+        },
+        "auc_roc": {
+          "mean": 0.6356943608629384,
+          "std": 0.0,
+          "n_seeds": 10
+        }
+      },
+      "G3_gbdt_tabular": {
+        "auc_pr": {
+          "mean": 0.386336510212108,
+          "std": 0.005974999930562427,
+          "n_seeds": 10
+        },
+        "auc_roc": {
+          "mean": 0.6393760190514398,
+          "std": 0.0036714224174766515,
+          "n_seeds": 10
+        }
+      }
+    }
+  },
+  "comparisons": [
+    {
+      "variant": "placebo_cohort",
+      "model": "L1_logit_overlap",
+      "true_mean": 0.3871,
+      "placebo_mean": 0.2757,
+      "mean_diff": 0.1114,
+      "p_raw": 0.001953125,
+      "p_adj": 0.001953,
+      "significant": true
+    },
+    {
+      "variant": "placebo_cohort",
+      "model": "L2_logit_tabular",
+      "true_mean": 0.4096,
+      "placebo_mean": 0.3838,
+      "mean_diff": 0.0258,
+      "p_raw": 0.001953125,
+      "p_adj": 0.001953,
+      "significant": true
+    },
+    {
+      "variant": "placebo_cohort",
+      "model": "G3_gbdt_tabular",
+      "true_mean": 0.4257,
+      "placebo_mean": 0.386,
+      "mean_diff": 0.0397,
+      "p_raw": 0.001953125,
+      "p_adj": 0.001953,
+      "significant": true
+    },
+    {
+      "variant": "placebo_random",
+      "model": "L1_logit_overlap",
+      "true_mean": 0.3871,
+      "placebo_mean": 0.275,
+      "mean_diff": 0.1121,
+      "p_raw": 0.001953125,
+      "p_adj": 0.001953,
+      "significant": true
+    },
+    {
+      "variant": "placebo_random",
+      "model": "L2_logit_tabular",
+      "true_mean": 0.4096,
+      "placebo_mean": 0.3837,
+      "mean_diff": 0.026,
+      "p_raw": 0.001953125,
+      "p_adj": 0.001953,
+      "significant": true
+    },
+    {
+      "variant": "placebo_random",
+      "model": "G3_gbdt_tabular",
+      "true_mean": 0.4257,
+      "placebo_mean": 0.3861,
+      "mean_diff": 0.0396,
+      "p_raw": 0.001953125,
+      "p_adj": 0.001953,
+      "significant": true
+    },
+    {
+      "variant": "field_mean",
+      "model": "L1_logit_overlap",
+      "true_mean": 0.3871,
+      "placebo_mean": 0.2977,
+      "mean_diff": 0.0893,
+      "p_raw": 0.001953125,
+      "p_adj": 0.001953,
+      "significant": true
+    },
+    {
+      "variant": "field_mean",
+      "model": "L2_logit_tabular",
+      "true_mean": 0.4096,
+      "placebo_mean": 0.3875,
+      "mean_diff": 0.0221,
+      "p_raw": 0.001953125,
+      "p_adj": 0.001953,
+      "significant": true
+    },
+    {
+      "variant": "field_mean",
+      "model": "G3_gbdt_tabular",
+      "true_mean": 0.4257,
+      "placebo_mean": 0.3863,
+      "mean_diff": 0.0394,
+      "p_raw": 0.001953125,
+      "p_adj": 0.001953,
+      "significant": true
+    }
+  ],
+  "reading": "If true-advisor overlap significantly outperforms cohort-matched placebo overlap, the predictive signal is advisor-specific, not generic field typicality; the task is not a persistence tautology."
+}

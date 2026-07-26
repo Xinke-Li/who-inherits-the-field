@@ -1,0 +1,60 @@
+{
+  "experiment": "T3_4_tabpfn_gpu",
+  "field": "econ",
+  "target_table": "Table 25",
+  "target_row": "TabPFN (GPU, full context)",
+  "model": "tabpfn_v2_gpu_full_context",
+  "features": [
+    "early_overlap",
+    "early_prod",
+    "early_breadth",
+    "adv_early_prod",
+    "adv_early_breadth",
+    "adv_career_age_at_t0",
+    "coauth_early_n",
+    "coauth_early"
+  ],
+  "train_rows_available": 1646,
+  "train_rows_used": 1646,
+  "context_capped": false,
+  "exceeds_pretraining_limit": false,
+  "seed_variation": "TabPFN ensemble permutations via random_state; no training subsample, unlike the CPU run",
+  "tabpfn_mean_auc_pr": 0.3716,
+  "per_seed_auc_pr": [
+    0.3741,
+    0.3647,
+    0.3721,
+    0.3712,
+    0.3715,
+    0.3767,
+    0.3723,
+    0.371,
+    0.3717,
+    0.3707
+  ],
+  "M5prime_mean": 0.3613,
+  "delta_vs_M5prime": 0.0103,
+  "wilcoxon_p_raw": 0.001953,
+  "p_BH": 0.001953,
+  "student_ci95_vs_M5prime": [
+    -0.0477,
+    0.0668
+  ],
+  "gates_fair": {
+    "seed_mean_gt_ceiling": true,
+    "p_adj_lt_0.05": true,
+    "student_ci_lower_gt_0": false
+  },
+  "exceeds_fair": false,
+  "cpu_1000row_mean_auc_pr": 0.3735,
+  "gpu_minus_cpu": -0.0019,
+  "comparison_note": "the CPU rung varied its ten seeds through a fresh 1,000-row training subsample; this run has no subsample and varies through TabPFN's ensemble permutations, so the two are not paired",
+  "env": {
+    "gpu": "NVIDIA A100-SXM4-40GB",
+    "cuda": "12.8",
+    "torch": "2.11.0+cu128",
+    "tabpfn": "2.2.1",
+    "python": "3.12.13",
+    "platform": "Linux-6.6.122+-x86_64-with-glibc2.35"
+  }
+}

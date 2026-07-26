@@ -1,0 +1,65 @@
+{
+  "experiment": "T2_1_strict_contract",
+  "field": "neuro",
+  "target_table": "Table 12b",
+  "target_row": "GAT",
+  "model": "gat_strict",
+  "cell": "gat_prereg_strict",
+  "protocol": "prereg",
+  "config_source": "strict",
+  "model_class": "GATSym",
+  "arch_requested": "gat",
+  "hp": {
+    "lr": 0.001,
+    "hidden": 64,
+    "layers": 2,
+    "dropout": 0.0
+  },
+  "budget": "prereg_strict",
+  "changes_vs_r3": [
+    "build_graph_v2 contract=strict (F1a, F1b)",
+    "class weight from training split only (F2)"
+  ],
+  "seed_mean_auc_pr": 0.421,
+  "M5_mean": 0.4231,
+  "M5prime_mean": 0.4249,
+  "delta_vs_M5": -0.002,
+  "delta_vs_M5prime": -0.0039,
+  "wilcoxon_p_raw": 0.105469,
+  "p_BH": 0.105469,
+  "student_ci95_vs_M5prime": [
+    -0.0236,
+    0.0159
+  ],
+  "gates_fair": {
+    "seed_mean_gt_ceiling": false,
+    "p_adj_lt_0.05": false,
+    "student_ci_lower_gt_0": false
+  },
+  "exceeds_fair": false,
+  "per_seed_auc_pr": [
+    0.4216,
+    0.4217,
+    0.4249,
+    0.4299,
+    0.4266,
+    0.4276,
+    0.4195,
+    0.4086,
+    0.4123,
+    0.4178
+  ],
+  "legacy_comparison": {
+    "pre_registered_vs_M5p": 0.022,
+    "post_hoc_symmetric_vs_M5p": 0.035
+  },
+  "env": {
+    "gpu": "NVIDIA A100-SXM4-40GB",
+    "cuda": "12.8",
+    "torch": "2.11.0+cu128",
+    "torch_geometric": "2.8.0",
+    "python": "3.12.13",
+    "platform": "Linux-6.6.122+-x86_64-with-glibc2.35",
+    "note": "exact cross-GPU reproduction is not assumed; see DETERMINISM_NOTE.json in the symmetric grid"
+  }
+}

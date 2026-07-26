@@ -1,0 +1,20 @@
+{
+  "experiment": "R15f_tabpfn_eq2",
+  "field": "math",
+  "model": "tabpfn_v2_cpu_context1000",
+  "train_subsampled": true,
+  "tabpfn_mean": 0.4263,
+  "M5prime_mean": 0.4357,
+  "delta": -0.0094,
+  "wilcoxon_p_raw": 0.232421875,
+  "student_ci95": [
+    -0.0609,
+    0.0391
+  ],
+  "gates": {
+    "seed_mean_gt_ceiling": false,
+    "p_lt_0.05": false,
+    "student_ci_lower_gt_0": false
+  },
+  "exceeds": false
+}

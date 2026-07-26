@@ -1,0 +1,12 @@
+{
+  "field": "neuro",
+  "min_level": 2,
+  "concepts_kept_of_map": 64718,
+  "rows_with_both_authors_cached": 21844,
+  "rows_used": 21844,
+  "test_base_rate_restricted": 0.0941,
+  "test_base_rate_frozen": 0.2645,
+  "label_agreement_with_frozen": 0.8048,
+  "M3_auc_pr_restricted": 0.2487,
+  "composition_ceiling_restricted": 0.5157
+}

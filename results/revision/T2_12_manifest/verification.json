@@ -1,0 +1,349 @@
+{
+  "task": "T2.12",
+  "finding": "F7",
+  "claim": "the released manifest declares every edge type that build_graph constructs",
+  "verification": "graph rebuilt on CPU per discipline; edge types read off the built object and diffed against the regenerated manifest",
+  "all_fields_match": true,
+  "fields": {
+    "econ": {
+      "field": "econ",
+      "built_forward_edge_types": [
+        [
+          "advisor",
+          "advises",
+          "student"
+        ],
+        [
+          "advisor",
+          "studies",
+          "concept"
+        ],
+        [
+          "student",
+          "at",
+          "institution"
+        ],
+        [
+          "student",
+          "coauth",
+          "advisor"
+        ],
+        [
+          "student",
+          "studies",
+          "concept"
+        ]
+      ],
+      "declared_in_regenerated_manifest": [
+        [
+          "advisor",
+          "advises",
+          "student"
+        ],
+        [
+          "advisor",
+          "studies",
+          "concept"
+        ],
+        [
+          "student",
+          "at",
+          "institution"
+        ],
+        [
+          "student",
+          "coauth",
+          "advisor"
+        ],
+        [
+          "student",
+          "studies",
+          "concept"
+        ]
+      ],
+      "match": true,
+      "n_forward": 5,
+      "n_reverse": 5,
+      "n_total": 10,
+      "frozen_manifest_declared": [
+        "advising (student-advisor)",
+        "coauth_early (student-advisor)",
+        "student-institution"
+      ],
+      "frozen_manifest_n": 3,
+      "n_students": 2697
+    },
+    "math": {
+      "field": "math",
+      "built_forward_edge_types": [
+        [
+          "advisor",
+          "advises",
+          "student"
+        ],
+        [
+          "advisor",
+          "studies",
+          "concept"
+        ],
+        [
+          "student",
+          "at",
+          "institution"
+        ],
+        [
+          "student",
+          "coauth",
+          "advisor"
+        ],
+        [
+          "student",
+          "studies",
+          "concept"
+        ]
+      ],
+      "declared_in_regenerated_manifest": [
+        [
+          "advisor",
+          "advises",
+          "student"
+        ],
+        [
+          "advisor",
+          "studies",
+          "concept"
+        ],
+        [
+          "student",
+          "at",
+          "institution"
+        ],
+        [
+          "student",
+          "coauth",
+          "advisor"
+        ],
+        [
+          "student",
+          "studies",
+          "concept"
+        ]
+      ],
+      "match": true,
+      "n_forward": 5,
+      "n_reverse": 5,
+      "n_total": 10,
+      "frozen_manifest_declared": [
+        "advising (student-advisor)",
+        "coauth_early (student-advisor)",
+        "student-institution"
+      ],
+      "frozen_manifest_n": 3,
+      "n_students": 5051
+    },
+    "neuro": {
+      "field": "neuro",
+      "built_forward_edge_types": [
+        [
+          "advisor",
+          "advises",
+          "student"
+        ],
+        [
+          "advisor",
+          "studies",
+          "concept"
+        ],
+        [
+          "student",
+          "at",
+          "institution"
+        ],
+        [
+          "student",
+          "coauth",
+          "advisor"
+        ],
+        [
+          "student",
+          "studies",
+          "concept"
+        ]
+      ],
+      "declared_in_regenerated_manifest": [
+        [
+          "advisor",
+          "advises",
+          "student"
+        ],
+        [
+          "advisor",
+          "studies",
+          "concept"
+        ],
+        [
+          "student",
+          "at",
+          "institution"
+        ],
+        [
+          "student",
+          "coauth",
+          "advisor"
+        ],
+        [
+          "student",
+          "studies",
+          "concept"
+        ]
+      ],
+      "match": true,
+      "n_forward": 5,
+      "n_reverse": 5,
+      "n_total": 10,
+      "frozen_manifest_declared": [
+        "advising (student-advisor)",
+        "coauth_early (student-advisor)",
+        "student-institution"
+      ],
+      "frozen_manifest_n": 3,
+      "n_students": 21844
+    },
+    "physics": {
+      "field": "physics",
+      "built_forward_edge_types": [
+        [
+          "advisor",
+          "advises",
+          "student"
+        ],
+        [
+          "advisor",
+          "studies",
+          "concept"
+        ],
+        [
+          "student",
+          "at",
+          "institution"
+        ],
+        [
+          "student",
+          "coauth",
+          "advisor"
+        ],
+        [
+          "student",
+          "studies",
+          "concept"
+        ]
+      ],
+      "declared_in_regenerated_manifest": [
+        [
+          "advisor",
+          "advises",
+          "student"
+        ],
+        [
+          "advisor",
+          "studies",
+          "concept"
+        ],
+        [
+          "student",
+          "at",
+          "institution"
+        ],
+        [
+          "student",
+          "coauth",
+          "advisor"
+        ],
+        [
+          "student",
+          "studies",
+          "concept"
+        ]
+      ],
+      "match": true,
+      "n_forward": 5,
+      "n_reverse": 5,
+      "n_total": 10,
+      "frozen_manifest_declared": [
+        "advising (student-advisor)",
+        "coauth_early (student-advisor)",
+        "student-institution"
+      ],
+      "frozen_manifest_n": 3,
+      "n_students": 11809
+    },
+    "chemistry": {
+      "field": "chemistry",
+      "built_forward_edge_types": [
+        [
+          "advisor",
+          "advises",
+          "student"
+        ],
+        [
+          "advisor",
+          "studies",
+          "concept"
+        ],
+        [
+          "student",
+          "at",
+          "institution"
+        ],
+        [
+          "student",
+          "coauth",
+          "advisor"
+        ],
+        [
+          "student",
+          "studies",
+          "concept"
+        ]
+      ],
+      "declared_in_regenerated_manifest": [
+        [
+          "advisor",
+          "advises",
+          "student"
+        ],
+        [
+          "advisor",
+          "studies",
+          "concept"
+        ],
+        [
+          "student",
+          "at",
+          "institution"
+        ],
+        [
+          "student",
+          "coauth",
+          "advisor"
+        ],
+        [
+          "student",
+          "studies",
+          "concept"
+        ]
+      ],
+      "match": true,
+      "n_forward": 5,
+      "n_reverse": 5,
+      "n_total": 10,
+      "frozen_manifest_declared": [
+        "advising (student-advisor)",
+        "coauth_early (student-advisor)",
+        "student-institution"
+      ],
+      "frozen_manifest_n": 3,
+      "n_students": 26830
+    }
+  }
+}

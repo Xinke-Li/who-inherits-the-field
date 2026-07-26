@@ -1,0 +1,57 @@
+{
+  "field": "neuro",
+  "tabular_ceiling_mean_max_M2_M3": 0.4257,
+  "n_ceiling_seeds": 10,
+  "models": {
+    "hgt": {
+      "n_seeds": 10,
+      "seed_mean_auc_pr": 0.4286,
+      "delta_vs_ceiling_mean": 0.0028,
+      "paired_p": 0.431640625,
+      "bootstrap_ci_diff": [
+        -0.0151,
+        0.0161
+      ],
+      "paired_p_bh": 0.431641,
+      "exceeds_ceiling": false
+    },
+    "hgt_tuned": {
+      "n_seeds": 10,
+      "seed_mean_auc_pr": 0.4329,
+      "delta_vs_ceiling_mean": 0.0072,
+      "paired_p": 0.375,
+      "bootstrap_ci_diff": [
+        -0.0069,
+        0.0184
+      ],
+      "paired_p_bh": 0.431641,
+      "exceeds_ceiling": false
+    },
+    "rgcn": {
+      "n_seeds": 10,
+      "seed_mean_auc_pr": 0.4354,
+      "delta_vs_ceiling_mean": 0.0096,
+      "paired_p": 0.00390625,
+      "bootstrap_ci_diff": [
+        0.0058,
+        0.0133
+      ],
+      "paired_p_bh": 0.015625,
+      "exceeds_ceiling": true
+    },
+    "gat_cohort_time": {
+      "n_seeds": 10,
+      "seed_mean_auc_pr": 0.4188,
+      "delta_vs_ceiling_mean": -0.0069,
+      "paired_p": 0.083984375,
+      "bootstrap_ci_diff": [
+        -0.0125,
+        -0.001
+      ],
+      "paired_p_bh": 0.167969,
+      "exceeds_ceiling": false
+    }
+  },
+  "gates": "exceeds_ceiling requires seed_mean>ceiling AND BH p<0.05 AND bootstrap CI excludes 0",
+  "any_exceeds": true
+}

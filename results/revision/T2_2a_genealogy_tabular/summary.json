@@ -1,0 +1,212 @@
+{
+  "task": "T2.2a",
+  "reviewer_point": "B1",
+  "gate1_all_match_3dp": true,
+  "gate1": {
+    "econ": {
+      "reproduced_M5_auc_pr": 0.339,
+      "frozen_M5_auc_pr": 0.339,
+      "delta": -0.0,
+      "matches_3dp": true
+    },
+    "math": {
+      "reproduced_M5_auc_pr": 0.398,
+      "frozen_M5_auc_pr": 0.398,
+      "delta": -0.0,
+      "matches_3dp": true
+    },
+    "neuro": {
+      "reproduced_M5_auc_pr": 0.4231,
+      "frozen_M5_auc_pr": 0.423,
+      "delta": 0.0001,
+      "matches_3dp": true
+    },
+    "physics": {
+      "reproduced_M5_auc_pr": 0.6437,
+      "frozen_M5_auc_pr": 0.644,
+      "delta": -0.0003,
+      "matches_3dp": true
+    },
+    "chemistry": {
+      "reproduced_M5_auc_pr": 0.5307,
+      "frozen_M5_auc_pr": 0.531,
+      "delta": -0.0003,
+      "matches_3dp": true
+    }
+  },
+  "gate2": {
+    "econ": {
+      "mean_auc_pr": 0.3479,
+      "delta_vs_M5": 0.0089,
+      "wilcoxon_p_raw": 0.492188,
+      "p_BH": 0.492188,
+      "student_ci95": [
+        -0.0148,
+        0.0355
+      ],
+      "seeds_improved": 6,
+      "gates": {
+        "mean_gt_ceiling": true,
+        "p_adj_lt_0.05": false,
+        "student_ci_lower_gt_0": false
+      },
+      "exceeds": false
+    },
+    "math": {
+      "mean_auc_pr": 0.3918,
+      "delta_vs_M5": -0.0061,
+      "wilcoxon_p_raw": 0.130859,
+      "p_BH": 0.261719,
+      "student_ci95": [
+        -0.0188,
+        0.0061
+      ],
+      "seeds_improved": 3,
+      "gates": {
+        "mean_gt_ceiling": false,
+        "p_adj_lt_0.05": false,
+        "student_ci_lower_gt_0": false
+      },
+      "exceeds": false
+    },
+    "neuro": {
+      "mean_auc_pr": 0.428,
+      "delta_vs_M5": 0.005,
+      "wilcoxon_p_raw": 0.064453,
+      "p_BH": 0.128906,
+      "student_ci95": [
+        -0.0063,
+        0.0161
+      ],
+      "seeds_improved": 7,
+      "gates": {
+        "mean_gt_ceiling": true,
+        "p_adj_lt_0.05": false,
+        "student_ci_lower_gt_0": false
+      },
+      "exceeds": false
+    },
+    "physics": {
+      "mean_auc_pr": 0.6439,
+      "delta_vs_M5": 0.0002,
+      "wilcoxon_p_raw": 1.0,
+      "p_BH": 1.0,
+      "student_ci95": [
+        -0.0071,
+        0.0072
+      ],
+      "seeds_improved": 5,
+      "gates": {
+        "mean_gt_ceiling": true,
+        "p_adj_lt_0.05": false,
+        "student_ci_lower_gt_0": false
+      },
+      "exceeds": false
+    },
+    "chemistry": {
+      "mean_auc_pr": 0.5247,
+      "delta_vs_M5": -0.006,
+      "wilcoxon_p_raw": 0.013672,
+      "p_BH": 0.027344,
+      "student_ci95": [
+        -0.0131,
+        0.0014
+      ],
+      "seeds_improved": 2,
+      "gates": {
+        "mean_gt_ceiling": false,
+        "p_adj_lt_0.05": true,
+        "student_ci_lower_gt_0": false
+      },
+      "exceeds": false
+    }
+  },
+  "gate3": {
+    "econ": {
+      "mean_auc_pr": 0.3306,
+      "delta_vs_M5": -0.0084,
+      "wilcoxon_p_raw": 0.322266,
+      "p_BH": 0.492188,
+      "student_ci95": [
+        -0.0193,
+        0.003
+      ],
+      "seeds_improved": 3,
+      "gates": {
+        "mean_gt_ceiling": false,
+        "p_adj_lt_0.05": false,
+        "student_ci_lower_gt_0": false
+      },
+      "exceeds": false
+    },
+    "math": {
+      "mean_auc_pr": 0.3983,
+      "delta_vs_M5": 0.0004,
+      "wilcoxon_p_raw": 1.0,
+      "p_BH": 1.0,
+      "student_ci95": [
+        -0.0058,
+        0.0061
+      ],
+      "seeds_improved": 5,
+      "gates": {
+        "mean_gt_ceiling": true,
+        "p_adj_lt_0.05": false,
+        "student_ci_lower_gt_0": false
+      },
+      "exceeds": false
+    },
+    "neuro": {
+      "mean_auc_pr": 0.4228,
+      "delta_vs_M5": -0.0003,
+      "wilcoxon_p_raw": 0.921875,
+      "p_BH": 0.921875,
+      "student_ci95": [
+        -0.003,
+        0.0027
+      ],
+      "seeds_improved": 5,
+      "gates": {
+        "mean_gt_ceiling": false,
+        "p_adj_lt_0.05": false,
+        "student_ci_lower_gt_0": false
+      },
+      "exceeds": false
+    },
+    "physics": {
+      "mean_auc_pr": 0.6441,
+      "delta_vs_M5": 0.0004,
+      "wilcoxon_p_raw": 0.845703,
+      "p_BH": 1.0,
+      "student_ci95": [
+        -0.0021,
+        0.0025
+      ],
+      "seeds_improved": 5,
+      "gates": {
+        "mean_gt_ceiling": true,
+        "p_adj_lt_0.05": false,
+        "student_ci_lower_gt_0": false
+      },
+      "exceeds": false
+    },
+    "chemistry": {
+      "mean_auc_pr": 0.53,
+      "delta_vs_M5": -0.0007,
+      "wilcoxon_p_raw": 0.695312,
+      "p_BH": 0.695312,
+      "student_ci95": [
+        -0.0037,
+        0.0023
+      ],
+      "seeds_improved": 5,
+      "gates": {
+        "mean_gt_ceiling": false,
+        "p_adj_lt_0.05": false,
+        "student_ci_lower_gt_0": false
+      },
+      "exceeds": false
+    }
+  },
+  "ceiling_moves": []
+}

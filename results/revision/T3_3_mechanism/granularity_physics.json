@@ -1,0 +1,12 @@
+{
+  "field": "physics",
+  "min_level": 2,
+  "concepts_kept_of_map": 64718,
+  "rows_with_both_authors_cached": 11809,
+  "rows_used": 11809,
+  "test_base_rate_restricted": 0.1474,
+  "test_base_rate_frozen": 0.3589,
+  "label_agreement_with_frozen": 0.7723,
+  "M3_auc_pr_restricted": 0.3661,
+  "composition_ceiling_restricted": 0.5327
+}

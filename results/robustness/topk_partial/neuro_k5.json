@@ -1,0 +1,240 @@
+{
+  "n": 21843,
+  "base_rate": 0.4514,
+  "ladder": {
+    "M0_prior": {
+      "auc_pr": {
+        "mean": 0.46433727981518913,
+        "std": 0.0,
+        "n_seeds": 10
+      },
+      "auc_roc": {
+        "mean": 0.5,
+        "std": 0.0,
+        "n_seeds": 10
+      }
+    },
+    "M1_logit_overlap": {
+      "auc_pr": {
+        "mean": 0.5581239769430251,
+        "std": 0.0,
+        "n_seeds": 10
+      },
+      "auc_roc": {
+        "mean": 0.6314493905137385,
+        "std": 0.0,
+        "n_seeds": 10
+      },
+      "f1": {
+        "mean": 0.642981691368788,
+        "std": 1.1702778228589004e-16,
+        "n_seeds": 10
+      }
+    },
+    "M2_logit_tabular": {
+      "auc_pr": {
+        "mean": 0.5806848555285121,
+        "std": 1.1702778228589004e-16,
+        "n_seeds": 10
+      },
+      "auc_roc": {
+        "mean": 0.6333068485067922,
+        "std": 0.0,
+        "n_seeds": 10
+      },
+      "f1": {
+        "mean": 0.6292931531132284,
+        "std": 0.0,
+        "n_seeds": 10
+      }
+    },
+    "M3_gbdt_tabular": {
+      "auc_pr": {
+        "mean": 0.6043584379062729,
+        "std": 0.003021026564482332,
+        "n_seeds": 10
+      },
+      "auc_roc": {
+        "mean": 0.6463496030628528,
+        "std": 0.0019571934820961845,
+        "n_seeds": 10
+      },
+      "f1": {
+        "mean": 0.6405444027085893,
+        "std": 0.003876092677253814,
+        "n_seeds": 10
+      }
+    },
+    "M4_logit_tfidf": {
+      "auc_pr": {
+        "mean": 0.5368596535976164,
+        "std": 0.0,
+        "n_seeds": 10
+      },
+      "auc_roc": {
+        "mean": 0.5951914953534218,
+        "std": 1.1702778228589004e-16,
+        "n_seeds": 10
+      },
+      "f1": {
+        "mean": 0.6329625884732053,
+        "std": 0.0,
+        "n_seeds": 10
+      }
+    },
+    "M5_gbdt_nfa": {
+      "auc_pr": {
+        "mean": 0.6063564485214972,
+        "std": 0.004129063388161138,
+        "n_seeds": 10
+      },
+      "auc_roc": {
+        "mean": 0.6511694391921792,
+        "std": 0.0034553349478534975,
+        "n_seeds": 10
+      },
+      "f1": {
+        "mean": 0.6425469851355647,
+        "std": 0.004241420506360068,
+        "n_seeds": 10
+      }
+    }
+  },
+  "best_pure_tabular": {
+    "model": "M3_gbdt_tabular",
+    "auc_pr": 0.6043584379062729
+  },
+  "advisor_placebo": {
+    "L1_auc_pr_means": {
+      "true": 0.5581,
+      "placebo_cohort": 0.4818,
+      "placebo_random": 0.4802,
+      "field_mean": 0.5038
+    },
+    "gap_true_minus_cohort": 0.0763,
+    "placebo_band_max_L1": 0.5038,
+    "comparisons": [
+      {
+        "variant": "placebo_cohort",
+        "true_mean": 0.5581,
+        "placebo_mean": 0.4818,
+        "mean_diff": 0.0763,
+        "p_raw": 0.001953125,
+        "p_adj": 0.001953,
+        "significant": true
+      },
+      {
+        "variant": "placebo_random",
+        "true_mean": 0.5581,
+        "placebo_mean": 0.4802,
+        "mean_diff": 0.0779,
+        "p_raw": 0.001953125,
+        "p_adj": 0.001953,
+        "significant": true
+      },
+      {
+        "variant": "field_mean",
+        "true_mean": 0.5581,
+        "placebo_mean": 0.5038,
+        "mean_diff": 0.0543,
+        "p_raw": 0.001953125,
+        "p_adj": 0.001953,
+        "significant": true
+      }
+    ]
+  },
+  "self_persistence": {
+    "summary": {
+      "M1s_typicality": {
+        "auc_pr": {
+          "mean": 0.4949373426091725,
+          "std": 5.851389114294502e-17,
+          "n_seeds": 10
+        },
+        "auc_roc": {
+          "mean": 0.5510557053009884,
+          "std": 0.0,
+          "n_seeds": 10
+        },
+        "f1": {
+          "mean": 0.6341944389666734,
+          "std": 1.1702778228589004e-16,
+          "n_seeds": 10
+        }
+      },
+      "M1s_scalars": {
+        "auc_pr": {
+          "mean": 0.5476666536462984,
+          "std": 0.0,
+          "n_seeds": 10
+        },
+        "auc_roc": {
+          "mean": 0.5948914457362783,
+          "std": 1.1702778228589004e-16,
+          "n_seeds": 10
+        },
+        "f1": {
+          "mean": 0.6324173636001593,
+          "std": 0.0,
+          "n_seeds": 10
+        }
+      },
+      "M4s_tfidf": {
+        "auc_pr": {
+          "mean": 0.5023496253661106,
+          "std": 0.0,
+          "n_seeds": 10
+        },
+        "auc_roc": {
+          "mean": 0.5550822370626651,
+          "std": 0.0,
+          "n_seeds": 10
+        },
+        "f1": {
+          "mean": 0.6343298356761038,
+          "std": 0.0,
+          "n_seeds": 10
+        }
+      },
+      "M3s_gbdt": {
+        "auc_pr": {
+          "mean": 0.5499649303671772,
+          "std": 0.004561639091431349,
+          "n_seeds": 10
+        },
+        "auc_roc": {
+          "mean": 0.5948735768596372,
+          "std": 0.0024569443988561937,
+          "n_seeds": 10
+        },
+        "f1": {
+          "mean": 0.633786969713484,
+          "std": 0.0010220000735591541,
+          "n_seeds": 10
+        }
+      }
+    },
+    "verdict": {
+      "branch": "B_SELF_PERSISTENCE_EQUIVALENT",
+      "best_student_model": "M3s_gbdt",
+      "best_student_auc_pr": 0.55,
+      "M1_auc_pr": 0.5581,
+      "placebo_band_plus_margin": 0.5538,
+      "M1_minus_floor_ci95": [
+        -0.0172,
+        0.0279
+      ]
+    },
+    "note": "student ladder WITHOUT early_concentration (works store absent)"
+  },
+  "mechanism_branch": "B_SELF_PERSISTENCE_EQUIVALENT",
+  "field": "neuro",
+  "k": 5,
+  "min_score": 0.3,
+  "provenance": "rebuilt from live-API cache (r5); compare within the rebuilt family only",
+  "row_diagnostics": {
+    "n_no_cache": 0,
+    "n_empty_early": 1,
+    "n_fail_min_works": 7
+  }
+}

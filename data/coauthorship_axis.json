@@ -1,0 +1,43 @@
+{
+  "note": "early_window_coauth_openalex is the reported axis. All five disciplines share one resolver (pub-ID anchoring) on one 2026 snapshot, so the column is internally comparable. That resolver resolves a student only through indexed publications, and students who publish co-author with their advisor more often, so each rate sits above the rate in the full cohort. The bias runs one way in every field, so the rates are read only as an ordering of the disciplines, never as field-level population statistics. aft_ever_coauth_proxy is ranking-only and additionally coverage-confounded (see coauth_coverage_check).",
+  "axis": {
+    "econ": {
+      "early_window_coauth_openalex": 0.583,
+      "aft_ever_coauth_proxy": 0.1634,
+      "base_rate": 0.2024,
+      "n_students": 2698
+    },
+    "math": {
+      "early_window_coauth_openalex": 0.6777,
+      "aft_ever_coauth_proxy": 0.2934,
+      "base_rate": 0.201,
+      "n_students": 5051
+    },
+    "neuro": {
+      "early_window_coauth_openalex": 0.7625,
+      "aft_ever_coauth_proxy": 0.3744,
+      "base_rate": 0.251,
+      "n_students": 21846
+    },
+    "physics": {
+      "early_window_coauth_openalex": 0.7876,
+      "aft_ever_coauth_proxy": 0.4449,
+      "base_rate": 0.352,
+      "n_students": 11810
+    },
+    "chemistry": {
+      "early_window_coauth_openalex": 0.7905,
+      "aft_ever_coauth_proxy": 0.5524,
+      "base_rate": 0.2182,
+      "n_students": 26830
+    }
+  },
+  "early_window_known": {
+    "econ": 0.583,
+    "math": 0.6777,
+    "neuro": 0.7625,
+    "physics": 0.7876,
+    "chemistry": 0.7905
+  },
+  "early_window_range_ratio": 1.36
+}

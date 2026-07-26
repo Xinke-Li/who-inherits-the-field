@@ -1,0 +1,19 @@
+{
+  "field": "math",
+  "min_works": 3,
+  "raw_pairs": 29109,
+  "both_resolvable": 10456,
+  "both_in_works_store": 10456,
+  "survive_window_filters": 5086,
+  "modeled": 5051,
+  "drop_breakdown": {
+    "no_years": 1,
+    "adv_no_years": 3,
+    "too_recent": 545,
+    "implausible_t0": 275,
+    "span_gt_max": 1320,
+    "sparse_windows": 3226
+  },
+  "adv_id_coverage": 0.7509,
+  "st_id_coverage": 0.3997
+}

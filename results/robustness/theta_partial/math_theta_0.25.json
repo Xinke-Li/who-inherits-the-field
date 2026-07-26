@@ -1,0 +1,261 @@
+{
+  "theta": 0.25,
+  "base_rate": 0.077,
+  "base_rate_by_split": {
+    "test": 0.0695,
+    "train": 0.0778,
+    "val": 0.0829
+  },
+  "ladder": {
+    "M0_prior": {
+      "auc_pr": {
+        "mean": 0.06951871657754012,
+        "std": 1.4628472785736255e-17,
+        "n_seeds": 10
+      },
+      "auc_roc": {
+        "mean": 0.5,
+        "std": 0.0,
+        "n_seeds": 10
+      }
+    },
+    "M1_logit_overlap": {
+      "auc_pr": {
+        "mean": 0.15531530453709025,
+        "std": 2.925694557147251e-17,
+        "n_seeds": 10
+      },
+      "auc_roc": {
+        "mean": 0.7262511052166225,
+        "std": 0.0,
+        "n_seeds": 10
+      },
+      "f1": {
+        "mean": 0.2443438914027149,
+        "std": 2.925694557147251e-17,
+        "n_seeds": 10
+      }
+    },
+    "M2_logit_tabular": {
+      "auc_pr": {
+        "mean": 0.1958168843831154,
+        "std": 0.0,
+        "n_seeds": 10
+      },
+      "auc_roc": {
+        "mean": 0.7238549955791334,
+        "std": 1.1702778228589004e-16,
+        "n_seeds": 10
+      },
+      "f1": {
+        "mean": 0.22222222222222224,
+        "std": 2.925694557147251e-17,
+        "n_seeds": 10
+      }
+    },
+    "M3_gbdt_tabular": {
+      "auc_pr": {
+        "mean": 0.1693261252074127,
+        "std": 0.014279921332885408,
+        "n_seeds": 10
+      },
+      "auc_roc": {
+        "mean": 0.721921308576481,
+        "std": 0.011718115982266184,
+        "n_seeds": 10
+      },
+      "f1": {
+        "mean": 0.2150223634376022,
+        "std": 0.02788039050045389,
+        "n_seeds": 10
+      }
+    },
+    "M4_logit_tfidf": {
+      "auc_pr": {
+        "mean": 0.10348996285602882,
+        "std": 0.0,
+        "n_seeds": 10
+      },
+      "auc_roc": {
+        "mean": 0.5848275862068967,
+        "std": 1.1702778228589004e-16,
+        "n_seeds": 10
+      },
+      "f1": {
+        "mean": 0.18009478672985785,
+        "std": 2.925694557147251e-17,
+        "n_seeds": 10
+      }
+    },
+    "M5_gbdt_nfa": {
+      "auc_pr": {
+        "mean": 0.20308159604924936,
+        "std": 0.022196475503740373,
+        "n_seeds": 10
+      },
+      "auc_roc": {
+        "mean": 0.7523191865605658,
+        "std": 0.011970996867313356,
+        "n_seeds": 10
+      },
+      "f1": {
+        "mean": 0.2395520428471379,
+        "std": 0.023418210847005277,
+        "n_seeds": 10
+      }
+    }
+  },
+  "best_pure_tabular": {
+    "model": "M2_logit_tabular",
+    "auc_pr": 0.1958168843831154
+  },
+  "y_scrambling": {
+    "global": {
+      "auc_roc_mean": 0.4891,
+      "auc_roc_std": 0.0394,
+      "auc_pr_mean": 0.0759
+    },
+    "cohort": {
+      "auc_roc_mean": 0.5092,
+      "auc_roc_std": 0.0332,
+      "auc_pr_mean": 0.0823
+    },
+    "test_base_rate": 0.0695,
+    "verdict": "PASS"
+  },
+  "advisor_disjoint": {
+    "temporal_auc_pr": 0.1693,
+    "disjoint_auc_pr": 0.197,
+    "shift_auc_pr": 0.0277,
+    "test_base_rates": [
+      0.0695,
+      0.0706
+    ],
+    "verdict": "PASS"
+  },
+  "advisor_placebo": {
+    "L1_auc_pr_means": {
+      "true": 0.1553,
+      "placebo_cohort": 0.0758,
+      "placebo_random": 0.0776,
+      "field_mean": 0.0801
+    },
+    "gap_true_minus_cohort": 0.0795,
+    "placebo_band_max_L1": 0.0801,
+    "comparisons": [
+      {
+        "variant": "placebo_cohort",
+        "true_mean": 0.1553,
+        "placebo_mean": 0.0758,
+        "mean_diff": 0.0795,
+        "p_raw": 0.001953125,
+        "p_adj": 0.001953,
+        "significant": true
+      },
+      {
+        "variant": "placebo_random",
+        "true_mean": 0.1553,
+        "placebo_mean": 0.0776,
+        "mean_diff": 0.0777,
+        "p_raw": 0.001953125,
+        "p_adj": 0.001953,
+        "significant": true
+      },
+      {
+        "variant": "field_mean",
+        "true_mean": 0.1553,
+        "placebo_mean": 0.0801,
+        "mean_diff": 0.0752,
+        "p_raw": 0.001953125,
+        "p_adj": 0.001953,
+        "significant": true
+      }
+    ]
+  },
+  "self_persistence": {
+    "summary": {
+      "M1s_typicality": {
+        "auc_pr": {
+          "mean": 0.0744774814325794,
+          "std": 1.4628472785736255e-17,
+          "n_seeds": 10
+        },
+        "auc_roc": {
+          "mean": 0.5205039787798409,
+          "std": 0.0,
+          "n_seeds": 10
+        },
+        "f1": {
+          "mean": 0.1370967741935484,
+          "std": 2.925694557147251e-17,
+          "n_seeds": 10
+        }
+      },
+      "M1s_scalars": {
+        "auc_pr": {
+          "mean": 0.09190184918848357,
+          "std": 0.0,
+          "n_seeds": 10
+        },
+        "auc_roc": {
+          "mean": 0.5218390804597701,
+          "std": 0.0,
+          "n_seeds": 10
+        },
+        "f1": {
+          "mean": 0.1363636363636364,
+          "std": 2.925694557147251e-17,
+          "n_seeds": 10
+        }
+      },
+      "M4s_tfidf": {
+        "auc_pr": {
+          "mean": 0.08313462392588676,
+          "std": 0.0,
+          "n_seeds": 10
+        },
+        "auc_roc": {
+          "mean": 0.5422458001768347,
+          "std": 1.1702778228589004e-16,
+          "n_seeds": 10
+        },
+        "f1": {
+          "mean": 0.13846153846153847,
+          "std": 0.0,
+          "n_seeds": 10
+        }
+      },
+      "M3s_gbdt": {
+        "auc_pr": {
+          "mean": 0.09012861244296795,
+          "std": 0.006448728793572583,
+          "n_seeds": 10
+        },
+        "auc_roc": {
+          "mean": 0.54631741821397,
+          "std": 0.01841081808419624,
+          "n_seeds": 10
+        },
+        "f1": {
+          "mean": 0.13118269589580472,
+          "std": 0.0057649137127894195,
+          "n_seeds": 10
+        }
+      }
+    },
+    "verdict": {
+      "branch": "A_ADVISOR_INFORMATION_REQUIRED",
+      "best_student_model": "M1s_scalars",
+      "best_student_auc_pr": 0.0919,
+      "M1_auc_pr": 0.1553,
+      "placebo_band_plus_margin": 0.1301,
+      "M1_minus_floor_ci95": [
+        0.0031,
+        0.1323
+      ]
+    },
+    "note": "student ladder WITHOUT early_concentration (works store absent)"
+  },
+  "mechanism_branch": "A_ADVISOR_INFORMATION_REQUIRED",
+  "field": "math"
+}

@@ -1,0 +1,841 @@
+{
+  "experiment": "R2_continuous_label",
+  "note": "post-hoc robustness; no threshold; same split and features",
+  "fields": {
+    "chemistry": {
+      "experiment": "R2_continuous_label",
+      "field": "chemistry",
+      "target": "late_overlap",
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "summary": {
+        "M1r_ols_overlap": {
+          "spearman_rho": {
+            "mean": 0.3719,
+            "std": 0.0
+          },
+          "r2": {
+            "mean": 0.1425,
+            "std": 0.0
+          }
+        },
+        "M2r_ridge_tabular": {
+          "spearman_rho": {
+            "mean": 0.3956,
+            "std": 0.0
+          },
+          "r2": {
+            "mean": 0.1881,
+            "std": 0.0
+          }
+        },
+        "M3r_gbr_tabular": {
+          "spearman_rho": {
+            "mean": 0.4244,
+            "std": 0.0038
+          },
+          "r2": {
+            "mean": 0.2153,
+            "std": 0.0035
+          }
+        },
+        "M5r_gbr_nfa": {
+          "spearman_rho": {
+            "mean": 0.4261,
+            "std": 0.004
+          },
+          "r2": {
+            "mean": 0.2189,
+            "std": 0.0041
+          }
+        }
+      },
+      "per_seed": {
+        "M1r_ols_overlap": [
+          {
+            "spearman_rho": 0.3719,
+            "r2": 0.1425
+          }
+        ],
+        "M2r_ridge_tabular": [
+          {
+            "spearman_rho": 0.3956,
+            "r2": 0.1881
+          }
+        ],
+        "M3r_gbr_tabular": [
+          {
+            "spearman_rho": 0.4214,
+            "r2": 0.2124
+          },
+          {
+            "spearman_rho": 0.4203,
+            "r2": 0.2107
+          },
+          {
+            "spearman_rho": 0.427,
+            "r2": 0.2158
+          },
+          {
+            "spearman_rho": 0.4233,
+            "r2": 0.2121
+          },
+          {
+            "spearman_rho": 0.4238,
+            "r2": 0.2152
+          },
+          {
+            "spearman_rho": 0.4214,
+            "r2": 0.2149
+          },
+          {
+            "spearman_rho": 0.4197,
+            "r2": 0.213
+          },
+          {
+            "spearman_rho": 0.4297,
+            "r2": 0.2178
+          },
+          {
+            "spearman_rho": 0.4285,
+            "r2": 0.2197
+          },
+          {
+            "spearman_rho": 0.4287,
+            "r2": 0.2213
+          }
+        ],
+        "M5r_gbr_nfa": [
+          {
+            "spearman_rho": 0.4219,
+            "r2": 0.2133
+          },
+          {
+            "spearman_rho": 0.4246,
+            "r2": 0.2185
+          },
+          {
+            "spearman_rho": 0.432,
+            "r2": 0.2187
+          },
+          {
+            "spearman_rho": 0.4263,
+            "r2": 0.2178
+          },
+          {
+            "spearman_rho": 0.4313,
+            "r2": 0.2238
+          },
+          {
+            "spearman_rho": 0.4228,
+            "r2": 0.2146
+          },
+          {
+            "spearman_rho": 0.422,
+            "r2": 0.2171
+          },
+          {
+            "spearman_rho": 0.4278,
+            "r2": 0.2229
+          },
+          {
+            "spearman_rho": 0.4219,
+            "r2": 0.2161
+          },
+          {
+            "spearman_rho": 0.43,
+            "r2": 0.2259
+          }
+        ]
+      },
+      "ladder_ordering_rho": {
+        "values": [
+          0.3719,
+          0.3956,
+          0.4244,
+          0.4261
+        ],
+        "monotone_nondecreasing": true
+      },
+      "m1_share_of_best_rho": 0.8728
+    },
+    "econ": {
+      "experiment": "R2_continuous_label",
+      "field": "econ",
+      "target": "late_overlap",
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "summary": {
+        "M1r_ols_overlap": {
+          "spearman_rho": {
+            "mean": 0.4984,
+            "std": 0.0
+          },
+          "r2": {
+            "mean": 0.2123,
+            "std": 0.0
+          }
+        },
+        "M2r_ridge_tabular": {
+          "spearman_rho": {
+            "mean": 0.5001,
+            "std": 0.0
+          },
+          "r2": {
+            "mean": 0.1858,
+            "std": 0.0
+          }
+        },
+        "M3r_gbr_tabular": {
+          "spearman_rho": {
+            "mean": 0.4188,
+            "std": 0.0112
+          },
+          "r2": {
+            "mean": 0.1405,
+            "std": 0.0151
+          }
+        },
+        "M5r_gbr_nfa": {
+          "spearman_rho": {
+            "mean": 0.4445,
+            "std": 0.007
+          },
+          "r2": {
+            "mean": 0.161,
+            "std": 0.0131
+          }
+        }
+      },
+      "per_seed": {
+        "M1r_ols_overlap": [
+          {
+            "spearman_rho": 0.4984,
+            "r2": 0.2123
+          }
+        ],
+        "M2r_ridge_tabular": [
+          {
+            "spearman_rho": 0.5001,
+            "r2": 0.1858
+          }
+        ],
+        "M3r_gbr_tabular": [
+          {
+            "spearman_rho": 0.4164,
+            "r2": 0.1512
+          },
+          {
+            "spearman_rho": 0.4216,
+            "r2": 0.1396
+          },
+          {
+            "spearman_rho": 0.4247,
+            "r2": 0.1471
+          },
+          {
+            "spearman_rho": 0.4147,
+            "r2": 0.1477
+          },
+          {
+            "spearman_rho": 0.4167,
+            "r2": 0.1302
+          },
+          {
+            "spearman_rho": 0.4053,
+            "r2": 0.1406
+          },
+          {
+            "spearman_rho": 0.4385,
+            "r2": 0.1648
+          },
+          {
+            "spearman_rho": 0.4292,
+            "r2": 0.1384
+          },
+          {
+            "spearman_rho": 0.3993,
+            "r2": 0.1069
+          },
+          {
+            "spearman_rho": 0.422,
+            "r2": 0.1385
+          }
+        ],
+        "M5r_gbr_nfa": [
+          {
+            "spearman_rho": 0.4412,
+            "r2": 0.1681
+          },
+          {
+            "spearman_rho": 0.4462,
+            "r2": 0.1644
+          },
+          {
+            "spearman_rho": 0.4546,
+            "r2": 0.1744
+          },
+          {
+            "spearman_rho": 0.4416,
+            "r2": 0.1592
+          },
+          {
+            "spearman_rho": 0.43,
+            "r2": 0.1369
+          },
+          {
+            "spearman_rho": 0.4414,
+            "r2": 0.1595
+          },
+          {
+            "spearman_rho": 0.4497,
+            "r2": 0.1811
+          },
+          {
+            "spearman_rho": 0.4522,
+            "r2": 0.1584
+          },
+          {
+            "spearman_rho": 0.442,
+            "r2": 0.144
+          },
+          {
+            "spearman_rho": 0.4464,
+            "r2": 0.1641
+          }
+        ]
+      },
+      "ladder_ordering_rho": {
+        "values": [
+          0.4984,
+          0.5001,
+          0.4188,
+          0.4445
+        ],
+        "monotone_nondecreasing": false
+      },
+      "m1_share_of_best_rho": 0.9966
+    },
+    "math": {
+      "experiment": "R2_continuous_label",
+      "field": "math",
+      "target": "late_overlap",
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "summary": {
+        "M1r_ols_overlap": {
+          "spearman_rho": {
+            "mean": 0.4362,
+            "std": 0.0
+          },
+          "r2": {
+            "mean": 0.17,
+            "std": 0.0
+          }
+        },
+        "M2r_ridge_tabular": {
+          "spearman_rho": {
+            "mean": 0.4283,
+            "std": 0.0
+          },
+          "r2": {
+            "mean": 0.1269,
+            "std": 0.0
+          }
+        },
+        "M3r_gbr_tabular": {
+          "spearman_rho": {
+            "mean": 0.4675,
+            "std": 0.0128
+          },
+          "r2": {
+            "mean": 0.1877,
+            "std": 0.0126
+          }
+        },
+        "M5r_gbr_nfa": {
+          "spearman_rho": {
+            "mean": 0.4704,
+            "std": 0.0099
+          },
+          "r2": {
+            "mean": 0.1874,
+            "std": 0.0082
+          }
+        }
+      },
+      "per_seed": {
+        "M1r_ols_overlap": [
+          {
+            "spearman_rho": 0.4362,
+            "r2": 0.17
+          }
+        ],
+        "M2r_ridge_tabular": [
+          {
+            "spearman_rho": 0.4283,
+            "r2": 0.1269
+          }
+        ],
+        "M3r_gbr_tabular": [
+          {
+            "spearman_rho": 0.4667,
+            "r2": 0.1828
+          },
+          {
+            "spearman_rho": 0.4793,
+            "r2": 0.2005
+          },
+          {
+            "spearman_rho": 0.4745,
+            "r2": 0.1893
+          },
+          {
+            "spearman_rho": 0.4674,
+            "r2": 0.191
+          },
+          {
+            "spearman_rho": 0.463,
+            "r2": 0.1814
+          },
+          {
+            "spearman_rho": 0.4595,
+            "r2": 0.1847
+          },
+          {
+            "spearman_rho": 0.4644,
+            "r2": 0.1937
+          },
+          {
+            "spearman_rho": 0.4521,
+            "r2": 0.1711
+          },
+          {
+            "spearman_rho": 0.4535,
+            "r2": 0.1708
+          },
+          {
+            "spearman_rho": 0.4949,
+            "r2": 0.2117
+          }
+        ],
+        "M5r_gbr_nfa": [
+          {
+            "spearman_rho": 0.4764,
+            "r2": 0.1844
+          },
+          {
+            "spearman_rho": 0.4735,
+            "r2": 0.1911
+          },
+          {
+            "spearman_rho": 0.484,
+            "r2": 0.1993
+          },
+          {
+            "spearman_rho": 0.4526,
+            "r2": 0.1776
+          },
+          {
+            "spearman_rho": 0.4769,
+            "r2": 0.1939
+          },
+          {
+            "spearman_rho": 0.4619,
+            "r2": 0.1774
+          },
+          {
+            "spearman_rho": 0.4647,
+            "r2": 0.1909
+          },
+          {
+            "spearman_rho": 0.4814,
+            "r2": 0.1955
+          },
+          {
+            "spearman_rho": 0.4624,
+            "r2": 0.1765
+          },
+          {
+            "spearman_rho": 0.4705,
+            "r2": 0.1872
+          }
+        ]
+      },
+      "ladder_ordering_rho": {
+        "values": [
+          0.4362,
+          0.4283,
+          0.4675,
+          0.4704
+        ],
+        "monotone_nondecreasing": false
+      },
+      "m1_share_of_best_rho": 0.9273
+    },
+    "neuro": {
+      "experiment": "R2_continuous_label",
+      "field": "neuro",
+      "target": "late_overlap",
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "summary": {
+        "M1r_ols_overlap": {
+          "spearman_rho": {
+            "mean": 0.3003,
+            "std": 0.0
+          },
+          "r2": {
+            "mean": 0.0872,
+            "std": 0.0
+          }
+        },
+        "M2r_ridge_tabular": {
+          "spearman_rho": {
+            "mean": 0.2977,
+            "std": 0.0
+          },
+          "r2": {
+            "mean": 0.0867,
+            "std": 0.0
+          }
+        },
+        "M3r_gbr_tabular": {
+          "spearman_rho": {
+            "mean": 0.332,
+            "std": 0.0038
+          },
+          "r2": {
+            "mean": 0.116,
+            "std": 0.0039
+          }
+        },
+        "M5r_gbr_nfa": {
+          "spearman_rho": {
+            "mean": 0.3313,
+            "std": 0.0037
+          },
+          "r2": {
+            "mean": 0.1132,
+            "std": 0.0035
+          }
+        }
+      },
+      "per_seed": {
+        "M1r_ols_overlap": [
+          {
+            "spearman_rho": 0.3003,
+            "r2": 0.0872
+          }
+        ],
+        "M2r_ridge_tabular": [
+          {
+            "spearman_rho": 0.2977,
+            "r2": 0.0867
+          }
+        ],
+        "M3r_gbr_tabular": [
+          {
+            "spearman_rho": 0.331,
+            "r2": 0.1169
+          },
+          {
+            "spearman_rho": 0.3321,
+            "r2": 0.1166
+          },
+          {
+            "spearman_rho": 0.337,
+            "r2": 0.1212
+          },
+          {
+            "spearman_rho": 0.3277,
+            "r2": 0.1123
+          },
+          {
+            "spearman_rho": 0.3325,
+            "r2": 0.1166
+          },
+          {
+            "spearman_rho": 0.3295,
+            "r2": 0.1152
+          },
+          {
+            "spearman_rho": 0.3324,
+            "r2": 0.1156
+          },
+          {
+            "spearman_rho": 0.3295,
+            "r2": 0.1122
+          },
+          {
+            "spearman_rho": 0.3284,
+            "r2": 0.1105
+          },
+          {
+            "spearman_rho": 0.3399,
+            "r2": 0.1231
+          }
+        ],
+        "M5r_gbr_nfa": [
+          {
+            "spearman_rho": 0.328,
+            "r2": 0.1147
+          },
+          {
+            "spearman_rho": 0.3367,
+            "r2": 0.1144
+          },
+          {
+            "spearman_rho": 0.3321,
+            "r2": 0.113
+          },
+          {
+            "spearman_rho": 0.3309,
+            "r2": 0.1148
+          },
+          {
+            "spearman_rho": 0.3283,
+            "r2": 0.1104
+          },
+          {
+            "spearman_rho": 0.3316,
+            "r2": 0.1152
+          },
+          {
+            "spearman_rho": 0.3258,
+            "r2": 0.1043
+          },
+          {
+            "spearman_rho": 0.3297,
+            "r2": 0.1137
+          },
+          {
+            "spearman_rho": 0.3327,
+            "r2": 0.116
+          },
+          {
+            "spearman_rho": 0.3373,
+            "r2": 0.1151
+          }
+        ]
+      },
+      "ladder_ordering_rho": {
+        "values": [
+          0.3003,
+          0.2977,
+          0.332,
+          0.3313
+        ],
+        "monotone_nondecreasing": false
+      },
+      "m1_share_of_best_rho": 0.9045
+    },
+    "physics": {
+      "experiment": "R2_continuous_label",
+      "field": "physics",
+      "target": "late_overlap",
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "summary": {
+        "M1r_ols_overlap": {
+          "spearman_rho": {
+            "mean": 0.4442,
+            "std": 0.0
+          },
+          "r2": {
+            "mean": 0.2082,
+            "std": 0.0
+          }
+        },
+        "M2r_ridge_tabular": {
+          "spearman_rho": {
+            "mean": 0.4871,
+            "std": 0.0
+          },
+          "r2": {
+            "mean": 0.2539,
+            "std": 0.0
+          }
+        },
+        "M3r_gbr_tabular": {
+          "spearman_rho": {
+            "mean": 0.5019,
+            "std": 0.0024
+          },
+          "r2": {
+            "mean": 0.2745,
+            "std": 0.0058
+          }
+        },
+        "M5r_gbr_nfa": {
+          "spearman_rho": {
+            "mean": 0.5086,
+            "std": 0.0028
+          },
+          "r2": {
+            "mean": 0.2804,
+            "std": 0.0045
+          }
+        }
+      },
+      "per_seed": {
+        "M1r_ols_overlap": [
+          {
+            "spearman_rho": 0.4442,
+            "r2": 0.2082
+          }
+        ],
+        "M2r_ridge_tabular": [
+          {
+            "spearman_rho": 0.4871,
+            "r2": 0.2539
+          }
+        ],
+        "M3r_gbr_tabular": [
+          {
+            "spearman_rho": 0.4979,
+            "r2": 0.2697
+          },
+          {
+            "spearman_rho": 0.5014,
+            "r2": 0.2797
+          },
+          {
+            "spearman_rho": 0.5021,
+            "r2": 0.2687
+          },
+          {
+            "spearman_rho": 0.4995,
+            "r2": 0.2636
+          },
+          {
+            "spearman_rho": 0.5036,
+            "r2": 0.2769
+          },
+          {
+            "spearman_rho": 0.5066,
+            "r2": 0.2773
+          },
+          {
+            "spearman_rho": 0.501,
+            "r2": 0.282
+          },
+          {
+            "spearman_rho": 0.5028,
+            "r2": 0.2715
+          },
+          {
+            "spearman_rho": 0.5008,
+            "r2": 0.2787
+          },
+          {
+            "spearman_rho": 0.5034,
+            "r2": 0.2769
+          }
+        ],
+        "M5r_gbr_nfa": [
+          {
+            "spearman_rho": 0.5025,
+            "r2": 0.2704
+          },
+          {
+            "spearman_rho": 0.5116,
+            "r2": 0.2846
+          },
+          {
+            "spearman_rho": 0.511,
+            "r2": 0.2791
+          },
+          {
+            "spearman_rho": 0.5092,
+            "r2": 0.2783
+          },
+          {
+            "spearman_rho": 0.5096,
+            "r2": 0.28
+          },
+          {
+            "spearman_rho": 0.5065,
+            "r2": 0.2789
+          },
+          {
+            "spearman_rho": 0.506,
+            "r2": 0.2856
+          },
+          {
+            "spearman_rho": 0.51,
+            "r2": 0.2807
+          },
+          {
+            "spearman_rho": 0.5098,
+            "r2": 0.2808
+          },
+          {
+            "spearman_rho": 0.5098,
+            "r2": 0.2858
+          }
+        ]
+      },
+      "ladder_ordering_rho": {
+        "values": [
+          0.4442,
+          0.4871,
+          0.5019,
+          0.5086
+        ],
+        "monotone_nondecreasing": true
+      },
+      "m1_share_of_best_rho": 0.8734
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "n_rows": 11809,
+  "n_covered": 11809,
+  "match_within_1e6": 0.997,
+  "abs_delta": {
+    "mean": 0.0002,
+    "median": 0.0,
+    "p90": 0.0,
+    "max": 0.1099
+  },
+  "label_agreement": 0.9995,
+  "label_kappa": 0.9989,
+  "base_rate_frozen": 0.352,
+  "base_rate_rebuilt": 0.3519
+}

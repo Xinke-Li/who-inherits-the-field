@@ -1,0 +1,1229 @@
+{
+  "task": "T2.4",
+  "what": "the student-only floor of r1_theta_sweep and r6_topk_sweep, rerun with all five e14 student-side features",
+  "fifth_feature_source": "r47_early_concentration.py, reconstructed from results/robustness/openalex_cache/ (r5 live-API fetch), because the builder's works store is in neither repository nor archive",
+  "branch_rule": "e14 branch A/B/C, thresholds 0.05, unchanged",
+  "branch_label_map": {
+    "A_ADVISOR_INFORMATION_REQUIRED": "advisor-required",
+    "B_SELF_PERSISTENCE_EQUIVALENT": "self-persistence",
+    "C_INTERMEDIATE": "advisor-adds"
+  },
+  "tfidf_footing": {
+    "primary": "legacy (all-rows fit), the footing of every recorded number, so four against five isolates the feature",
+    "second_arm": "partial_w5repaired/, the current train-only fit",
+    "why": "the W5 repair changed student_tfidf's default and was never carried back through the recorded artifacts; r1's own four-feature floor does not reproduce r1's recorded numbers under the repaired default"
+  },
+  "fields": {
+    "chemistry": {
+      "cells": {
+        "theta_0.10": {
+          "floor_four": 0.7565,
+          "floor_five": 0.7583,
+          "floor_delta": 0.0018,
+          "rung_four": "M3s_gbdt",
+          "rung_five": "M3s_gbdt",
+          "M1": 0.7713,
+          "ci_four": [
+            -0.0073,
+            0.0228
+          ],
+          "ci_five": [
+            -0.0055,
+            0.0249
+          ],
+          "branch_four": "B_SELF_PERSISTENCE_EQUIVALENT",
+          "branch_five": "B_SELF_PERSISTENCE_EQUIVALENT"
+        },
+        "theta_0.15": {
+          "floor_four": 0.5755,
+          "floor_five": 0.5746,
+          "floor_delta": -0.0009,
+          "rung_four": "M3s_gbdt",
+          "rung_five": "M1s_scalars",
+          "M1": 0.5711,
+          "ci_four": [
+            -0.0233,
+            0.0196
+          ],
+          "ci_five": [
+            -0.0242,
+            0.0176
+          ],
+          "branch_four": "B_SELF_PERSISTENCE_EQUIVALENT",
+          "branch_five": "B_SELF_PERSISTENCE_EQUIVALENT"
+        },
+        "theta_0.20": {
+          "floor_four": 0.4615,
+          "floor_five": 0.4617,
+          "floor_delta": 0.0002,
+          "rung_four": "M1s_scalars",
+          "rung_five": "M1s_scalars",
+          "M1": 0.4186,
+          "ci_four": [
+            -0.07,
+            -0.0161
+          ],
+          "ci_five": [
+            -0.0703,
+            -0.0162
+          ],
+          "branch_four": "B_SELF_PERSISTENCE_EQUIVALENT",
+          "branch_five": "B_SELF_PERSISTENCE_EQUIVALENT"
+        },
+        "theta_0.25": {
+          "floor_four": 0.2963,
+          "floor_five": 0.2965,
+          "floor_delta": 0.0002,
+          "rung_four": "M3s_gbdt",
+          "rung_five": "M3s_gbdt",
+          "M1": 0.2606,
+          "ci_four": [
+            -0.072,
+            -0.0082
+          ],
+          "ci_five": [
+            -0.0782,
+            -0.0129
+          ],
+          "branch_four": "B_SELF_PERSISTENCE_EQUIVALENT",
+          "branch_five": "B_SELF_PERSISTENCE_EQUIVALENT"
+        },
+        "theta_0.30": {
+          "floor_four": 0.2882,
+          "floor_five": 0.2881,
+          "floor_delta": -0.0001,
+          "rung_four": "M3s_gbdt",
+          "rung_five": "M3s_gbdt",
+          "M1": 0.2542,
+          "ci_four": [
+            -0.0688,
+            -0.0036
+          ],
+          "ci_five": [
+            -0.0745,
+            -0.0109
+          ],
+          "branch_four": "B_SELF_PERSISTENCE_EQUIVALENT",
+          "branch_five": "B_SELF_PERSISTENCE_EQUIVALENT"
+        },
+        "k5": {
+          "floor_four": 0.5649,
+          "floor_five": 0.5665,
+          "floor_delta": 0.0016,
+          "rung_four": "M1s_scalars",
+          "rung_five": "M1s_scalars",
+          "M1": 0.5564,
+          "ci_four": [
+            -0.0282,
+            0.0109
+          ],
+          "ci_five": [
+            -0.0299,
+            0.0097
+          ],
+          "branch_four": "B_SELF_PERSISTENCE_EQUIVALENT",
+          "branch_five": "B_SELF_PERSISTENCE_EQUIVALENT"
+        },
+        "k10": {
+          "floor_four": 0.4615,
+          "floor_five": 0.4617,
+          "floor_delta": 0.0002,
+          "rung_four": "M1s_scalars",
+          "rung_five": "M1s_scalars",
+          "M1": 0.4187,
+          "ci_four": [
+            -0.0699,
+            -0.0159
+          ],
+          "ci_five": [
+            -0.0701,
+            -0.0161
+          ],
+          "branch_four": "B_SELF_PERSISTENCE_EQUIVALENT",
+          "branch_five": "B_SELF_PERSISTENCE_EQUIVALENT"
+        },
+        "k15": {
+          "floor_four": 0.314,
+          "floor_five": 0.3172,
+          "floor_delta": 0.0032,
+          "rung_four": "M3s_gbdt",
+          "rung_five": "M3s_gbdt",
+          "M1": 0.322,
+          "ci_four": [
+            -0.0287,
+            0.0344
+          ],
+          "ci_five": [
+            -0.033,
+            0.0303
+          ],
+          "branch_four": "B_SELF_PERSISTENCE_EQUIVALENT",
+          "branch_five": "B_SELF_PERSISTENCE_EQUIVALENT"
+        },
+        "k20": {
+          "floor_four": 0.331,
+          "floor_five": 0.3293,
+          "floor_delta": -0.0017,
+          "rung_four": "M3s_gbdt",
+          "rung_five": "M3s_gbdt",
+          "M1": 0.3355,
+          "ci_four": [
+            -0.0289,
+            0.0387
+          ],
+          "ci_five": [
+            -0.0298,
+            0.036
+          ],
+          "branch_four": "B_SELF_PERSISTENCE_EQUIVALENT",
+          "branch_five": "B_SELF_PERSISTENCE_EQUIVALENT"
+        },
+        "k10_ms0.2": {
+          "floor_four": 0.4594,
+          "floor_five": 0.4594,
+          "floor_delta": 0.0,
+          "rung_four": "M1s_scalars",
+          "rung_five": "M1s_scalars",
+          "M1": 0.4202,
+          "ci_four": [
+            -0.0663,
+            -0.013
+          ],
+          "ci_five": [
+            -0.0663,
+            -0.013
+          ],
+          "branch_four": "B_SELF_PERSISTENCE_EQUIVALENT",
+          "branch_five": "B_SELF_PERSISTENCE_EQUIVALENT"
+        },
+        "k10_ms0.4": {
+          "floor_four": 0.4105,
+          "floor_five": 0.4108,
+          "floor_delta": 0.0003,
+          "rung_four": "M1s_scalars",
+          "rung_five": "M1s_scalars",
+          "M1": 0.37,
+          "ci_four": [
+            -0.0678,
+            -0.0141
+          ],
+          "ci_five": [
+            -0.0684,
+            -0.0143
+          ],
+          "branch_four": "B_SELF_PERSISTENCE_EQUIVALENT",
+          "branch_five": "B_SELF_PERSISTENCE_EQUIVALENT"
+        }
+      },
+      "n_cells": 11,
+      "n_branch_moves": 0,
+      "five_feature_w5repaired_arm": {}
+    },
+    "econ": {
+      "cells": {
+        "theta_0.10": {
+          "floor_four": 0.7926,
+          "floor_five": 0.7947,
+          "floor_delta": 0.0021,
+          "rung_four": "M1s_scalars",
+          "rung_five": "M1s_scalars",
+          "M1": 0.8293,
+          "ci_four": [
+            -0.0049,
+            0.0807
+          ],
+          "ci_five": [
+            -0.0052,
+            0.0768
+          ],
+          "branch_four": "B_SELF_PERSISTENCE_EQUIVALENT",
+          "branch_five": "B_SELF_PERSISTENCE_EQUIVALENT"
+        },
+        "theta_0.15": {
+          "floor_four": 0.5216,
+          "floor_five": 0.5275,
+          "floor_delta": 0.0059,
+          "rung_four": "M1s_scalars",
+          "rung_five": "M1s_scalars",
+          "M1": 0.6102,
+          "ci_four": [
+            0.0136,
+            0.1569
+          ],
+          "ci_five": [
+            0.0094,
+            0.1546
+          ],
+          "branch_four": "C_INTERMEDIATE",
+          "branch_five": "C_INTERMEDIATE"
+        },
+        "theta_0.20": {
+          "floor_four": 0.3203,
+          "floor_five": 0.3165,
+          "floor_delta": -0.0038,
+          "rung_four": "M1s_scalars",
+          "rung_five": "M1s_scalars",
+          "M1": 0.3462,
+          "ci_four": [
+            -0.0564,
+            0.1038
+          ],
+          "ci_five": [
+            -0.0539,
+            0.1077
+          ],
+          "branch_four": "B_SELF_PERSISTENCE_EQUIVALENT",
+          "branch_five": "B_SELF_PERSISTENCE_EQUIVALENT"
+        },
+        "theta_0.25": {
+          "floor_four": 0.1706,
+          "floor_five": 0.1707,
+          "floor_delta": 0.0001,
+          "rung_four": "M1s_scalars",
+          "rung_five": "M1s_scalars",
+          "M1": 0.1798,
+          "ci_four": [
+            -0.1154,
+            0.1025
+          ],
+          "ci_five": [
+            -0.1159,
+            0.1024
+          ],
+          "branch_four": "B_SELF_PERSISTENCE_EQUIVALENT",
+          "branch_five": "B_SELF_PERSISTENCE_EQUIVALENT"
+        },
+        "theta_0.30": {
+          "floor_four": 0.1612,
+          "floor_five": 0.1662,
+          "floor_delta": 0.005,
+          "rung_four": "M1s_scalars",
+          "rung_five": "M1s_scalars",
+          "M1": 0.1798,
+          "ci_four": [
+            -0.0991,
+            0.1107
+          ],
+          "ci_five": [
+            -0.1104,
+            0.1074
+          ],
+          "branch_four": "B_SELF_PERSISTENCE_EQUIVALENT",
+          "branch_five": "B_SELF_PERSISTENCE_EQUIVALENT"
+        },
+        "k5": {
+          "floor_four": 0.4821,
+          "floor_five": 0.4833,
+          "floor_delta": 0.0012,
+          "rung_four": "M1s_scalars",
+          "rung_five": "M1s_scalars",
+          "M1": 0.509,
+          "ci_four": [
+            -0.0399,
+            0.0885
+          ],
+          "ci_five": [
+            -0.0388,
+            0.0888
+          ],
+          "branch_four": "B_SELF_PERSISTENCE_EQUIVALENT",
+          "branch_five": "B_SELF_PERSISTENCE_EQUIVALENT"
+        },
+        "k10": {
+          "floor_four": 0.3195,
+          "floor_five": 0.3165,
+          "floor_delta": -0.003,
+          "rung_four": "M1s_scalars",
+          "rung_five": "M1s_scalars",
+          "M1": 0.3464,
+          "ci_four": [
+            -0.0576,
+            0.1038
+          ],
+          "ci_five": [
+            -0.0557,
+            0.1086
+          ],
+          "branch_four": "B_SELF_PERSISTENCE_EQUIVALENT",
+          "branch_five": "B_SELF_PERSISTENCE_EQUIVALENT"
+        },
+        "k15": {
+          "floor_four": 0.1748,
+          "floor_five": 0.1698,
+          "floor_delta": -0.005,
+          "rung_four": "M4s_tfidf",
+          "rung_five": "M4s_tfidf",
+          "M1": 0.245,
+          "ci_four": [
+            -0.0635,
+            0.1856
+          ],
+          "ci_five": [
+            -0.0508,
+            0.189
+          ],
+          "branch_four": "B_SELF_PERSISTENCE_EQUIVALENT",
+          "branch_five": "B_SELF_PERSISTENCE_EQUIVALENT"
+        },
+        "k20": {
+          "floor_four": 0.2293,
+          "floor_five": 0.2278,
+          "floor_delta": -0.0015,
+          "rung_four": "M1s_scalars",
+          "rung_five": "M1s_scalars",
+          "M1": 0.3791,
+          "ci_four": [
+            0.0469,
+            0.2559
+          ],
+          "ci_five": [
+            0.0531,
+            0.2564
+          ],
+          "branch_four": "A_ADVISOR_INFORMATION_REQUIRED",
+          "branch_five": "A_ADVISOR_INFORMATION_REQUIRED"
+        },
+        "k10_ms0.2": {
+          "floor_four": 0.3238,
+          "floor_five": 0.3223,
+          "floor_delta": -0.0015,
+          "rung_four": "M1s_scalars",
+          "rung_five": "M1s_scalars",
+          "M1": 0.3464,
+          "ci_four": [
+            -0.0626,
+            0.1007
+          ],
+          "ci_five": [
+            -0.0646,
+            0.1049
+          ],
+          "branch_four": "B_SELF_PERSISTENCE_EQUIVALENT",
+          "branch_five": "B_SELF_PERSISTENCE_EQUIVALENT"
+        },
+        "k10_ms0.4": {
+          "floor_four": 0.3018,
+          "floor_five": 0.3054,
+          "floor_delta": 0.0036,
+          "rung_four": "M1s_scalars",
+          "rung_five": "M1s_scalars",
+          "M1": 0.3292,
+          "ci_four": [
+            -0.0695,
+            0.1213
+          ],
+          "ci_five": [
+            -0.0737,
+            0.1198
+          ],
+          "branch_four": "B_SELF_PERSISTENCE_EQUIVALENT",
+          "branch_five": "B_SELF_PERSISTENCE_EQUIVALENT"
+        }
+      },
+      "n_cells": 11,
+      "n_branch_moves": 0,
+      "five_feature_w5repaired_arm": {
+        "theta_0.10": {
+          "floor": 0.7947,
+          "ci": [
+            -0.0052,
+            0.0768
+          ],
+          "branch": "B_SELF_PERSISTENCE_EQUIVALENT"
+        },
+        "theta_0.15": {
+          "floor": 0.5277,
+          "ci": [
+            0.0096,
+            0.1542
+          ],
+          "branch": "C_INTERMEDIATE"
+        },
+        "theta_0.20": {
+          "floor": 0.3164,
+          "ci": [
+            -0.0539,
+            0.1076
+          ],
+          "branch": "B_SELF_PERSISTENCE_EQUIVALENT"
+        },
+        "theta_0.25": {
+          "floor": 0.1707,
+          "ci": [
+            -0.1159,
+            0.1024
+          ],
+          "branch": "B_SELF_PERSISTENCE_EQUIVALENT"
+        },
+        "theta_0.30": {
+          "floor": 0.1662,
+          "ci": [
+            -0.1104,
+            0.1074
+          ],
+          "branch": "B_SELF_PERSISTENCE_EQUIVALENT"
+        }
+      }
+    },
+    "math": {
+      "cells": {
+        "theta_0.10": {
+          "floor_four": 0.7841,
+          "floor_five": 0.7806,
+          "floor_delta": -0.0035,
+          "rung_four": "M3s_gbdt",
+          "rung_five": "M3s_gbdt",
+          "M1": 0.7963,
+          "ci_four": [
+            -0.0265,
+            0.0427
+          ],
+          "ci_five": [
+            -0.0184,
+            0.0531
+          ],
+          "branch_four": "B_SELF_PERSISTENCE_EQUIVALENT",
+          "branch_five": "B_SELF_PERSISTENCE_EQUIVALENT"
+        },
+        "theta_0.15": {
+          "floor_four": 0.5387,
+          "floor_five": 0.5402,
+          "floor_delta": 0.0015,
+          "rung_four": "M3s_gbdt",
+          "rung_five": "M3s_gbdt",
+          "M1": 0.5782,
+          "ci_four": [
+            -0.0124,
+            0.0874
+          ],
+          "ci_five": [
+            -0.0038,
+            0.0984
+          ],
+          "branch_four": "B_SELF_PERSISTENCE_EQUIVALENT",
+          "branch_five": "B_SELF_PERSISTENCE_EQUIVALENT"
+        },
+        "theta_0.20": {
+          "floor_four": 0.306,
+          "floor_five": 0.3075,
+          "floor_delta": 0.0015,
+          "rung_four": "M3s_gbdt",
+          "rung_five": "M3s_gbdt",
+          "M1": 0.3825,
+          "ci_four": [
+            -0.0035,
+            0.1302
+          ],
+          "ci_five": [
+            0.0089,
+            0.1366
+          ],
+          "branch_four": "B_SELF_PERSISTENCE_EQUIVALENT",
+          "branch_five": "C_INTERMEDIATE"
+        },
+        "theta_0.25": {
+          "floor_four": 0.0919,
+          "floor_five": 0.0948,
+          "floor_delta": 0.0029,
+          "rung_four": "M1s_scalars",
+          "rung_five": "M3s_gbdt",
+          "M1": 0.1553,
+          "ci_four": [
+            0.0031,
+            0.1323
+          ],
+          "ci_five": [
+            -0.0087,
+            0.1314
+          ],
+          "branch_four": "A_ADVISOR_INFORMATION_REQUIRED",
+          "branch_five": "B_SELF_PERSISTENCE_EQUIVALENT"
+        },
+        "theta_0.30": {
+          "floor_four": 0.0931,
+          "floor_five": 0.0936,
+          "floor_delta": 0.0005,
+          "rung_four": "M3s_gbdt",
+          "rung_five": "M1s_scalars",
+          "M1": 0.1562,
+          "ci_four": [
+            0.0167,
+            0.1399
+          ],
+          "ci_five": [
+            0.0019,
+            0.1308
+          ],
+          "branch_four": "A_ADVISOR_INFORMATION_REQUIRED",
+          "branch_five": "A_ADVISOR_INFORMATION_REQUIRED"
+        },
+        "k5": {
+          "floor_four": 0.5492,
+          "floor_five": 0.5537,
+          "floor_delta": 0.0045,
+          "rung_four": "M3s_gbdt",
+          "rung_five": "M3s_gbdt",
+          "M1": 0.5671,
+          "ci_four": [
+            -0.0376,
+            0.0607
+          ],
+          "ci_five": [
+            -0.0366,
+            0.0631
+          ],
+          "branch_four": "B_SELF_PERSISTENCE_EQUIVALENT",
+          "branch_five": "B_SELF_PERSISTENCE_EQUIVALENT"
+        },
+        "k10": {
+          "floor_four": 0.3089,
+          "floor_five": 0.3087,
+          "floor_delta": -0.0002,
+          "rung_four": "M3s_gbdt",
+          "rung_five": "M3s_gbdt",
+          "M1": 0.3829,
+          "ci_four": [
+            -0.0069,
+            0.1265
+          ],
+          "ci_five": [
+            0.0083,
+            0.1372
+          ],
+          "branch_four": "B_SELF_PERSISTENCE_EQUIVALENT",
+          "branch_five": "C_INTERMEDIATE"
+        },
+        "k15": {
+          "floor_four": 0.1944,
+          "floor_five": 0.2112,
+          "floor_delta": 0.0168,
+          "rung_four": "M3s_gbdt",
+          "rung_five": "M3s_gbdt",
+          "M1": 0.2867,
+          "ci_four": [
+            0.0283,
+            0.1587
+          ],
+          "ci_five": [
+            0.0103,
+            0.1498
+          ],
+          "branch_four": "A_ADVISOR_INFORMATION_REQUIRED",
+          "branch_five": "C_INTERMEDIATE"
+        },
+        "k20": {
+          "floor_four": 0.2251,
+          "floor_five": 0.2204,
+          "floor_delta": -0.0047,
+          "rung_four": "M3s_gbdt",
+          "rung_five": "M3s_gbdt",
+          "M1": 0.3167,
+          "ci_four": [
+            0.0192,
+            0.1704
+          ],
+          "ci_five": [
+            0.0303,
+            0.1737
+          ],
+          "branch_four": "C_INTERMEDIATE",
+          "branch_five": "C_INTERMEDIATE"
+        },
+        "k10_ms0.2": {
+          "floor_four": 0.3113,
+          "floor_five": 0.3016,
+          "floor_delta": -0.0097,
+          "rung_four": "M3s_gbdt",
+          "rung_five": "M3s_gbdt",
+          "M1": 0.3948,
+          "ci_four": [
+            0.0167,
+            0.1412
+          ],
+          "ci_five": [
+            0.0127,
+            0.1446
+          ],
+          "branch_four": "C_INTERMEDIATE",
+          "branch_five": "C_INTERMEDIATE"
+        },
+        "k10_ms0.4": {
+          "floor_four": 0.2678,
+          "floor_five": 0.2496,
+          "floor_delta": -0.0182,
+          "rung_four": "M3s_gbdt",
+          "rung_five": "M3s_gbdt",
+          "M1": 0.3319,
+          "ci_four": [
+            0.0026,
+            0.1245
+          ],
+          "ci_five": [
+            0.0239,
+            0.1398
+          ],
+          "branch_four": "C_INTERMEDIATE",
+          "branch_five": "A_ADVISOR_INFORMATION_REQUIRED"
+        }
+      },
+      "n_cells": 11,
+      "n_branch_moves": 5,
+      "five_feature_w5repaired_arm": {
+        "theta_0.10": {
+          "floor": 0.7828,
+          "ci": [
+            -0.0226,
+            0.0475
+          ],
+          "branch": "B_SELF_PERSISTENCE_EQUIVALENT"
+        },
+        "theta_0.15": {
+          "floor": 0.5469,
+          "ci": [
+            -0.0194,
+            0.0815
+          ],
+          "branch": "B_SELF_PERSISTENCE_EQUIVALENT"
+        },
+        "theta_0.20": {
+          "floor": 0.292,
+          "ci": [
+            0.0276,
+            0.1484
+          ],
+          "branch": "C_INTERMEDIATE"
+        },
+        "theta_0.25": {
+          "floor": 0.0934,
+          "ci": [
+            0.0013,
+            0.1288
+          ],
+          "branch": "A_ADVISOR_INFORMATION_REQUIRED"
+        },
+        "theta_0.30": {
+          "floor": 0.0981,
+          "ci": [
+            -0.0211,
+            0.1322
+          ],
+          "branch": "B_SELF_PERSISTENCE_EQUIVALENT"
+        }
+      }
+    },
+    "neuro": {
+      "cells": {
+        "theta_0.10": {
+          "floor_four": 0.8235,
+          "floor_five": 0.8245,
+          "floor_delta": 0.001,
+          "rung_four": "M3s_gbdt",
+          "rung_five": "M3s_gbdt",
+          "M1": 0.8217,
+          "ci_four": [
+            -0.0157,
+            0.017
+          ],
+          "ci_five": [
+            -0.0183,
+            0.0134
+          ],
+          "branch_four": "B_SELF_PERSISTENCE_EQUIVALENT",
+          "branch_five": "B_SELF_PERSISTENCE_EQUIVALENT"
+        },
+        "theta_0.15": {
+          "floor_four": 0.5971,
+          "floor_five": 0.5969,
+          "floor_delta": -0.0002,
+          "rung_four": "M3s_gbdt",
+          "rung_five": "M3s_gbdt",
+          "M1": 0.618,
+          "ci_four": [
+            -0.0055,
+            0.0406
+          ],
+          "ci_five": [
+            -0.0053,
+            0.0421
+          ],
+          "branch_four": "B_SELF_PERSISTENCE_EQUIVALENT",
+          "branch_five": "B_SELF_PERSISTENCE_EQUIVALENT"
+        },
+        "theta_0.20": {
+          "floor_four": 0.3444,
+          "floor_five": 0.3442,
+          "floor_delta": -0.0002,
+          "rung_four": "M3s_gbdt",
+          "rung_five": "M3s_gbdt",
+          "M1": 0.3871,
+          "ci_four": [
+            0.0136,
+            0.0659
+          ],
+          "ci_five": [
+            0.0165,
+            0.0671
+          ],
+          "branch_four": "A_ADVISOR_INFORMATION_REQUIRED",
+          "branch_five": "A_ADVISOR_INFORMATION_REQUIRED"
+        },
+        "theta_0.25": {
+          "floor_four": 0.1578,
+          "floor_five": 0.1595,
+          "floor_delta": 0.0017,
+          "rung_four": "M3s_gbdt",
+          "rung_five": "M1s_scalars",
+          "M1": 0.2008,
+          "ci_four": [
+            0.0222,
+            0.0725
+          ],
+          "ci_five": [
+            0.0166,
+            0.0641
+          ],
+          "branch_four": "A_ADVISOR_INFORMATION_REQUIRED",
+          "branch_five": "A_ADVISOR_INFORMATION_REQUIRED"
+        },
+        "theta_0.30": {
+          "floor_four": 0.156,
+          "floor_five": 0.1561,
+          "floor_delta": 0.0001,
+          "rung_four": "M3s_gbdt",
+          "rung_five": "M1s_scalars",
+          "M1": 0.1876,
+          "ci_four": [
+            0.0017,
+            0.0564
+          ],
+          "ci_five": [
+            0.0059,
+            0.0545
+          ],
+          "branch_four": "A_ADVISOR_INFORMATION_REQUIRED",
+          "branch_five": "A_ADVISOR_INFORMATION_REQUIRED"
+        },
+        "k5": {
+          "floor_four": 0.55,
+          "floor_five": 0.5484,
+          "floor_delta": -0.0016,
+          "rung_four": "M3s_gbdt",
+          "rung_five": "M1s_scalars",
+          "M1": 0.5581,
+          "ci_four": [
+            -0.0172,
+            0.0279
+          ],
+          "ci_five": [
+            -0.0108,
+            0.0306
+          ],
+          "branch_four": "B_SELF_PERSISTENCE_EQUIVALENT",
+          "branch_five": "B_SELF_PERSISTENCE_EQUIVALENT"
+        },
+        "k10": {
+          "floor_four": 0.3414,
+          "floor_five": 0.3438,
+          "floor_delta": 0.0024,
+          "rung_four": "M3s_gbdt",
+          "rung_five": "M3s_gbdt",
+          "M1": 0.3865,
+          "ci_four": [
+            0.0137,
+            0.0651
+          ],
+          "ci_five": [
+            0.0085,
+            0.0604
+          ],
+          "branch_four": "A_ADVISOR_INFORMATION_REQUIRED",
+          "branch_five": "A_ADVISOR_INFORMATION_REQUIRED"
+        },
+        "k15": {
+          "floor_four": 0.2353,
+          "floor_five": 0.2361,
+          "floor_delta": 0.0008,
+          "rung_four": "M3s_gbdt",
+          "rung_five": "M1s_scalars",
+          "M1": 0.313,
+          "ci_four": [
+            0.046,
+            0.1055
+          ],
+          "ci_five": [
+            0.0515,
+            0.1021
+          ],
+          "branch_four": "A_ADVISOR_INFORMATION_REQUIRED",
+          "branch_five": "A_ADVISOR_INFORMATION_REQUIRED"
+        },
+        "k20": {
+          "floor_four": 0.2818,
+          "floor_five": 0.2807,
+          "floor_delta": -0.0011,
+          "rung_four": "M3s_gbdt",
+          "rung_five": "M3s_gbdt",
+          "M1": 0.3389,
+          "ci_four": [
+            0.0286,
+            0.0926
+          ],
+          "ci_five": [
+            0.0246,
+            0.0902
+          ],
+          "branch_four": "C_INTERMEDIATE",
+          "branch_five": "C_INTERMEDIATE"
+        },
+        "k10_ms0.2": {
+          "floor_four": 0.3505,
+          "floor_five": 0.3483,
+          "floor_delta": -0.0022,
+          "rung_four": "M3s_gbdt",
+          "rung_five": "M3s_gbdt",
+          "M1": 0.389,
+          "ci_four": [
+            0.0166,
+            0.0689
+          ],
+          "ci_five": [
+            0.0186,
+            0.0697
+          ],
+          "branch_four": "B_SELF_PERSISTENCE_EQUIVALENT",
+          "branch_five": "B_SELF_PERSISTENCE_EQUIVALENT"
+        },
+        "k10_ms0.4": {
+          "floor_four": 0.3276,
+          "floor_five": 0.3278,
+          "floor_delta": 0.0002,
+          "rung_four": "M3s_gbdt",
+          "rung_five": "M3s_gbdt",
+          "M1": 0.3811,
+          "ci_four": [
+            0.0234,
+            0.0796
+          ],
+          "ci_five": [
+            0.0274,
+            0.082
+          ],
+          "branch_four": "A_ADVISOR_INFORMATION_REQUIRED",
+          "branch_five": "A_ADVISOR_INFORMATION_REQUIRED"
+        }
+      },
+      "n_cells": 11,
+      "n_branch_moves": 0,
+      "five_feature_w5repaired_arm": {}
+    },
+    "physics": {
+      "cells": {
+        "theta_0.10": {
+          "floor_four": 0.8802,
+          "floor_five": 0.8821,
+          "floor_delta": 0.0019,
+          "rung_four": "M3s_gbdt",
+          "rung_five": "M3s_gbdt",
+          "M1": 0.8646,
+          "ci_four": [
+            -0.0281,
+            0.0029
+          ],
+          "ci_five": [
+            -0.0322,
+            -0.0013
+          ],
+          "branch_four": "B_SELF_PERSISTENCE_EQUIVALENT",
+          "branch_five": "B_SELF_PERSISTENCE_EQUIVALENT"
+        },
+        "theta_0.15": {
+          "floor_four": 0.7521,
+          "floor_five": 0.7523,
+          "floor_delta": 0.0002,
+          "rung_four": "M3s_gbdt",
+          "rung_five": "M3s_gbdt",
+          "M1": 0.7207,
+          "ci_four": [
+            -0.0575,
+            -0.002
+          ],
+          "ci_five": [
+            -0.0551,
+            0.0002
+          ],
+          "branch_four": "B_SELF_PERSISTENCE_EQUIVALENT",
+          "branch_five": "B_SELF_PERSISTENCE_EQUIVALENT"
+        },
+        "theta_0.20": {
+          "floor_four": 0.5885,
+          "floor_five": 0.592,
+          "floor_delta": 0.0035,
+          "rung_four": "M3s_gbdt",
+          "rung_five": "M3s_gbdt",
+          "M1": 0.546,
+          "ci_four": [
+            -0.0841,
+            -0.0133
+          ],
+          "ci_five": [
+            -0.0833,
+            -0.012
+          ],
+          "branch_four": "B_SELF_PERSISTENCE_EQUIVALENT",
+          "branch_five": "B_SELF_PERSISTENCE_EQUIVALENT"
+        },
+        "theta_0.25": {
+          "floor_four": 0.3916,
+          "floor_five": 0.3928,
+          "floor_delta": 0.0012,
+          "rung_four": "M3s_gbdt",
+          "rung_five": "M3s_gbdt",
+          "M1": 0.3721,
+          "ci_four": [
+            -0.0674,
+            0.0171
+          ],
+          "ci_five": [
+            -0.0685,
+            0.0169
+          ],
+          "branch_four": "B_SELF_PERSISTENCE_EQUIVALENT",
+          "branch_five": "B_SELF_PERSISTENCE_EQUIVALENT"
+        },
+        "theta_0.30": {
+          "floor_four": 0.3812,
+          "floor_five": 0.388,
+          "floor_delta": 0.0068,
+          "rung_four": "M3s_gbdt",
+          "rung_five": "M3s_gbdt",
+          "M1": 0.3665,
+          "ci_four": [
+            -0.0552,
+            0.03
+          ],
+          "ci_five": [
+            -0.0597,
+            0.0234
+          ],
+          "branch_four": "B_SELF_PERSISTENCE_EQUIVALENT",
+          "branch_five": "B_SELF_PERSISTENCE_EQUIVALENT"
+        },
+        "k5": {
+          "floor_four": 0.7276,
+          "floor_five": 0.7302,
+          "floor_delta": 0.0026,
+          "rung_four": "M3s_gbdt",
+          "rung_five": "M3s_gbdt",
+          "M1": 0.6687,
+          "ci_four": [
+            -0.0852,
+            -0.0344
+          ],
+          "ci_five": [
+            -0.0881,
+            -0.0368
+          ],
+          "branch_four": "B_SELF_PERSISTENCE_EQUIVALENT",
+          "branch_five": "B_SELF_PERSISTENCE_EQUIVALENT"
+        },
+        "k10": {
+          "floor_four": 0.5857,
+          "floor_five": 0.5847,
+          "floor_delta": -0.001,
+          "rung_four": "M3s_gbdt",
+          "rung_five": "M3s_gbdt",
+          "M1": 0.5451,
+          "ci_four": [
+            -0.0742,
+            -0.0022
+          ],
+          "ci_five": [
+            -0.0712,
+            -0.0002
+          ],
+          "branch_four": "B_SELF_PERSISTENCE_EQUIVALENT",
+          "branch_five": "B_SELF_PERSISTENCE_EQUIVALENT"
+        },
+        "k15": {
+          "floor_four": 0.4582,
+          "floor_five": 0.4605,
+          "floor_delta": 0.0023,
+          "rung_four": "M3s_gbdt",
+          "rung_five": "M3s_gbdt",
+          "M1": 0.4486,
+          "ci_four": [
+            -0.0498,
+            0.027
+          ],
+          "ci_five": [
+            -0.0521,
+            0.0241
+          ],
+          "branch_four": "B_SELF_PERSISTENCE_EQUIVALENT",
+          "branch_five": "B_SELF_PERSISTENCE_EQUIVALENT"
+        },
+        "k20": {
+          "floor_four": 0.5038,
+          "floor_five": 0.5027,
+          "floor_delta": -0.0011,
+          "rung_four": "M3s_gbdt",
+          "rung_five": "M3s_gbdt",
+          "M1": 0.4906,
+          "ci_four": [
+            -0.0576,
+            0.0197
+          ],
+          "ci_five": [
+            -0.0447,
+            0.0296
+          ],
+          "branch_four": "B_SELF_PERSISTENCE_EQUIVALENT",
+          "branch_five": "B_SELF_PERSISTENCE_EQUIVALENT"
+        },
+        "k10_ms0.2": {
+          "floor_four": 0.5917,
+          "floor_five": 0.5945,
+          "floor_delta": 0.0028,
+          "rung_four": "M3s_gbdt",
+          "rung_five": "M3s_gbdt",
+          "M1": 0.5456,
+          "ci_four": [
+            -0.079,
+            -0.0082
+          ],
+          "ci_five": [
+            -0.0836,
+            -0.0119
+          ],
+          "branch_four": "B_SELF_PERSISTENCE_EQUIVALENT",
+          "branch_five": "B_SELF_PERSISTENCE_EQUIVALENT"
+        },
+        "k10_ms0.4": {
+          "floor_four": 0.5614,
+          "floor_five": 0.5591,
+          "floor_delta": -0.0023,
+          "rung_four": "M3s_gbdt",
+          "rung_five": "M3s_gbdt",
+          "M1": 0.521,
+          "ci_four": [
+            -0.0772,
+            -0.0047
+          ],
+          "ci_five": [
+            -0.0718,
+            0.0
+          ],
+          "branch_four": "B_SELF_PERSISTENCE_EQUIVALENT",
+          "branch_five": "B_SELF_PERSISTENCE_EQUIVALENT"
+        }
+      },
+      "n_cells": 11,
+      "n_branch_moves": 0,
+      "five_feature_w5repaired_arm": {
+        "theta_0.10": {
+          "floor": 0.8815,
+          "ci": [
+            -0.0338,
+            -0.0029
+          ],
+          "branch": "B_SELF_PERSISTENCE_EQUIVALENT"
+        },
+        "theta_0.15": {
+          "floor": 0.7542,
+          "ci": [
+            -0.0508,
+            0.0039
+          ],
+          "branch": "B_SELF_PERSISTENCE_EQUIVALENT"
+        }
+      }
+    }
+  },
+  "calibration_vs_frozen_e14": {
+    "chemistry": {
+      "frozen_e14_floor": 0.4617,
+      "five_feature_floor": 0.4617,
+      "floor_delta": 0.0,
+      "frozen_e14_rung": "M1s_scalars",
+      "five_feature_rung": "M1s_scalars",
+      "frozen_e14_ci95": [
+        -0.0703,
+        -0.0162
+      ],
+      "five_feature_ci95": [
+        -0.0703,
+        -0.0162
+      ],
+      "frozen_e14_branch": "B_SELF_PERSISTENCE_EQUIVALENT",
+      "five_feature_branch": "B_SELF_PERSISTENCE_EQUIVALENT"
+    },
+    "econ": {
+      "frozen_e14_floor": 0.3166,
+      "five_feature_floor": 0.3165,
+      "floor_delta": -0.0001,
+      "frozen_e14_rung": "M1s_scalars",
+      "five_feature_rung": "M1s_scalars",
+      "frozen_e14_ci95": [
+        -0.054,
+        0.1076
+      ],
+      "five_feature_ci95": [
+        -0.0539,
+        0.1077
+      ],
+      "frozen_e14_branch": "B_SELF_PERSISTENCE_EQUIVALENT",
+      "five_feature_branch": "B_SELF_PERSISTENCE_EQUIVALENT"
+    },
+    "math": {
+      "frozen_e14_floor": 0.3085,
+      "five_feature_floor": 0.3075,
+      "floor_delta": -0.001,
+      "frozen_e14_rung": "M3s_gbdt",
+      "five_feature_rung": "M3s_gbdt",
+      "frozen_e14_ci95": [
+        0.0033,
+        0.1339
+      ],
+      "five_feature_ci95": [
+        0.0089,
+        0.1366
+      ],
+      "frozen_e14_branch": "C_INTERMEDIATE",
+      "five_feature_branch": "C_INTERMEDIATE"
+    },
+    "neuro": {
+      "frozen_e14_floor": 0.3442,
+      "five_feature_floor": 0.3442,
+      "floor_delta": 0.0,
+      "frozen_e14_rung": "M3s_gbdt",
+      "five_feature_rung": "M3s_gbdt",
+      "frozen_e14_ci95": [
+        0.0117,
+        0.0632
+      ],
+      "five_feature_ci95": [
+        0.0165,
+        0.0671
+      ],
+      "frozen_e14_branch": "A_ADVISOR_INFORMATION_REQUIRED",
+      "five_feature_branch": "A_ADVISOR_INFORMATION_REQUIRED"
+    },
+    "physics": {
+      "frozen_e14_floor": 0.5911,
+      "five_feature_floor": 0.592,
+      "floor_delta": 0.0009,
+      "frozen_e14_rung": "M3s_gbdt",
+      "five_feature_rung": "M3s_gbdt",
+      "frozen_e14_ci95": [
+        -0.082,
+        -0.0115
+      ],
+      "five_feature_ci95": [
+        -0.0833,
+        -0.012
+      ],
+      "frozen_e14_branch": "B_SELF_PERSISTENCE_EQUIVALENT",
+      "five_feature_branch": "B_SELF_PERSISTENCE_EQUIVALENT"
+    }
+  }
+}

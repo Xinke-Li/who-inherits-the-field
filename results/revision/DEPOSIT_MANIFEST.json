@@ -1,0 +1,470 @@
+{
+  "purpose": "what the next Zenodo version must carry, and why",
+  "this_script_cannot_upload": true,
+  "current_archive": {
+    "file": "zenodo_archive.zip",
+    "n_entries": 34
+  },
+  "required": [
+    {
+      "pattern": "concept_events_*.parquet",
+      "why": "reproduction/verify_time_contract.py rebuilds early concepts from these and is what makes T2.11's exact t0+5 assertion checkable; the harness reads the recorded verdict either way, but without the tables a reader can only read that verdict, never re-derive it. 120 MB is past what git should carry",
+      "files": [
+        {
+          "path": "data/supplement/concept_events_chemistry.parquet",
+          "bytes": 48795675,
+          "mb": 48.8,
+          "sha256": "8f9723a64da4ae56fcff2b81647653fa607492dfd81ec73f0d79df266360aa75",
+          "already_in_archive": false
+        },
+        {
+          "path": "data/supplement/concept_events_econ.parquet",
+          "bytes": 4774083,
+          "mb": 4.77,
+          "sha256": "93fed37786010812c356a0920c838493f042ca7a4763ce1be01a19dd0f001acb",
+          "already_in_archive": false
+        },
+        {
+          "path": "data/supplement/concept_events_math.parquet",
+          "bytes": 10247778,
+          "mb": 10.25,
+          "sha256": "1a37e0c57c3d7d0eb2c08225e7701b39af08ee3203ce62f4859bb8b33cdb50fb",
+          "already_in_archive": false
+        },
+        {
+          "path": "data/supplement/concept_events_neuro.parquet",
+          "bytes": 36229359,
+          "mb": 36.23,
+          "sha256": "4644527f2c27b91f08c8c28cabefa0eb02f5c494b89a2a4fc8fd472a9e298eac",
+          "already_in_archive": false
+        },
+        {
+          "path": "data/supplement/concept_events_physics.parquet",
+          "bytes": 26228918,
+          "mb": 26.23,
+          "sha256": "76a29e263632571d2fd4f608e185ba4602893c787bceba42253e51d0c8fb3a89",
+          "already_in_archive": false
+        }
+      ],
+      "n_files": 5,
+      "total_mb": 126.28,
+      "pending": [
+        "data/supplement/concept_events_chemistry.parquet",
+        "data/supplement/concept_events_econ.parquet",
+        "data/supplement/concept_events_math.parquet",
+        "data/supplement/concept_events_neuro.parquet",
+        "data/supplement/concept_events_physics.parquet"
+      ]
+    }
+  ],
+  "candidate": [
+    {
+      "pattern": "titles_*.parquet",
+      "why": "input to T3.1's adjudication sample. The 2,200 rendered items and the judge's raw answers are both tracked, so a reader can recompute every T3.1 number without these; they are what a reader redrawing the sample from scratch would need",
+      "files": [
+        {
+          "path": "data/supplement/titles_chemistry.parquet",
+          "bytes": 105498866,
+          "mb": 105.5,
+          "sha256": "5dc741e2c5c046287885d1c1d953594d932cb4eacaf4c67e8da82bd03177f8b2",
+          "already_in_archive": false
+        },
+        {
+          "path": "data/supplement/titles_econ.parquet",
+          "bytes": 8840567,
+          "mb": 8.84,
+          "sha256": "d92e1dbd7415815d40978bb4454ebd5964eb4de1bcc6945e4ec1ad5f74ba84ea",
+          "already_in_archive": false
+        },
+        {
+          "path": "data/supplement/titles_math.parquet",
+          "bytes": 18591480,
+          "mb": 18.59,
+          "sha256": "d711f8258d29e46d32bf6aeeecc507a61d050c0fb27ee27b885cd6f0d2e1bd65",
+          "already_in_archive": false
+        },
+        {
+          "path": "data/supplement/titles_neuro.parquet",
+          "bytes": 71214221,
+          "mb": 71.21,
+          "sha256": "f59123c014b9140a1eb68b48e50966022a34786fc22a8b1091c2b5d5321ef706",
+          "already_in_archive": false
+        },
+        {
+          "path": "data/supplement/titles_physics.parquet",
+          "bytes": 50465222,
+          "mb": 50.47,
+          "sha256": "f9cea1070358dac959b3898aca3ddedc337a3f566ca9ae8e48ad5943936334fd",
+          "already_in_archive": false
+        }
+      ],
+      "n_files": 5,
+      "total_mb": 254.61,
+      "pending": [
+        "data/supplement/titles_chemistry.parquet",
+        "data/supplement/titles_econ.parquet",
+        "data/supplement/titles_math.parquet",
+        "data/supplement/titles_neuro.parquet",
+        "data/supplement/titles_physics.parquet"
+      ]
+    }
+  ],
+  "excluded_by_decision": [
+    {
+      "pattern": "abstracts_*.parquet",
+      "why": "193.5 MB, and excluded by decision rather than by size. Four of the five disciplines have them: chemistry's merge completed titles-only after the full merge exhausted the machine. Depositing four fifths of an input makes the first question about the release the whereabouts of chemistry, and the input in question feeds a text rung this paper does not run, so shipping it would advertise an absent baseline rather than support a present one. Nothing reported reads them",
+      "files": [
+        {
+          "path": "data/supplement/abstracts_econ.parquet",
+          "bytes": 12215826,
+          "mb": 12.22,
+          "sha256": "6642a0f5cb2b2aa89de930157db49fd5fe5c8aa0fb5dd6d54ea56a8e2b8a4ebd",
+          "already_in_archive": false
+        },
+        {
+          "path": "data/supplement/abstracts_math.parquet",
+          "bytes": 26955410,
+          "mb": 26.96,
+          "sha256": "a26bee82576299670dc861b0c1602660c0ffae6973ef518c33cfc9f7a375c1b9",
+          "already_in_archive": false
+        },
+        {
+          "path": "data/supplement/abstracts_neuro.parquet",
+          "bytes": 98912675,
+          "mb": 98.91,
+          "sha256": "f39e55a7a96ef097eee8da06f8aa31f5ac7029e9a89cf48008eb836b60a0dc03",
+          "already_in_archive": false
+        },
+        {
+          "path": "data/supplement/abstracts_physics.parquet",
+          "bytes": 64920785,
+          "mb": 64.92,
+          "sha256": "ddce69f20f5c5e6898b7359a02ac9aab245615f1c61dede660e79195e0d0c3f7",
+          "already_in_archive": false
+        }
+      ],
+      "n_files": 4,
+      "total_mb": 203.01,
+      "pending": [
+        "data/supplement/abstracts_econ.parquet",
+        "data/supplement/abstracts_math.parquet",
+        "data/supplement/abstracts_neuro.parquet",
+        "data/supplement/abstracts_physics.parquet"
+      ]
+    },
+    {
+      "pattern": "results/revision/T2_6_funnel_neuro/works_cache/",
+      "why": "287 MB of T2.6 fetch input, superseded by a derived file 130 times smaller. funnel_neuro_years.parquet, 2.2 MB and tracked in git, reproduces all eight reconstructed funnel counters through r49_funnel_neuro_counters.py --stage verify",
+      "files": [
+        {
+          "path": "results/revision/T2_6_funnel_neuro/works_cache/works_00000.parquet",
+          "bytes": 8367733,
+          "mb": 8.37,
+          "sha256": "1b624e585e1d6754ca34acbf20d9857d29dc783c375a3cc7d73584ca64e4d4a0",
+          "already_in_archive": false
+        },
+        {
+          "path": "results/revision/T2_6_funnel_neuro/works_cache/works_00001.parquet",
+          "bytes": 8504257,
+          "mb": 8.5,
+          "sha256": "b344976675610bc1cba51a47ec6146a7169b0fb9febce20948285f563cb628fa",
+          "already_in_archive": false
+        },
+        {
+          "path": "results/revision/T2_6_funnel_neuro/works_cache/works_00002.parquet",
+          "bytes": 7888918,
+          "mb": 7.89,
+          "sha256": "2c4cb25e1aba3b9d52dcc256f97a33287d72157c3697b67c3f2a1e91b6a76a4b",
+          "already_in_archive": false
+        },
+        {
+          "path": "results/revision/T2_6_funnel_neuro/works_cache/works_00003.parquet",
+          "bytes": 8852806,
+          "mb": 8.85,
+          "sha256": "91f267cd27e7e2d3af184d1de5442d3fadda8c1c9e0f36bf527069897928f918",
+          "already_in_archive": false
+        },
+        {
+          "path": "results/revision/T2_6_funnel_neuro/works_cache/works_00004.parquet",
+          "bytes": 7671388,
+          "mb": 7.67,
+          "sha256": "3e5ca4e9736491f20c5ad578334c6d088a162b47df48f744f42439accc44baa4",
+          "already_in_archive": false
+        },
+        {
+          "path": "results/revision/T2_6_funnel_neuro/works_cache/works_00005.parquet",
+          "bytes": 8648465,
+          "mb": 8.65,
+          "sha256": "303def466759833f1776a71174a46be21fe98ae062a2d6fe08333f45a88e0062",
+          "already_in_archive": false
+        },
+        {
+          "path": "results/revision/T2_6_funnel_neuro/works_cache/works_00006.parquet",
+          "bytes": 8348228,
+          "mb": 8.35,
+          "sha256": "89427fbc2f51283af53c1a2516d5618b99dd0fa00b7f5d34f361a16d354b6d0f",
+          "already_in_archive": false
+        },
+        {
+          "path": "results/revision/T2_6_funnel_neuro/works_cache/works_00007.parquet",
+          "bytes": 8577881,
+          "mb": 8.58,
+          "sha256": "32f6fb9e53936e122728fa3df363a9678b6a14aa828099091542f9a93fa5b0fb",
+          "already_in_archive": false
+        },
+        {
+          "path": "results/revision/T2_6_funnel_neuro/works_cache/works_00008.parquet",
+          "bytes": 8173444,
+          "mb": 8.17,
+          "sha256": "94e6b6a9e2997080a65fc403655795ffced788d8a459cbb6527339d596f4df15",
+          "already_in_archive": false
+        },
+        {
+          "path": "results/revision/T2_6_funnel_neuro/works_cache/works_00009.parquet",
+          "bytes": 8843840,
+          "mb": 8.84,
+          "sha256": "7997065e86e54552cc020298a8c868ff24188b863edfcac8f90a88548968d5ec",
+          "already_in_archive": false
+        },
+        {
+          "path": "results/revision/T2_6_funnel_neuro/works_cache/works_00010.parquet",
+          "bytes": 8336107,
+          "mb": 8.34,
+          "sha256": "f31c2f1a8092e55fc8fd1f8e69a1c4a2eaa0c6e09ad610d6cdfebae6bb76b18a",
+          "already_in_archive": false
+        },
+        {
+          "path": "results/revision/T2_6_funnel_neuro/works_cache/works_00011.parquet",
+          "bytes": 8521059,
+          "mb": 8.52,
+          "sha256": "e5905f7b20e5be073318f0401c302661b10ce9f8409fb517f49c2737da2ff9de",
+          "already_in_archive": false
+        },
+        {
+          "path": "results/revision/T2_6_funnel_neuro/works_cache/works_00012.parquet",
+          "bytes": 8738600,
+          "mb": 8.74,
+          "sha256": "7cc38166df85699110489d289b692d56fe0c87ce64db5120eab8b626c993561c",
+          "already_in_archive": false
+        },
+        {
+          "path": "results/revision/T2_6_funnel_neuro/works_cache/works_00013.parquet",
+          "bytes": 8618021,
+          "mb": 8.62,
+          "sha256": "42dbece5dbf1206e7b12bf01f4c0faded79e5f1f93faf2de12fbdb53c3537d7b",
+          "already_in_archive": false
+        },
+        {
+          "path": "results/revision/T2_6_funnel_neuro/works_cache/works_00014.parquet",
+          "bytes": 8588168,
+          "mb": 8.59,
+          "sha256": "905746258dfa4b56219cfac0cc2ae10984f561cedfb89416a2de5ce3e05092d1",
+          "already_in_archive": false
+        },
+        {
+          "path": "results/revision/T2_6_funnel_neuro/works_cache/works_00015.parquet",
+          "bytes": 8332677,
+          "mb": 8.33,
+          "sha256": "31374701e5bc572a63608fef2fc708149e9cf4852424525d2ba661bafddf27db",
+          "already_in_archive": false
+        },
+        {
+          "path": "results/revision/T2_6_funnel_neuro/works_cache/works_00016.parquet",
+          "bytes": 8128962,
+          "mb": 8.13,
+          "sha256": "eb12a12836c01b1c498301858b0fc5c8b0b2d7c9ed0bfc80f32e9ddaf2574a40",
+          "already_in_archive": false
+        },
+        {
+          "path": "results/revision/T2_6_funnel_neuro/works_cache/works_00017.parquet",
+          "bytes": 7800994,
+          "mb": 7.8,
+          "sha256": "76ed4e57ccd3b7c97ae112c79b37263ae05a5a9c3a79926eff8986f86459852c",
+          "already_in_archive": false
+        },
+        {
+          "path": "results/revision/T2_6_funnel_neuro/works_cache/works_00018.parquet",
+          "bytes": 8579622,
+          "mb": 8.58,
+          "sha256": "844f29e3c81d50bcdd5f65c0baf6568d715bbef02f8f35431defa4e3d4c7cc0d",
+          "already_in_archive": false
+        },
+        {
+          "path": "results/revision/T2_6_funnel_neuro/works_cache/works_00019.parquet",
+          "bytes": 8414595,
+          "mb": 8.41,
+          "sha256": "7ce1ac0370a1779d53cfb2903b40fe7110fa8e2564e7ade32524667dc121c99b",
+          "already_in_archive": false
+        },
+        {
+          "path": "results/revision/T2_6_funnel_neuro/works_cache/works_00020.parquet",
+          "bytes": 8487343,
+          "mb": 8.49,
+          "sha256": "1505d5d7ea35e9cef0dd38fb16da01ebd01c865d0524c32110766f36aecbea3d",
+          "already_in_archive": false
+        },
+        {
+          "path": "results/revision/T2_6_funnel_neuro/works_cache/works_00021.parquet",
+          "bytes": 7992067,
+          "mb": 7.99,
+          "sha256": "eab0396355f8ce83c75acf384862bf62857245601faa160f53ea534e5428c459",
+          "already_in_archive": false
+        },
+        {
+          "path": "results/revision/T2_6_funnel_neuro/works_cache/works_00022.parquet",
+          "bytes": 8184666,
+          "mb": 8.18,
+          "sha256": "24dde363417650bbfbedd64af122cf069efff40aa4b0a23a8e6e6b43705302bf",
+          "already_in_archive": false
+        },
+        {
+          "path": "results/revision/T2_6_funnel_neuro/works_cache/works_00023.parquet",
+          "bytes": 8563954,
+          "mb": 8.56,
+          "sha256": "4beefceb71832f78633c259348fc9e135ffe9e8669370187f83ea68794ea3bad",
+          "already_in_archive": false
+        },
+        {
+          "path": "results/revision/T2_6_funnel_neuro/works_cache/works_00024.parquet",
+          "bytes": 8319441,
+          "mb": 8.32,
+          "sha256": "ac30c9f0d3c46e4242f634c445bcb3c1fc117cdfcfb94104109669206555f33c",
+          "already_in_archive": false
+        },
+        {
+          "path": "results/revision/T2_6_funnel_neuro/works_cache/works_00025.parquet",
+          "bytes": 7729803,
+          "mb": 7.73,
+          "sha256": "e0d769df8014078a6cca252e8037c0be9228c7b671493f3fcb08674315010ba9",
+          "already_in_archive": false
+        },
+        {
+          "path": "results/revision/T2_6_funnel_neuro/works_cache/works_00026.parquet",
+          "bytes": 8101770,
+          "mb": 8.1,
+          "sha256": "dec46f23024de850fcccce836a0d3c60c37bd3155690015284f95b20f8eba2f4",
+          "already_in_archive": false
+        },
+        {
+          "path": "results/revision/T2_6_funnel_neuro/works_cache/works_00027.parquet",
+          "bytes": 8171417,
+          "mb": 8.17,
+          "sha256": "2224a08fe6794df1c250df5cef70bccf61ba5801147162d26b1504e77e40740a",
+          "already_in_archive": false
+        },
+        {
+          "path": "results/revision/T2_6_funnel_neuro/works_cache/works_00028.parquet",
+          "bytes": 8671389,
+          "mb": 8.67,
+          "sha256": "1d03904134b3378329c681c16f7f832aa2d1cd9895eaf86fe89fa70ebe8b7e96",
+          "already_in_archive": false
+        },
+        {
+          "path": "results/revision/T2_6_funnel_neuro/works_cache/works_00029.parquet",
+          "bytes": 8860863,
+          "mb": 8.86,
+          "sha256": "7f773282dd0f42601c4db3e40b348e1509f42969078dd366642ad3b28614d9ae",
+          "already_in_archive": false
+        },
+        {
+          "path": "results/revision/T2_6_funnel_neuro/works_cache/works_00030.parquet",
+          "bytes": 11379287,
+          "mb": 11.38,
+          "sha256": "3017e731727c9476da6f73a2e982a943c14041f90d831251d5c924ca343e2306",
+          "already_in_archive": false
+        },
+        {
+          "path": "results/revision/T2_6_funnel_neuro/works_cache/works_00031.parquet",
+          "bytes": 11332156,
+          "mb": 11.33,
+          "sha256": "55dce32d6d0a2dcb128680d9f2bd53679bda980e228b0cf0ba150c2568bde063",
+          "already_in_archive": false
+        },
+        {
+          "path": "results/revision/T2_6_funnel_neuro/works_cache/works_00032.parquet",
+          "bytes": 9270505,
+          "mb": 9.27,
+          "sha256": "e4aeabe308c3ce108683eac788fa9e14321a96b678de7529116f4375bcbcaa0d",
+          "already_in_archive": false
+        },
+        {
+          "path": "results/revision/T2_6_funnel_neuro/works_cache/works_00033.parquet",
+          "bytes": 9068295,
+          "mb": 9.07,
+          "sha256": "5b669bb406ac1fc927cb0ddcfc8c792af9691d213206363804541c1ff59d284d",
+          "already_in_archive": false
+        },
+        {
+          "path": "results/revision/T2_6_funnel_neuro/works_cache/works_00034.parquet",
+          "bytes": 8758118,
+          "mb": 8.76,
+          "sha256": "2fc196682040e43d5f373c671d386f6e25f79085b8ffed8ae0cd66225efb121b",
+          "already_in_archive": false
+        },
+        {
+          "path": "results/revision/T2_6_funnel_neuro/works_cache/works_00035.parquet",
+          "bytes": 140422,
+          "mb": 0.14,
+          "sha256": "48740961bf711e2ba54f816f49ea77c435c952d03b561d50b3f283d412360f35",
+          "already_in_archive": false
+        }
+      ],
+      "n_files": 36,
+      "total_mb": 300.95,
+      "pending": [
+        "results/revision/T2_6_funnel_neuro/works_cache/works_00000.parquet",
+        "results/revision/T2_6_funnel_neuro/works_cache/works_00001.parquet",
+        "results/revision/T2_6_funnel_neuro/works_cache/works_00002.parquet",
+        "results/revision/T2_6_funnel_neuro/works_cache/works_00003.parquet",
+        "results/revision/T2_6_funnel_neuro/works_cache/works_00004.parquet",
+        "results/revision/T2_6_funnel_neuro/works_cache/works_00005.parquet",
+        "results/revision/T2_6_funnel_neuro/works_cache/works_00006.parquet",
+        "results/revision/T2_6_funnel_neuro/works_cache/works_00007.parquet",
+        "results/revision/T2_6_funnel_neuro/works_cache/works_00008.parquet",
+        "results/revision/T2_6_funnel_neuro/works_cache/works_00009.parquet",
+        "results/revision/T2_6_funnel_neuro/works_cache/works_00010.parquet",
+        "results/revision/T2_6_funnel_neuro/works_cache/works_00011.parquet",
+        "results/revision/T2_6_funnel_neuro/works_cache/works_00012.parquet",
+        "results/revision/T2_6_funnel_neuro/works_cache/works_00013.parquet",
+        "results/revision/T2_6_funnel_neuro/works_cache/works_00014.parquet",
+        "results/revision/T2_6_funnel_neuro/works_cache/works_00015.parquet",
+        "results/revision/T2_6_funnel_neuro/works_cache/works_00016.parquet",
+        "results/revision/T2_6_funnel_neuro/works_cache/works_00017.parquet",
+        "results/revision/T2_6_funnel_neuro/works_cache/works_00018.parquet",
+        "results/revision/T2_6_funnel_neuro/works_cache/works_00019.parquet",
+        "results/revision/T2_6_funnel_neuro/works_cache/works_00020.parquet",
+        "results/revision/T2_6_funnel_neuro/works_cache/works_00021.parquet",
+        "results/revision/T2_6_funnel_neuro/works_cache/works_00022.parquet",
+        "results/revision/T2_6_funnel_neuro/works_cache/works_00023.parquet",
+        "results/revision/T2_6_funnel_neuro/works_cache/works_00024.parquet",
+        "results/revision/T2_6_funnel_neuro/works_cache/works_00025.parquet",
+        "results/revision/T2_6_funnel_neuro/works_cache/works_00026.parquet",
+        "results/revision/T2_6_funnel_neuro/works_cache/works_00027.parquet",
+        "results/revision/T2_6_funnel_neuro/works_cache/works_00028.parquet",
+        "results/revision/T2_6_funnel_neuro/works_cache/works_00029.parquet",
+        "results/revision/T2_6_funnel_neuro/works_cache/works_00030.parquet",
+        "results/revision/T2_6_funnel_neuro/works_cache/works_00031.parquet",
+        "results/revision/T2_6_funnel_neuro/works_cache/works_00032.parquet",
+        "results/revision/T2_6_funnel_neuro/works_cache/works_00033.parquet",
+        "results/revision/T2_6_funnel_neuro/works_cache/works_00034.parquet",
+        "results/revision/T2_6_funnel_neuro/works_cache/works_00035.parquet"
+      ]
+    }
+  ],
+  "excluded_because_git_carries_it": {
+    "early_concentration_*.parquet": "git carries it, 824 KB",
+    "lineage_*.parquet": "git carries it, 1.8 MB",
+    "funnel_neuro_years.parquet": "git carries it, 2.2 MB",
+    "*.json": "git carries every supplement manifest",
+    "_ta_cache/": "regenerable working cache of the B1 fetch, 2.88 GB; the per-field outputs are what any consumer reads"
+  },
+  "pending_required_count": 5,
+  "pending_required": [
+    "data/supplement/concept_events_chemistry.parquet",
+    "data/supplement/concept_events_econ.parquet",
+    "data/supplement/concept_events_math.parquet",
+    "data/supplement/concept_events_neuro.parquet",
+    "data/supplement/concept_events_physics.parquet"
+  ],
+  "harness_consequence": "one check moves from SKIP to PASS once the required files are deposited and unpacked, 'supplement: every concept event table exists'. The other two concept-event checks and the two time-contract checks read tracked JSON and already run. The larger consequence is not the count: verify_time_contract.py cannot execute at all without these tables, so T2.11 is readable but not re-runnable by a third party until they are deposited"
+}

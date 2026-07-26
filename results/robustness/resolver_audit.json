@@ -1,0 +1,744 @@
+{
+  "experiment": "R13_resolver_audit",
+  "sample_seed": 0,
+  "population": {
+    "unique_pairs": 3548,
+    "agree": 3394,
+    "disagree": 65,
+    "no_openalex_orcid_link": 89,
+    "author_record_missing": 0
+  },
+  "raw_agreement": 0.9812,
+  "raw_agreement_wilson95": [
+    0.9761,
+    0.9852
+  ],
+  "disagreement_sample": {
+    "n": 50,
+    "counts": {
+      "original_id_error": 4,
+      "resolver_error": 10,
+      "id_split": 17,
+      "human_judgment_ambiguous": 6,
+      "human_judgment_orcid_unindexed": 13
+    },
+    "flagged_for_human_judgment": [
+      {
+        "field": "neuro",
+        "pid": "918224",
+        "orcid": "0000-0002-2464-8632",
+        "aid": "A5107942470",
+        "gen_name": "Leonardo Barbosa",
+        "resolved_name": "Leonardo S. Barbosa",
+        "orcid_holder": "Leonardo Barbosa Silva",
+        "class": "human_judgment_ambiguous"
+      },
+      {
+        "field": "physics",
+        "pid": "782666",
+        "orcid": "0009-0006-0103-4896",
+        "aid": "A5017427529",
+        "gen_name": "Roh-Suan Tung",
+        "resolved_name": "Roh-Suan Tung",
+        "orcid_holder": null,
+        "class": "human_judgment_orcid_unindexed"
+      },
+      {
+        "field": "physics",
+        "pid": "974405",
+        "orcid": "0009-0004-0946-4458",
+        "aid": "A5100327835",
+        "gen_name": "Xin Wang",
+        "resolved_name": "Xin Wang",
+        "orcid_holder": null,
+        "class": "human_judgment_orcid_unindexed"
+      },
+      {
+        "field": "neuro",
+        "pid": "66470",
+        "orcid": "0000-0002-9406-7710",
+        "aid": "A5031025260",
+        "gen_name": "Fan Yang",
+        "resolved_name": "Fan Yang",
+        "orcid_holder": null,
+        "class": "human_judgment_orcid_unindexed"
+      },
+      {
+        "field": "neuro",
+        "pid": "795488",
+        "orcid": "0000-0002-8511-2989",
+        "aid": "A5024320544",
+        "gen_name": "Alan Meca",
+        "resolved_name": "Alan Meca",
+        "orcid_holder": "Ana Meca",
+        "class": "human_judgment_ambiguous"
+      },
+      {
+        "field": "neuro",
+        "pid": "948905",
+        "orcid": "0009-0008-7487-4276",
+        "aid": "A5101752250",
+        "gen_name": "Ruozhou Wang",
+        "resolved_name": "Qihui Wang",
+        "orcid_holder": null,
+        "class": "human_judgment_orcid_unindexed"
+      },
+      {
+        "field": "neuro",
+        "pid": "9990",
+        "orcid": "0000-0001-8866-8459",
+        "aid": "A5015827324",
+        "gen_name": "James Hokanson",
+        "resolved_name": "Jim Hokanson",
+        "orcid_holder": null,
+        "class": "human_judgment_orcid_unindexed"
+      },
+      {
+        "field": "neuro",
+        "pid": "890371",
+        "orcid": "0000-0001-9335-9861",
+        "aid": "A5043149961",
+        "gen_name": "Hyunjin Kim",
+        "resolved_name": "Hyoung-Ihl Kim",
+        "orcid_holder": null,
+        "class": "human_judgment_orcid_unindexed"
+      },
+      {
+        "field": "chemistry",
+        "pid": "911016",
+        "orcid": "0000-0002-8295-7361",
+        "aid": "A5010802633",
+        "gen_name": "Jaume Farr\u00e0s",
+        "resolved_name": "Jaume Farr\u00e0s",
+        "orcid_holder": null,
+        "class": "human_judgment_orcid_unindexed"
+      },
+      {
+        "field": "neuro",
+        "pid": "865367",
+        "orcid": "0000-0002-0416-5182",
+        "aid": "A5021521173",
+        "gen_name": "Luis Monteiro",
+        "resolved_name": "Lu\u0131\u0301s Monteiro",
+        "orcid_holder": "Luis Carlos Pereira Monteiro",
+        "class": "human_judgment_ambiguous"
+      },
+      {
+        "field": "neuro",
+        "pid": "70932",
+        "orcid": "0000-0003-0581-8277",
+        "aid": "A5028860077",
+        "gen_name": "Monique Smith",
+        "resolved_name": "Monique L. Smith",
+        "orcid_holder": null,
+        "class": "human_judgment_orcid_unindexed"
+      },
+      {
+        "field": "neuro",
+        "pid": "973942",
+        "orcid": "0000-0002-5869-7483",
+        "aid": "A5059020340",
+        "gen_name": "Lina Garcia",
+        "resolved_name": "Lina Mar\u00eda Garc\u00eda",
+        "orcid_holder": null,
+        "class": "human_judgment_orcid_unindexed"
+      },
+      {
+        "field": "neuro",
+        "pid": "959835",
+        "orcid": "0009-0007-5876-6075",
+        "aid": "A5100727304",
+        "gen_name": "Jong-Hyun, Kim",
+        "resolved_name": "Jong\u2010Hyun Kim",
+        "orcid_holder": null,
+        "class": "human_judgment_orcid_unindexed"
+      },
+      {
+        "field": "neuro",
+        "pid": "83779",
+        "orcid": "0000-0003-2695-1659",
+        "aid": "A5070619322",
+        "gen_name": "Brendan Kelly",
+        "resolved_name": "Brendan P. Kelly",
+        "orcid_holder": null,
+        "class": "human_judgment_orcid_unindexed"
+      },
+      {
+        "field": "chemistry",
+        "pid": "973808",
+        "orcid": "0000-0003-4225-751X",
+        "aid": "A5021735741",
+        "gen_name": "Travis Nelson",
+        "resolved_name": "Travis J. Nelson",
+        "orcid_holder": null,
+        "class": "human_judgment_orcid_unindexed"
+      },
+      {
+        "field": "chemistry",
+        "pid": "69246",
+        "orcid": "0000-0002-7621-3980",
+        "aid": "A5108009774",
+        "gen_name": "Norbert M\u00fcller",
+        "resolved_name": "Norbert M\u00fcller",
+        "orcid_holder": "N. MUELLER",
+        "class": "human_judgment_ambiguous"
+      },
+      {
+        "field": "neuro",
+        "pid": "859051",
+        "orcid": "0000-0002-4870-2541",
+        "aid": "A5100630443",
+        "gen_name": "Minwoo Kim",
+        "resolved_name": "Minwoo Kim",
+        "orcid_holder": "Minwoo J. B. Kim",
+        "class": "human_judgment_ambiguous"
+      },
+      {
+        "field": "physics",
+        "pid": "915579",
+        "orcid": "0000-0002-9157-360X",
+        "aid": "A5100439464",
+        "gen_name": "Biao Wang",
+        "resolved_name": "Biao Wang",
+        "orcid_holder": "B. Wang",
+        "class": "human_judgment_ambiguous"
+      },
+      {
+        "field": "neuro",
+        "pid": "873141",
+        "orcid": "0000-0003-2180-1619",
+        "aid": "A5021900426",
+        "gen_name": "K. Thompson",
+        "resolved_name": "Kara Thompson",
+        "orcid_holder": null,
+        "class": "human_judgment_orcid_unindexed"
+      }
+    ]
+  },
+  "frozen_ground_truth_precision": 0.867,
+  "bias_corrected_precision_favorable_humans_excluded": 0.9939,
+  "bias_corrected_precision_favorable_humans_excluded_wilson95": [
+    0.9907,
+    0.996
+  ],
+  "bias_corrected_precision_conservative_humans_as_error": 0.9891,
+  "bias_corrected_precision_conservative_humans_as_error_wilson95": [
+    0.9851,
+    0.9921
+  ],
+  "all_classified": [
+    {
+      "field": "neuro",
+      "pid": "20253",
+      "orcid": "0000-0002-3391-8876",
+      "aid": "A5034677612",
+      "gen_name": "Claire Braboszcz",
+      "resolved_name": "Claire Braboszcz",
+      "orcid_holder": "S\u00e9verin Lemaignan",
+      "class": "original_id_error"
+    },
+    {
+      "field": "chemistry",
+      "pid": "908420",
+      "orcid": "0000-0003-1108-3852",
+      "aid": "A5011515327",
+      "gen_name": "Zheng-Bin Tang",
+      "resolved_name": "Min Tang",
+      "orcid_holder": "Zheng\u2010Bin Tang",
+      "class": "resolver_error"
+    },
+    {
+      "field": "physics",
+      "pid": "953221",
+      "orcid": "0000-0002-8125-025X",
+      "aid": "A5101832974",
+      "gen_name": "Jan Martinek",
+      "resolved_name": "Jan Martinek",
+      "orcid_holder": "J. Martinek",
+      "class": "id_split"
+    },
+    {
+      "field": "neuro",
+      "pid": "732088",
+      "orcid": "0000-0001-7411-2740",
+      "aid": "A5100392978",
+      "gen_name": "Daniel Lee",
+      "resolved_name": "Daniel Lee",
+      "orcid_holder": "Daniel A. Lee",
+      "class": "id_split"
+    },
+    {
+      "field": "neuro",
+      "pid": "918224",
+      "orcid": "0000-0002-2464-8632",
+      "aid": "A5107942470",
+      "gen_name": "Leonardo Barbosa",
+      "resolved_name": "Leonardo S. Barbosa",
+      "orcid_holder": "Leonardo Barbosa Silva",
+      "class": "human_judgment_ambiguous"
+    },
+    {
+      "field": "physics",
+      "pid": "782666",
+      "orcid": "0009-0006-0103-4896",
+      "aid": "A5017427529",
+      "gen_name": "Roh-Suan Tung",
+      "resolved_name": "Roh-Suan Tung",
+      "orcid_holder": null,
+      "class": "human_judgment_orcid_unindexed"
+    },
+    {
+      "field": "physics",
+      "pid": "974405",
+      "orcid": "0009-0004-0946-4458",
+      "aid": "A5100327835",
+      "gen_name": "Xin Wang",
+      "resolved_name": "Xin Wang",
+      "orcid_holder": null,
+      "class": "human_judgment_orcid_unindexed"
+    },
+    {
+      "field": "neuro",
+      "pid": "66470",
+      "orcid": "0000-0002-9406-7710",
+      "aid": "A5031025260",
+      "gen_name": "Fan Yang",
+      "resolved_name": "Fan Yang",
+      "orcid_holder": null,
+      "class": "human_judgment_orcid_unindexed"
+    },
+    {
+      "field": "chemistry",
+      "pid": "135653",
+      "orcid": "0000-0002-4753-0872",
+      "aid": "A5009499042",
+      "gen_name": "Ritu Shrestha",
+      "resolved_name": "Ritu Shrestha",
+      "orcid_holder": "Ritu Shrestha",
+      "class": "id_split"
+    },
+    {
+      "field": "neuro",
+      "pid": "72301",
+      "orcid": "0000-0003-2495-483X",
+      "aid": "A5031152986",
+      "gen_name": "Li Lu",
+      "resolved_name": "Li Lu",
+      "orcid_holder": "Li Lu",
+      "class": "id_split"
+    },
+    {
+      "field": "neuro",
+      "pid": "746270",
+      "orcid": "0000-0001-8947-5544",
+      "aid": "A5100396850",
+      "gen_name": "Hao Zhang",
+      "resolved_name": "Hao Zhang",
+      "orcid_holder": "Hao Zhang",
+      "class": "id_split"
+    },
+    {
+      "field": "neuro",
+      "pid": "795488",
+      "orcid": "0000-0002-8511-2989",
+      "aid": "A5024320544",
+      "gen_name": "Alan Meca",
+      "resolved_name": "Alan Meca",
+      "orcid_holder": "Ana Meca",
+      "class": "human_judgment_ambiguous"
+    },
+    {
+      "field": "neuro",
+      "pid": "948905",
+      "orcid": "0009-0008-7487-4276",
+      "aid": "A5101752250",
+      "gen_name": "Ruozhou Wang",
+      "resolved_name": "Qihui Wang",
+      "orcid_holder": null,
+      "class": "human_judgment_orcid_unindexed"
+    },
+    {
+      "field": "neuro",
+      "pid": "959952",
+      "orcid": "0000-0002-8399-5693",
+      "aid": "A5053938226",
+      "gen_name": "Orhan Soyuhos",
+      "resolved_name": "Orhan Soyuhos",
+      "orcid_holder": "Kyle A. Artelle",
+      "class": "original_id_error"
+    },
+    {
+      "field": "neuro",
+      "pid": "949566",
+      "orcid": "0000-0002-0641-5771",
+      "aid": "A5101704499",
+      "gen_name": "Yuki Ito",
+      "resolved_name": "Yuki Ito",
+      "orcid_holder": "Yuki Ito",
+      "class": "id_split"
+    },
+    {
+      "field": "neuro",
+      "pid": "749579",
+      "orcid": "0000-0001-9151-1372",
+      "aid": "A5030183755",
+      "gen_name": "Rohit Joshi",
+      "resolved_name": "Rohit Joshi",
+      "orcid_holder": "Rohit Joshi",
+      "class": "id_split"
+    },
+    {
+      "field": "neuro",
+      "pid": "9990",
+      "orcid": "0000-0001-8866-8459",
+      "aid": "A5015827324",
+      "gen_name": "James Hokanson",
+      "resolved_name": "Jim Hokanson",
+      "orcid_holder": null,
+      "class": "human_judgment_orcid_unindexed"
+    },
+    {
+      "field": "chemistry",
+      "pid": "97378",
+      "orcid": "0000-0003-1839-1938",
+      "aid": "A5009507371",
+      "gen_name": "Juventino Garcia",
+      "resolved_name": "Nidia G. Garc\u00eda-Pe\u00f1a",
+      "orcid_holder": "Juventino J. Garc\u0131\u0301a",
+      "class": "resolver_error"
+    },
+    {
+      "field": "neuro",
+      "pid": "746672",
+      "orcid": "0000-0002-6999-9866",
+      "aid": "A5101746124",
+      "gen_name": "Xiang Li",
+      "resolved_name": "Xiang Li",
+      "orcid_holder": "Xiang Li",
+      "class": "id_split"
+    },
+    {
+      "field": "chemistry",
+      "pid": "924950",
+      "orcid": "0000-0003-1240-8495",
+      "aid": "A5056584031",
+      "gen_name": "Dustin Duncan",
+      "resolved_name": "Dustin T. Duncan",
+      "orcid_holder": "Dustin Duncan",
+      "class": "id_split"
+    },
+    {
+      "field": "neuro",
+      "pid": "808927",
+      "orcid": "0000-0003-0127-1761",
+      "aid": "A5102608653",
+      "gen_name": "Yu Yong",
+      "resolved_name": "Yong Yu",
+      "orcid_holder": "Yu Yong",
+      "class": "resolver_error"
+    },
+    {
+      "field": "neuro",
+      "pid": "890371",
+      "orcid": "0000-0001-9335-9861",
+      "aid": "A5043149961",
+      "gen_name": "Hyunjin Kim",
+      "resolved_name": "Hyoung-Ihl Kim",
+      "orcid_holder": null,
+      "class": "human_judgment_orcid_unindexed"
+    },
+    {
+      "field": "neuro",
+      "pid": "960820",
+      "orcid": "0000-0002-6589-3028",
+      "aid": "A5087811347",
+      "gen_name": "Yiyang Chen",
+      "resolved_name": "Yiyang Chen",
+      "orcid_holder": "Yiyang Chen",
+      "class": "id_split"
+    },
+    {
+      "field": "neuro",
+      "pid": "156477",
+      "orcid": "0000-0002-1781-8912",
+      "aid": "A5010059664",
+      "gen_name": "Juyun Lim",
+      "resolved_name": "Jae\u2010Young Lim",
+      "orcid_holder": "Juyun Lim",
+      "class": "resolver_error"
+    },
+    {
+      "field": "chemistry",
+      "pid": "931979",
+      "orcid": "0000-0002-3076-8868",
+      "aid": "A5064349471",
+      "gen_name": "Yue Hu",
+      "resolved_name": "Yue Hu",
+      "orcid_holder": "Yue Hu",
+      "class": "id_split"
+    },
+    {
+      "field": "chemistry",
+      "pid": "958274",
+      "orcid": "0000-0003-0201-3553",
+      "aid": "A5100343920",
+      "gen_name": "Min Liu",
+      "resolved_name": "Min Liu",
+      "orcid_holder": "Min Liu",
+      "class": "id_split"
+    },
+    {
+      "field": "neuro",
+      "pid": "777380",
+      "orcid": "0000-0002-4354-4169",
+      "aid": "A5021726939",
+      "gen_name": "Jaeyoung Yoon",
+      "resolved_name": "Jin\u2010Young Yoon",
+      "orcid_holder": "Jaeyoung Yoon",
+      "class": "resolver_error"
+    },
+    {
+      "field": "chemistry",
+      "pid": "911016",
+      "orcid": "0000-0002-8295-7361",
+      "aid": "A5010802633",
+      "gen_name": "Jaume Farr\u00e0s",
+      "resolved_name": "Jaume Farr\u00e0s",
+      "orcid_holder": null,
+      "class": "human_judgment_orcid_unindexed"
+    },
+    {
+      "field": "neuro",
+      "pid": "70116",
+      "orcid": "0000-0001-8787-076X",
+      "aid": "A5101740303",
+      "gen_name": "Xiaoliang Zhao",
+      "resolved_name": "Xiaolong Zhao",
+      "orcid_holder": "Xiaoliang Zhao",
+      "class": "id_split"
+    },
+    {
+      "field": "neuro",
+      "pid": "865367",
+      "orcid": "0000-0002-0416-5182",
+      "aid": "A5021521173",
+      "gen_name": "Luis Monteiro",
+      "resolved_name": "Lu\u0131\u0301s Monteiro",
+      "orcid_holder": "Luis Carlos Pereira Monteiro",
+      "class": "human_judgment_ambiguous"
+    },
+    {
+      "field": "neuro",
+      "pid": "70932",
+      "orcid": "0000-0003-0581-8277",
+      "aid": "A5028860077",
+      "gen_name": "Monique Smith",
+      "resolved_name": "Monique L. Smith",
+      "orcid_holder": null,
+      "class": "human_judgment_orcid_unindexed"
+    },
+    {
+      "field": "physics",
+      "pid": "830020",
+      "orcid": "0000-0001-7638-4037",
+      "aid": "A5100620486",
+      "gen_name": "Fei Huang",
+      "resolved_name": "Fei Huang",
+      "orcid_holder": "Fei Huang",
+      "class": "id_split"
+    },
+    {
+      "field": "neuro",
+      "pid": "973942",
+      "orcid": "0000-0002-5869-7483",
+      "aid": "A5059020340",
+      "gen_name": "Lina Garcia",
+      "resolved_name": "Lina Mar\u00eda Garc\u00eda",
+      "orcid_holder": null,
+      "class": "human_judgment_orcid_unindexed"
+    },
+    {
+      "field": "neuro",
+      "pid": "959835",
+      "orcid": "0009-0007-5876-6075",
+      "aid": "A5100727304",
+      "gen_name": "Jong-Hyun, Kim",
+      "resolved_name": "Jong\u2010Hyun Kim",
+      "orcid_holder": null,
+      "class": "human_judgment_orcid_unindexed"
+    },
+    {
+      "field": "neuro",
+      "pid": "83779",
+      "orcid": "0000-0003-2695-1659",
+      "aid": "A5070619322",
+      "gen_name": "Brendan Kelly",
+      "resolved_name": "Brendan P. Kelly",
+      "orcid_holder": null,
+      "class": "human_judgment_orcid_unindexed"
+    },
+    {
+      "field": "neuro",
+      "pid": "114524",
+      "orcid": "0000-0001-9108-151X",
+      "aid": "A5002867409",
+      "gen_name": "Hyun Jin Kim",
+      "resolved_name": "Joung\u2010Hun Kim",
+      "orcid_holder": "Hyun Jin Kim",
+      "class": "resolver_error"
+    },
+    {
+      "field": "neuro",
+      "pid": "894170",
+      "orcid": "0000-0003-0058-2429",
+      "aid": "A5100459826",
+      "gen_name": "Guanghui ZHANG",
+      "resolved_name": "Guanghui Zhang",
+      "orcid_holder": "Fengyu Cong",
+      "class": "original_id_error"
+    },
+    {
+      "field": "chemistry",
+      "pid": "973808",
+      "orcid": "0000-0003-4225-751X",
+      "aid": "A5021735741",
+      "gen_name": "Travis Nelson",
+      "resolved_name": "Travis J. Nelson",
+      "orcid_holder": null,
+      "class": "human_judgment_orcid_unindexed"
+    },
+    {
+      "field": "chemistry",
+      "pid": "495649",
+      "orcid": "0000-0002-2385-5672",
+      "aid": "A5102907301",
+      "gen_name": "Syed Rizvi",
+      "resolved_name": "Syed A. A. Rizvi",
+      "orcid_holder": "Syed A. A. Rizvi",
+      "class": "id_split"
+    },
+    {
+      "field": "chemistry",
+      "pid": "69246",
+      "orcid": "0000-0002-7621-3980",
+      "aid": "A5108009774",
+      "gen_name": "Norbert M\u00fcller",
+      "resolved_name": "Norbert M\u00fcller",
+      "orcid_holder": "N. MUELLER",
+      "class": "human_judgment_ambiguous"
+    },
+    {
+      "field": "neuro",
+      "pid": "859051",
+      "orcid": "0000-0002-4870-2541",
+      "aid": "A5100630443",
+      "gen_name": "Minwoo Kim",
+      "resolved_name": "Minwoo Kim",
+      "orcid_holder": "Minwoo J. B. Kim",
+      "class": "human_judgment_ambiguous"
+    },
+    {
+      "field": "chemistry",
+      "pid": "858529",
+      "orcid": "0000-0002-1078-2056",
+      "aid": "A5100440139",
+      "gen_name": "Jie Wang",
+      "resolved_name": "Jie Wang",
+      "orcid_holder": "Jie Wang",
+      "class": "id_split"
+    },
+    {
+      "field": "physics",
+      "pid": "915579",
+      "orcid": "0000-0002-9157-360X",
+      "aid": "A5100439464",
+      "gen_name": "Biao Wang",
+      "resolved_name": "Biao Wang",
+      "orcid_holder": "B. Wang",
+      "class": "human_judgment_ambiguous"
+    },
+    {
+      "field": "neuro",
+      "pid": "32974",
+      "orcid": "0000-0002-3815-2240",
+      "aid": "A5027668886",
+      "gen_name": "Douglas Anthony",
+      "resolved_name": "Daniel C. Anthony",
+      "orcid_holder": "Douglas C. Anthony",
+      "class": "resolver_error"
+    },
+    {
+      "field": "chemistry",
+      "pid": "803280",
+      "orcid": "0000-0002-3026-8986",
+      "aid": "A5021349116",
+      "gen_name": "Debasish Koner",
+      "resolved_name": "Debasish Koner",
+      "orcid_holder": "L. D. Ziegler",
+      "class": "original_id_error"
+    },
+    {
+      "field": "chemistry",
+      "pid": "757526",
+      "orcid": "0000-0001-5165-2699",
+      "aid": "A5028401323",
+      "gen_name": "Khuloud Al-Jamal",
+      "resolved_name": "Wafa\u2019 T. Al-Jamal",
+      "orcid_holder": "Khuloud T. Al\u2010Jamal",
+      "class": "resolver_error"
+    },
+    {
+      "field": "chemistry",
+      "pid": "927270",
+      "orcid": "0009-0005-6788-1193",
+      "aid": "A5059109137",
+      "gen_name": "Xinyu Luo",
+      "resolved_name": "Yingwu Luo",
+      "orcid_holder": "Xinyu Luo",
+      "class": "resolver_error"
+    },
+    {
+      "field": "neuro",
+      "pid": "873141",
+      "orcid": "0000-0003-2180-1619",
+      "aid": "A5021900426",
+      "gen_name": "K. Thompson",
+      "resolved_name": "Kara Thompson",
+      "orcid_holder": null,
+      "class": "human_judgment_orcid_unindexed"
+    },
+    {
+      "field": "neuro",
+      "pid": "794728",
+      "orcid": "0000-0003-0040-9255",
+      "aid": "A5039562624",
+      "gen_name": "Yi He",
+      "resolved_name": "Yong He",
+      "orcid_holder": "Yi He",
+      "class": "resolver_error"
+    },
+    {
+      "field": "chemistry",
+      "pid": "856003",
+      "orcid": "0000-0001-7122-2135",
+      "aid": "A5103204534",
+      "gen_name": "Sudarshan Debnath",
+      "resolved_name": "Sudarshan Debnath",
+      "orcid_holder": "Sudarshan Debnath",
+      "class": "id_split"
+    }
+  ],
+  "bias_corrected_precision_interval": {
+    "definition": "lower bound treats all sampled human-judgment items as genuine resolver errors; upper bound treats all as benign; no adjudication required",
+    "lower": 0.9891,
+    "lower_wilson95": [
+      0.9851,
+      0.9921
+    ],
+    "upper": 0.9962,
+    "upper_wilson95": [
+      0.9936,
+      0.9978
+    ]
+  }
+}

@@ -1,0 +1,395 @@
+{
+  "task": "paired student-level interval on lineage minus strict",
+  "procedure": "r25_strict_contract.py:400-417 with the strict arm in place of the M5 prime ceiling",
+  "n_boot": 2000,
+  "rng_seed": 0,
+  "validation": {
+    "max_seed_auc_deviation": 0.0005582654759925809,
+    "max_linstr_point_deviation": 6.437380363902463e-05,
+    "tolerance_seed": 0.002,
+    "tolerance_linstr": 0.004,
+    "note": "test_scores are stored rounded to five decimal places, which bounds how closely any recomputation can track the recorded AUC-PR"
+  },
+  "cells": [
+    {
+      "field": "econ",
+      "display": "economics",
+      "arch": "rgcn",
+      "protocol": "prereg",
+      "target_table": "Table 12c",
+      "target_row": "RGCN lineage",
+      "lineage_mean_auc_pr": 0.346,
+      "strict_mean_auc_pr": 0.352,
+      "lin_minus_str": -0.006,
+      "lin_minus_str_recomputed_from_rounded_scores": -0.006,
+      "linstr_ci95_paired_student": [
+        -0.0194,
+        0.0074
+      ],
+      "ci_excludes_zero": false,
+      "n_test_students": 495,
+      "strict_source": "results\\revision\\T2_1_strict_contract\\T2_1_final\\T2_1_strict_contract\\econ\\rgcn_prereg_strict"
+    },
+    {
+      "field": "econ",
+      "display": "economics",
+      "arch": "rgcn",
+      "protocol": "tuned",
+      "target_table": "Table 13c",
+      "target_row": "RGCN symmetric lineage",
+      "lineage_mean_auc_pr": 0.3528,
+      "strict_mean_auc_pr": 0.3544,
+      "lin_minus_str": -0.0016,
+      "lin_minus_str_recomputed_from_rounded_scores": -0.0016,
+      "linstr_ci95_paired_student": [
+        -0.0123,
+        0.0094
+      ],
+      "ci_excludes_zero": false,
+      "n_test_students": 495,
+      "strict_source": "results\\revision\\T2_1_strict_contract\\T2_1_final\\T2_1_strict_contract\\econ\\rgcn_tuned_strict"
+    },
+    {
+      "field": "econ",
+      "display": "economics",
+      "arch": "gat",
+      "protocol": "prereg",
+      "target_table": "Table 12c",
+      "target_row": "GAT lineage",
+      "lineage_mean_auc_pr": 0.373,
+      "strict_mean_auc_pr": 0.3706,
+      "lin_minus_str": 0.0024,
+      "lin_minus_str_recomputed_from_rounded_scores": 0.0024,
+      "linstr_ci95_paired_student": [
+        -0.0137,
+        0.0208
+      ],
+      "ci_excludes_zero": false,
+      "n_test_students": 495,
+      "strict_source": "results\\revision\\T2_1_strict_contract\\T2_1_final\\T2_1_strict_contract\\econ\\gat_prereg_strict"
+    },
+    {
+      "field": "econ",
+      "display": "economics",
+      "arch": "gat",
+      "protocol": "tuned",
+      "target_table": "Table 13c",
+      "target_row": "GAT symmetric lineage",
+      "lineage_mean_auc_pr": 0.3728,
+      "strict_mean_auc_pr": 0.3805,
+      "lin_minus_str": -0.0077,
+      "lin_minus_str_recomputed_from_rounded_scores": -0.0077,
+      "linstr_ci95_paired_student": [
+        -0.0277,
+        0.0142
+      ],
+      "ci_excludes_zero": false,
+      "n_test_students": 495,
+      "strict_source": "results\\revision\\T2_1_strict_contract\\T2_1_final\\T2_1_strict_contract\\econ\\gat_tuned_strict"
+    },
+    {
+      "field": "math",
+      "display": "mathematics",
+      "arch": "rgcn",
+      "protocol": "prereg",
+      "target_table": "Table 12c",
+      "target_row": "RGCN lineage",
+      "lineage_mean_auc_pr": 0.4219,
+      "strict_mean_auc_pr": 0.4058,
+      "lin_minus_str": 0.0161,
+      "lin_minus_str_recomputed_from_rounded_scores": 0.0161,
+      "linstr_ci95_paired_student": [
+        -0.0064,
+        0.0377
+      ],
+      "ci_excludes_zero": false,
+      "n_test_students": 935,
+      "strict_source": "results\\revision\\T2_1_strict_contract\\T2_1_final\\T2_1_strict_contract\\math\\rgcn_prereg_strict"
+    },
+    {
+      "field": "math",
+      "display": "mathematics",
+      "arch": "rgcn",
+      "protocol": "tuned",
+      "target_table": "Table 13c",
+      "target_row": "RGCN symmetric lineage",
+      "lineage_mean_auc_pr": 0.4156,
+      "strict_mean_auc_pr": 0.4049,
+      "lin_minus_str": 0.0107,
+      "lin_minus_str_recomputed_from_rounded_scores": 0.0107,
+      "linstr_ci95_paired_student": [
+        -0.001,
+        0.0227
+      ],
+      "ci_excludes_zero": false,
+      "n_test_students": 935,
+      "strict_source": "results\\revision\\T2_1_strict_contract\\T2_1_final\\T2_1_strict_contract\\math\\rgcn_tuned_strict"
+    },
+    {
+      "field": "math",
+      "display": "mathematics",
+      "arch": "gat",
+      "protocol": "prereg",
+      "target_table": "Table 12c",
+      "target_row": "GAT lineage",
+      "lineage_mean_auc_pr": 0.3948,
+      "strict_mean_auc_pr": 0.3838,
+      "lin_minus_str": 0.0109,
+      "lin_minus_str_recomputed_from_rounded_scores": 0.0109,
+      "linstr_ci95_paired_student": [
+        -0.0066,
+        0.0285
+      ],
+      "ci_excludes_zero": false,
+      "n_test_students": 935,
+      "strict_source": "results\\revision\\T2_1_strict_contract\\T2_1_final\\T2_1_strict_contract\\math\\gat_prereg_strict"
+    },
+    {
+      "field": "math",
+      "display": "mathematics",
+      "arch": "gat",
+      "protocol": "tuned",
+      "target_table": "Table 13c",
+      "target_row": "GAT symmetric lineage",
+      "lineage_mean_auc_pr": 0.3855,
+      "strict_mean_auc_pr": 0.4064,
+      "lin_minus_str": -0.0209,
+      "lin_minus_str_recomputed_from_rounded_scores": -0.0209,
+      "linstr_ci95_paired_student": [
+        -0.0371,
+        -0.0042
+      ],
+      "ci_excludes_zero": true,
+      "n_test_students": 935,
+      "strict_source": "results\\revision\\T2_1_strict_contract\\T2_1_final\\T2_1_strict_contract\\math\\gat_tuned_strict"
+    },
+    {
+      "field": "neuro",
+      "display": "neuroscience",
+      "arch": "rgcn",
+      "protocol": "prereg",
+      "target_table": "Table 12c",
+      "target_row": "RGCN lineage",
+      "lineage_mean_auc_pr": 0.4351,
+      "strict_mean_auc_pr": 0.4335,
+      "lin_minus_str": 0.0016,
+      "lin_minus_str_recomputed_from_rounded_scores": 0.0016,
+      "linstr_ci95_paired_student": [
+        -0.0026,
+        0.0058
+      ],
+      "ci_excludes_zero": false,
+      "n_test_students": 3463,
+      "strict_source": "results\\revision\\T2_1_strict_contract\\T2_1_final\\T2_1_strict_contract\\neuro\\rgcn_prereg_strict"
+    },
+    {
+      "field": "neuro",
+      "display": "neuroscience",
+      "arch": "rgcn",
+      "protocol": "tuned",
+      "target_table": "Table 13c",
+      "target_row": "RGCN symmetric lineage",
+      "lineage_mean_auc_pr": 0.4378,
+      "strict_mean_auc_pr": 0.4414,
+      "lin_minus_str": -0.0036,
+      "lin_minus_str_recomputed_from_rounded_scores": -0.0036,
+      "linstr_ci95_paired_student": [
+        -0.008,
+        0.0007
+      ],
+      "ci_excludes_zero": false,
+      "n_test_students": 3463,
+      "strict_source": "results\\revision\\T2_1_strict_contract\\T2_1_final\\T2_1_strict_contract\\neuro\\rgcn_tuned_strict"
+    },
+    {
+      "field": "neuro",
+      "display": "neuroscience",
+      "arch": "gat",
+      "protocol": "prereg",
+      "target_table": "Table 12c",
+      "target_row": "GAT lineage",
+      "lineage_mean_auc_pr": 0.4211,
+      "strict_mean_auc_pr": 0.421,
+      "lin_minus_str": 0.0001,
+      "lin_minus_str_recomputed_from_rounded_scores": 0.0001,
+      "linstr_ci95_paired_student": [
+        -0.0059,
+        0.0064
+      ],
+      "ci_excludes_zero": false,
+      "n_test_students": 3463,
+      "strict_source": "results\\revision\\T2_1_strict_contract\\T2_1_final\\T2_1_strict_contract\\neuro\\gat_prereg_strict"
+    },
+    {
+      "field": "neuro",
+      "display": "neuroscience",
+      "arch": "gat",
+      "protocol": "tuned",
+      "target_table": "Table 13c",
+      "target_row": "GAT symmetric lineage",
+      "lineage_mean_auc_pr": 0.4253,
+      "strict_mean_auc_pr": 0.4292,
+      "lin_minus_str": -0.0039,
+      "lin_minus_str_recomputed_from_rounded_scores": -0.0039,
+      "linstr_ci95_paired_student": [
+        -0.0091,
+        0.0017
+      ],
+      "ci_excludes_zero": false,
+      "n_test_students": 3463,
+      "strict_source": "results\\revision\\T2_1_strict_contract\\T2_1_final\\T2_1_strict_contract\\neuro\\gat_tuned_strict"
+    },
+    {
+      "field": "physics",
+      "display": "physics",
+      "arch": "rgcn",
+      "protocol": "prereg",
+      "target_table": "Table 12c",
+      "target_row": "RGCN lineage",
+      "lineage_mean_auc_pr": 0.6507,
+      "strict_mean_auc_pr": 0.6519,
+      "lin_minus_str": -0.0013,
+      "lin_minus_str_recomputed_from_rounded_scores": -0.0013,
+      "linstr_ci95_paired_student": [
+        -0.0044,
+        0.0019
+      ],
+      "ci_excludes_zero": false,
+      "n_test_students": 2218,
+      "strict_source": "results\\revision\\T2_1_strict_contract\\T2_1_final\\T2_1_strict_contract\\physics\\rgcn_prereg_strict"
+    },
+    {
+      "field": "physics",
+      "display": "physics",
+      "arch": "rgcn",
+      "protocol": "tuned",
+      "target_table": "Table 13c",
+      "target_row": "RGCN symmetric lineage",
+      "lineage_mean_auc_pr": 0.6556,
+      "strict_mean_auc_pr": 0.6591,
+      "lin_minus_str": -0.0035,
+      "lin_minus_str_recomputed_from_rounded_scores": -0.0036,
+      "linstr_ci95_paired_student": [
+        -0.007,
+        -0.0001
+      ],
+      "ci_excludes_zero": true,
+      "n_test_students": 2218,
+      "strict_source": "results\\revision\\T2_1_strict_contract\\T2_1_final\\T2_1_strict_contract\\physics\\rgcn_tuned_strict"
+    },
+    {
+      "field": "physics",
+      "display": "physics",
+      "arch": "gat",
+      "protocol": "prereg",
+      "target_table": "Table 12c",
+      "target_row": "GAT lineage",
+      "lineage_mean_auc_pr": 0.6442,
+      "strict_mean_auc_pr": 0.6501,
+      "lin_minus_str": -0.0059,
+      "lin_minus_str_recomputed_from_rounded_scores": -0.0059,
+      "linstr_ci95_paired_student": [
+        -0.0115,
+        -0.0007
+      ],
+      "ci_excludes_zero": true,
+      "n_test_students": 2218,
+      "strict_source": "results\\revision\\T2_1_strict_contract\\T2_1_final\\T2_1_strict_contract\\physics\\gat_prereg_strict"
+    },
+    {
+      "field": "physics",
+      "display": "physics",
+      "arch": "gat",
+      "protocol": "tuned",
+      "target_table": "Table 13c",
+      "target_row": "GAT symmetric lineage",
+      "lineage_mean_auc_pr": 0.6521,
+      "strict_mean_auc_pr": 0.6563,
+      "lin_minus_str": -0.0043,
+      "lin_minus_str_recomputed_from_rounded_scores": -0.0042,
+      "linstr_ci95_paired_student": [
+        -0.0111,
+        0.0025
+      ],
+      "ci_excludes_zero": false,
+      "n_test_students": 2218,
+      "strict_source": "results\\revision\\T2_1_strict_contract\\T2_1_final\\T2_1_strict_contract\\physics\\gat_tuned_strict"
+    },
+    {
+      "field": "chemistry",
+      "display": "chemistry",
+      "arch": "rgcn",
+      "protocol": "prereg",
+      "target_table": "Table 12c",
+      "target_row": "RGCN lineage",
+      "lineage_mean_auc_pr": 0.5514,
+      "strict_mean_auc_pr": 0.5652,
+      "lin_minus_str": -0.0138,
+      "lin_minus_str_recomputed_from_rounded_scores": -0.0138,
+      "linstr_ci95_paired_student": [
+        -0.0184,
+        -0.0092
+      ],
+      "ci_excludes_zero": true,
+      "n_test_students": 4617,
+      "strict_source": "results\\revision\\T2_1_strict_contract\\T2_1_final\\T2_1_strict_contract\\chemistry\\rgcn_prereg_strict"
+    },
+    {
+      "field": "chemistry",
+      "display": "chemistry",
+      "arch": "rgcn",
+      "protocol": "tuned",
+      "target_table": "Table 13c",
+      "target_row": "RGCN symmetric lineage",
+      "lineage_mean_auc_pr": 0.5778,
+      "strict_mean_auc_pr": 0.5822,
+      "lin_minus_str": -0.0044,
+      "lin_minus_str_recomputed_from_rounded_scores": -0.0044,
+      "linstr_ci95_paired_student": [
+        -0.0076,
+        -0.0012
+      ],
+      "ci_excludes_zero": true,
+      "n_test_students": 4617,
+      "strict_source": "results\\revision\\T2_1_strict_contract\\T2_1_final\\T2_1_strict_contract\\chemistry\\rgcn_tuned_strict"
+    },
+    {
+      "field": "chemistry",
+      "display": "chemistry",
+      "arch": "gat",
+      "protocol": "prereg",
+      "target_table": "Table 12c",
+      "target_row": "GAT lineage",
+      "lineage_mean_auc_pr": 0.5579,
+      "strict_mean_auc_pr": 0.5596,
+      "lin_minus_str": -0.0017,
+      "lin_minus_str_recomputed_from_rounded_scores": -0.0017,
+      "linstr_ci95_paired_student": [
+        -0.0058,
+        0.0027
+      ],
+      "ci_excludes_zero": false,
+      "n_test_students": 4617,
+      "strict_source": "results\\revision\\T2_1_strict_contract\\T2_1_final\\T2_1_strict_contract\\chemistry\\gat_prereg_strict"
+    },
+    {
+      "field": "chemistry",
+      "display": "chemistry",
+      "arch": "gat",
+      "protocol": "tuned",
+      "target_table": "Table 13c",
+      "target_row": "GAT symmetric lineage",
+      "lineage_mean_auc_pr": 0.5752,
+      "strict_mean_auc_pr": 0.5706,
+      "lin_minus_str": 0.0045,
+      "lin_minus_str_recomputed_from_rounded_scores": 0.0045,
+      "linstr_ci95_paired_student": [
+        0.0,
+        0.0089
+      ],
+      "ci_excludes_zero": false,
+      "n_test_students": 4617,
+      "strict_source": "results\\revision\\T2_1_strict_contract\\T2_1_final\\T2_1_strict_contract\\chemistry\\gat_tuned_strict"
+    }
+  ]
+}

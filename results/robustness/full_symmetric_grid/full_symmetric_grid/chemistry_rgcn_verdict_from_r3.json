@@ -1,0 +1,127 @@
+{
+  "experiment": "R3_rgcn_symmetric",
+  "field": "chemistry",
+  "note": "post-hoc robustness; RGCN under the HGT-tuned grid protocol (16 configs, seeds 0/1, budget 200/15, weight decay 1e-4, train-only class weight), winner at 10 seeds under both budgets; corrected eq.(2) protocol vs M5' with BH across the four-model family, symmetric RGCN substituted for the original RGCN",
+  "grid_selection": {
+    "winner": {
+      "lr": 0.005,
+      "hidden": 64,
+      "layers": 3,
+      "dropout": 0.5
+    },
+    "winner_mean_val_auc_pr": 0.5079,
+    "per_seed_argmax": {
+      "0": {
+        "lr": 0.005,
+        "hidden": 64,
+        "layers": 3,
+        "dropout": 0.5
+      },
+      "1": {
+        "lr": 0.005,
+        "hidden": 64,
+        "layers": 3,
+        "dropout": 0.5
+      }
+    },
+    "seeds_agree": true,
+    "all_configs_mean_val": {
+      "lr0.001_h64_l2_d0.0": 0.4918,
+      "lr0.001_h64_l2_d0.5": 0.5045,
+      "lr0.001_h64_l3_d0.0": 0.4892,
+      "lr0.001_h64_l3_d0.5": 0.5072,
+      "lr0.001_h128_l2_d0.0": 0.4926,
+      "lr0.001_h128_l2_d0.5": 0.5009,
+      "lr0.001_h128_l3_d0.0": 0.4909,
+      "lr0.001_h128_l3_d0.5": 0.5052,
+      "lr0.005_h64_l2_d0.0": 0.4926,
+      "lr0.005_h64_l2_d0.5": 0.5021,
+      "lr0.005_h64_l3_d0.0": 0.4915,
+      "lr0.005_h64_l3_d0.5": 0.5079,
+      "lr0.005_h128_l2_d0.0": 0.4868,
+      "lr0.005_h128_l2_d0.5": 0.4969,
+      "lr0.005_h128_l3_d0.0": 0.4934,
+      "lr0.005_h128_l3_d0.5": 0.5021
+    }
+  },
+  "winner_10seed": {
+    "hgt_budget_mean_auc_pr": 0.5724,
+    "original_budget_mean_auc_pr": 0.5677,
+    "frozen_original_rgcn_mean_auc_pr": 0.5598
+  },
+  "ceilings": {
+    "M5_preregistered": 0.5307,
+    "M5_prime_val_symmetric": 0.5374
+  },
+  "models": {
+    "hgt": {
+      "seed_mean_auc_pr": 0.5415,
+      "delta_vs_M5": 0.0108,
+      "p_adj_M5": 0.375,
+      "delta_vs_M5prime": 0.0041,
+      "p_adj_M5prime": 1.0,
+      "student_ci95_vs_M5prime": [
+        -0.0105,
+        0.0173
+      ],
+      "gates_fair": {
+        "seed_mean_gt_ceiling": true,
+        "p_adj_lt_0.05": false,
+        "student_ci_lower_gt_0": false
+      },
+      "exceeds_fair": false
+    },
+    "hgt_tuned": {
+      "seed_mean_auc_pr": 0.5426,
+      "delta_vs_M5": 0.0119,
+      "p_adj_M5": 0.213542,
+      "delta_vs_M5prime": 0.0052,
+      "p_adj_M5prime": 1.0,
+      "student_ci95_vs_M5prime": [
+        -0.0109,
+        0.0209
+      ],
+      "gates_fair": {
+        "seed_mean_gt_ceiling": true,
+        "p_adj_lt_0.05": false,
+        "student_ci_lower_gt_0": false
+      },
+      "exceeds_fair": false
+    },
+    "rgcn_symmetric": {
+      "seed_mean_auc_pr": 0.5724,
+      "delta_vs_M5": 0.0417,
+      "p_adj_M5": 0.003906,
+      "delta_vs_M5prime": 0.035,
+      "p_adj_M5prime": 0.007812,
+      "student_ci95_vs_M5prime": [
+        0.0198,
+        0.049
+      ],
+      "gates_fair": {
+        "seed_mean_gt_ceiling": true,
+        "p_adj_lt_0.05": true,
+        "student_ci_lower_gt_0": true
+      },
+      "exceeds_fair": true
+    },
+    "gat_cohort_time": {
+      "seed_mean_auc_pr": 0.547,
+      "delta_vs_M5": 0.0164,
+      "p_adj_M5": 0.003906,
+      "delta_vs_M5prime": 0.0096,
+      "p_adj_M5prime": 0.039062,
+      "student_ci95_vs_M5prime": [
+        -0.0078,
+        0.0271
+      ],
+      "gates_fair": {
+        "seed_mean_gt_ceiling": true,
+        "p_adj_lt_0.05": true,
+        "student_ci_lower_gt_0": false
+      },
+      "exceeds_fair": false
+    }
+  },
+  "rgcn_symmetric_exceeds_fair": true
+}

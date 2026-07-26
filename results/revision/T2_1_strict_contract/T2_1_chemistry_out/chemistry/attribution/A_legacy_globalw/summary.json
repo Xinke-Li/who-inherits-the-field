@@ -1,0 +1,29 @@
+{
+  "cell": "A_legacy_globalw",
+  "field": "chemistry",
+  "hp": {
+    "lr": 0.005,
+    "hidden": 64,
+    "layers": 3,
+    "dropout": 0.5
+  },
+  "construction": "legacy",
+  "class_weight_scope": "all",
+  "mean_auc_pr": 0.5716,
+  "std_auc_pr": 0.0043,
+  "per_seed_auc_pr": [
+    0.5721,
+    0.5731,
+    0.5773,
+    0.5657,
+    0.5632,
+    0.5759,
+    0.5714,
+    0.5717,
+    0.5689,
+    0.5762
+  ],
+  "ROLE": "attribution anchor: reproduces the legacy reading on this stack",
+  "WARNING": "uses the UNFIXED e2_hgt.build_graph (audit finding F1) on purpose, for attribution only. This is NOT a verdict cell and must never be read as one.",
+  "IS_VERDICT_CELL": false
+}

@@ -1,0 +1,72 @@
+{
+  "snapshot_utc": "2026-07-23T18:30:00Z",
+  "git_note": "commit recorded at bundle build",
+  "fetch_r5": {
+    "authors_total": 89374,
+    "authors_cached": 71000,
+    "authors_remaining": 18374,
+    "cache_shards": 72,
+    "repair_pass_run": true,
+    "still_empty_after_repair": 0,
+    "retry_list": "results/robustness/retry_list.json"
+  },
+  "theta_r1": {
+    "cells_done": [
+      "chemistry_theta_0.10.json",
+      "chemistry_theta_0.15.json",
+      "econ_theta_0.10.json",
+      "econ_theta_0.15.json",
+      "econ_theta_0.20.json",
+      "econ_theta_0.25.json",
+      "econ_theta_0.30.json",
+      "math_theta_0.10.json",
+      "math_theta_0.15.json",
+      "math_theta_0.20.json",
+      "math_theta_0.25.json",
+      "math_theta_0.30.json",
+      "neuro_theta_0.10.json",
+      "neuro_theta_0.15.json",
+      "neuro_theta_0.20.json",
+      "physics_theta_0.10.json",
+      "physics_theta_0.15.json",
+      "physics_theta_0.20.json",
+      "physics_theta_0.25.json"
+    ],
+    "cells_remaining": [
+      "chemistry_theta_0.20",
+      "chemistry_theta_0.25",
+      "chemistry_theta_0.30",
+      "neuro_theta_0.25",
+      "neuro_theta_0.30",
+      "physics_theta_0.30"
+    ],
+    "note": "econ+math complete (5/5 each); r2 continuous-label complete for all five"
+  },
+  "rgcn_r3": {
+    "grid_files_done": [
+      "rgcn_sym_grid_seed0_lr0.001_h128_l2_d0.0.json",
+      "rgcn_sym_grid_seed0_lr0.001_h128_l2_d0.5.json",
+      "rgcn_sym_grid_seed0_lr0.001_h128_l3_d0.0.json",
+      "rgcn_sym_grid_seed0_lr0.001_h128_l3_d0.5.json",
+      "rgcn_sym_grid_seed0_lr0.001_h64_l2_d0.0.json",
+      "rgcn_sym_grid_seed0_lr0.001_h64_l2_d0.5.json",
+      "rgcn_sym_grid_seed0_lr0.001_h64_l3_d0.0.json",
+      "rgcn_sym_grid_seed0_lr0.001_h64_l3_d0.5.json",
+      "rgcn_sym_grid_seed0_lr0.005_h128_l2_d0.0.json",
+      "rgcn_sym_grid_seed0_lr0.005_h128_l2_d0.5.json",
+      "rgcn_sym_grid_seed0_lr0.005_h128_l3_d0.0.json",
+      "rgcn_sym_grid_seed0_lr0.005_h128_l3_d0.5.json",
+      "rgcn_sym_grid_seed0_lr0.005_h64_l2_d0.0.json",
+      "rgcn_sym_grid_seed0_lr0.005_h64_l2_d0.5.json",
+      "rgcn_sym_grid_seed0_lr0.005_h64_l3_d0.0.json",
+      "rgcn_sym_grid_seed0_lr0.005_h64_l3_d0.5.json",
+      "rgcn_sym_grid_seed1_lr0.001_h64_l2_d0.0.json"
+    ],
+    "winner_runs_done": [],
+    "device_of_partials": "cpu",
+    "note": "CPU partials to be superseded by GPU grid per migration decision"
+  },
+  "topk_r6": {
+    "status": "not started; gated on fetch completion"
+  }
+}

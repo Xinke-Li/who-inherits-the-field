@@ -1,0 +1,37 @@
+{
+  "cell": "F_f1b_only_trainw",
+  "field": "chemistry",
+  "hp": {
+    "lr": 0.005,
+    "hidden": 64,
+    "layers": 3,
+    "dropout": 0.5
+  },
+  "construction": "f1b",
+  "class_weight_scope": "train",
+  "mean_auc_pr": 0.5714,
+  "std_auc_pr": 0.0053,
+  "per_seed_auc_pr": [
+    0.5729,
+    0.5726,
+    0.5827,
+    0.5643,
+    0.5641,
+    0.5755,
+    0.574,
+    0.572,
+    0.5677,
+    0.5686
+  ],
+  "ROLE": "F1b alone: sibling reachability restricted to prior cohorts, with legacy .first() advisor features retained.",
+  "WARNING": "attribution cell, not a verdict cell.",
+  "session": {
+    "session_id": "3d9a066c7a94",
+    "gpu": "NVIDIA A100-SXM4-40GB",
+    "torch": "2.11.0+cu128",
+    "cuda": "12.8",
+    "platform": "Linux-6.6.122+-x86_64-with-glibc2.35",
+    "forced_recompute": true
+  },
+  "IS_VERDICT_CELL": false
+}

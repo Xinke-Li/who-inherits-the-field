@@ -1,0 +1,52 @@
+{
+  "experiment": "R12_vocab_bound",
+  "design": "e18 eligibility rule on the r5 cache: concept eligible iff earliest corpus appearance <= t0+5; single-feature AUC-PR (M1-equivalent: raw scalar as score), rebuilt family, label untouched; an upper bound, the 2026 tagging model itself cannot be un-applied",
+  "n_concepts": 64761,
+  "fields": {
+    "chemistry": {
+      "n": 26830,
+      "n_test": 4617,
+      "auc_pr_unrestricted": 0.4187,
+      "auc_pr_restricted": 0.4187,
+      "shift": 0.0,
+      "rows_with_changed_feature": 0.0,
+      "corr_restricted_vs_full": 1.0
+    },
+    "econ": {
+      "n": 2697,
+      "n_test": 495,
+      "auc_pr_unrestricted": 0.3464,
+      "auc_pr_restricted": 0.3464,
+      "shift": 0.0,
+      "rows_with_changed_feature": 0.0,
+      "corr_restricted_vs_full": 1.0
+    },
+    "math": {
+      "n": 5051,
+      "n_test": 935,
+      "auc_pr_unrestricted": 0.3829,
+      "auc_pr_restricted": 0.3829,
+      "shift": 0.0,
+      "rows_with_changed_feature": 0.0,
+      "corr_restricted_vs_full": 1.0
+    },
+    "neuro": {
+      "n": 21844,
+      "n_test": 3463,
+      "auc_pr_unrestricted": 0.3865,
+      "auc_pr_restricted": 0.3865,
+      "shift": 0.0,
+      "rows_with_changed_feature": 0.0,
+      "corr_restricted_vs_full": 1.0
+    },
+    "physics": {
+      "n": 11809,
+      "n_test": 2218,
+      "auc_pr_unrestricted": 0.5451,
+      "auc_pr_restricted": 0.5451,
+      "shift": 0.0,
+      "rows_with_changed_feature": 0.0,
+      "corr_restricted_vs_full": 1.0
+    }
+  }
+}

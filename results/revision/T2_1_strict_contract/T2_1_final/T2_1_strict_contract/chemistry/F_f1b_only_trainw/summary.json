@@ -1,0 +1,29 @@
+{
+  "cell": "F_f1b_only_trainw",
+  "field": "chemistry",
+  "hp": {
+    "lr": 0.005,
+    "hidden": 64,
+    "layers": 3,
+    "dropout": 0.5
+  },
+  "construction": "f1b",
+  "class_weight_scope": "train",
+  "mean_auc_pr": 0.5716,
+  "std_auc_pr": 0.0052,
+  "per_seed_auc_pr": [
+    0.5751,
+    0.573,
+    0.5816,
+    0.565,
+    0.5632,
+    0.5759,
+    0.5735,
+    0.572,
+    0.568,
+    0.5692
+  ],
+  "ROLE": "F1b alone: sibling reachability restricted to prior cohorts, with legacy .first() advisor features retained.",
+  "WARNING": "attribution cell, not a verdict cell.",
+  "IS_VERDICT_CELL": false
+}

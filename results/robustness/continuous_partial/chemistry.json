@@ -1,0 +1,167 @@
+{
+  "experiment": "R2_continuous_label",
+  "field": "chemistry",
+  "target": "late_overlap",
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "summary": {
+    "M1r_ols_overlap": {
+      "spearman_rho": {
+        "mean": 0.3719,
+        "std": 0.0
+      },
+      "r2": {
+        "mean": 0.1425,
+        "std": 0.0
+      }
+    },
+    "M2r_ridge_tabular": {
+      "spearman_rho": {
+        "mean": 0.3956,
+        "std": 0.0
+      },
+      "r2": {
+        "mean": 0.1881,
+        "std": 0.0
+      }
+    },
+    "M3r_gbr_tabular": {
+      "spearman_rho": {
+        "mean": 0.4244,
+        "std": 0.0038
+      },
+      "r2": {
+        "mean": 0.2153,
+        "std": 0.0035
+      }
+    },
+    "M5r_gbr_nfa": {
+      "spearman_rho": {
+        "mean": 0.4261,
+        "std": 0.004
+      },
+      "r2": {
+        "mean": 0.2189,
+        "std": 0.0041
+      }
+    }
+  },
+  "per_seed": {
+    "M1r_ols_overlap": [
+      {
+        "spearman_rho": 0.3719,
+        "r2": 0.1425
+      }
+    ],
+    "M2r_ridge_tabular": [
+      {
+        "spearman_rho": 0.3956,
+        "r2": 0.1881
+      }
+    ],
+    "M3r_gbr_tabular": [
+      {
+        "spearman_rho": 0.4214,
+        "r2": 0.2124
+      },
+      {
+        "spearman_rho": 0.4203,
+        "r2": 0.2107
+      },
+      {
+        "spearman_rho": 0.427,
+        "r2": 0.2158
+      },
+      {
+        "spearman_rho": 0.4233,
+        "r2": 0.2121
+      },
+      {
+        "spearman_rho": 0.4238,
+        "r2": 0.2152
+      },
+      {
+        "spearman_rho": 0.4214,
+        "r2": 0.2149
+      },
+      {
+        "spearman_rho": 0.4197,
+        "r2": 0.213
+      },
+      {
+        "spearman_rho": 0.4297,
+        "r2": 0.2178
+      },
+      {
+        "spearman_rho": 0.4285,
+        "r2": 0.2197
+      },
+      {
+        "spearman_rho": 0.4287,
+        "r2": 0.2213
+      }
+    ],
+    "M5r_gbr_nfa": [
+      {
+        "spearman_rho": 0.4219,
+        "r2": 0.2133
+      },
+      {
+        "spearman_rho": 0.4246,
+        "r2": 0.2185
+      },
+      {
+        "spearman_rho": 0.432,
+        "r2": 0.2187
+      },
+      {
+        "spearman_rho": 0.4263,
+        "r2": 0.2178
+      },
+      {
+        "spearman_rho": 0.4313,
+        "r2": 0.2238
+      },
+      {
+        "spearman_rho": 0.4228,
+        "r2": 0.2146
+      },
+      {
+        "spearman_rho": 0.422,
+        "r2": 0.2171
+      },
+      {
+        "spearman_rho": 0.4278,
+        "r2": 0.2229
+      },
+      {
+        "spearman_rho": 0.4219,
+        "r2": 0.2161
+      },
+      {
+        "spearman_rho": 0.43,
+        "r2": 0.2259
+      }
+    ]
+  },
+  "ladder_ordering_rho": {
+    "values": [
+      0.3719,
+      0.3956,
+      0.4244,
+      0.4261
+    ],
+    "monotone_nondecreasing": true
+  },
+  "m1_share_of_best_rho": 0.8728
+}

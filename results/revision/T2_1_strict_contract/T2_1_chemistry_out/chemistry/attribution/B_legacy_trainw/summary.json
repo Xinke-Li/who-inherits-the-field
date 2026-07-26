@@ -1,0 +1,29 @@
+{
+  "cell": "B_legacy_trainw",
+  "field": "chemistry",
+  "hp": {
+    "lr": 0.005,
+    "hidden": 64,
+    "layers": 3,
+    "dropout": 0.5
+  },
+  "construction": "legacy",
+  "class_weight_scope": "train",
+  "mean_auc_pr": 0.5718,
+  "std_auc_pr": 0.0047,
+  "per_seed_auc_pr": [
+    0.5729,
+    0.5703,
+    0.5785,
+    0.5637,
+    0.5636,
+    0.5741,
+    0.5753,
+    0.5712,
+    0.5729,
+    0.5758
+  ],
+  "ROLE": "legacy construction, F2 repaired: isolates the class-weight effect",
+  "WARNING": "uses the UNFIXED e2_hgt.build_graph for attribution only. NOT a verdict cell.",
+  "IS_VERDICT_CELL": false
+}

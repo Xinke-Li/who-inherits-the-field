@@ -1,0 +1,24 @@
+[split] temporal: train t0<=2005, val t0 in (2005,2007], test t0>2007 | sizes={'train': 3356, 'test': 935, 'val': 760} | base rates={'test': 0.2075, 'train': 0.2017, 'val': 0.1895}
+[split] temporal: train t0<=2005, val t0 in (2005,2007], test t0>2007 | sizes={'train': 3356, 'test': 935, 'val': 760} | base rates={'test': 0.661, 'train': 0.643, 'val': 0.6526}
+[r48] math theta=0.1: floor 0.7806 ci [-0.0184, 0.0531] branch B_SELF_PERSISTENCE_EQUIVALENT
+[split] temporal: train t0<=2005, val t0 in (2005,2007], test t0>2007 | sizes={'train': 3356, 'test': 935, 'val': 760} | base rates={'test': 0.4107, 'train': 0.4035, 'val': 0.4053}
+[r48] math theta=0.15: floor 0.5402 ci [-0.0038, 0.0984] branch B_SELF_PERSISTENCE_EQUIVALENT
+[split] temporal: train t0<=2005, val t0 in (2005,2007], test t0>2007 | sizes={'train': 3356, 'test': 935, 'val': 760} | base rates={'test': 0.2075, 'train': 0.2017, 'val': 0.1895}
+[r48] math theta=0.2: floor 0.3075 ci [0.0089, 0.1366] branch C_INTERMEDIATE
+[split] temporal: train t0<=2005, val t0 in (2005,2007], test t0>2007 | sizes={'train': 3356, 'test': 935, 'val': 760} | base rates={'test': 0.0695, 'train': 0.0778, 'val': 0.0829}
+[r48] math theta=0.25: floor 0.0948 ci [-0.0087, 0.1314] branch B_SELF_PERSISTENCE_EQUIVALENT
+[split] temporal: train t0<=2005, val t0 in (2005,2007], test t0>2007 | sizes={'train': 3356, 'test': 935, 'val': 760} | base rates={'test': 0.0684, 'train': 0.0748, 'val': 0.0789}
+[r48] math theta=0.3: floor 0.0936 ci [0.0019, 0.1308] branch A_ADVISOR_INFORMATION_REQUIRED
+[r48] math: loading r5 cache for 7380 authors
+[split] temporal: train t0<=2005, val t0 in (2005,2007], test t0>2007 | sizes={'train': 3356, 'test': 935, 'val': 760} | base rates={'test': 0.4107, 'train': 0.4044, 'val': 0.4118}
+[r48] math_k5: floor 0.5537 ci [-0.0366, 0.0631] branch B_SELF_PERSISTENCE_EQUIVALENT
+[split] temporal: train t0<=2005, val t0 in (2005,2007], test t0>2007 | sizes={'train': 3356, 'test': 935, 'val': 760} | base rates={'test': 0.2075, 'train': 0.2017, 'val': 0.1895}
+[r48] math_k10: floor 0.3087 ci [0.0083, 0.1372] branch C_INTERMEDIATE
+[split] temporal: train t0<=2005, val t0 in (2005,2007], test t0>2007 | sizes={'train': 3356, 'test': 935, 'val': 760} | base rates={'test': 0.1369, 'train': 0.1135, 'val': 0.1145}
+[r48] math_k15: floor 0.2112 ci [0.0103, 0.1498] branch C_INTERMEDIATE
+[split] temporal: train t0<=2005, val t0 in (2005,2007], test t0>2007 | sizes={'train': 3356, 'test': 935, 'val': 760} | base rates={'test': 0.1497, 'train': 0.132, 'val': 0.1263}
+[r48] math_k20: floor 0.2204 ci [0.0303, 0.1737] branch C_INTERMEDIATE
+[split] temporal: train t0<=2005, val t0 in (2005,2007], test t0>2007 | sizes={'train': 3356, 'test': 935, 'val': 760} | base rates={'test': 0.2118, 'train': 0.2029, 'val': 0.1908}
+[r48] math_k10_ms0.2: floor 0.3016 ci [0.0127, 0.1446] branch C_INTERMEDIATE
+[split] temporal: train t0<=2005, val t0 in (2005,2007], test t0>2007 | sizes={'train': 3356, 'test': 935, 'val': 760} | base rates={'test': 0.184, 'train': 0.1838, 'val': 0.1763}
+[r48] math_k10_ms0.4: floor 0.2496 ci [0.0239, 0.1398] branch A_ADVISOR_INFORMATION_REQUIRED

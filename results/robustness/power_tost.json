@@ -1,0 +1,256 @@
+{
+  "experiment": "R11_power_tost",
+  "design": "sigma from the stored student-level pooled bootstrap CI of e12_corrected_vs_m5.json; MDE = 2.80 sigma (alpha 0.05 two-sided, power 0.80); TOST equivalent at m iff mean +/- 1.645 sigma inside (-m, +m)",
+  "margins": [
+    0.01,
+    0.02,
+    0.03
+  ],
+  "fields": {
+    "econ": {
+      "margin_justification_M1_to_best_tabular": 0.0062,
+      "models": {
+        "hgt": {
+          "delta_vs_M5prime": -0.0048,
+          "sigma": 0.033,
+          "MDE_80pct": 0.0924,
+          "ci90": [
+            -0.0591,
+            0.0495
+          ],
+          "equivalent_at_margin": null,
+          "verdict": "not identifiable at this design"
+        },
+        "hgt_tuned": {
+          "delta_vs_M5prime": -0.0129,
+          "sigma": 0.031,
+          "MDE_80pct": 0.0867,
+          "ci90": [
+            -0.0638,
+            0.038
+          ],
+          "equivalent_at_margin": null,
+          "verdict": "not identifiable at this design"
+        },
+        "rgcn": {
+          "delta_vs_M5prime": -0.0208,
+          "sigma": 0.03,
+          "MDE_80pct": 0.0841,
+          "ci90": [
+            -0.0702,
+            0.0286
+          ],
+          "equivalent_at_margin": null,
+          "verdict": "not identifiable at this design"
+        },
+        "gat_cohort_time": {
+          "delta_vs_M5prime": 0.0109,
+          "sigma": 0.0362,
+          "MDE_80pct": 0.1013,
+          "ci90": [
+            -0.0486,
+            0.0704
+          ],
+          "equivalent_at_margin": null,
+          "verdict": "not identifiable at this design"
+        }
+      }
+    },
+    "math": {
+      "margin_justification_M1_to_best_tabular": 0.023,
+      "models": {
+        "hgt": {
+          "delta_vs_M5prime": -0.0463,
+          "sigma": 0.0258,
+          "MDE_80pct": 0.0724,
+          "ci90": [
+            -0.0888,
+            -0.0038
+          ],
+          "equivalent_at_margin": null,
+          "verdict": "not identifiable at this design"
+        },
+        "hgt_tuned": {
+          "delta_vs_M5prime": -0.0838,
+          "sigma": 0.0274,
+          "MDE_80pct": 0.0767,
+          "ci90": [
+            -0.1289,
+            -0.0387
+          ],
+          "equivalent_at_margin": null,
+          "verdict": "not identifiable at this design"
+        },
+        "rgcn": {
+          "delta_vs_M5prime": -0.0306,
+          "sigma": 0.0249,
+          "MDE_80pct": 0.0697,
+          "ci90": [
+            -0.0716,
+            0.0104
+          ],
+          "equivalent_at_margin": null,
+          "verdict": "not identifiable at this design"
+        },
+        "gat_cohort_time": {
+          "delta_vs_M5prime": -0.0777,
+          "sigma": 0.027,
+          "MDE_80pct": 0.0756,
+          "ci90": [
+            -0.1221,
+            -0.0333
+          ],
+          "equivalent_at_margin": null,
+          "verdict": "not identifiable at this design"
+        }
+      }
+    },
+    "neuro": {
+      "margin_justification_M1_to_best_tabular": 0.0387,
+      "models": {
+        "hgt": {
+          "delta_vs_M5prime": 0.0036,
+          "sigma": 0.0094,
+          "MDE_80pct": 0.0264,
+          "ci90": [
+            -0.0119,
+            0.0191
+          ],
+          "equivalent_at_margin": 0.02,
+          "verdict": "equivalent at 0.02"
+        },
+        "hgt_tuned": {
+          "delta_vs_M5prime": 0.008,
+          "sigma": 0.0099,
+          "MDE_80pct": 0.0276,
+          "ci90": [
+            -0.0082,
+            0.0242
+          ],
+          "equivalent_at_margin": 0.03,
+          "verdict": "equivalent at 0.03"
+        },
+        "rgcn": {
+          "delta_vs_M5prime": 0.0105,
+          "sigma": 0.0088,
+          "MDE_80pct": 0.0246,
+          "ci90": [
+            -0.004,
+            0.025
+          ],
+          "equivalent_at_margin": 0.03,
+          "verdict": "equivalent at 0.03"
+        },
+        "gat_cohort_time": {
+          "delta_vs_M5prime": -0.0061,
+          "sigma": 0.0113,
+          "MDE_80pct": 0.0316,
+          "ci90": [
+            -0.0247,
+            0.0125
+          ],
+          "equivalent_at_margin": 0.03,
+          "verdict": "equivalent at 0.03"
+        }
+      }
+    },
+    "physics": {
+      "margin_justification_M1_to_best_tabular": 0.0885,
+      "models": {
+        "hgt": {
+          "delta_vs_M5prime": 0.0066,
+          "sigma": 0.0102,
+          "MDE_80pct": 0.0286,
+          "ci90": [
+            -0.0102,
+            0.0234
+          ],
+          "equivalent_at_margin": 0.03,
+          "verdict": "equivalent at 0.03"
+        },
+        "hgt_tuned": {
+          "delta_vs_M5prime": 0.0119,
+          "sigma": 0.0117,
+          "MDE_80pct": 0.0328,
+          "ci90": [
+            -0.0074,
+            0.0312
+          ],
+          "equivalent_at_margin": null,
+          "verdict": "not identifiable at this design"
+        },
+        "rgcn": {
+          "delta_vs_M5prime": 0.0052,
+          "sigma": 0.0097,
+          "MDE_80pct": 0.0271,
+          "ci90": [
+            -0.0107,
+            0.0211
+          ],
+          "equivalent_at_margin": 0.03,
+          "verdict": "equivalent at 0.03"
+        },
+        "gat_cohort_time": {
+          "delta_vs_M5prime": -0.0019,
+          "sigma": 0.0113,
+          "MDE_80pct": 0.0316,
+          "ci90": [
+            -0.0205,
+            0.0167
+          ],
+          "equivalent_at_margin": 0.03,
+          "verdict": "equivalent at 0.03"
+        }
+      }
+    },
+    "chemistry": {
+      "margin_justification_M1_to_best_tabular": 0.1163,
+      "models": {
+        "hgt": {
+          "delta_vs_M5prime": 0.0041,
+          "sigma": 0.0071,
+          "MDE_80pct": 0.0199,
+          "ci90": [
+            -0.0076,
+            0.0158
+          ],
+          "equivalent_at_margin": 0.02,
+          "verdict": "equivalent at 0.02"
+        },
+        "hgt_tuned": {
+          "delta_vs_M5prime": 0.0052,
+          "sigma": 0.0081,
+          "MDE_80pct": 0.0227,
+          "ci90": [
+            -0.0081,
+            0.0185
+          ],
+          "equivalent_at_margin": 0.02,
+          "verdict": "equivalent at 0.02"
+        },
+        "rgcn": {
+          "delta_vs_M5prime": 0.0224,
+          "sigma": 0.0075,
+          "MDE_80pct": 0.0209,
+          "ci90": [
+            0.0101,
+            0.0347
+          ],
+          "equivalent_at_margin": null,
+          "verdict": "exceeds"
+        },
+        "gat_cohort_time": {
+          "delta_vs_M5prime": 0.0096,
+          "sigma": 0.0089,
+          "MDE_80pct": 0.0249,
+          "ci90": [
+            -0.005,
+            0.0242
+          ],
+          "equivalent_at_margin": 0.03,
+          "verdict": "equivalent at 0.03"
+        }
+      }
+    }
+  }
+}

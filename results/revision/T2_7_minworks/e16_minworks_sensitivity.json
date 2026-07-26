@@ -1,0 +1,106 @@
+{
+  "task": "T2.7",
+  "claim_under_audit": "main.tex Appendix H, window filter paragraph: 24,918 against 21,846; base rate 0.251 to 0.240; advisor-placebo gap 0.111 in both; best tabular rung 0.426 to 0.407",
+  "frozen_tables_unchanged": true,
+  "min3_arm_regenerated": {
+    "source_files": [
+      "results/results_neuro/e1_baselines.json",
+      "results/results_neuro/e10_advisor_placebo.json",
+      "data/dataset_summary_neuro.json"
+    ],
+    "n_students": {
+      "quoted_in_paper": 21846,
+      "regenerated": 21846,
+      "tolerance": 0,
+      "match": true
+    },
+    "base_rate": {
+      "quoted_in_paper": 0.251,
+      "regenerated": 0.251,
+      "tolerance": 0.0005,
+      "match": true
+    },
+    "best_tabular_rung": {
+      "quoted_in_paper": 0.426,
+      "regenerated": 0.4257,
+      "tolerance": 0.0005,
+      "match": true,
+      "model": "M3_gbdt_tabular",
+      "unrounded": 0.4257264014067542
+    },
+    "advisor_placebo_gap": {
+      "quoted_in_paper": 0.111,
+      "regenerated": 0.1114,
+      "tolerance": 0.0005,
+      "match": true,
+      "true_L1": 0.3871,
+      "cohort_placebo_L1": 0.2757,
+      "unrounded": 0.11139944909296112
+    }
+  },
+  "min2_arm": {
+    "table_path": "data/clean_dataset_neuro_min2.parquet",
+    "table_present": false,
+    "searched": [
+      "data/",
+      "data/supplement/",
+      "the whole project root",
+      "zenodo_archive.zip",
+      "colab_bundle.zip"
+    ],
+    "surviving_record": "data/dataset_summary_neuro_min2.json",
+    "pinned_sha256": "14a9e823d63760cb29b06f258bd82a784a3b440eef2a8a205e76fd8db837ba07",
+    "min_works_per_window": 2,
+    "recorded_in_summary": {
+      "n_students": {
+        "quoted_in_paper": 24918,
+        "regenerated": 24918,
+        "tolerance": 0,
+        "match": true
+      },
+      "base_rate": {
+        "quoted_in_paper": 0.24,
+        "regenerated": 0.2401,
+        "tolerance": 0.0005,
+        "match": true
+      },
+      "pct_more_students": {
+        "quoted_in_paper": 14,
+        "regenerated": 14.1,
+        "match": true
+      }
+    },
+    "not_regenerable": {
+      "advisor_placebo_gap": 0.111,
+      "best_tabular_rung": 0.407,
+      "reason": "both need the relaxed table, which is absent from repository and archive; rebuilding it needs the builder's per-author works store, which is also absent. Neither number is adopted here and neither is deleted: they stand as computed during the frozen build, and the sha above lets a recovered table be verified rather than trusted",
+      "status": "quoted from the frozen build, no artifact"
+    }
+  },
+  "runnable_sensitivity": {
+    "source": "e16_minworks_sensitivity.measure, imported verbatim",
+    "discipline": "neuro",
+    "thresholds": {
+      ">=3_frozen": {
+        "n": 21844,
+        "base_rate": 0.251,
+        "M1_true_auc_pr": 0.3871,
+        "cohort_placebo_auc_pr": 0.2764,
+        "M1_minus_placebo_gap": 0.1106,
+        "student_only_floor_auc_pr": 0.3404
+      },
+      ">=5_subset": {
+        "n": 16481,
+        "base_rate": 0.2732,
+        "M1_true_auc_pr": 0.412,
+        "cohort_placebo_auc_pr": 0.2926,
+        "M1_minus_placebo_gap": 0.1194,
+        "student_only_floor_auc_pr": 0.3636
+      },
+      ">=2_relaxed": {
+        "status": "ABSENT - the relaxed table is gone; see min2_arm above"
+      }
+    },
+    "reading": "the advisor-vs-placebo gap under tightening is +0.111 at >=3 and +0.119 at >=5; the relaxing direction the appendix quotes cannot be re-measured"
+  }
+}

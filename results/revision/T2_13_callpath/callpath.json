@@ -1,0 +1,43 @@
+{
+  "task": "T2.13",
+  "what": "call-path dependence of the M3s_gbdt student-only rung: the same cell, the same inputs and the same ten seeds, differing only in what ran earlier in the same Python process",
+  "cell": {
+    "field": "econ",
+    "theta": 0.2,
+    "rung": "M3s_gbdt",
+    "features": 4,
+    "tfidf_footing": "legacy (all rows)",
+    "seeds": 10
+  },
+  "values_by_prefix": {
+    "none": 0.271516,
+    "dense_logit": 0.273027,
+    "lbfgsb": 0.271516,
+    "matmul": 0.268045,
+    "scaler": 0.271516,
+    "liblinear": 0.268045,
+    "gbdt_first": 0.273027
+  },
+  "distinct_branches": {
+    "0.268": [
+      "matmul",
+      "liblinear"
+    ],
+    "0.2715": [
+      "none",
+      "lbfgsb",
+      "scaler"
+    ],
+    "0.273": [
+      "dense_logit",
+      "gbdt_first"
+    ]
+  },
+  "n_branches": 3,
+  "spread": 0.004982,
+  "determinism_floor": 0.0013,
+  "floor_source": "results/revision/T2_1_strict_contract/chemistry/DETERMINISM_MEASURED.json, max drift over five cells run twice",
+  "ratio_to_floor": 3.8,
+  "why_not_the_floor": "the floor is variation between two runs of the same call; this is variation between call paths, so folding one into the other would understate both",
+  "published_branch": "r1_theta_sweep.py fits the deterministic M1 reference before any student-only design, so the recorded floors are the branch that prefix produces"
+}

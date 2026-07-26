@@ -1,0 +1,67 @@
+{
+  "_README": [
+    "Submission format for the research-area-persistence benchmark.",
+    "Validate before quoting any number:",
+    "  python reproduction/validate_submission.py --submission <this file>",
+    "The validator refuses a submission that changes the split, reports a",
+    "subset of seeds, or selects on the test cohort, and it refuses before",
+    "computing a score, so a rejected submission never produces a number.",
+    "Every field below is required except the ones marked optional."
+  ],
+
+  "benchmark": "research-area-persistence-v1",
+  "field": "econ",
+
+  "model_name": "your model, one line",
+  "model_note": "optional: architecture, features consumed, anything a reader needs",
+
+  "seeds": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
+
+  "selection": {
+    "split": "val",
+    "metric": "auc_pr",
+    "note": [
+      "How the final model was chosen. split must not be 'test'.",
+      "The temporal validation cohort is the only cohort a submission may",
+      "select on: early stopping, hyperparameter choice, checkpoint choice.",
+      "The test cohort is scored once, after every choice has been made."
+    ]
+  },
+
+  "test_student_pid": [
+    "the frozen temporal test split of this discipline, in order.",
+    "Get it with:",
+    "  DATASET=<field> python -c \"import sys; sys.path[:0]=['code/paper_pipeline'];",
+    "  from utils import data as D; ds=D.temporal_split(D.load_dataset());",
+    "  print(ds[ds.split=='test'].student_pid.astype(str).tolist())\"",
+    "The validator compares this list for equality, order included."
+  ],
+
+  "test_labels": [
+    "the frozen y of those same rows, in the same order, as integers 0 or 1.",
+    "The validator compares for equality. It is in the submission so that a",
+    "misalignment fails loudly here rather than silently shifting a score."
+  ],
+
+  "test_scores_per_seed": {
+    "0": ["one probability per test student, same order, finite, in [0, 1]"],
+    "1": ["..."],
+    "_note": [
+      "Exactly ten arrays, keyed '0' through '9'. An extra array means the",
+      "test cohort was scored more times than declared, which the validator",
+      "rejects. Scores are probabilities, not logits and not ranks; AUC-PR is",
+      "rank-based so a monotone transform is harmless, but the [0, 1] check",
+      "catches the common mistake of submitting logits."
+    ]
+  },
+
+  "_what_the_validator_does_next": [
+    "After the six checks pass it scores the submission under eq. (2):",
+    "the ten-seed mean gap to the validation-symmetric ceiling M5', a paired",
+    "student-level bootstrap over 2000 draws, and three gates that must all",
+    "pass for a gain to count. Passing validation is not passing the gates.",
+    "p_BH from the validator corrects a family of one. The paper's tables",
+    "correct across the architecture family within a discipline; a submission",
+    "compared against those numbers should be corrected the same way."
+  ]
+}

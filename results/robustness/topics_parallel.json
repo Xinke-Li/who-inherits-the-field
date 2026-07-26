@@ -1,0 +1,346 @@
+{
+  "experiment": "R16_topics_parallel",
+  "note": "parallel robustness family; the pre-registered concept label remains the benchmark label; within-family reading (r6 convention)",
+  "fields": {
+    "econ": {
+      "topic": {
+        "agreement": {
+          "n": 2694,
+          "coverage": 0.9989,
+          "theta_calibrated": 0.3333,
+          "train_rate_achieved": 0.1478,
+          "raw_theta02": {
+            "agreement": 0.6463,
+            "kappa": 0.2666,
+            "base_rate": 0.4703
+          },
+          "calibrated": {
+            "agreement": 0.7728,
+            "kappa": 0.2251,
+            "base_rate": 0.1522
+          }
+        },
+        "base_rate": 0.1522,
+        "best_tabular_auc_pr": 0.344,
+        "ladder": {
+          "M0_prior": 0.1354,
+          "M1_logit_overlap": 0.3343,
+          "M2_logit_tabular": 0.344,
+          "M3_gbdt_tabular": 0.3087,
+          "M4_logit_tfidf": 0.2308,
+          "M5_gbdt_nfa": 0.3152
+        },
+        "scramble": "PASS",
+        "disjoint": "PASS",
+        "placebo_gap": 0.1625,
+        "floor": 0.2684,
+        "branch": "B_SELF_PERSISTENCE_EQUIVALENT"
+      },
+      "subfield": {
+        "agreement": {
+          "n": 2694,
+          "coverage": 0.9989,
+          "theta_calibrated": 0.4545,
+          "train_rate_achieved": 0.2001,
+          "raw_theta02": {
+            "agreement": 0.3968,
+            "kappa": 0.0985,
+            "base_rate": 0.7843
+          },
+          "calibrated": {
+            "agreement": 0.7416,
+            "kappa": 0.1918,
+            "base_rate": 0.1967
+          }
+        },
+        "base_rate": 0.1967,
+        "best_tabular_auc_pr": 0.4139,
+        "ladder": {
+          "M0_prior": 0.1657,
+          "M1_logit_overlap": 0.3776,
+          "M2_logit_tabular": 0.4139,
+          "M3_gbdt_tabular": 0.3447,
+          "M4_logit_tfidf": 0.3087,
+          "M5_gbdt_nfa": 0.364
+        },
+        "scramble": "PASS",
+        "disjoint": "PASS",
+        "placebo_gap": 0.1517,
+        "floor": 0.2679,
+        "branch": "A_ADVISOR_INFORMATION_REQUIRED"
+      }
+    },
+    "math": {
+      "topic": {
+        "agreement": {
+          "n": 5049,
+          "coverage": 0.9996,
+          "theta_calibrated": 0.3077,
+          "train_rate_achieved": 0.2442,
+          "raw_theta02": {
+            "agreement": 0.7158,
+            "kappa": 0.3417,
+            "base_rate": 0.3858
+          },
+          "calibrated": {
+            "agreement": 0.7703,
+            "kappa": 0.338,
+            "base_rate": 0.2442
+          }
+        },
+        "base_rate": 0.2442,
+        "best_tabular_auc_pr": 0.6663,
+        "ladder": {
+          "M0_prior": 0.2524,
+          "M1_logit_overlap": 0.5888,
+          "M2_logit_tabular": 0.6663,
+          "M3_gbdt_tabular": 0.6371,
+          "M4_logit_tfidf": 0.3965,
+          "M5_gbdt_nfa": 0.6304
+        },
+        "scramble": "PASS",
+        "disjoint": "FAIL",
+        "placebo_gap": 0.3144,
+        "floor": 0.4892,
+        "branch": "C_INTERMEDIATE"
+      },
+      "subfield": {
+        "agreement": {
+          "n": 5049,
+          "coverage": 0.9996,
+          "theta_calibrated": 0.4286,
+          "train_rate_achieved": 0.167,
+          "raw_theta02": {
+            "agreement": 0.5092,
+            "kappa": 0.1719,
+            "base_rate": 0.655
+          },
+          "calibrated": {
+            "agreement": 0.7653,
+            "kappa": 0.2239,
+            "base_rate": 0.1695
+          }
+        },
+        "base_rate": 0.1695,
+        "best_tabular_auc_pr": 0.4464,
+        "ladder": {
+          "M0_prior": 0.1743,
+          "M1_logit_overlap": 0.381,
+          "M2_logit_tabular": 0.4464,
+          "M3_gbdt_tabular": 0.4078,
+          "M4_logit_tfidf": 0.35,
+          "M5_gbdt_nfa": 0.4079
+        },
+        "scramble": "PASS",
+        "disjoint": "PASS",
+        "placebo_gap": 0.1499,
+        "floor": 0.3375,
+        "branch": "B_SELF_PERSISTENCE_EQUIVALENT"
+      }
+    },
+    "physics": {
+      "topic": {
+        "agreement": {
+          "n": 11804,
+          "coverage": 0.9996,
+          "theta_calibrated": 0.3333,
+          "train_rate_achieved": 0.283,
+          "raw_theta02": {
+            "agreement": 0.6842,
+            "kappa": 0.397,
+            "base_rate": 0.5802
+          },
+          "calibrated": {
+            "agreement": 0.7399,
+            "kappa": 0.4017,
+            "base_rate": 0.2793
+          }
+        },
+        "base_rate": 0.2793,
+        "best_tabular_auc_pr": 0.5855,
+        "ladder": {
+          "M0_prior": 0.2696,
+          "M1_logit_overlap": 0.5385,
+          "M2_logit_tabular": 0.5855,
+          "M3_gbdt_tabular": 0.5817,
+          "M4_logit_tfidf": 0.4258,
+          "M5_gbdt_nfa": 0.5892
+        },
+        "scramble": "PASS",
+        "disjoint": "PASS",
+        "placebo_gap": 0.2466,
+        "floor": 0.5625,
+        "branch": "B_SELF_PERSISTENCE_EQUIVALENT"
+      },
+      "subfield": {
+        "agreement": {
+          "n": 11804,
+          "coverage": 0.9996,
+          "theta_calibrated": 0.4286,
+          "train_rate_achieved": 0.2904,
+          "raw_theta02": {
+            "agreement": 0.4932,
+            "kappa": 0.1519,
+            "base_rate": 0.8296
+          },
+          "calibrated": {
+            "agreement": 0.6844,
+            "kappa": 0.2747,
+            "base_rate": 0.2808
+          }
+        },
+        "base_rate": 0.2808,
+        "best_tabular_auc_pr": 0.4604,
+        "ladder": {
+          "M0_prior": 0.2583,
+          "M1_logit_overlap": 0.4186,
+          "M2_logit_tabular": 0.4604,
+          "M3_gbdt_tabular": 0.4574,
+          "M4_logit_tfidf": 0.4401,
+          "M5_gbdt_nfa": 0.459
+        },
+        "scramble": "PASS",
+        "disjoint": "PASS",
+        "placebo_gap": 0.1134,
+        "floor": 0.4035,
+        "branch": "B_SELF_PERSISTENCE_EQUIVALENT"
+      }
+    },
+    "neuro": {
+      "topic": {
+        "agreement": {
+          "n": 21836,
+          "coverage": 0.9996,
+          "theta_calibrated": 0.2667,
+          "train_rate_achieved": 0.251,
+          "raw_theta02": {
+            "agreement": 0.6919,
+            "kappa": 0.3301,
+            "base_rate": 0.4195
+          },
+          "calibrated": {
+            "agreement": 0.7435,
+            "kappa": 0.3186,
+            "base_rate": 0.2518
+          }
+        },
+        "base_rate": 0.2518,
+        "best_tabular_auc_pr": 0.4588,
+        "ladder": {
+          "M0_prior": 0.2642,
+          "M1_logit_overlap": 0.4134,
+          "M2_logit_tabular": 0.4462,
+          "M3_gbdt_tabular": 0.4588,
+          "M4_logit_tfidf": 0.3313,
+          "M5_gbdt_nfa": 0.466
+        },
+        "scramble": "PASS",
+        "disjoint": "PASS",
+        "placebo_gap": 0.1303,
+        "floor": 0.3942,
+        "branch": "B_SELF_PERSISTENCE_EQUIVALENT"
+      },
+      "subfield": {
+        "agreement": {
+          "n": 21836,
+          "coverage": 0.9996,
+          "theta_calibrated": 0.4167,
+          "train_rate_achieved": 0.2762,
+          "raw_theta02": {
+            "agreement": 0.4656,
+            "kappa": 0.1394,
+            "base_rate": 0.743
+          },
+          "calibrated": {
+            "agreement": 0.7039,
+            "kappa": 0.2402,
+            "base_rate": 0.2784
+          }
+        },
+        "base_rate": 0.2784,
+        "best_tabular_auc_pr": 0.4656,
+        "ladder": {
+          "M0_prior": 0.2677,
+          "M1_logit_overlap": 0.4338,
+          "M2_logit_tabular": 0.4504,
+          "M3_gbdt_tabular": 0.4656,
+          "M4_logit_tfidf": 0.4527,
+          "M5_gbdt_nfa": 0.4629
+        },
+        "scramble": "PASS",
+        "disjoint": "PASS",
+        "placebo_gap": 0.1558,
+        "floor": 0.3603,
+        "branch": "C_INTERMEDIATE"
+      }
+    },
+    "chemistry": {
+      "topic": {
+        "agreement": {
+          "n": 26824,
+          "coverage": 0.9998,
+          "theta_calibrated": 0.25,
+          "train_rate_achieved": 0.1946,
+          "raw_theta02": {
+            "agreement": 0.7507,
+            "kappa": 0.3824,
+            "base_rate": 0.3291
+          },
+          "calibrated": {
+            "agreement": 0.7958,
+            "kappa": 0.3777,
+            "base_rate": 0.1951
+          }
+        },
+        "base_rate": 0.1951,
+        "best_tabular_auc_pr": 0.4713,
+        "ladder": {
+          "M0_prior": 0.204,
+          "M1_logit_overlap": 0.3862,
+          "M2_logit_tabular": 0.4601,
+          "M3_gbdt_tabular": 0.4713,
+          "M4_logit_tfidf": 0.3012,
+          "M5_gbdt_nfa": 0.4704
+        },
+        "scramble": "PASS",
+        "disjoint": "PASS",
+        "placebo_gap": 0.1651,
+        "floor": 0.3998,
+        "branch": "B_SELF_PERSISTENCE_EQUIVALENT"
+      },
+      "subfield": {
+        "agreement": {
+          "n": 26824,
+          "coverage": 0.9998,
+          "theta_calibrated": 0.4286,
+          "train_rate_achieved": 0.1995,
+          "raw_theta02": {
+            "agreement": 0.4612,
+            "kappa": 0.1445,
+            "base_rate": 0.7303
+          },
+          "calibrated": {
+            "agreement": 0.7652,
+            "kappa": 0.2765,
+            "base_rate": 0.1887
+          }
+        },
+        "base_rate": 0.1887,
+        "best_tabular_auc_pr": 0.3717,
+        "ladder": {
+          "M0_prior": 0.1809,
+          "M1_logit_overlap": 0.332,
+          "M2_logit_tabular": 0.3717,
+          "M3_gbdt_tabular": 0.3692,
+          "M4_logit_tfidf": 0.3754,
+          "M5_gbdt_nfa": 0.3699
+        },
+        "scramble": "PASS",
+        "disjoint": "PASS",
+        "placebo_gap": 0.1082,
+        "floor": 0.3337,
+        "branch": "B_SELF_PERSISTENCE_EQUIVALENT"
+      }
+    }
+  }
+}

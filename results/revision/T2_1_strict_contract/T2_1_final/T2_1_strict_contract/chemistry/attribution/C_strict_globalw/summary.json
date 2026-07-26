@@ -1,0 +1,37 @@
+{
+  "cell": "C_strict_globalw",
+  "field": "chemistry",
+  "hp": {
+    "lr": 0.005,
+    "hidden": 64,
+    "layers": 3,
+    "dropout": 0.5
+  },
+  "construction": "strict",
+  "class_weight_scope": "all",
+  "mean_auc_pr": 0.5815,
+  "std_auc_pr": 0.0056,
+  "per_seed_auc_pr": [
+    0.5774,
+    0.5837,
+    0.5853,
+    0.5842,
+    0.5659,
+    0.5836,
+    0.5844,
+    0.5818,
+    0.584,
+    0.5846
+  ],
+  "ROLE": "strict construction, F2 not repaired: isolates the contract effect",
+  "WARNING": "attribution cell, not a verdict cell.",
+  "session": {
+    "session_id": "3d9a066c7a94",
+    "gpu": "NVIDIA A100-SXM4-40GB",
+    "torch": "2.11.0+cu128",
+    "cuda": "12.8",
+    "platform": "Linux-6.6.122+-x86_64-with-glibc2.35",
+    "forced_recompute": true
+  },
+  "IS_VERDICT_CELL": false
+}

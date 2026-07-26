@@ -1,0 +1,14 @@
+{
+  "experiment": "E7_node2vec",
+  "spearman_vs_h_full": {
+    "mean": 0.1038,
+    "std": 0.0014,
+    "stable": true
+  },
+  "spearman_vs_late_cite_pct": {
+    "mean": 0.081,
+    "std": 0.002,
+    "stable": true
+  },
+  "note": "divergence exported to e7_divergence.parquet; causal-adjacent claims come from the e6 FE regression, not from these raw correlations"
+}

@@ -1,0 +1,29 @@
+{
+  "cell": "C_strict_globalw",
+  "field": "chemistry",
+  "hp": {
+    "lr": 0.005,
+    "hidden": 64,
+    "layers": 3,
+    "dropout": 0.5
+  },
+  "construction": "strict",
+  "class_weight_scope": "all",
+  "mean_auc_pr": 0.5813,
+  "std_auc_pr": 0.0047,
+  "per_seed_auc_pr": [
+    0.5772,
+    0.5842,
+    0.5853,
+    0.5806,
+    0.5691,
+    0.582,
+    0.5834,
+    0.5819,
+    0.584,
+    0.5857
+  ],
+  "ROLE": "strict construction, F2 not repaired: isolates the contract effect",
+  "WARNING": "attribution cell, not a verdict cell.",
+  "IS_VERDICT_CELL": false
+}

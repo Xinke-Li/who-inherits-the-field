@@ -1,0 +1,48 @@
+{
+  "task": "T3.1",
+  "field": "econ",
+  "judge": {
+    "model": "claude-opus-5",
+    "date": "2026-07-26",
+    "decoding": "default; temperature not accepted on claude-opus-5"
+  },
+  "gate_1_true_minus_placebo": {
+    "true_yes_rate": 0.21,
+    "placebo_yes_rate": 0.005,
+    "gap": 0.205,
+    "threshold": 0.1,
+    "passes": true,
+    "refusal_convention": "counted as NO; denominators held at the number of items drawn",
+    "n_refusals": 1,
+    "refused_items": [
+      "econ-0112-placebo"
+    ],
+    "if_refusals_excluded": {
+      "n_true": 200,
+      "n_placebo": 199,
+      "true_yes_rate": 0.21,
+      "placebo_yes_rate": 0.005,
+      "gap": 0.205,
+      "passes": true,
+      "note": "reported so the convention is visible; it moves the gap by at most one item over the denominator"
+    },
+    "gap_ceiling": {
+      "value": 0.21,
+      "why": "the gap is the true-arm rate minus the placebo rate and the placebo rate cannot fall below zero, so the true-arm rate is the largest gap this design can produce",
+      "headroom": 0.005
+    }
+  },
+  "gate_2_self_consistency": {
+    "n_probes": 40,
+    "rate": 1.0,
+    "threshold": 0.8,
+    "passes": true
+  },
+  "kappa": {
+    "balanced": 0.1924,
+    "reweighted_to_base_rate": 0.1867,
+    "sample_base_rate": 0.225,
+    "cohort_base_rate": 0.2024
+  },
+  "verdict": "both gates pass, so the agreement figures may be read; this is a third instrument and not human validation"
+}

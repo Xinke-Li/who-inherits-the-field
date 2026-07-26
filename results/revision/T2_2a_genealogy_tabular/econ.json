@@ -1,0 +1,70 @@
+{
+  "field": "econ",
+  "n_test": 495,
+  "grand_advisor_coverage": 0.3226,
+  "grand_advisor_with_cached_works": 0.1783,
+  "features_added": [
+    "grand_adv_early_prod",
+    "grand_adv_early_breadth",
+    "grand_adv_career_age_at_t0",
+    "jac_student_grandadv",
+    "jac_advisor_grandadv",
+    "lineage_depth",
+    "advisor_fanout_at_t0"
+  ],
+  "gate1_harness_validation": {
+    "reproduced_M5_auc_pr": 0.339,
+    "frozen_M5_auc_pr": 0.339,
+    "delta": -0.0,
+    "matches_3dp": true
+  },
+  "gate2_eq2_verdicts": {
+    "M6_gbdt_nfa_genealogy": {
+      "mean_auc_pr": 0.3479,
+      "delta_vs_M5": 0.0089,
+      "wilcoxon_p_raw": 0.492188,
+      "p_BH": 0.492188,
+      "student_ci95": [
+        -0.0148,
+        0.0355
+      ],
+      "seeds_improved": 6,
+      "gates": {
+        "mean_gt_ceiling": true,
+        "p_adj_lt_0.05": false,
+        "student_ci_lower_gt_0": false
+      },
+      "exceeds": false
+    },
+    "M5_plus_missingness": {
+      "mean_auc_pr": 0.3306,
+      "delta_vs_M5": -0.0084,
+      "wilcoxon_p_raw": 0.322266,
+      "p_BH": 0.492188,
+      "student_ci95": [
+        -0.0193,
+        0.003
+      ],
+      "seeds_improved": 3,
+      "gates": {
+        "mean_gt_ceiling": false,
+        "p_adj_lt_0.05": false,
+        "student_ci_lower_gt_0": false
+      },
+      "exceeds": false
+    }
+  },
+  "gate3_note": "M5_plus_missingness isolates the single binary has-a-grand-advisor-with-works channel",
+  "M5_per_seed_auc_pr": [
+    0.3416,
+    0.316,
+    0.3746,
+    0.3372,
+    0.3563,
+    0.3382,
+    0.315,
+    0.3053,
+    0.3221,
+    0.3836
+  ]
+}

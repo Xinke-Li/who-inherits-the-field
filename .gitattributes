@@ -1,0 +1,5 @@
+# The robustness manifest pins byte-exact file content. Line-ending translation
+# on checkout would change those bytes and break verification on any platform
+# whose git converts (Windows default). Check these paths out verbatim.
+results/robustness/** -text
+data/SHA256SUMS -text

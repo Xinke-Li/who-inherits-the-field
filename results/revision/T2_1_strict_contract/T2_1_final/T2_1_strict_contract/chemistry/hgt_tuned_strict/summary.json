@@ -1,0 +1,65 @@
+{
+  "experiment": "T2_1_strict_contract",
+  "field": "chemistry",
+  "target_table": "Table 12b",
+  "target_row": "HGT tuned",
+  "model": "hgt_strict",
+  "cell": "hgt_tuned_strict",
+  "protocol": "tuned",
+  "config_source": "strict",
+  "model_class": "Net",
+  "arch_requested": "hgt",
+  "hp": {
+    "lr": 0.005,
+    "hidden": 64,
+    "layers": 3,
+    "dropout": 0.5
+  },
+  "budget": "hgt",
+  "changes_vs_r3": [
+    "build_graph_v2 contract=strict (F1a, F1b)",
+    "class weight from training split only (F2)"
+  ],
+  "seed_mean_auc_pr": 0.5574,
+  "M5_mean": 0.5307,
+  "M5prime_mean": 0.5374,
+  "delta_vs_M5": 0.0267,
+  "delta_vs_M5prime": 0.02,
+  "wilcoxon_p_raw": 0.064453,
+  "p_BH": 0.064453,
+  "student_ci95_vs_M5prime": [
+    0.0012,
+    0.0385
+  ],
+  "gates_fair": {
+    "seed_mean_gt_ceiling": true,
+    "p_adj_lt_0.05": false,
+    "student_ci_lower_gt_0": true
+  },
+  "exceeds_fair": false,
+  "per_seed_auc_pr": [
+    0.5657,
+    0.5631,
+    0.5649,
+    0.5595,
+    0.5566,
+    0.5613,
+    0.5756,
+    0.5593,
+    0.5654,
+    0.5027
+  ],
+  "legacy_comparison": {
+    "pre_registered_vs_M5p": 0.022,
+    "post_hoc_symmetric_vs_M5p": 0.035
+  },
+  "env": {
+    "gpu": "NVIDIA A100-SXM4-40GB",
+    "cuda": "12.8",
+    "torch": "2.11.0+cu128",
+    "torch_geometric": "2.8.0",
+    "python": "3.12.13",
+    "platform": "Linux-6.6.122+-x86_64-with-glibc2.35",
+    "note": "exact cross-GPU reproduction is not assumed; see DETERMINISM_NOTE.json in the symmetric grid"
+  }
+}

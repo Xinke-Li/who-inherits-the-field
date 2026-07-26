@@ -1,0 +1,28 @@
+# Secrets: the OpenAlex key lives in the environment only, never in the tree.
+.openalex_key
+*.key
+.env
+.env.*
+
+# Large data ships through Zenodo, not git.
+*.parquet
+*.jsonl
+*.npz
+*.gz
+*.csv
+
+# Python noise
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Bundles are build artifacts; code/make_colab_bundle.py rebuilds the Colab bundle.
+*.zip
+
+# Training noise
+catboost_info/
+
+# Refetchable cache, about 300 MB; code/r49_funnel_neuro_counters.py
+# --stage verify reproduces its counters from
+# data/supplement/funnel_neuro_years.parquet.
+results/revision/T2_6_funnel_neuro/works_cache/

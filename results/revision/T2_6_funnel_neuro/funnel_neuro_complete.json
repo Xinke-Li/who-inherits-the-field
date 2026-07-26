@@ -1,0 +1,81 @@
+{
+  "task": "T2.6",
+  "field": "neuro",
+  "what": "the eight counters data/funnel_neuro.json records as zero, reconstructed by rerunning the builder's counting loop only",
+  "frozen_tables_unchanged": true,
+  "provenance": {
+    "works_source": "live OpenAlex API, 2026-07",
+    "is_frozen_snapshot": false,
+    "why": "the builder's works store is in neither the repository nor the archive",
+    "caches_read": [
+      "results/robustness/openalex_cache/",
+      "results/revision/T2_6_funnel_neuro/works_cache/"
+    ],
+    "reading_rule": "a reconstruction, not the build's own counters; judge it by the agreement block below"
+  },
+  "recorded": {
+    "raw_pairs": 120347,
+    "both_resolvable": 61724,
+    "both_in_works_store": 0,
+    "survive_window_filters": 0,
+    "modeled": 21846,
+    "drop_breakdown": {
+      "no_years": 0,
+      "adv_no_years": 0,
+      "too_recent": 0,
+      "implausible_t0": 0,
+      "span_gt_max": 0,
+      "sparse_windows": 0
+    },
+    "zero_means": "uninstrumented in this build, not measured as zero: econ's funnel carries all eight"
+  },
+  "reconstructed": {
+    "raw_pairs": 120347,
+    "both_resolvable": 61724,
+    "both_in_works_store": 61723,
+    "survive_window_filters": 24128,
+    "modeled": 21874,
+    "drop_breakdown": {
+      "no_years": 0,
+      "adv_no_years": 0,
+      "too_recent": 10962,
+      "implausible_t0": 2138,
+      "span_gt_max": 9763,
+      "sparse_windows": 14732
+    }
+  },
+  "agreement": {
+    "raw_pairs": {
+      "recorded": 120347,
+      "reconstructed": 120347,
+      "match": true
+    },
+    "both_resolvable": {
+      "recorded": 61724,
+      "reconstructed": 61724,
+      "match": true
+    },
+    "modeled": {
+      "recorded": 21846,
+      "reconstructed": 21874,
+      "delta": 28,
+      "ratio": 1.0013
+    },
+    "frozen_students_recovered": {
+      "n_frozen": 21846,
+      "n_recovered": 21818,
+      "share": 0.9987
+    },
+    "students_new_to_reconstruction": 56
+  },
+  "builder_params": {
+    "early_years": 5,
+    "late_years": 15,
+    "min_works_per_window": 3,
+    "t0_min": 1950,
+    "obs_year": 2026,
+    "max_career_span": 60,
+    "concept_min_score": 0.3,
+    "max_works_per_author": 400
+  }
+}

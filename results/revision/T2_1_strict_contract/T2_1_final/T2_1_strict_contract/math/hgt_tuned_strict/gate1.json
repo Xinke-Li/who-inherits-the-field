@@ -1,0 +1,10 @@
+{
+  "M5_mean": 0.398,
+  "M5_frozen": 0.398,
+  "M5_delta": -0.0,
+  "M5prime_mean": 0.4357,
+  "M5prime_frozen": 0.4357,
+  "M5prime_delta": -0.0,
+  "M5prime_max_per_seed_deviation": 6e-06,
+  "passes": true
+}

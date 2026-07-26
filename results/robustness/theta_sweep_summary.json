@@ -1,0 +1,344 @@
+{
+  "experiment": "R1_theta_sweep",
+  "theta_grid": [
+    0.1,
+    0.15,
+    0.2,
+    0.25,
+    0.3
+  ],
+  "reference_theta": 0.2,
+  "note": "post-hoc robustness; pre-registered 0.05 decision thresholds unchanged; student floor without early_concentration (works store absent)",
+  "fields": {
+    "chemistry": {
+      "rows": {
+        "0.10": {
+          "base_rate": 0.6574,
+          "best_tabular_auc_pr": 0.8053,
+          "best_tabular_model": "M3_gbdt_tabular",
+          "M5_auc_pr": 0.8065,
+          "scramble": "PASS",
+          "disjoint_shift": 0.0007,
+          "disjoint": "PASS",
+          "placebo_gap": 0.0845,
+          "floor": 0.7565,
+          "branch": "B_SELF_PERSISTENCE_EQUIVALENT"
+        },
+        "0.15": {
+          "base_rate": 0.4041,
+          "best_tabular_auc_pr": 0.6429,
+          "best_tabular_model": "M3_gbdt_tabular",
+          "M5_auc_pr": 0.6453,
+          "scramble": "PASS",
+          "disjoint_shift": -0.0094,
+          "disjoint": "PASS",
+          "placebo_gap": 0.1077,
+          "floor": 0.5755,
+          "branch": "B_SELF_PERSISTENCE_EQUIVALENT"
+        },
+        "0.20": {
+          "base_rate": 0.2182,
+          "best_tabular_auc_pr": 0.5349,
+          "best_tabular_model": "M3_gbdt_tabular",
+          "M5_auc_pr": 0.5307,
+          "scramble": "PASS",
+          "disjoint_shift": -0.0596,
+          "disjoint": "FAIL",
+          "placebo_gap": 0.1138,
+          "floor": 0.4615,
+          "branch": "B_SELF_PERSISTENCE_EQUIVALENT"
+        },
+        "0.25": {
+          "base_rate": 0.0978,
+          "best_tabular_auc_pr": 0.3572,
+          "best_tabular_model": "M2_logit_tabular",
+          "M5_auc_pr": 0.3516,
+          "scramble": "PASS",
+          "disjoint_shift": -0.0139,
+          "disjoint": "PASS",
+          "placebo_gap": 0.0933,
+          "floor": 0.2963,
+          "branch": "B_SELF_PERSISTENCE_EQUIVALENT"
+        },
+        "0.30": {
+          "base_rate": 0.0942,
+          "best_tabular_auc_pr": 0.3499,
+          "best_tabular_model": "M2_logit_tabular",
+          "M5_auc_pr": 0.3442,
+          "scramble": "PASS",
+          "disjoint_shift": -0.0216,
+          "disjoint": "PASS",
+          "placebo_gap": 0.0934,
+          "floor": 0.2882,
+          "branch": "B_SELF_PERSISTENCE_EQUIVALENT"
+        }
+      },
+      "branch_stable_all_theta": true,
+      "branch_stable_adjacent": true
+    },
+    "econ": {
+      "rows": {
+        "0.10": {
+          "base_rate": 0.7134,
+          "best_tabular_auc_pr": 0.8553,
+          "best_tabular_model": "M2_logit_tabular",
+          "M5_auc_pr": 0.8164,
+          "scramble": "PASS",
+          "disjoint_shift": 0.0343,
+          "disjoint": "PASS",
+          "placebo_gap": 0.0961,
+          "floor": 0.7926,
+          "branch": "B_SELF_PERSISTENCE_EQUIVALENT"
+        },
+        "0.15": {
+          "base_rate": 0.4375,
+          "best_tabular_auc_pr": 0.631,
+          "best_tabular_model": "M2_logit_tabular",
+          "M5_auc_pr": 0.6049,
+          "scramble": "PASS",
+          "disjoint_shift": 0.0316,
+          "disjoint": "PASS",
+          "placebo_gap": 0.1842,
+          "floor": 0.5216,
+          "branch": "C_INTERMEDIATE"
+        },
+        "0.20": {
+          "base_rate": 0.2024,
+          "best_tabular_auc_pr": 0.3523,
+          "best_tabular_model": "M3_gbdt_tabular",
+          "M5_auc_pr": 0.339,
+          "scramble": "PASS",
+          "disjoint_shift": 0.0436,
+          "disjoint": "PASS",
+          "placebo_gap": 0.1369,
+          "floor": 0.3203,
+          "branch": "B_SELF_PERSISTENCE_EQUIVALENT"
+        },
+        "0.25": {
+          "base_rate": 0.0786,
+          "best_tabular_auc_pr": 0.217,
+          "best_tabular_model": "M2_logit_tabular",
+          "M5_auc_pr": 0.1795,
+          "scramble": "PASS",
+          "disjoint_shift": -0.0064,
+          "disjoint": "PASS",
+          "placebo_gap": 0.0979,
+          "floor": 0.1706,
+          "branch": "B_SELF_PERSISTENCE_EQUIVALENT"
+        },
+        "0.30": {
+          "base_rate": 0.0775,
+          "best_tabular_auc_pr": 0.2141,
+          "best_tabular_model": "M2_logit_tabular",
+          "M5_auc_pr": 0.1886,
+          "scramble": "PASS",
+          "disjoint_shift": 0.0062,
+          "disjoint": "PASS",
+          "placebo_gap": 0.0979,
+          "floor": 0.1612,
+          "branch": "B_SELF_PERSISTENCE_EQUIVALENT"
+        }
+      },
+      "branch_stable_all_theta": false,
+      "branch_stable_adjacent": false
+    },
+    "math": {
+      "rows": {
+        "0.10": {
+          "base_rate": 0.6478,
+          "best_tabular_auc_pr": 0.8351,
+          "best_tabular_model": "M3_gbdt_tabular",
+          "M5_auc_pr": 0.8286,
+          "scramble": "PASS",
+          "disjoint_shift": -0.0089,
+          "disjoint": "PASS",
+          "placebo_gap": 0.1115,
+          "floor": 0.7841,
+          "branch": "B_SELF_PERSISTENCE_EQUIVALENT"
+        },
+        "0.15": {
+          "base_rate": 0.4051,
+          "best_tabular_auc_pr": 0.6302,
+          "best_tabular_model": "M3_gbdt_tabular",
+          "M5_auc_pr": 0.6306,
+          "scramble": "PASS",
+          "disjoint_shift": 0.0201,
+          "disjoint": "PASS",
+          "placebo_gap": 0.1488,
+          "floor": 0.5387,
+          "branch": "B_SELF_PERSISTENCE_EQUIVALENT"
+        },
+        "0.20": {
+          "base_rate": 0.201,
+          "best_tabular_auc_pr": 0.4055,
+          "best_tabular_model": "M2_logit_tabular",
+          "M5_auc_pr": 0.398,
+          "scramble": "PASS",
+          "disjoint_shift": 0.0053,
+          "disjoint": "PASS",
+          "placebo_gap": 0.1606,
+          "floor": 0.306,
+          "branch": "B_SELF_PERSISTENCE_EQUIVALENT"
+        },
+        "0.25": {
+          "base_rate": 0.077,
+          "best_tabular_auc_pr": 0.1958,
+          "best_tabular_model": "M2_logit_tabular",
+          "M5_auc_pr": 0.2031,
+          "scramble": "PASS",
+          "disjoint_shift": 0.0277,
+          "disjoint": "PASS",
+          "placebo_gap": 0.0795,
+          "floor": 0.0919,
+          "branch": "A_ADVISOR_INFORMATION_REQUIRED"
+        },
+        "0.30": {
+          "base_rate": 0.0742,
+          "best_tabular_auc_pr": 0.1964,
+          "best_tabular_model": "M2_logit_tabular",
+          "M5_auc_pr": 0.1946,
+          "scramble": "PASS",
+          "disjoint_shift": 0.0073,
+          "disjoint": "PASS",
+          "placebo_gap": 0.0808,
+          "floor": 0.0931,
+          "branch": "A_ADVISOR_INFORMATION_REQUIRED"
+        }
+      },
+      "branch_stable_all_theta": false,
+      "branch_stable_adjacent": false
+    },
+    "neuro": {
+      "rows": {
+        "0.10": {
+          "base_rate": 0.7304,
+          "best_tabular_auc_pr": 0.8451,
+          "best_tabular_model": "M3_gbdt_tabular",
+          "M5_auc_pr": 0.8439,
+          "scramble": "PASS",
+          "disjoint_shift": -0.002,
+          "disjoint": "PASS",
+          "placebo_gap": 0.0417,
+          "floor": 0.8235,
+          "branch": "B_SELF_PERSISTENCE_EQUIVALENT"
+        },
+        "0.15": {
+          "base_rate": 0.4713,
+          "best_tabular_auc_pr": 0.6495,
+          "best_tabular_model": "M3_gbdt_tabular",
+          "M5_auc_pr": 0.644,
+          "scramble": "PASS",
+          "disjoint_shift": -0.0002,
+          "disjoint": "PASS",
+          "placebo_gap": 0.1002,
+          "floor": 0.5971,
+          "branch": "B_SELF_PERSISTENCE_EQUIVALENT"
+        },
+        "0.20": {
+          "base_rate": 0.251,
+          "best_tabular_auc_pr": 0.4257,
+          "best_tabular_model": "M3_gbdt_tabular",
+          "M5_auc_pr": 0.4231,
+          "scramble": "PASS",
+          "disjoint_shift": 0.0092,
+          "disjoint": "PASS",
+          "placebo_gap": 0.1114,
+          "floor": 0.3444,
+          "branch": "A_ADVISOR_INFORMATION_REQUIRED"
+        },
+        "0.25": {
+          "base_rate": 0.1044,
+          "best_tabular_auc_pr": 0.2396,
+          "best_tabular_model": "M3_gbdt_tabular",
+          "M5_auc_pr": 0.2381,
+          "scramble": "PASS",
+          "disjoint_shift": -0.0026,
+          "disjoint": "PASS",
+          "placebo_gap": 0.0844,
+          "floor": 0.1578,
+          "branch": "A_ADVISOR_INFORMATION_REQUIRED"
+        },
+        "0.30": {
+          "base_rate": 0.1009,
+          "best_tabular_auc_pr": 0.2319,
+          "best_tabular_model": "M3_gbdt_tabular",
+          "M5_auc_pr": 0.2311,
+          "scramble": "PASS",
+          "disjoint_shift": -0.0,
+          "disjoint": "PASS",
+          "placebo_gap": 0.0783,
+          "floor": 0.156,
+          "branch": "A_ADVISOR_INFORMATION_REQUIRED"
+        }
+      },
+      "branch_stable_all_theta": false,
+      "branch_stable_adjacent": false
+    },
+    "physics": {
+      "rows": {
+        "0.10": {
+          "base_rate": 0.7607,
+          "best_tabular_auc_pr": 0.893,
+          "best_tabular_model": "M3_gbdt_tabular",
+          "M5_auc_pr": 0.8934,
+          "scramble": "PASS",
+          "disjoint_shift": 0.0201,
+          "disjoint": "PASS",
+          "placebo_gap": 0.0838,
+          "floor": 0.8802,
+          "branch": "B_SELF_PERSISTENCE_EQUIVALENT"
+        },
+        "0.15": {
+          "base_rate": 0.5583,
+          "best_tabular_auc_pr": 0.7843,
+          "best_tabular_model": "M3_gbdt_tabular",
+          "M5_auc_pr": 0.7839,
+          "scramble": "PASS",
+          "disjoint_shift": 0.0302,
+          "disjoint": "PASS",
+          "placebo_gap": 0.1255,
+          "floor": 0.7521,
+          "branch": "B_SELF_PERSISTENCE_EQUIVALENT"
+        },
+        "0.20": {
+          "base_rate": 0.352,
+          "best_tabular_auc_pr": 0.6345,
+          "best_tabular_model": "M3_gbdt_tabular",
+          "M5_auc_pr": 0.6437,
+          "scramble": "PASS",
+          "disjoint_shift": 0.0127,
+          "disjoint": "PASS",
+          "placebo_gap": 0.1572,
+          "floor": 0.5885,
+          "branch": "B_SELF_PERSISTENCE_EQUIVALENT"
+        },
+        "0.25": {
+          "base_rate": 0.186,
+          "best_tabular_auc_pr": 0.4655,
+          "best_tabular_model": "M3_gbdt_tabular",
+          "M5_auc_pr": 0.4725,
+          "scramble": "PASS",
+          "disjoint_shift": -0.0279,
+          "disjoint": "PASS",
+          "placebo_gap": 0.1563,
+          "floor": 0.3916,
+          "branch": "B_SELF_PERSISTENCE_EQUIVALENT"
+        },
+        "0.30": {
+          "base_rate": 0.1825,
+          "best_tabular_auc_pr": 0.4573,
+          "best_tabular_model": "M3_gbdt_tabular",
+          "M5_auc_pr": 0.4573,
+          "scramble": "PASS",
+          "disjoint_shift": -0.0275,
+          "disjoint": "PASS",
+          "placebo_gap": 0.1546,
+          "floor": 0.3812,
+          "branch": "B_SELF_PERSISTENCE_EQUIVALENT"
+        }
+      },
+      "branch_stable_all_theta": true,
+      "branch_stable_adjacent": true
+    }
+  }
+}

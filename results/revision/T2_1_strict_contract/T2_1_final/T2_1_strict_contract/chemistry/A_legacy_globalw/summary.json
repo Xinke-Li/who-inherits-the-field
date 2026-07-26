@@ -1,0 +1,29 @@
+{
+  "cell": "A_legacy_globalw",
+  "field": "chemistry",
+  "hp": {
+    "lr": 0.005,
+    "hidden": 64,
+    "layers": 3,
+    "dropout": 0.5
+  },
+  "construction": "legacy",
+  "class_weight_scope": "all",
+  "mean_auc_pr": 0.5723,
+  "std_auc_pr": 0.0049,
+  "per_seed_auc_pr": [
+    0.5718,
+    0.5726,
+    0.5831,
+    0.5671,
+    0.5647,
+    0.576,
+    0.5716,
+    0.5715,
+    0.5687,
+    0.5761
+  ],
+  "ROLE": "legacy construction with a GLOBAL class weight. NOT the anchor: r3 used a train-only weight, so cell B is the anchor. This cell exists to isolate the class-weight effect.",
+  "WARNING": "uses the UNFIXED e2_hgt.build_graph (audit finding F1) on purpose, for attribution only. This is NOT a verdict cell and must never be read as one.",
+  "IS_VERDICT_CELL": false
+}

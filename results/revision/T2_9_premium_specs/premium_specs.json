@@ -1,0 +1,188 @@
+{
+  "task": "T2.9",
+  "finding": "W6.3",
+  "alpha": 0.05,
+  "outcome": "late_cite_pct_mean",
+  "fields": {
+    "econ": {
+      "1_raw": {
+        "coef": -0.0012,
+        "se": 0.0024,
+        "p": 0.60921,
+        "n": 2697,
+        "reading": "ns"
+      },
+      "2_controls": {
+        "coef": -0.0018,
+        "se": 0.0027,
+        "p": 0.49149,
+        "n": 2697,
+        "reading": "ns"
+      },
+      "3_controls_FE": {
+        "coef": 0.0006,
+        "se": 0.0026,
+        "p": 0.8223,
+        "n": 2697,
+        "reading": "ns"
+      },
+      "4_structural_FE": {
+        "coef": 0.0086,
+        "se": 0.0034,
+        "p": 0.01181,
+        "n": 2697,
+        "reading": "pos"
+      },
+      "frozen_verdict": "raw correlation not robust to FE - report compositional explanation",
+      "source_file": "results/results_econ/e6_innovation_premium.json",
+      "spec3_vs_spec4_reading_changes": true
+    },
+    "math": {
+      "1_raw": {
+        "coef": 0.0069,
+        "se": 0.0019,
+        "p": 0.00022,
+        "n": 5051,
+        "reading": "pos"
+      },
+      "2_controls": {
+        "coef": 0.0054,
+        "se": 0.002,
+        "p": 0.00762,
+        "n": 5051,
+        "reading": "pos"
+      },
+      "3_controls_FE": {
+        "coef": 0.0053,
+        "se": 0.002,
+        "p": 0.00828,
+        "n": 5051,
+        "reading": "pos"
+      },
+      "4_structural_FE": {
+        "coef": 0.0012,
+        "se": 0.0027,
+        "p": 0.65912,
+        "n": 5051,
+        "reading": "ns"
+      },
+      "frozen_verdict": "Innovation Premium SUPPORTED with FE (positive divergence coefficient)",
+      "source_file": "results/results_math/e6_innovation_premium.json",
+      "spec3_vs_spec4_reading_changes": true
+    },
+    "neuro": {
+      "1_raw": {
+        "coef": -0.0065,
+        "se": 0.001,
+        "p": 0.0,
+        "n": 21844,
+        "reading": "neg"
+      },
+      "2_controls": {
+        "coef": -0.0032,
+        "se": 0.0011,
+        "p": 0.00393,
+        "n": 21844,
+        "reading": "neg"
+      },
+      "3_controls_FE": {
+        "coef": -0.0039,
+        "se": 0.0011,
+        "p": 0.00045,
+        "n": 21844,
+        "reading": "neg"
+      },
+      "4_structural_FE": {
+        "coef": 0.0078,
+        "se": 0.0013,
+        "p": 0.0,
+        "n": 21844,
+        "reading": "pos"
+      },
+      "frozen_verdict": "DIVERGENCE PENALTY: negative and significant with FE - premium NOT supported in this discipline; report as discipline difference",
+      "source_file": "results/results_neuro/e6_innovation_premium.json",
+      "spec3_vs_spec4_reading_changes": true
+    },
+    "physics": {
+      "1_raw": {
+        "coef": 0.0033,
+        "se": 0.0012,
+        "p": 0.00556,
+        "n": 11809,
+        "reading": "pos"
+      },
+      "2_controls": {
+        "coef": 0.0038,
+        "se": 0.0014,
+        "p": 0.00655,
+        "n": 11809,
+        "reading": "pos"
+      },
+      "3_controls_FE": {
+        "coef": 0.0041,
+        "se": 0.0014,
+        "p": 0.00368,
+        "n": 11809,
+        "reading": "pos"
+      },
+      "4_structural_FE": {
+        "coef": 0.0001,
+        "se": 0.0021,
+        "p": 0.95175,
+        "n": 11809,
+        "reading": "ns"
+      },
+      "frozen_verdict": "Innovation Premium SUPPORTED with FE (positive divergence coefficient)",
+      "source_file": "results/results_physics/e6_innovation_premium.json",
+      "spec3_vs_spec4_reading_changes": true
+    },
+    "chemistry": {
+      "1_raw": {
+        "coef": 0.0035,
+        "se": 0.0009,
+        "p": 0.00016,
+        "n": 26830,
+        "reading": "pos"
+      },
+      "2_controls": {
+        "coef": -0.0015,
+        "se": 0.001,
+        "p": 0.14547,
+        "n": 26830,
+        "reading": "ns"
+      },
+      "3_controls_FE": {
+        "coef": -0.0018,
+        "se": 0.001,
+        "p": 0.0666,
+        "n": 26830,
+        "reading": "ns"
+      },
+      "4_structural_FE": {
+        "coef": 0.0016,
+        "se": 0.0013,
+        "p": 0.20924,
+        "n": 26830,
+        "reading": "ns"
+      },
+      "frozen_verdict": "raw correlation not robust to FE - report compositional explanation",
+      "source_file": "results/results_chemistry/e6_innovation_premium.json",
+      "spec3_vs_spec4_reading_changes": false
+    }
+  },
+  "disciplines_whose_reading_changes_between_spec3_and_spec4": [
+    "econ",
+    "math",
+    "neuro",
+    "physics"
+  ],
+  "n_changed": 4,
+  "regressors": {
+    "1_raw": "divergence (concept space)",
+    "2_controls": "divergence (concept space)",
+    "3_controls_FE": "divergence (concept space)",
+    "4_structural_FE": "n2v_divergence (structural Node2Vec)"
+  },
+  "interpretation": "Specifications 1 to 3 are a nested ladder on one regressor, concept-space divergence: raw, then controls, then cohort and institution fixed effects. Specification 4 keeps those controls and fixed effects but substitutes a different regressor, structural Node2Vec divergence (e6_innovation_premium.py:68-78). It is therefore not a stricter test of specification 3; it estimates the same specification for a different construct. A reading that differs between them is a difference between two notions of divergence, not a robustness failure of one of them. Specification 3 is the terminal rung of the ladder for the construct the paper defines, which is why it is the headline; no pre-registration document fixes that choice in advance, so the paper states it as the ladder's endpoint rather than as a pre-specified selection.",
+  "summary": "The reported reading differs between the two constructs in 4 of five disciplines (econ, math, neuro, physics). Both are now reported."
+}

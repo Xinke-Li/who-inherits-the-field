@@ -1,0 +1,33 @@
+cff-version: 1.2.0
+message: "If you use this dataset or benchmark, please cite it. The code is MIT licensed; the derived data tables are CC BY 4.0."
+title: "A Leakage-Audited Forward-Prediction Benchmark for Research-Area Persistence in Doctoral Training"
+type: dataset
+authors:
+  - family-names: "Li"
+    given-names: "Xinke"
+    affiliation: "University of Chicago"
+    orcid: "https://orcid.org/0009-0001-0403-3606"
+version: "1.0.0"
+date-released: "2026-07-24"
+doi: "10.5281/zenodo.21501632"
+repository-code: "https://github.com/Xinke-Li/who-inherits-the-field"
+preferred-citation:
+  type: conference-paper
+  title: "A Leakage-Audited Forward-Prediction Benchmark for Research-Area Persistence in Doctoral Training"
+  authors:
+    - family-names: "Li"
+      given-names: "Xinke"
+      affiliation: "University of Chicago"
+      orcid: "https://orcid.org/0009-0001-0403-3606"
+  year: 2026
+  notes: "Submission to the KDD 2027 Datasets and Benchmarks Track"
+license:
+  - MIT
+  - CC-BY-4.0
+keywords:
+  - benchmark
+  - forward prediction
+  - leakage audit
+  - scientific genealogy
+  - graph neural networks
+  - negative control

@@ -1,0 +1,496 @@
+{
+  "task": "T2.8",
+  "question": "does the cross-discipline early co-authorship ordering, economics lowest, survive stratification on index coverage rather than on productivity?",
+  "variable": "institutional index density: the share of an institution's raw pairs whose student resolved to an OpenAlex author, from the frozen resolved-pairs table",
+  "why_not_st_id_coverage": "st_id_coverage is one scalar per discipline in data/funnel_<field>.json and cannot stratify within a discipline; this is its per-row decomposition",
+  "arms": {
+    "all_institutions": {
+      "per_field": {
+        "econ": {
+          "n_modeled": 2698,
+          "n_with_density": 2661,
+          "n_without_density": 37,
+          "overall_student_resolution_rate": 0.3134,
+          "tercile_cuts": [
+            0.3125,
+            0.3962
+          ],
+          "strata": {
+            "low": {
+              "n": 889,
+              "coauth_early_rate": 0.613,
+              "density_range": [
+                0.0267,
+                0.3125
+              ]
+            },
+            "mid": {
+              "n": 892,
+              "coauth_early_rate": 0.5729,
+              "density_range": [
+                0.3128,
+                0.3962
+              ]
+            },
+            "high": {
+              "n": 880,
+              "coauth_early_rate": 0.5693,
+              "density_range": [
+                0.4,
+                1.0
+              ]
+            }
+          }
+        },
+        "math": {
+          "n_modeled": 5051,
+          "n_with_density": 5027,
+          "n_without_density": 24,
+          "overall_student_resolution_rate": 0.3997,
+          "tercile_cuts": [
+            0.4444,
+            0.5385
+          ],
+          "strata": {
+            "low": {
+              "n": 1685,
+              "coauth_early_rate": 0.6831,
+              "density_range": [
+                0.0385,
+                0.4444
+              ]
+            },
+            "mid": {
+              "n": 1734,
+              "coauth_early_rate": 0.6672,
+              "density_range": [
+                0.4474,
+                0.5385
+              ]
+            },
+            "high": {
+              "n": 1608,
+              "coauth_early_rate": 0.6841,
+              "density_range": [
+                0.5425,
+                1.0
+              ]
+            }
+          }
+        },
+        "neuro": {
+          "n_modeled": 21846,
+          "n_with_density": 20797,
+          "n_without_density": 1049,
+          "overall_student_resolution_rate": 0.5574,
+          "tercile_cuts": [
+            0.6113,
+            0.7056
+          ],
+          "strata": {
+            "low": {
+              "n": 7072,
+              "coauth_early_rate": 0.7735,
+              "density_range": [
+                0.0065,
+                0.6113
+              ]
+            },
+            "mid": {
+              "n": 6835,
+              "coauth_early_rate": 0.7712,
+              "density_range": [
+                0.6124,
+                0.7056
+              ]
+            },
+            "high": {
+              "n": 6890,
+              "coauth_early_rate": 0.7562,
+              "density_range": [
+                0.7059,
+                1.0
+              ]
+            }
+          }
+        },
+        "physics": {
+          "n_modeled": 11810,
+          "n_with_density": 11475,
+          "n_without_density": 335,
+          "overall_student_resolution_rate": 0.5648,
+          "tercile_cuts": [
+            0.6154,
+            0.7059
+          ],
+          "strata": {
+            "low": {
+              "n": 3882,
+              "coauth_early_rate": 0.787,
+              "density_range": [
+                0.04,
+                0.6154
+              ]
+            },
+            "mid": {
+              "n": 4002,
+              "coauth_early_rate": 0.7984,
+              "density_range": [
+                0.6161,
+                0.7059
+              ]
+            },
+            "high": {
+              "n": 3591,
+              "coauth_early_rate": 0.7786,
+              "density_range": [
+                0.7063,
+                1.0
+              ]
+            }
+          }
+        },
+        "chemistry": {
+          "n_modeled": 26830,
+          "n_with_density": 26072,
+          "n_without_density": 758,
+          "overall_student_resolution_rate": 0.699,
+          "tercile_cuts": [
+            0.7197,
+            0.7695
+          ],
+          "strata": {
+            "low": {
+              "n": 9026,
+              "coauth_early_rate": 0.7938,
+              "density_range": [
+                0.04,
+                0.7197
+              ]
+            },
+            "mid": {
+              "n": 8407,
+              "coauth_early_rate": 0.7978,
+              "density_range": [
+                0.72,
+                0.7695
+              ]
+            },
+            "high": {
+              "n": 8639,
+              "coauth_early_rate": 0.7863,
+              "density_range": [
+                0.7697,
+                1.0
+              ]
+            }
+          }
+        }
+      },
+      "by_stratum": {
+        "low": {
+          "lowest": "econ",
+          "econ_is_lowest": true,
+          "rates": {
+            "econ": 0.613,
+            "math": 0.6831,
+            "neuro": 0.7735,
+            "physics": 0.787,
+            "chemistry": 0.7938
+          },
+          "econ_margin_to_next": 0.0701,
+          "n_by_field": {
+            "econ": 889,
+            "math": 1685,
+            "neuro": 7072,
+            "physics": 3882,
+            "chemistry": 9026
+          }
+        },
+        "mid": {
+          "lowest": "econ",
+          "econ_is_lowest": true,
+          "rates": {
+            "econ": 0.5729,
+            "math": 0.6672,
+            "neuro": 0.7712,
+            "physics": 0.7984,
+            "chemistry": 0.7978
+          },
+          "econ_margin_to_next": 0.0943,
+          "n_by_field": {
+            "econ": 892,
+            "math": 1734,
+            "neuro": 6835,
+            "physics": 4002,
+            "chemistry": 8407
+          }
+        },
+        "high": {
+          "lowest": "econ",
+          "econ_is_lowest": true,
+          "rates": {
+            "econ": 0.5693,
+            "math": 0.6841,
+            "neuro": 0.7562,
+            "physics": 0.7786,
+            "chemistry": 0.7863
+          },
+          "econ_margin_to_next": 0.1148,
+          "n_by_field": {
+            "econ": 880,
+            "math": 1608,
+            "neuro": 6890,
+            "physics": 3591,
+            "chemistry": 8639
+          }
+        }
+      },
+      "econ_lowest_in_all_strata": true
+    },
+    "institutions_with_at_least_10_raw_pairs": {
+      "per_field": {
+        "econ": {
+          "n_modeled": 2698,
+          "n_with_density": 2593,
+          "n_without_density": 105,
+          "overall_student_resolution_rate": 0.3134,
+          "tercile_cuts": [
+            0.3097,
+            0.3889
+          ],
+          "strata": {
+            "low": {
+              "n": 868,
+              "coauth_early_rate": 0.6118,
+              "density_range": [
+                0.0267,
+                0.3097
+              ]
+            },
+            "mid": {
+              "n": 862,
+              "coauth_early_rate": 0.5719,
+              "density_range": [
+                0.3125,
+                0.3889
+              ]
+            },
+            "high": {
+              "n": 863,
+              "coauth_early_rate": 0.5678,
+              "density_range": [
+                0.3913,
+                0.9
+              ]
+            }
+          }
+        },
+        "math": {
+          "n_modeled": 5051,
+          "n_with_density": 4891,
+          "n_without_density": 160,
+          "overall_student_resolution_rate": 0.3997,
+          "tercile_cuts": [
+            0.4408,
+            0.538
+          ],
+          "strata": {
+            "low": {
+              "n": 1654,
+              "coauth_early_rate": 0.6802,
+              "density_range": [
+                0.0385,
+                0.4408
+              ]
+            },
+            "mid": {
+              "n": 1636,
+              "coauth_early_rate": 0.6663,
+              "density_range": [
+                0.4444,
+                0.538
+              ]
+            },
+            "high": {
+              "n": 1601,
+              "coauth_early_rate": 0.6871,
+              "density_range": [
+                0.5385,
+                0.85
+              ]
+            }
+          }
+        },
+        "neuro": {
+          "n_modeled": 21846,
+          "n_with_density": 18489,
+          "n_without_density": 3357,
+          "overall_student_resolution_rate": 0.5574,
+          "tercile_cuts": [
+            0.6,
+            0.6919
+          ],
+          "strata": {
+            "low": {
+              "n": 6190,
+              "coauth_early_rate": 0.7724,
+              "density_range": [
+                0.0065,
+                0.6
+              ]
+            },
+            "mid": {
+              "n": 6366,
+              "coauth_early_rate": 0.7738,
+              "density_range": [
+                0.601,
+                0.6919
+              ]
+            },
+            "high": {
+              "n": 5933,
+              "coauth_early_rate": 0.7617,
+              "density_range": [
+                0.6923,
+                1.0
+              ]
+            }
+          }
+        },
+        "physics": {
+          "n_modeled": 11810,
+          "n_with_density": 10728,
+          "n_without_density": 1082,
+          "overall_student_resolution_rate": 0.5648,
+          "tercile_cuts": [
+            0.6113,
+            0.7015
+          ],
+          "strata": {
+            "low": {
+              "n": 3576,
+              "coauth_early_rate": 0.7855,
+              "density_range": [
+                0.04,
+                0.6111
+              ]
+            },
+            "mid": {
+              "n": 3587,
+              "coauth_early_rate": 0.8043,
+              "density_range": [
+                0.6115,
+                0.7015
+              ]
+            },
+            "high": {
+              "n": 3565,
+              "coauth_early_rate": 0.7714,
+              "density_range": [
+                0.7034,
+                1.0
+              ]
+            }
+          }
+        },
+        "chemistry": {
+          "n_modeled": 26830,
+          "n_with_density": 24212,
+          "n_without_density": 2618,
+          "overall_student_resolution_rate": 0.699,
+          "tercile_cuts": [
+            0.7187,
+            0.7615
+          ],
+          "strata": {
+            "low": {
+              "n": 8176,
+              "coauth_early_rate": 0.7937,
+              "density_range": [
+                0.04,
+                0.7187
+              ]
+            },
+            "mid": {
+              "n": 8008,
+              "coauth_early_rate": 0.8001,
+              "density_range": [
+                0.7197,
+                0.7615
+              ]
+            },
+            "high": {
+              "n": 8028,
+              "coauth_early_rate": 0.7941,
+              "density_range": [
+                0.7619,
+                1.0
+              ]
+            }
+          }
+        }
+      },
+      "by_stratum": {
+        "low": {
+          "lowest": "econ",
+          "econ_is_lowest": true,
+          "rates": {
+            "econ": 0.6118,
+            "math": 0.6802,
+            "neuro": 0.7724,
+            "physics": 0.7855,
+            "chemistry": 0.7937
+          },
+          "econ_margin_to_next": 0.0684,
+          "n_by_field": {
+            "econ": 868,
+            "math": 1654,
+            "neuro": 6190,
+            "physics": 3576,
+            "chemistry": 8176
+          }
+        },
+        "mid": {
+          "lowest": "econ",
+          "econ_is_lowest": true,
+          "rates": {
+            "econ": 0.5719,
+            "math": 0.6663,
+            "neuro": 0.7738,
+            "physics": 0.8043,
+            "chemistry": 0.8001
+          },
+          "econ_margin_to_next": 0.0944,
+          "n_by_field": {
+            "econ": 862,
+            "math": 1636,
+            "neuro": 6366,
+            "physics": 3587,
+            "chemistry": 8008
+          }
+        },
+        "high": {
+          "lowest": "econ",
+          "econ_is_lowest": true,
+          "rates": {
+            "econ": 0.5678,
+            "math": 0.6871,
+            "neuro": 0.7617,
+            "physics": 0.7714,
+            "chemistry": 0.7941
+          },
+          "econ_margin_to_next": 0.1193,
+          "n_by_field": {
+            "econ": 863,
+            "math": 1601,
+            "neuro": 5933,
+            "physics": 3565,
+            "chemistry": 8028
+          }
+        }
+      },
+      "econ_lowest_in_all_strata": true
+    }
+  }
+}

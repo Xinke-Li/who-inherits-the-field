@@ -1,0 +1,71 @@
+{
+  "task": "T2.4",
+  "feature": "early_concentration",
+  "definition": "Herfindahl index of the student's early-window concept occurrence counts, window [t0, t0+5] inclusive, on the builder's concept view",
+  "source_cache": "results/robustness/openalex_cache/",
+  "source_is_frozen_snapshot": false,
+  "source_note": "r5 live-API fetch of 2026-07; the builder's works store is absent from repository and archive. Reconstruction, not the frozen feature; drift bounded by r48's calibration",
+  "builder_min_score": 0.3,
+  "min_score_variants": [
+    0.2,
+    0.3,
+    0.4
+  ],
+  "imported_verbatim": {
+    "herfindahl": "e14_self_persistence.herfindahl",
+    "profile_counts": "e14_self_persistence.profile_counts",
+    "builder_view": "r6_topk_sweep.builder_view"
+  },
+  "fields": {
+    "chemistry": {
+      "n_rows": 26830,
+      "n_students_unique": 26830,
+      "n_empty_early_window": 0,
+      "mean": 0.100454,
+      "median": 0.093333,
+      "min": 0.015604,
+      "max": 1.0,
+      "supplement_file": "data/supplement/early_concentration_chemistry.parquet"
+    },
+    "econ": {
+      "n_rows": 2698,
+      "n_students_unique": 2698,
+      "n_empty_early_window": 1,
+      "mean": 0.09115,
+      "median": 0.083333,
+      "min": 0.018042,
+      "max": 1.0,
+      "supplement_file": "data/supplement/early_concentration_econ.parquet"
+    },
+    "math": {
+      "n_rows": 5051,
+      "n_students_unique": 5051,
+      "n_empty_early_window": 0,
+      "mean": 0.101292,
+      "median": 0.093711,
+      "min": 0.018728,
+      "max": 0.625,
+      "supplement_file": "data/supplement/early_concentration_math.parquet"
+    },
+    "neuro": {
+      "n_rows": 21846,
+      "n_students_unique": 21846,
+      "n_empty_early_window": 3,
+      "mean": 0.10062,
+      "median": 0.093333,
+      "min": 0.011931,
+      "max": 1.0,
+      "supplement_file": "data/supplement/early_concentration_neuro.parquet"
+    },
+    "physics": {
+      "n_rows": 11810,
+      "n_students_unique": 11810,
+      "n_empty_early_window": 2,
+      "mean": 0.100094,
+      "median": 0.093333,
+      "min": 0.010094,
+      "max": 1.0,
+      "supplement_file": "data/supplement/early_concentration_physics.parquet"
+    }
+  }
+}

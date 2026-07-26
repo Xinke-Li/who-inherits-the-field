@@ -1,0 +1,20 @@
+versions 1.2.2 1.11.4 1.26.4
+[split] temporal: train t0<=2005, val t0 in (2005,2007], test t0>2007 | sizes={'train': 3356, 'test': 935, 'val': 760} | base rates={'test': 0.2075, 'train': 0.2017, 'val': 0.1895}
+[split] temporal: train t0<=2005, val t0 in (2005,2007], test t0>2007 | sizes={'train': 3356, 'test': 935, 'val': 760} | base rates={'test': 0.2075, 'train': 0.2017, 'val': 0.1895}
+{
+ "M1s_typicality": 0.2352,
+ "M1s_scalars": 0.2752,
+ "M4s_tfidf": 0.2483,
+ "M3s_gbdt": 0.2881,
+ "verdict": {
+  "branch": "A_ADVISOR_INFORMATION_REQUIRED",
+  "best_student_model": "M3s_gbdt",
+  "best_student_auc_pr": 0.2881,
+  "M1_auc_pr": 0.3825,
+  "placebo_band_plus_margin": 0.2919,
+  "M1_minus_floor_ci95": [
+   0.0421,
+   0.1583
+  ]
+ }
+}

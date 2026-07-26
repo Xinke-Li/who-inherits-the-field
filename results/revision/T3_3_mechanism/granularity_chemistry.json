@@ -1,0 +1,12 @@
+{
+  "field": "chemistry",
+  "min_level": 2,
+  "concepts_kept_of_map": 64718,
+  "rows_with_both_authors_cached": 26830,
+  "rows_used": 26830,
+  "test_base_rate_restricted": 0.0745,
+  "test_base_rate_frozen": 0.245,
+  "label_agreement_with_frozen": 0.8113,
+  "M3_auc_pr_restricted": 0.1677,
+  "composition_ceiling_restricted": 0.5289
+}

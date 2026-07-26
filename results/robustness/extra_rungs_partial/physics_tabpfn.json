@@ -1,0 +1,19 @@
+{
+  "field": "physics",
+  "model": "tabpfn_v2_cpu_context1000",
+  "train_subsampled": true,
+  "per_seed_auc_pr": [
+    0.619,
+    0.6293,
+    0.6327,
+    0.6342,
+    0.6229,
+    0.6307,
+    0.6215,
+    0.6322,
+    0.6327,
+    0.6261
+  ],
+  "mean": 0.6281,
+  "std": 0.0054
+}

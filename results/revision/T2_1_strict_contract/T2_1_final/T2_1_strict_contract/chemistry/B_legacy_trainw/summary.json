@@ -1,0 +1,29 @@
+{
+  "cell": "B_legacy_trainw",
+  "field": "chemistry",
+  "hp": {
+    "lr": 0.005,
+    "hidden": 64,
+    "layers": 3,
+    "dropout": 0.5
+  },
+  "construction": "legacy",
+  "class_weight_scope": "train",
+  "mean_auc_pr": 0.5713,
+  "std_auc_pr": 0.0046,
+  "per_seed_auc_pr": [
+    0.5707,
+    0.5705,
+    0.5782,
+    0.5634,
+    0.5632,
+    0.5745,
+    0.5751,
+    0.5708,
+    0.5725,
+    0.5744
+  ],
+  "ROLE": "THE ANCHOR. r3's legacy run used a train-only class weight (see rgcn_symmetric_verdict.json), so this cell, not cell A, is what reproduces r3's 0.5724 on this stack. The difference is the environment offset.",
+  "WARNING": "uses the UNFIXED e2_hgt.build_graph for attribution only. NOT a verdict cell.",
+  "IS_VERDICT_CELL": false
+}

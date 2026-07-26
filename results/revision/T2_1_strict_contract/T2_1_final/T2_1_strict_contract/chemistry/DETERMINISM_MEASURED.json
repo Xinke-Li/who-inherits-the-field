@@ -1,0 +1,52 @@
+{
+  "note": "T2.1 chemistry RGCN: measured run-to-run determinism, not a caveat",
+  "how_it_arose": "A restore-cell path defect caused both completed cells to be recomputed on a resumed session. The accident produced two independent runs of the same cells, on the same stack, at the same seeds, so the difference between them is an empirical noise floor for exactly these numbers.",
+  "conditions_held_fixed": {
+    "gpu": "A100",
+    "torch": "2.11.0+cu128",
+    "torch_geometric": "2.8.0",
+    "seeds": "0 through 9",
+    "configuration": "identical per cell",
+    "construction": "build_graph_v2 contract=strict",
+    "class_weight": "train-only"
+  },
+  "cells": {
+    "rgcn_prereg_strict": {
+      "run1_delta_vs_M5prime": 0.0278,
+      "run2_delta_vs_M5prime": 0.0277,
+      "drift": 0.0001
+    },
+    "rgcn_tuned_strict": {
+      "run1_delta_vs_M5prime": 0.0448,
+      "run2_delta_vs_M5prime": 0.0451,
+      "drift": 0.0003
+    },
+    "A_legacy_globalw": {
+      "run1": 0.5716,
+      "run2": 0.5722,
+      "drift": 0.0006
+    },
+    "B_legacy_trainw": {
+      "run1": 0.5718,
+      "run2": 0.5714,
+      "drift": -0.0004
+    },
+    "C_strict_globalw": {
+      "run1": 0.5824,
+      "run2": 0.5811,
+      "drift": -0.0013
+    }
+  },
+  "max_drift_point_estimate": 0.0013,
+  "max_drift_ci_endpoint": 0.0013,
+  "which_run_is_authoritative": "run 2",
+  "why": "The per-seed test score and label arrays now on disk, which are what ships as the F8a release, come from run 2. The reported numbers and the released arrays must correspond, so the paper quotes +0.0277 and +0.0451.",
+  "relation_to_existing_DETERMINISM_NOTE": "The existing DETERMINISM_NOTE.json in results/robustness/full_symmetric_grid/ exists because the legacy symmetric grid mixed CPU and GPU execution, so it records that exact cross-device reproduction is not assumed. This note is stronger and narrower: same device, same library versions, same seeds, two independent runs, maximum drift 0.0013 across five repeated cells.",
+  "consequence_for_attribution": "Read against a 0.0013 floor, not 3e-4. F2 is null: it moved from +0.0002 to -0.0008 across repeats and changed sign, which is what noise looks like. F1 is the entire effect at +0.0108 and +0.0089 across repeats, both far above the floor; report it as a range of roughly +0.009 to +0.011 rather than as a single point estimate. For the F1a/F1b split, call the halves separable if (E-B) + (F-B) lands within about 0.002 of (D-B); beyond that, report interaction.",
+  "evidence": "Both downloaded output trees are retained by the author.",
+  "IS_VERDICT_CELL": false,
+  "n_cells_repeated": 5,
+  "n_repeats_per_cell": 2,
+  "floor_basis": "the widest drift observed across all five repeated cells (A, B, C, and the two verdict cells), two independent runs each. An earlier version of this file quoted 3e-4, which was the drift of the two verdict cells alone and understated the floor.",
+  "do_not_quote": "+0.0105 as a precise point estimate for F1; it is one of two measurements whose spread exceeds its own last digit"
+}
