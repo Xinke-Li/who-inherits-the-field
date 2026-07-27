@@ -130,8 +130,7 @@ excludes zero. ``null (gate 2)'' marks a cell whose interval excludes zero but
 whose corrected $p$ does not clear 0.05, and ``below'' a cell whose interval
 lies wholly under the ceiling. Table~\ref{tab:full20} retains all twenty
 comparisons under the unrepaired construction as the pre-specified audit
-trail. Cells under
-\texttt{results/revision/T2\_1\_strict\_contract/T2\_1\_final/}.}
+trail.}
 \label{tab:gnn}
 \scriptsize
 \setlength{\tabcolsep}{2.2pt}

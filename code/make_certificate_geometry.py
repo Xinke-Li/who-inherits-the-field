@@ -121,13 +121,96 @@ def build():
     return base
 
 
+def verify_values(plotted):
+    """Refuse to write the strip if any plotted value disagrees with an
+    independent re-read of the four source families. Key paths are duplicated
+    here on purpose: this is the second path the check needs."""
+    for field, d in plotted.items():
+        base = RES / f"results_{field}"
+        e1 = json.load(open(base / "e1_baselines.json"))["summary"]
+        e10 = json.load(open(base / "e10_advisor_placebo.json"))["summary"]
+        e14 = json.load(open(base / "e14_self_persistence.json"))[
+            "a_student_only_ladder"]["summary"]
+        want = {
+            "prior": e1["M0_prior"]["auc_pr"]["mean"],
+            "placebo": e10["placebo_cohort"]["L1_logit_overlap"]["auc_pr"]["mean"],
+            "floor": max(e14[m]["auc_pr"]["mean"] for m in STUDENT_ONLY),
+            "m1": e1["M1_logit_overlap"]["auc_pr"]["mean"],
+            "best": max(e1[m]["auc_pr"]["mean"] for m in TABULAR),
+        }
+        for k, v in want.items():
+            if abs(plotted[field][k] - v) > 1e-12:
+                raise SystemExit(f"strip: value mismatch {field}.{k}: "
+                                 f"plotted {plotted[field][k]} source {v}")
+
+
+def build_strip():
+    """One row of five mini-panels sharing the vertical AUC-PR axis, for the
+    body: figure* at text width, total height at most 32mm with the legend."""
+    import matplotlib.pyplot as plt
+    fig, axes = plt.subplots(1, 5, sharey=True, figsize=(7.0, 1.02))
+    XPOS = {"prior": 1, "placebo": 2, "floor": 3, "m1": 4, "best": 5}
+    plotted = {}
+    for ax, (field, name) in zip(axes, PANELS):
+        d = load(field)
+        plotted[field] = d
+        ax.axhspan(d["prior"], d["placebo"], color="#e4e4e4", zorder=1)
+        ax.plot(XPOS["prior"], d["prior"], marker="s", ms=3.4, color=DIMGRAY,
+                ls="none", zorder=4)
+        ax.plot(XPOS["placebo"], d["placebo"], marker="v", ms=3.8,
+                color=DIMGRAY, ls="none", zorder=4)
+        ax.plot(XPOS["floor"], d["floor"], marker="o", ms=3.8, color=DARKBLUE,
+                ls="none", zorder=4)
+        ax.plot(XPOS["m1"], d["m1"], marker="^", ms=4.2, mfc="white",
+                mec=DARKRED, mew=0.9, ls="none", zorder=4)
+        ax.plot(XPOS["best"], d["best"], marker="^", ms=4.2, color=DARKRED,
+                ls="none", zorder=4)
+        ax.set_title(name, fontsize=7, pad=2)
+        ax.set_xlim(0.4, 5.6)
+        ax.set_xticks([])
+        ax.grid(axis="y")
+        ax.grid(axis="x", visible=False)
+        ax.tick_params(length=2, labelsize=6.3)
+        ax.spines["bottom"].set_visible(False)
+    axes[0].set_ylim(0.15, 0.68)
+    axes[0].set_ylabel("Test AUC-PR", fontsize=6.6)
+    verify_values(plotted)
+    handles = [
+        mpl.lines.Line2D([], [], marker="s", ms=3.4, color=DIMGRAY, ls="none",
+                         label="M0 prior"),
+        mpl.lines.Line2D([], [], marker="v", ms=3.8, color=DIMGRAY, ls="none",
+                         label="placebo advisor (e10)"),
+        mpl.lines.Line2D([], [], marker="o", ms=3.8, color=DARKBLUE, ls="none",
+                         label="student-only floor (e14)"),
+        mpl.lines.Line2D([], [], marker="^", ms=4.2, mfc="white", mec=DARKRED,
+                         mew=0.9, ls="none", label="M1 advisor overlap"),
+        mpl.lines.Line2D([], [], marker="^", ms=4.2, color=DARKRED, ls="none",
+                         label="best tabular"),
+    ]
+    fig.legend(handles=handles, loc="lower center", ncol=5, frameon=False,
+               fontsize=6.3, bbox_to_anchor=(0.5, -0.15), handletextpad=0.25,
+               columnspacing=0.9)
+    fig.subplots_adjust(left=0.055, right=0.995, top=0.86, bottom=0.16,
+                        wspace=0.08)
+    OUT.mkdir(parents=True, exist_ok=True)
+    base = OUT / "F17_certificate_strip"
+    fig.savefig(str(base) + ".pdf", pad_inches=0.02)
+    fig.savefig(str(base) + ".png", pad_inches=0.02)
+    plt.close(fig)
+    return base
+
+
 if __name__ == "__main__":
+    import sys
+    maker = build_strip if "--strip" in sys.argv else build
     try:
         style(True)
-        base = build()
+        base = maker()
         print(f"wrote {base}.pdf and .png (usetex)")
+    except SystemExit:
+        raise
     except Exception as e:
         print(f"usetex render failed ({type(e).__name__}); serif fallback")
         style(False)
-        base = build()
+        base = maker()
         print(f"wrote {base}.pdf and .png (serif fallback)")

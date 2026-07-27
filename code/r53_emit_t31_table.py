@@ -65,8 +65,7 @@ def main():
         "reweighted to the cohort base rate. "
         f"Judge \\texttt{{{model}}}, decoding recorded as \\texttt{{{decoding}}}. "
         "Six refusals are counted as NO, which holds every denominator at 200; "
-        "Appendix~\\ref{app:t31} gives the accounting and both conventions. "
-        "From \\texttt{results/revision/T3\\_1\\_adjudication/}."
+        "Appendix~\\ref{app:t31} gives the accounting and both conventions."
     )
 
     tex = "\n".join([

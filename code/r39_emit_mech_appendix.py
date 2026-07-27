@@ -98,7 +98,7 @@ it is the weakest of the four columns.
 scramble column is the within-cohort placebo's test AUC-ROC over 30 seeds
 against the true labels; the graph columns are the strict symmetric relational
 cell against M5$'$ with the paired student-level interval drawn inside the
-stratum. From \protect\path{results/revision/T3_3_mechanism/chemistry_strata.json}.}
+stratum.}
 \label{tab:mechdisp}
 \scriptsize
 \setlength{\tabcolsep}{2.4pt}
@@ -121,8 +121,7 @@ terciles, so this gradient is not the previous candidate in disguise.
 
 \begin{table}[h]
 \caption{\textbf{Chemistry stratified by concept degree.} Terciles of the mean
-degree of a student's own early concepts, equal in size by construction. From
-\protect\path{results/revision/T3_3_mechanism/chemistry_strata.json}.}
+degree of a student's own early concepts, equal in size by construction.}
 \label{tab:mechdeg}
 \scriptsize
 \setlength{\tabcolsep}{3pt}
@@ -150,8 +149,7 @@ this vocabulary.
 \begin{table}[h]
 \caption{\textbf{The ladder under a level-restricted vocabulary.} Profiles and
 label rebuilt keeping only OpenAlex concepts at level 2 or deeper. Agreement is
-the share of test rows whose label is unchanged. From
-\protect\path{results/revision/T3_3_mechanism/granularity.json}.}
+the share of test rows whose label is unchanged.}
 \label{tab:mechlevel}
 \scriptsize
 \setlength{\tabcolsep}{4pt}

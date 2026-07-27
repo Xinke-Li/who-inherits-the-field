@@ -80,8 +80,7 @@ eq.~(\\ref{{eq:gates}}), so every verdict is null, but four of the five means si
 above M5$'$. $^{{\\dagger}}$ marks a verdict whose deciding gate clears its
 threshold by less than the measured run-to-run floor of {FLOOR}, so the verdict
 is not stable under noise the project has already measured; the bootstrap
-covers sampling and the floor covers run to run, and the two add. From
-\\protect\\path{{results/revision/T3_4_tabpfn_gpu/}}.}}
+covers sampling and the floor covers run to run, and the two add.}}
 \\label{{tab:tabpfngpu}}
 \\scriptsize
 \\setlength{{\\tabcolsep}}{{2.5pt}}

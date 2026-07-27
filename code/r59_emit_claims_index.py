@@ -150,7 +150,7 @@ row(P2, "The best pure-tabular rung reaches 0.352 AUC-PR in economics and "
     ["results/results_<field>/e1_baselines.json"])
 row(P2, "The single overlap scalar M1 already recovers most of the best "
         "tabular rung, at 0.346 to 0.546.",
-    "0.346 to 0.546", r"Table~\ref{tab:ladder}", ["tab:ladder"],
+    "already recovers", r"Table~\ref{tab:ladder}", ["tab:ladder"],
     ["code/paper_pipeline/experiments/e1_baselines.py"],
     ["results/results_<field>/e1_baselines.json"])
 row(P2, "The graph-aware comparator M5 sits at or below the best pure-tabular "
@@ -249,7 +249,7 @@ row(P2, "The no-exceeds reading is power-qualified: equivalence excludes "
 row(P3, "The global y-scrambling placebo centers on chance everywhere, test "
         "AUC-ROC 0.489 to 0.501; the within-cohort variant stays within "
         "0.025 of chance.",
-    "0.489 to 0.501", r"Tables~\ref{tab:certs}, \ref{tab:e9a}, "
+    "0.025 of chance", r"Tables~\ref{tab:certs}, \ref{tab:e9a}, "
     r"Figure~\ref{fig:shuffle}", ["tab:certs", "tab:e9a", "fig:shuffle"],
     ["code/paper_pipeline/experiments/e9a_placebo.py",
      "code/make_shuffle_certificate.py"],
@@ -297,7 +297,7 @@ row(P3, "The student-only floor spans 0.309 in mathematics to 0.591 in "
         "stays positive in mathematics and neuroscience, and reverses in "
         "physics and chemistry.",
     "0.309 in mathematics", r"Tables~\ref{tab:certs}, \ref{tab:e14}, "
-    r"Figure~\ref{fig:geometry}", ["tab:certs", "tab:e14", "fig:geometry"],
+    r"Figure~\ref{fig:certstrip}", ["tab:certs", "tab:e14", "fig:certstrip"],
     ["code/paper_pipeline/experiments/e14_self_persistence.py",
      "code/make_certificate_geometry.py"],
     ["results/results_<field>/e14_self_persistence.json"])

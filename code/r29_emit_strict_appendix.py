@@ -139,8 +139,7 @@ contract.} __N12__ cells. $\Delta$ is against the validation-symmetric ceiling
 M5$'$; the interval is the paired student-level bootstrap of
 eq.~(\ref{eq:gates}) and the verdict applies all three of its gates. Compare
 Table~\ref{tab:full20}, which is the same protocol on the unrepaired
-construction. __E12__ cells exceed. One cell directory each, under the tree
-named above.}
+construction. __E12__ cells exceed.}
 \label{tab:full20b}
 \small
 \setlength{\tabcolsep}{4pt}
@@ -159,8 +158,7 @@ __ROWS12__
 __N13__ cells, not twenty: chemistry's relational cell has no separate
 legacy-configuration row because the strict grid selected the same configuration
 the legacy grid had chosen, so the two coincide and one reading covers both.
-Columns as in Table~\ref{tab:full20b}. __E13__ cells exceed, all in chemistry.
-One cell directory each, under the tree named above.}
+Columns as in Table~\ref{tab:full20b}. __E13__ cells exceed, all in chemistry.}
 \label{tab:fullgridb}
 \small
 \setlength{\tabcolsep}{4pt}
@@ -198,8 +196,7 @@ the precision repeated runs on one stack give.
 over ten seeds, chemistry, relational network, at the configuration both grids
 selected. Cells A and B use the unrepaired construction deliberately, for
 attribution only; every file they write records that and is marked as not a
-verdict cell. From
-\protect\path{chemistry/attribution/} under the tree named above.}
+verdict cell.}
 \label{tab:attribution}
 \small
 \begin{tabular}{llr}
